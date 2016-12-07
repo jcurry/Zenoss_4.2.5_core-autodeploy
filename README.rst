@@ -23,7 +23,15 @@ I have tested this script against a CentOS 6.3 system.
 
 I would appreciate feedback from anyone else who uses it.
 
+The equivalent script for Ubuntu was built by Zenoss Master "hydruid" and although he has
+now largely moved away from Zenoss, his auto-install script is still available in GitHub at
+https://github.com/hydruid/zenoss/blob/master/core-autodeploy/4.2.5/zo425_ubuntu-debian.sh .
+There is also a copy of a useful blog item on the wayback machine at 
+https://web.archive.org/web/20140701000137/http://hydruid-blog.com/?p=710 
+
+
 Cheers,
+
 Jane    
 
 jane.curry@skills-1st.co.uk
