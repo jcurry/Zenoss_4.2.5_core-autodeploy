@@ -195,6 +195,11 @@ wget --no-check-certificate -r -l1 --no-parent -A 'epel*.rpm' $epel_rpm_url
 try yum -y --nogpgcheck localinstall */pub/epel/$elv/$arch/epel-*.rpm
 disable_repo epel
 
+# JC - get the zenoss deps (which sorts the rpmforge requirement)
+wget --no-check-certificate http://deps.zenoss.com/yum/zenossdeps-4.2.x-1.$els.noarch.rpm
+try yum --nogpgcheck -y localinstall zenossdeps-4.2.x-1.$els.noarch.rpm
+	
+
 echo "Installing RabbitMQ"
 # JC - rabbitmq-server-2.8.7-1.noarch requires a prereq of erlang >= R12B-3
 wget --no-check-certificate http://deps.zenoss.com/yum/4.2.x/centos/6/os/x86_64/erlang-R12B-5.10.el6.x86_64.rpm
@@ -252,10 +257,6 @@ enable_service mysql
 #try yum --nogpgcheck -y localinstall rpmforge-release-0.5.3-1.$els.rf.$arch.rpm
 #disable_repo rpmforge
 
-# JC - get the zenoss deps (which sorts the rpmforge requirement)
-wget --no-check-certificate http://deps.zenoss.com/yum/zenossdeps-4.2.x-1.$els.noarch.rpm
-try yum --nogpgcheck -y localinstall zenossdeps-4.2.x-1.$els.noarch.rpm
-	
 echo "Installing rrdtool"
 # JC - so dont enable the rpmforge rep
 #try yum -y --enablerepo='rpmforge*' install rrdtool-1.4.7
