@@ -251,6 +251,10 @@ enable_service mysql
 #try wget --no-check-certificate http://apt.sw.be/redhat/$els/en/$arch/rpmforge/RPMS/rpmforge-release-0.5.3-1.$els.rf.$arch.rpm
 #try yum --nogpgcheck -y localinstall rpmforge-release-0.5.3-1.$els.rf.$arch.rpm
 #disable_repo rpmforge
+
+# JC - get the zenoss deps (which sorts the rpmforge requirement)
+wget --no-check-certificate http://deps.zenoss.com/yum/zenossdeps-4.2.x-1.$els.noarch.rpm
+try yum --nogpgcheck -y localinstall zenossdeps-4.2.x-1.$els.noarch.rpm
 	
 echo "Installing rrdtool"
 # JC - so dont enable the rpmforge rep

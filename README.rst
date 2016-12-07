@@ -19,6 +19,12 @@ wget are put under the /tmp directory in a random-name subdirectory.  Those pack
 in this repository in the pre_req_downloads subdirectory.  You should not need them but it may
 help someone digging around in the future if stuff changes / moves again.
 
+If you need to re-run the script, note that you will need to use "yum remove" to remove
+the four MySQL packages installed.  
+
+The install also checks for any existing package starting "zenoss" so any such packages
+must also be removed before the script will run successfully.
+
 I have tested this script against a CentOS 6.3 system.
 
 I would appreciate feedback from anyone else who uses it.
