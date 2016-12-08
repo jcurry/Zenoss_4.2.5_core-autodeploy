@@ -331,3 +331,9 @@ su -l -c "zenup init zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz $ZENHOME && r
 
 su -l -c "zenup install zenoss_core-4.2.5-SP671-zenup11.zup && read && read" zenoss
 
+# Check zenup status
+su -l -c "zenup status --verbose" zenoss
+
+#Start zenoss daemons
+su -l -c "zenoss start" zenoss
+
