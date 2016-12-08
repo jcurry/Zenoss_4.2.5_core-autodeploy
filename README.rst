@@ -2,7 +2,6 @@
 Zenoss Core 4.2.5 updated auto deploy script - December 2016
 ============================================================
 
-
 The Zenoss wiki has a link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
 http://wiki.zenoss.org/Install_Zenoss#Auto-deploy_Installation 
 
@@ -25,6 +24,8 @@ the four MySQL packages installed.
 
 The install also checks for any existing package starting "zenoss" so any such packages
 must also be removed before the script will run successfully.
+
+Output is tee'ed to /tmp/zenoss425_install.out .
 
 I have tested this script against a CentOS 6.3 system.
 
