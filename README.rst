@@ -36,6 +36,11 @@ https://github.com/hydruid/zenoss/blob/master/core-autodeploy/4.2.5/zo425_ubuntu
 There is also a copy of a useful blog item on the wayback machine at 
 https://web.archive.org/web/20140701000137/http://hydruid-blog.com/?p=710 
 
+Note that the location of the zenoss rpm in hydruid's autodeploy script needs to be changed from
+http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-2108_03c_amd64.deb to
+https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download .
+
+
 
 Cheers,
 
