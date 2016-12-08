@@ -9,6 +9,8 @@
 #
 ###################################################
 
+# Tee everything to /tmp/zenoss425_install.out
+(
 cat <<EOF
 Welcome to the Zenoss Core auto-deploy script!
 
@@ -278,7 +280,7 @@ for service in memcached snmpd zenoss; do
 	try /sbin/service $service start
 done
 
-cho "Securing configuration files..."
+echo "Securing configuration files..."
 try chmod -R go-rwx /opt/zenoss/etc
 
 cat << EOF
@@ -325,7 +327,7 @@ try chown zenoss:zenoss zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
 try chown zenoss:zenoss zenoss_core-4.2.5-SP671-zenup11.zup
 
 # Install the pristine
-su -l -c "zenup init zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz $ZENHOME && read && read" zenoss
+su -l -c "zenup init zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz $ZENHOME" zenoss
 
 # Install SUP671 supply ENTER to respond with default to 2 questions
 
@@ -336,4 +338,6 @@ su -l -c "zenup status --verbose" zenoss
 
 #Start zenoss daemons
 su -l -c "zenoss start" zenoss
+
+) | tee /tmp/zenoss425_install.out 2>&1
 
