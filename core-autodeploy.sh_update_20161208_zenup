@@ -329,13 +329,12 @@ try chown zenoss:zenoss /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
 cp zenoss_core-4.2.5-SP671-zenup11.zup /tmp
 try chown zenoss:zenoss /tmp/zenoss_core-4.2.5-SP671-zenup11.zup
 
-# Copy the pristine to $ZENHOME/../zenup and install - need to do this as zenoss user to get $ZENHOME
-su -l -c "cp /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz $ZENHOME/../zenup && zenup init $ZENHOME/../zenup/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz $ZENHOME" zenoss
+#  Copy pristine to $ZENHOME/../zenup  and run zenup init
+su -l -c 'cp /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz $ZENHOME/../zenup && zenup init $ZENHOME/../zenup/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz $ZENHOME' zenoss
 
-# Copy the pristine to $ZENHOME/../zenup and install - need to do this as zenoss user to get $ZENHOME
+#  Copy sup file to $ZENHOME/../zenup  and run zenup install
 # Install SUP671 supply ENTER to respond with default to 2 questions
-
-su -l -c "cp /tmp/zenoss_core-4.2.5-SP671-zenup11.zup $ZENHOME/../zenup && zenup install $ZENHOME/../zenup/zenoss_core-4.2.5-SP671-zenup11.zup && read && read" zenoss
+su -l -c 'cp /tmp/zenoss_core-4.2.5-SP671-zenup11.zup $ZENHOME/../zenup && zenup install $ZENHOME/../zenup/zenoss_core-4.2.5-SP671-zenup11.zup && read && read' zenoss
 
 # Check zenup status
 su -l -c "zenup status --verbose" zenoss
