@@ -323,15 +323,18 @@ try yum --nogpgcheck -y localinstall zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm
 wget --no-check-certificate  http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2014-08-06/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz/download
 wget --no-check-certificate  http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2016-02-26/zenoss_core-4.2.5-SP671-zenup11.zup/download
 
-try chown zenoss:zenoss zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
-try chown zenoss:zenoss zenoss_core-4.2.5-SP671-zenup11.zup
+# Copy the pristine and zup files to $ZENHOME/../zenup and change ownership to zenoss
+cp zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz $ZENHOME/../zenup
+try chown zenoss:zenoss $ZENHOME/../zenup/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
+cp zenoss_core-4.2.5-SP671-zenup11.zup $ZENHOME/../zenup
+try chown zenoss:zenoss $ZENHOME/../zenup/zenoss_core-4.2.5-SP671-zenup11.zup
 
 # Install the pristine
-su -l -c "zenup init zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz $ZENHOME" zenoss
+su -l -c "zenup init $ZENHOME/../zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz $ZENHOME" zenoss
 
 # Install SUP671 supply ENTER to respond with default to 2 questions
 
-su -l -c "zenup install zenoss_core-4.2.5-SP671-zenup11.zup && read && read" zenoss
+su -l -c "zenup install $ZENHOME/../zenup/zenoss_core-4.2.5-SP671-zenup11.zup && read && read" zenoss
 
 # Check zenup status
 su -l -c "zenup status --verbose" zenoss
