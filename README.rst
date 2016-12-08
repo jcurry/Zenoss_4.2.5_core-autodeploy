@@ -10,7 +10,7 @@ Unfortunately some of the pre-req / co-req chain appears to have broken as at
 December 2016.  There is a forum append documenting some of the issues at
 http://www.zenoss.org/forum/146626 
 
-This repository contains a new version, core-autodeploy.sh_update_20161207,
+This repository contains a new version, core-autodeploy.sh_update_20161208_zenup ,
 which should replace the core-autodeploy.sh file that is downloaded with the package documented
 on the wiki.  Other than that, the wiki article remains the same.
 
