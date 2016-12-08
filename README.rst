@@ -19,6 +19,9 @@ wget are put under the /tmp directory in a random-name subdirectory.  Those pack
 in this repository in the pre_req_downloads subdirectory.  You should not need them but it may
 help someone digging around in the future if stuff changes / moves again.
 
+The script now also installs zenup, the latest pristine file and the latest SUP update file
+(as of Dec 8th, 2016) - SUP267.
+
 If you need to re-run the script, note that you will need to use "yum remove" to remove
 the four MySQL packages installed.  
 
