@@ -44,6 +44,8 @@ Note that the location of the zenoss rpm in hydruid's autodeploy script needs to
 http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-2108_03c_amd64.deb to
 https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download .
 
+The ubuntu branch of this git repository contains a slightly modified version of his script. Run
+zo425_ubuntu-debian.sh.  Output goes to /tmp/zenoss425_ubuntu_install.out . Tested on Ubuntu 14.04.
 
 
 Cheers,

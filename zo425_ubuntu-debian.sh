@@ -8,6 +8,7 @@
 ##########################################
 
 # Beginning Script Message
+(
 clear
 echo && echo "Welcome to the Zenoss 4.2.5 core-autodeploy script for Ubuntu and Debian! (http://hydruid-blog.com/?p=710)" && echo
 echo "*WARNING*: This script will update your OS and for Debian users it will install the "Testing" version of some packages."
@@ -85,9 +86,9 @@ if [ $curos = "debian" ]; then
 fi
 
 # Download Zenoss DEB and install it
-# Location for Zenoss has changed....
+# JC - Location for Zenoss has changed....
 #wget -N http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-2108_03c_amd64.deb -P $DOWNDIR/
-wget -N https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download -P $DOWNDIR/
+wget -O $DOWNDIR/zenoss-core-425-2108_03c_amd64.deb -N https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download -P $DOWNDIR/
 if [ $UPGRADE = "no" ]; then
 	dpkg -i $DOWNDIR/zenoss-core-425-2108_03c_amd64.deb
 fi
@@ -166,7 +167,9 @@ ln -s /usr/local/zenoss/zenup /opt
 chmod +x /usr/local/zenoss/zenup/bin/zenup
 echo 'watchdog True' >> $ZENHOME/etc/zenwinperf.conf
 touch $ZENHOME/var/Data.fs && echo
-wget --no-check-certificate -N https://raw2.github.com/hydruid/zenoss/master/core-autodeploy/$ZVERb/misc/zenoss -P $DOWNDIR/
+# JC - Says it cant get this - 404 ??? - lose the "2" after "raw"
+#wget --no-check-certificate -N https://raw2.github.com/hydruid/zenoss/master/core-autodeploy/$ZVERb/misc/zenoss -P $DOWNDIR/
+wget --no-check-certificate -N https://raw.github.com/hydruid/zenoss/master/core-autodeploy/$ZVERb/misc/zenoss -P $DOWNDIR/
 cp $DOWNDIR/zenoss /etc/init.d/zenoss
 chmod 755 /etc/init.d/zenoss
 update-rc.d zenoss defaults && sleep 2
@@ -215,3 +218,4 @@ echo "  username: admin"
 echo "  password: zenoss"
 
 exit 0
+) | tee /tmp/zenoss425_ubuntu_install.out 2>&1
