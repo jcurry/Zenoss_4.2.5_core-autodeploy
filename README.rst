@@ -45,6 +45,7 @@ http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-
 https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download .
 
 
+With thanks to "baileytj" for tidying and testing.
 
 Cheers,
 
