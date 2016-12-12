@@ -62,8 +62,13 @@ if [ $curos = "ubuntu" ]; then
 		apt-get install python-software-properties -y && sleep 1
 	fi	
 	echo | add-apt-repository ppa:webupd8team/java && sleep 1 && apt-get update
-	apt-get install rrdtool libmysqlclient-dev nagios-plugins erlang subversion autoconf swig unzip zip g++ libssl-dev maven libmaven-compiler-plugin-java build-essential libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev oracle-java7-installer python-twisted python-gnutls python-twisted-web python-samba libsnmp-base snmp-mibs-downloader bc rpm2cpio memcached libncurses5 libncurses5-dev libreadline6-dev libreadline6 librrd-dev python-setuptools python-dev erlang-nox redis-server -y
+	apt-get install rrdtool libmysqlclient-dev nagios-plugins erlang subversion autoconf swig unzip zip g++ libssl-dev maven libmaven-compiler-plugin-java build-essential libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev oracle-java7-installer python-twisted python-gnutls python-twisted-web python-samba libsnmp-base snmp-mibs-downloader snmpd bc rpm2cpio memcached libncurses5 libncurses5-dev libreadline6-dev libreadline6 librrd-dev python-setuptools python-dev erlang-nox redis-server -y
 	pkg-fix
+        # JC - install working snmpd.conf with public community for SNMP v1 and v2c
+        wget -N --no-check-certificate  https://rawgithub.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/snmpd.conf -P $DOWNDIR
+        cp $DOWNDIR/snmpd.conf /etc/snmp
+        service snmpd stop
+        service snmpd start
 	export DEBIAN_FRONTEND=noninteractive
 	apt-get install mysql-server mysql-client mysql-common -y
 	mysql-conn_test
