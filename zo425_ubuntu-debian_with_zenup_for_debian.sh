@@ -295,4 +295,4 @@ echo "  password: zenoss"
 
 
 exit 0
-) | tee /tmp/zenoss425_ubuntu_install.out 2>&1
+) | tee /tmp/zenoss425_debian_install.out 2>&1
