@@ -34,6 +34,9 @@ I have tested this script against a CentOS 6.3 system.
 
 I would appreciate feedback from anyone else who uses it.
 
+Ubuntu
+------
+
 The equivalent script for Ubuntu was built by Zenoss Master "hydruid" and although he has
 now largely moved away from Zenoss, his auto-install script is still available in GitHub at
 https://github.com/hydruid/zenoss/blob/master/core-autodeploy/4.2.5/zo425_ubuntu-debian.sh .
@@ -44,8 +47,22 @@ Note that the location of the zenoss rpm in hydruid's autodeploy script needs to
 http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-2108_03c_amd64.deb to
 https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download .
 
-The ubuntu branch of this git repository contains a slightly modified version of his script. Run
-zo425_ubuntu-debian.sh as the root user (sudo bash).  Output goes to /tmp/zenoss425_ubuntu_install.out . Tested on Ubuntu 14.04.
+The ubuntu branch of this git repository contains a slightly modified version of his script. 
+
+The original hydruid script had an incorporated zenup at version 1.0.  This script replaces the
+zenup package with the latest zenup 1.1.0, installs the latest pristine and then applies the latest
+(as of December 2016) SUP 671. The zenup package was converted from an rpm format to a deb format with
+the "alien" utility and the --scripts parameter and  is available from the ubuntu branch of this repository.
+
+SUP671 does not install cleanly under Ubuntu as it uses the dash shell rather than bash.  One of
+the check scripts bundled into sup671, check_mibs, uses the "local" construct which dash interprets 
+differently and check_mibs does not have a #!/bin/bash shebang at the top.  I have exploded the
+standard zup (it's just a tgz file), added the shebang to check_mibs, and repackaged it as 
+zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup which is available from the ubuntu branch of this
+repository.
+
+Run zo425_ubuntu-debian_with_zenup.sh as the root user (sudo bash).  Output goes to 
+/tmp/zenoss425_ubuntu_install.out .  Tested on Ubuntu 14.04.
 
 
 Cheers,
