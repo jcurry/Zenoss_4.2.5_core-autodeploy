@@ -61,10 +61,6 @@ dpkg -i $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb
 cp $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb /opt/zenup
 chown zenoss:zenoss /opt/zenup/zenup_1.1.0.267.869d67a-2_amd64.deb
 
-# JC Fix problems that will be found by zenup....  To be run by zenoss user
-su -l -c 'find /usr/local/zenoss -type f ! \( -name pyraw -o -name zensocket -o -name nmap -o -name nginx -o -name nginx.pid -o -name zodbpack.pyc -o -name zone.tab -o -name iso3166.tab -o -name libpython2.7.so.1.0 \) ! \( -user zenoss -group zenoss -perm -u+rw \) -exec chown zenoss:zenoss {} \; -exec chmod u+rw {} \;' zenoss
-
-
 #  Copy pristine to /opt/zenup  and run zenup init
 cp $DOWNDIR/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz /opt/zenup 
 chown zenoss:zenoss /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz
@@ -74,6 +70,9 @@ chown zenoss:zenoss /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz
 #  Sourcing .bashrc from .bash_profile doesnt seem to work
 
 su -l -c "(echo '') | /opt/zenup/bin/zenup init /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz \$ZENHOME" zenoss
+
+# JC Fix problems that will be found by zenup....  To be run by zenoss user
+su -l -c 'find /usr/local/zenoss -type f ! \( -name pyraw -o -name zensocket -o -name nmap -o -name nginx -o -name nginx.pid -o -name zodbpack.pyc -o -name zone.tab -o -name iso3166.tab -o -name libpython2.7.so.1.0 \) ! \( -user zenoss -group zenoss -perm -u+rw \) -exec chown zenoss:zenoss {} \; -exec chmod u+rw {} \;' zenoss
 
 #  Copy sup file to /opt/zenup  and run zenup install
 # Install SUP671 supply ENTER to respond with default to 2 questions
