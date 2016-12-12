@@ -82,7 +82,7 @@ if [ $curos = "debian" ]; then
 	apt-get update
 	apt-get install rrdtool libmysqlclient-dev nagios-plugins erlang subversion autoconf swig unzip zip g++ libssl-dev maven libmaven-compiler-plugin-java build-essential libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev oracle-java7-installer python-twisted python-gnutls python-twisted-web python-samba libsnmp-base snmpd bc rpm2cpio memcached libncurses5 libncurses5-dev libreadline6-dev libreadline6 librrd-dev python-setuptools python-dev erlang-nox smistrip redis-server -y
 	debian-testing-repo
-	wget -N http://ftp.us.debian.org/debian/pool/non-free/s/snmp-mibs-downloader/snmp-mibs-downloader_1.1_all.deb
+	wget -N http://ftp.us.debian.org/debian/pool/non-free/s/snmp-mibs-downloader/snmp-mibs-downloader_1.1_all.deb -P $DOWNDIR/
 	dpkg -i snmp-mibs-downloader_1.1_all.deb
         # JC - install working snmpd.conf with public community for SNMP v1 and v2c
         wget -N --no-check-certificate  https://rawgithub.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/snmpd.conf -P $DOWNDIR
@@ -171,8 +171,9 @@ rabbitmqctl set_permissions -p /zenoss zenoss '.*' '.*' '.*' && echo
 os-fixes
 echo && ln -s /usr/local/zenoss /opt
 apt-get install libssl1.0.0 libssl-dev -y
-ln -s /lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/libssl.so.10
-ln -s /lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.10
+# JC - for Debian 8 the libraries are installed under /usr/lib/x86_64-linux-gnu
+ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/libssl.so.10
+ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.10
 ln -s /usr/local/zenoss/zenup /opt
 chmod +x /usr/local/zenoss/zenup/bin/zenup
 echo 'watchdog True' >> $ZENHOME/etc/zenwinperf.conf
@@ -294,4 +295,4 @@ echo "  password: zenoss"
 
 
 exit 0
-) | tee /tmp/zenoss425_ubuntu_install.out 2>&1
+) | tee /tmp/zenoss425_debian_install.out 2>&1
