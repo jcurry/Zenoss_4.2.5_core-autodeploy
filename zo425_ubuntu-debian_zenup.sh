@@ -72,6 +72,10 @@ chown zenoss:zenoss /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz
 su -l -c "(echo '') | /opt/zenup/bin/zenup init /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz \$ZENHOME" zenoss
 
 # JC Fix problems that will be found by zenup....  To be run by zenoss user
+# JC - /usr/local/zenoss/var/Data.fs seems to get owned by root - change to zenoss
+echo "New zenup installed - ensuring zenoss:zenoss owns /usr/local/zenoss/var/Data.fs"
+chown zenoss:zenoss /usr/local/zenoss/var/Data.fs
+
 su -l -c 'find /usr/local/zenoss -type f ! \( -name pyraw -o -name zensocket -o -name nmap -o -name nginx -o -name nginx.pid -o -name zodbpack.pyc -o -name zone.tab -o -name iso3166.tab -o -name libpython2.7.so.1.0 \) ! \( -user zenoss -group zenoss -perm -u+rw \) -exec chown zenoss:zenoss {} \; -exec chmod u+rw {} \;' zenoss
 
 #  Copy sup file to /opt/zenup  and run zenup install
