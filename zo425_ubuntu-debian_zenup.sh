@@ -54,7 +54,7 @@ wget -N --no-check-certificate https://raw.github.com/jcurry/Zenoss_4.2.5_core-a
 # Need to remove old version of zenup - it is installed under /usr/local/zenoss and linked to /opt/zenup
 
 echo "Removing old zenup and installing zenup 1.1.0"
-#rm -rf $ZENHOME/zenup
+rm -rf /usr/local/zenoss/zenup
 #rm /opt/zenup
 (echo '') | dpkg -i $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb
 # Put the zenup code into /opt/zenup in case it is wanted in the future
