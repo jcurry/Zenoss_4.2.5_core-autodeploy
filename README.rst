@@ -64,6 +64,16 @@ repository.
 Run zo425_ubuntu-debian_with_zenup.sh as the root user (sudo bash).  Output goes to 
 /tmp/zenoss425_ubuntu_install.out .  Tested on Ubuntu 14.04.
 
+Debian
+------
+
+Script to install on Debian is zo425_ubuntu-debian_with_zenup_for_debian.sh . wget commands to
+get variables.sh now uses this repository rather than hydruid's - detect-os function only checked
+for "Debian GNU/Linux 7"; this version also checks for "Debian GNU/Linux 8".
+
+Tested on Debian 8.6.
+
+
 With thanks to "baileytj" for tidying and testing.
 
 Cheers,
