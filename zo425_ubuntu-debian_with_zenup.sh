@@ -217,7 +217,7 @@ check-log
 echo "Getting .bash_profile for zenoss user for use in su"
 wget -N --no-check-certificate  https://rawgithub.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/.bash_profile -P $DOWNDIR/
 cp $DOWNDIR/.bash_profile /home/zenoss
-chown zenoss:zenoss .bash_profile
+chown zenoss:zenoss /home/zenoss/.bash_profile
 
 # zenup installed as part of Zenoss install - but old version. Get zenup for deb from github
 # deb version of zenup created using the alien utility in Ubuntu to convert rpm to deb
