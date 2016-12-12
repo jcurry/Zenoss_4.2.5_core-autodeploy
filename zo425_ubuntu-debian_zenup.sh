@@ -29,7 +29,7 @@ PACKAGECLEANUP="yes" # Valid options are "yes" and "no"
 
 
 # Get .bash_profile for zenoss user
-wget -O $DOWNDIR/.bash_profile  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/.bash_profile
+wget -N --no-check-certificate  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/.bash_profile -P $DOWNDIR/
 cp $DOWNDIR/.bash_profile /home/zenoss
 chown zenoss:zenoss .bash_profile
 
@@ -37,7 +37,7 @@ chown zenoss:zenoss .bash_profile
 # deb version of zenup created using the alien utility in Ubuntu to convert rpm to deb
 #   alien requires --scripts parameter to convert scripts
 
-wget -O  $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb --no-check-certificate  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/zenup_1.1.0.267.869d67a-2_amd64.deb
+wget -N --no-check-certificate  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/zenup_1.1.0.267.869d67a-2_amd64.deb -P $DOWNDIR/
 
 #Get pristine 
 echo " Getting pristine SP203"
@@ -49,15 +49,16 @@ wget -O $DOWNDIR/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz --no-check-certif
 #  Get zup from git hub repo not from sourceforge.
 
 echo " Getting ZUP 671 for Ubuntu"
-wget -O $DOWNDIR/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup --no-check-certificate https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup 
+wget -N --no-check-certificate https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup  -P $DOWNDIR
 
 
 # Need to remove old version of zenup - it is installed under /usr/local/zenoss and linked to /opt/zenup
 
 echo "Removing old zenup and installing zenup 1.1.0"
 rm -rf $ZENHOME/zenup
-rm /opt/zenup
+#rm /opt/zenup
 dpkg -i $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb
+# Put the zenup code into /opt/zenup in case it is wanted in the future
 cp $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb /opt/zenup
 
 # JC Fix problems that will be found by zenup....  To be run by zenoss user
