@@ -40,7 +40,7 @@ fi
 useradd -m -U -s /bin/bash zenoss
 mkdir $ZENOSSHOME/zenoss$ZVER-srpm_install
 rm -f $ZENOSSHOME/zenoss$ZVER-srpm_install/variables.sh
-wget --no-check-certificate -N https://raw.github.com/hydruid/zenoss/master/core-autodeploy/$ZVERb/misc/variables.sh -P $ZENOSSHOME/zenoss$ZVER-srpm_install/
+wget --no-check-certificate -N  https://raw.github.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/variables.sh -P $ZENOSSHOME/zenoss$ZVER-srpm_install/
 . $ZENOSSHOME/zenoss$ZVER-srpm_install/variables.sh
 mkdir $ZENHOME && chown -cR zenoss:zenoss $ZENHOME
 
@@ -108,7 +108,7 @@ if [ $UPGRADE = "yes" ]; then
         dpkg -i $DOWNDIR/zenoss-core-425-2108_03c_amd64.deb
 fi
 rm -f $ZENOSSHOME/zenoss$ZVER-srpm_install/variables.sh
-wget --no-check-certificate -N https://raw.github.com/hydruid/zenoss/master/core-autodeploy/$ZVERb/misc/variables.sh -P $ZENOSSHOME/zenoss$ZVER-srpm_install/
+wget --no-check-certificate -N  https://raw.github.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/variables.sh -P $ZENOSSHOME/zenoss$ZVER-srpm_install/
 chown -R zenoss:zenoss $ZENHOME && chown -R zenoss:zenoss $ZENOSSHOME
 
 # Import the MySQL Database and create users
