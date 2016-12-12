@@ -171,8 +171,9 @@ rabbitmqctl set_permissions -p /zenoss zenoss '.*' '.*' '.*' && echo
 os-fixes
 echo && ln -s /usr/local/zenoss /opt
 apt-get install libssl1.0.0 libssl-dev -y
-ln -s /lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/libssl.so.10
-ln -s /lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.10
+# JC - for Debian 8 the libraries are installed under /usr/lib/x86_64-linux-gnu
+ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0 /usr/lib/libssl.so.10
+ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.10
 ln -s /usr/local/zenoss/zenup /opt
 chmod +x /usr/local/zenoss/zenup/bin/zenup
 echo 'watchdog True' >> $ZENHOME/etc/zenwinperf.conf
