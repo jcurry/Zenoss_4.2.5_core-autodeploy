@@ -37,7 +37,7 @@ chown zenoss:zenoss .bash_profile
 # deb version of zenup created using the alien utility in Ubuntu to convert rpm to deb
 #   alien requires --scripts parameter to convert scripts
 
-wget -N --no-check-certificate  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/blob/ubuntu/zenup_1.1.0.267.869d67a-2_amd64.deb?raw=true -P $DOWNDIR/
+wget -N --no-check-certificate  https://raw.github.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/zenup_1.1.0.267.869d67a-2_amd64.deb -P $DOWNDIR/
 
 #Get pristine 
 echo " Getting pristine SP203"
@@ -49,8 +49,7 @@ wget -O $DOWNDIR/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz --no-check-certif
 #  Get zup from git hub repo not from sourceforge.
 
 echo " Getting ZUP 671 for Ubuntu"
-wget -N --no-check-certificate https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/blob/ubuntu/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup?raw=true  -P $DOWNDIR
-
+wget -N --no-check-certificate https://raw.github.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup  -P $DOWNDIR
 
 # Need to remove old version of zenup - it is installed under /usr/local/zenoss and linked to /opt/zenup
 
