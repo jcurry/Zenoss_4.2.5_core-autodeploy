@@ -29,7 +29,7 @@ PACKAGECLEANUP="yes" # Valid options are "yes" and "no"
 
 
 # Get .bash_profile for zenoss user
-wget -N --no-check-certificate  https://github.com/jcurry/Zenoss_4.2.5_core-autodeploy/tree/ubuntu/.bash_profile -P $DOWNDIR/
+wget -N --no-check-certificate  https://rawgithub.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/.bash_profile -P $DOWNDIR/
 cp $DOWNDIR/.bash_profile /home/zenoss
 chown zenoss:zenoss .bash_profile
 
@@ -54,11 +54,12 @@ wget -N --no-check-certificate https://raw.github.com/jcurry/Zenoss_4.2.5_core-a
 # Need to remove old version of zenup - it is installed under /usr/local/zenoss and linked to /opt/zenup
 
 echo "Removing old zenup and installing zenup 1.1.0"
-rm -rf $ZENHOME/zenup
+#rm -rf $ZENHOME/zenup
 #rm /opt/zenup
-dpkg -i $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb
+(echo '') | dpkg -i $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb
 # Put the zenup code into /opt/zenup in case it is wanted in the future
 cp $DOWNDIR/zenup_1.1.0.267.869d67a-2_amd64.deb /opt/zenup
+chown zenoss:zenoss /opt/zenup/zenup_1.1.0.267.869d67a-2_amd64.deb
 
 # JC Fix problems that will be found by zenup....  To be run by zenoss user
 su -l -c 'find /usr/local/zenoss -type f ! \( -name pyraw -o -name zensocket -o -name nmap -o -name nginx -o -name nginx.pid -o -name zodbpack.pyc -o -name zone.tab -o -name iso3166.tab -o -name libpython2.7.so.1.0 \) ! \( -user zenoss -group zenoss -perm -u+rw \) -exec chown zenoss:zenoss {} \; -exec chmod u+rw {} \;' zenoss
@@ -66,7 +67,7 @@ su -l -c 'find /usr/local/zenoss -type f ! \( -name pyraw -o -name zensocket -o 
 
 #  Copy pristine to /opt/zenup  and run zenup init
 cp $DOWNDIR/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz /opt/zenup 
-chown zenup:zenoss /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz
+chown zenoss:zenoss /opt/zenup/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz
 
 # Note that su -l .... zenoss construct only seems to work if zenoss user has 
 #  a .bash_profile that has the usual Zenoss environment vars in it.  
@@ -77,7 +78,7 @@ su -l -c "/opt/zenup/bin/zenup init /opt/zenup/zenoss_core-4.2.5-2108.el6-pristi
 #  Copy sup file to /opt/zenup  and run zenup install
 # Install SUP671 supply ENTER to respond with default to 2 questions
 cp $DOWNDIR/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup /opt/zenup  
-chown zenup:zenoss /opt/zenup/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup
+chown zenoss:zenoss /opt/zenup/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup
 
 su -l -c "/opt/zenup/bin/zenup install /opt/zenup/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup" zenoss
 #su -l -c "cp \$DOWNDIR/zenoss_core-4.2.5-SP671-zenup11.zup /opt/zenup && (echo ''; echo '') | zenup install /opt/zenup/zenoss_core-4.2.5-SP671-zenup11.zup" zenoss
