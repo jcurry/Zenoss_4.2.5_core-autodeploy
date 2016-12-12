@@ -64,6 +64,7 @@ repository.
 Run zo425_ubuntu-debian_with_zenup.sh as the root user (sudo bash).  Output goes to 
 /tmp/zenoss425_ubuntu_install.out .  Tested on Ubuntu 14.04.
 
+With thanks to "baileytj" for tidying and testing.
 
 Cheers,
 
