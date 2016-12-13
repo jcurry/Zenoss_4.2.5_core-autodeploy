@@ -82,8 +82,10 @@ if [ $curos = "debian" ]; then
 	apt-get update
 	apt-get install rrdtool libmysqlclient-dev nagios-plugins erlang subversion autoconf swig unzip zip g++ libssl-dev maven libmaven-compiler-plugin-java build-essential libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev oracle-java7-installer python-twisted python-gnutls python-twisted-web python-samba libsnmp-base snmpd bc rpm2cpio memcached libncurses5 libncurses5-dev libreadline6-dev libreadline6 librrd-dev python-setuptools python-dev erlang-nox smistrip redis-server -y
 	debian-testing-repo
+        echo " Getting snmp-mibs-downloader "
 	wget -N http://ftp.us.debian.org/debian/pool/non-free/s/snmp-mibs-downloader/snmp-mibs-downloader_1.1_all.deb -P $DOWNDIR/
 	dpkg -i snmp-mibs-downloader_1.1_all.deb
+        echo " snmp-mibs-downloader  now installed"
         # JC - install working snmpd.conf with public community for SNMP v1 and v2c
         wget -N --no-check-certificate  https://rawgithub.com/jcurry/Zenoss_4.2.5_core-autodeploy/ubuntu/snmpd.conf -P $DOWNDIR
         cp $DOWNDIR/snmpd.conf /etc/snmp
