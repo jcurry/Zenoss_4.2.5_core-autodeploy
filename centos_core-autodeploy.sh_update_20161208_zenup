@@ -182,6 +182,11 @@ disable_repo rpmforge
 wget --no-check-certificate http://deps.zenoss.com/yum/zenossdeps-4.2.x-1.$els.noarch.rpm
 try yum --nogpgcheck -y localinstall zenossdeps-4.2.x-1.$els.noarch.rpm
 
+# JC - the regex epel* in the following wget also gets epel-rpm-macro which has new prereqs
+#   (as of October 2016) of 3 python-rpm-macros packages (see http://www.zenoss.org/forum/146626 )
+# In fact,  the epel-release package is in the 'extras' repo that comes with a minimal install of
+#   centos so you can just do `yum install epel-release` and avoid the wget too. (thanks baileytj)
+
 echo "Installing EPEL Repo"
 #wget --no-check-certificate -r -l1 --no-parent -A 'epel*.rpm' $epel_rpm_url
 #try yum -y --nogpgcheck localinstall */pub/epel/$elv/$arch/epel-*.rpm
