@@ -82,6 +82,16 @@ disable_repo() {
 	fi
 }
 
+enable_repo() {
+	local conf=/etc/yum.repos.d/$1.repo
+	if [ ! -e "$conf" ]; then
+		echo "Yum repo config $conf not found -- exiting."
+		exit 1
+	else
+		sed -i -e 's/^enabled.*/enabled = 1/g' $conf
+	fi
+}
+
 enable_service() {
 	try /sbin/chkconfig $1 on
 	try /sbin/service $1 start
@@ -254,6 +264,10 @@ try yum -y  install rrdtool-1.4.7
 echo "===wget perl-common-sense.noarch===="
 wget --no-check-certificate http://dl.fedoraproject.org/pub/epel/6/x86_64/perl-common-sense-3.5-1.$els.noarch.rpm
 try yum --nogpgcheck -y localinstall perl-common-sense-3.5-1.$els.noarch.rpm
+
+# JC - re-enable epel
+enable_repo epel
+yum clean all
 
 echo "Installing Zenoss"
 if [ -e $zenoss_rpm_file ]; then
