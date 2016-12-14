@@ -75,8 +75,7 @@ die() {
 disable_repo() {
 	local conf=/etc/yum.repos.d/$1.repo
 	if [ ! -e "$conf" ]; then
-		echo "Yum repo config $conf not found -- exiting."
-		exit 1
+		die "Yum repo config $conf not found -- exiting."
 	else
 		sed -i -e 's/^enabled.*/enabled = 0/g' $conf
 	fi
@@ -85,8 +84,7 @@ disable_repo() {
 enable_repo() {
 	local conf=/etc/yum.repos.d/$1.repo
 	if [ ! -e "$conf" ]; then
-		echo "Yum repo config $conf not found -- exiting."
-		exit 1
+		die "Yum repo config $conf not found -- exiting."
 	else
 		sed -i -e 's/^enabled.*/enabled = 1/g' $conf
 	fi
@@ -104,8 +102,7 @@ if [ -f /etc/redhat-release ]; then
 	els=el$elv
 else
 	#Bail
-	echo "Unable to determine version. I can't continue"
-	exit 1
+	die "Unable to determine version. I can't continue"
 fi
 
 # MySQL's official download RPM has different naming for RHEL 5...
@@ -119,8 +116,7 @@ fi
 
 echo "Ensuring Zenoss RPMs are not already present"
 if [ `rpm -qa | grep -c -i ^zenoss` -gt 0 ]; then
-	echo "I see Zenoss Packages already installed. I can't handle that"
-	exit 1
+	die "I see Zenoss Packages already installed. I can't handle that"
 fi
 
 MYTMP="$(PATH=/sbin:/usr/sbin:/bin:/usr/bin mktemp -d)"
@@ -235,8 +231,7 @@ do
 		try wget --no-check-certificate -N http://wiki.zenoss.org/download/core/mysql/$file
 	fi
 	if [ ! -f $file ];then
-		echo "Failed to download $file. I can't continue"
-		exit 1
+		die "Failed to download $file. I can't continue"
 	fi
 	try yum -y --nogpgcheck localinstall $file
 done
