@@ -1,1107 +1,3 @@
-<<<<<<< HEAD:zenoss425_install.out
-Welcome to the Zenoss Core auto-deploy script!
-
-This auto-deploy script installs the Oracle Java Runtime Environment (JRE).
-To continue, please review and accept the Oracle Binary Code License Agreement
-for Java SE. 
-
-Press Enter to continue.
-# File generated from the output of:
-# links -dump http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-# For up-to-date version with html links, please check the URL
-
-   Oracle Binary Code License Agreement for the Java SE Platform Products and
-   JavaFX
-
-   ORACLE AMERICA, INC. ("ORACLE"), FOR AND ON BEHALF OF ITSELF AND ITS
-   SUBSIDIARIES AND AFFILIATES UNDER COMMON CONTROL, IS WILLING TO LICENSE
-   THE SOFTWARE TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE
-   TERMS CONTAINED IN THIS BINARY CODE LICENSE AGREEMENT AND SUPPLEMENTAL
-   LICENSE TERMS (COLLECTIVELY "AGREEMENT"). PLEASE READ THE AGREEMENT
-   CAREFULLY. BY SELECTING THE "ACCEPT LICENSE AGREEMENT" (OR THE EQUIVALENT)
-   BUTTON AND/OR BY USING THE SOFTWARE YOU ACKNOWLEDGE THAT YOU HAVE READ THE
-   TERMS AND AGREE TO THEM. IF YOU ARE AGREEING TO THESE TERMS ON BEHALF OF A
-   COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT THAT YOU HAVE THE LEGAL
-   AUTHORITY TO BIND THE LEGAL ENTITY TO THESE TERMS. IF YOU DO NOT HAVE SUCH
-   AUTHORITY, OR IF YOU DO NOT WISH TO BE BOUND BY THE TERMS, THEN SELECT THE
-   "DECLINE LICENSE AGREEMENT" (OR THE EQUIVALENT) BUTTON AND YOU MUST NOT
-   USE THE SOFTWARE ON THIS SITE OR ANY OTHER MEDIA ON WHICH THE SOFTWARE IS
-   CONTAINED.
-
-   1. DEFINITIONS. "Software" means the software identified above in binary
-   form that you selected for download, install or use (in the version You
-   selected for download, install or use) from Oracle or its authorized
-   licensees, any other machine readable materials (including, but not
-   limited to, libraries, source files, header files, and data files), any
-   updates or error corrections provided by Oracle, and any user manuals,
-   programming guides and other documentation provided to you by Oracle under
-   this Agreement. "General Purpose Desktop Computers and Servers" means
-   computers, including desktop and laptop computers, or servers, used for
-   general computing functions under end user control (such as but not
-   specifically limited to email, general purpose Internet browsing, and
-   office suite productivity tools). The use of Software in systems and
-   solutions that provide dedicated functionality (other than as mentioned
-   above) or designed for use in embedded or function-specific software
-   applications, for example but not limited to: Software embedded in or
-   bundled with industrial control systems, wireless mobile telephones,
-   wireless handheld devices, kiosks, TV/STB, Blu-ray Disc devices,
-   telematics and network control switching equipment, printers and storage
-   management systems, and other related systems are excluded from this
-   definition and not licensed under this Agreement. "Programs" means (a)
-   Java technology applets and applications intended to run on the Java
-   Platform, Standard Edition platform on Java-enabled General Purpose
-   Desktop Computers and Servers; and (b) JavaFX technology applications
-   intended to run on the JavaFX Runtime on JavaFX-enabled General Purpose
-   Desktop Computers and Servers. "Commercial Features" means those features
-   identified in Table 1-1 (Commercial Features In Java SE Product Editions)
-   of the Java SE documentation accessible at
-   http://www.oracle.com/technetwork/java/javase/documentation/index.html.
-   "README File" means the README file for the Software accessible at
-   http://www.oracle.com/technetwork/java/javase/documentation/index.html.
-
-   2. LICENSE TO USE. Subject to the terms and conditions of this Agreement
-   including, but not limited to, the Java Technology Restrictions of the
-   Supplemental License Terms, Oracle grants you a non-exclusive,
-   non-transferable, limited license without license fees to reproduce and
-   use internally the Software complete and unmodified for the sole purpose
-   of running Programs. THE LICENSE SET FORTH IN THIS SECTION 2 DOES NOT
-   EXTEND TO THE COMMERCIAL FEATURES. YOUR RIGHTS AND OBLIGATIONS RELATED TO
-   THE COMMERCIAL FEATURES ARE AS SET FORTH IN THE SUPPLEMENTAL TERMS ALONG
-   WITH ADDITIONAL LICENSES FOR DEVELOPERS AND PUBLISHERS.
-
-   3. RESTRICTIONS. Software is copyrighted. Title to Software and all
-   associated intellectual property rights is retained by Oracle and/or its
-   licensors. Unless enforcement is prohibited by applicable law, you may not
-   modify, decompile, or reverse engineer Software. You acknowledge that the
-   Software is developed for general use in a variety of information
-   management applications; it is not developed or intended for use in any
-   inherently dangerous applications, including applications that may create
-   a risk of personal injury. If you use the Software in dangerous
-   applications, then you shall be responsible to take all appropriate
-   fail-safe, backup, redundancy, and other measures to ensure its safe use.
-   Oracle disclaims any express or implied warranty of fitness for such uses.
-   No right, title or interest in or to any trademark, service mark, logo or
-   trade name of Oracle or its licensors is granted under this Agreement.
-   Additional restrictions for developers and/or publishers licenses are set
-   forth in the Supplemental License Terms.
-
-   4. DISCLAIMER OF WARRANTY. THE SOFTWARE IS PROVIDED "AS IS" WITHOUT
-   WARRANTY OF ANY KIND. ORACLE FURTHER DISCLAIMS ALL WARRANTIES, EXPRESS AND
-   IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF
-   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
-
-   5. LIMITATION OF LIABILITY. IN NO EVENT SHALL ORACLE BE LIABLE FOR ANY
-   INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR
-   DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR DATA USE, INCURRED BY YOU OR
-   ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF ORACLE
-   HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. ORACLE'S ENTIRE
-   LIABILITY FOR DAMAGES HEREUNDER SHALL IN NO EVENT EXCEED ONE THOUSAND
-   DOLLARS (U.S. $1,000).
-
-   6. TERMINATION. This Agreement is effective until terminated. You may
-   terminate this Agreement at any time by destroying all copies of Software.
-   This Agreement will terminate immediately without notice from Oracle if
-   you fail to comply with any provision of this Agreement. Either party may
-   terminate this Agreement immediately should any Software become, or in
-   either party's opinion be likely to become, the subject of a claim of
-   infringement of any intellectual property right. Upon termination, you
-   must destroy all copies of Software.
-
-   7. EXPORT REGULATIONS. You agree that U.S. export control laws and other
-   applicable export and import laws govern your use of the Software,
-   including technical data; additional information can be found on Oracle's
-   Global Trade Compliance web site (http://www.oracle.com/products/export).
-   You agree that neither the Software nor any direct product thereof will be
-   exported, directly, or indirectly, in violation of these laws, or will be
-   used for any purpose prohibited by these laws including, without
-   limitation, nuclear, chemical, or biological weapons proliferation.
-
-   8. TRADEMARKS AND LOGOS. You acknowledge and agree as between you
-   and Oracle that Oracle owns the ORACLE and JAVA trademarks and all ORACLE-
-   and JAVA-related trademarks, service marks, logos and other brand
-   designations ("Oracle Marks"), and you agree to comply with the Third
-   Party Usage Guidelines for Oracle Trademarks currently located at
-   http://www.oracle.com/us/legal/third-party-trademarks/index.html . Any use
-   you make of the Oracle Marks inures to Oracle's benefit.
-
-   9. U.S. GOVERNMENT LICENSE RIGHTS. If Software is being acquired by or on
-   behalf of the U.S. Government or by a U.S. Government prime contractor or
-   subcontractor (at any tier), then the Government's rights in Software and
-   accompanying documentation shall be only those set forth in this
-   Agreement.
-
-   10. GOVERNING LAW. This agreement is governed by the substantive and
-   procedural laws of California. You and Oracle agree to submit to the
-   exclusive jurisdiction of, and venue in, the courts of San Francisco, or
-   Santa Clara counties in California in any dispute arising out of or
-   relating to this agreement.
-
-   11. SEVERABILITY. If any provision of this Agreement is held to be
-   unenforceable, this Agreement will remain in effect with the provision
-   omitted, unless omission would frustrate the intent of the parties, in
-   which case this Agreement will immediately terminate.
-
-   12. INTEGRATION. This Agreement is the entire agreement between you and
-   Oracle relating to its subject matter. It supersedes all prior or
-   contemporaneous oral or written communications, proposals, representations
-   and warranties and prevails over any conflicting or additional terms of
-   any quote, order, acknowledgment, or other communication between the
-   parties relating to its subject matter during the term of this Agreement.
-   No modification of this Agreement will be binding, unless in writing and
-   signed by an authorized representative of each party.
-
-   SUPPLEMENTAL LICENSE TERMS
-
-   These Supplemental License Terms add to or modify the terms of the Binary
-   Code License Agreement. Capitalized terms not defined in these
-   Supplemental Terms shall have the same meanings ascribed to them in the
-   Binary Code License Agreement. These Supplemental Terms shall supersede
-   any inconsistent or conflicting terms in the Binary Code License
-   Agreement, or in any license contained within the Software.
-
-   A. COMMERCIAL FEATURES. You may not use the Commercial Features for
-   running Programs, Java applets or applications in your internal business
-   operations or for any commercial or production purpose, or for any purpose
-   other than as set forth in Sections B, C, D and E of these Supplemental
-   Terms. If You want to use the Commercial Features for any purpose other
-   than as permitted in this Agreement, You must obtain a separate license
-   from Oracle.
-
-   B. SOFTWARE INTERNAL USE FOR DEVELOPMENT LICENSE GRANT. Subject to the
-   terms and conditions of this Agreement and restrictions and exceptions set
-   forth in the README File incorporated herein by reference, including, but
-   not limited to the Java Technology Restrictions of these Supplemental
-   Terms, Oracle grants you a non-exclusive, non-transferable, limited
-   license without fees to reproduce internally and use internally the
-   Software complete and unmodified for the purpose of designing, developing,
-   and testing your Programs.
-
-   C. LICENSE TO DISTRIBUTE SOFTWARE. Subject to the terms and conditions of
-   this Agreement and restrictions and exceptions set forth in the README
-   File, including, but not limited to the Java Technology Restrictions and
-   Limitations on Redistribution of these Supplemental Terms, Oracle grants
-   you a non-exclusive, non-transferable, limited license without fees to
-   reproduce and distribute the Software, provided that (i) you distribute
-   the Software complete and unmodified and only bundled as part of, and for
-   the sole purpose of running, your Programs, (ii) the Programs add
-   significant and primary functionality to the Software, (iii) you do not
-   distribute additional software intended to replace any component(s) of the
-   Software, (iv) you do not remove or alter any proprietary legends or
-   notices contained in the Software, (v) you only distribute the Software
-   subject to a license agreement that: (a) is a complete, unmodified
-   reproduction of this Agreement; or (b) protects Oracle's interests
-   consistent with the terms contained in this Agreement and that includes
-   the notice set forth in Section H, and (vi) you agree to defend and
-   indemnify Oracle and its licensors from and against any damages, costs,
-   liabilities, settlement amounts and/or expenses (including attorneys'
-   fees) incurred in connection with any claim, lawsuit or action by any
-   third party that arises or results from the use or distribution of any and
-   all Programs and/or Software. The license set forth in this Section C does
-   not extend to the Software identified in Section G.
-
-   D. LICENSE TO DISTRIBUTE REDISTRIBUTABLES. Subject to the terms and
-   conditions of this Agreement and restrictions and exceptions set forth in
-   the README File, including but not limited to the Java Technology
-   Restrictions and Limitations on Redistribution of these Supplemental
-   Terms, Oracle grants you a non-exclusive, non-transferable, limited
-   license without fees to reproduce and distribute those files specifically
-   identified as redistributable in the README File ("Redistributables")
-   provided that: (i) you distribute the Redistributables complete and
-   unmodified, and only bundled as part of Programs, (ii) the Programs add
-   significant and primary functionality to the Redistributables, (iii) you
-   do not distribute additional software intended to supersede any
-   component(s) of the Redistributables (unless otherwise specified in the
-   applicable README File), (iv) you do not remove or alter any proprietary
-   legends or notices contained in or on the Redistributables, (v) you only
-   distribute the Redistributables pursuant to a license agreement that: (a)
-   is a complete, unmodified reproduction of this Agreement; or (b) protects
-   Oracle's interests consistent with the terms contained in the Agreement
-   and includes the notice set forth in Section H, (vi) you agree to defend
-   and indemnify Oracle and its licensors from and against any damages,
-   costs, liabilities, settlement amounts and/or expenses (including
-   attorneys' fees) incurred in connection with any claim, lawsuit or action
-   by any third party that arises or results from the use or distribution of
-   any and all Programs and/or Software. The license set forth in this
-   Section D does not extend to the Software identified in Section G.
-
-   E. DISTRIBUTION BY PUBLISHERS. This section pertains to your distribution
-   of the JavaTM SE Development Kit Software ("JDK") with your printed book
-   or magazine (as those terms are commonly used in the industry) relating to
-   Java technology ("Publication"). Subject to and conditioned upon your
-   compliance with the restrictions and obligations contained in the
-   Agreement, Oracle hereby grants to you a non-exclusive, nontransferable
-   limited right to reproduce complete and unmodified copies of the JDK on
-   electronic media (the "Media") for the sole purpose of inclusion and
-   distribution with your Publication(s), subject to the following terms: (i)
-   You may not distribute the JDK on a stand-alone basis; it must be
-   distributed with your Publication(s); (ii) You are responsible for
-   downloading the JDK from the applicable Oracle web site; (iii) You must
-   refer to the JDK as JavaTM SE Development Kit; (iv) The JDK must be
-   reproduced in its entirety and without any modification whatsoever
-   (including with respect to all proprietary notices) and distributed with
-   your Publication subject to a license agreement that is a complete,
-   unmodified reproduction of this Agreement; (v) The Media label shall
-   include the following information: "Copyright [YEAR], Oracle America, Inc.
-   All rights reserved. Use is subject to license terms. ORACLE and JAVA
-   trademarks and all ORACLE- and JAVA-related trademarks, service marks,
-   logos and other brand designations are trademarks or registered trademarks
-   of Oracle in the U.S. and other countries." [YEAR] is the year of Oracle's
-   release of the Software; the year information can typically be found in
-   the Software's "About" box or screen. This information must be placed on
-   the Media label in such a manner as to only apply to the JDK; (vi) You
-   must clearly identify the JDK as Oracle's product on the Media holder or
-   Media label, and you may not state or imply that Oracle is responsible for
-   any third-party software contained on the Media; (vii) You may not include
-   any third party software on the Media which is intended to be a
-   replacement or substitute for the JDK; (viii) You agree to defend and
-   indemnify Oracle and its licensors from and against any damages, costs,
-   liabilities, settlement amounts and/or expenses (including attorneys'
-   fees) incurred in connection with any claim, lawsuit or action by any
-   third party that arises or results from the use or distribution of the JDK
-   and/or the Publication; ; and (ix) You shall provide Oracle with a written
-   notice for each Publication; such notice shall include the following
-   information: (1) title of Publication, (2) author(s), (3) date of
-   Publication, and (4) ISBN or ISSN numbers. Such notice shall be sent to
-   Oracle America, Inc., 500 Oracle Parkway, Redwood Shores, California 94065
-   U.S.A , Attention: General Counsel.
-
-   F. JAVA TECHNOLOGY RESTRICTIONS. You may not create, modify, or change the
-   behavior of, or authorize your licensees to create, modify, or change the
-   behavior of, classes, interfaces, or subpackages that are in any way
-   identified as "java", "javax", "sun", "oracle" or similar convention as
-   specified by Oracle in any naming convention designation.
-
-   G. LIMITATIONS ON REDISTRIBUTION. You may not redistribute or otherwise
-   transfer patches, bug fixes or updates made available by Oracle through
-   Oracle Premier Support, including those made available under Oracle's Java
-   SE Support program.
-
-   H. COMMERCIAL FEATURES NOTICE. For purpose of complying with Supplemental
-   Term Section C.(v)(b) and D.(v)(b), your license agreement shall include
-   the following notice, where the notice is displayed in a manner that
-   anyone using the Software will see the notice:
-
-   Use of the Commercial Features for any commercial or production purpose
-   requires a separate license from Oracle. "Commercial Features" means those
-   features identified Table 1-1 (Commercial Features In Java SE Product
-   Editions) of the Java SE documentation accessible at
-   http://www.oracle.com/technetwork/java/javase/documentation/index.html
-
-    
-
-   I. SOURCE CODE. Software may contain source code that, unless expressly
-   licensed for other purposes, is provided solely for reference purposes
-   pursuant to the terms of this Agreement. Source code may not be
-   redistributed unless expressly provided for in this Agreement.
-
-   J. THIRD PARTY CODE. Additional copyright notices and license terms
-   applicable to portions of the Software are set forth in the
-   THIRDPARTYLICENSEREADME file accessible at
-   http://www.oracle.com/technetwork/java/javase/documentation/index.html. In
-   addition to any terms and conditions of any third party
-   opensource/freeware license identified in the THIRDPARTYLICENSEREADME
-   file, the disclaimer of warranty and limitation of liability provisions in
-   paragraphs 4 and 5 of the Binary Code License Agreement shall apply to all
-   Software in this distribution.
-
-   K. TERMINATION FOR INFRINGEMENT. Either party may terminate this Agreement
-   immediately should any Software become, or in either party's opinion be
-   likely to become, the subject of a claim of infringement of any
-   intellectual property right.
-
-   L. INSTALLATION AND AUTO-UPDATE. The Software's installation and
-   auto-update processes transmit a limited amount of data to Oracle (or its
-   service provider) about those specific processes to help Oracle understand
-   and optimize them. Oracle does not associate the data with personally
-   identifiable information. You can find more information about the data
-   Oracle collects as a result of your Software download at
-   http://www.oracle.com/technetwork/java/javase/documentation/index.html.
-
-   For inquiries please contact: Oracle America, Inc., 500 Oracle Parkway,
-
-   Redwood Shores, California 94065, USA.
-
-   Last updated 02 April 2013
-Install continues....
-Ensuring Zenoss RPMs are not already present
-Disabling SELinux...
-Downloading zenoss_core-4.2.5-2108.el6.x86_64.rpm...
-Importing Zenoss GPG Key
-Using MySQL Community Release version 5.5.37-1
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining zenossdeps-4.2.x-1.el6.noarch.rpm: zenossdeps-4.2.x-1.el6.noarch
-Marking zenossdeps-4.2.x-1.el6.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package zenossdeps.noarch 0:4.2.x-1.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package       Arch      Version        Repository                         Size
-================================================================================
-Installing:
- zenossdeps    noarch    4.2.x-1.el6    /zenossdeps-4.2.x-1.el6.noarch    334  
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 334  
-Installed size: 334  
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : zenossdeps-4.2.x-1.el6.noarch                                1/1 
-  Verifying  : zenossdeps-4.2.x-1.el6.noarch                                1/1 
-
-Installed:
-  zenossdeps.noarch 0:4.2.x-1.el6                                               
-
-Complete!
-Installing EPEL Repo
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Setting up Install Process
-Resolving Dependencies
---> Running transaction check
----> Package epel-release.noarch 0:6-8 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package                Arch             Version         Repository        Size
-================================================================================
-Installing:
- epel-release           noarch           6-8             extras            14 k
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total download size: 14 k
-Installed size: 22 k
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : epel-release-6-8.noarch                                      1/1 
-  Verifying  : epel-release-6-8.noarch                                      1/1 
-
-Installed:
-  epel-release.noarch 0:6-8                                                     
-
-Complete!
-Installing RabbitMQ
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * epel: epel.check-update.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Setting up Local Package Process
-Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
-Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
-Resolving Dependencies
---> Running transaction check
----> Package rabbitmq-server.noarch 0:2.8.7-1 will be installed
---> Processing Dependency: erlang >= R12B-3 for package: rabbitmq-server-2.8.7-1.noarch
---> Running transaction check
----> Package erlang.x86_64 0:R12B-5.10.el6 will be installed
---> Processing Dependency: tk for package: erlang-R12B-5.10.el6.x86_64
---> Processing Dependency: libodbc.so.2()(64bit) for package: erlang-R12B-5.10.el6.x86_64
---> Running transaction check
----> Package tk.x86_64 1:8.5.7-5.el6 will be installed
----> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package          Arch    Version        Repository                        Size
-================================================================================
-Installing:
- rabbitmq-server  noarch  2.8.7-1        /rabbitmq-server-2.8.7-1.noarch  3.3 M
-Installing for dependencies:
- erlang           x86_64  R12B-5.10.el6  zenossdeps-repo                   35 M
- tk               x86_64  1:8.5.7-5.el6  base                             1.4 M
- unixODBC         x86_64  2.2.14-14.el6  base                             378 k
-
-Transaction Summary
-================================================================================
-Install       4 Package(s)
-
-Total size: 40 M
-Total download size: 36 M
-Installed size: 100 M
-Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           277 kB/s |  36 MB     02:14     
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : 1:tk-8.5.7-5.el6.x86_64                                      1/4 
-  Installing : unixODBC-2.2.14-14.el6.x86_64                                2/4 
-  Installing : erlang-R12B-5.10.el6.x86_64                                  3/4 
-  Installing : rabbitmq-server-2.8.7-1.noarch                               4/4 
-  Verifying  : rabbitmq-server-2.8.7-1.noarch                               1/4 
-  Verifying  : unixODBC-2.2.14-14.el6.x86_64                                2/4 
-  Verifying  : erlang-R12B-5.10.el6.x86_64                                  3/4 
-  Verifying  : 1:tk-8.5.7-5.el6.x86_64                                      4/4 
-
-Installed:
-  rabbitmq-server.noarch 0:2.8.7-1                                              
-
-Dependency Installed:
-  erlang.x86_64 0:R12B-5.10.el6              tk.x86_64 1:8.5.7-5.el6           
-  unixODBC.x86_64 0:2.2.14-14.el6           
-
-Complete!
-Starting rabbitmq-server: SUCCESS
-rabbitmq-server.
-Downloading Files
-Downloading Oracle JRE
-Installing JRE
-Unpacking...
-Checksumming...
-Extracting...
-UnZipSFX 5.50 of 17 February 2002, by Info-ZIP (Zip-Bugs@lists.wku.edu).
-  inflating: jre-6u31-linux-amd64.rpm  
-Preparing...                ##################################################
-jre                         ##################################################
-Unpacking JAR files...
-	rt.jar...
-	jsse.jar...
-	charsets.jar...
-	localedata.jar...
-	plugin.jar...
-	javaws.jar...
-	deploy.jar...
- 
-Done.
-Downloading and installing MySQL RPMs
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining MySQL-client-5.5.37-1.linux2.6.x86_64.rpm: MySQL-client-5.5.37-1.linux2.6.x86_64
-Marking MySQL-client-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package MySQL-client.x86_64 0:5.5.37-1.linux2.6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package  Arch   Version           Repository                              Size
-================================================================================
-Installing:
- MySQL-client
-          x86_64 5.5.37-1.linux2.6 /MySQL-client-5.5.37-1.linux2.6.x86_64  58 M
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 58 M
-Installed size: 58 M
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : MySQL-client-5.5.37-1.linux2.6.x86_64                        1/1 
-  Verifying  : MySQL-client-5.5.37-1.linux2.6.x86_64                        1/1 
-
-Installed:
-  MySQL-client.x86_64 0:5.5.37-1.linux2.6                                       
-
-Complete!
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining MySQL-server-5.5.37-1.linux2.6.x86_64.rpm: MySQL-server-5.5.37-1.linux2.6.x86_64
-Marking MySQL-server-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package MySQL-server.x86_64 0:5.5.37-1.linux2.6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package  Arch   Version           Repository                              Size
-================================================================================
-Installing:
- MySQL-server
-          x86_64 5.5.37-1.linux2.6 /MySQL-server-5.5.37-1.linux2.6.x86_64 151 M
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 151 M
-Installed size: 151 M
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : MySQL-server-5.5.37-1.linux2.6.x86_64                        1/1 
-
-PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
-To do so, start the server, then issue the following commands:
-
-/usr/bin/mysqladmin -u root password 'new-password'
-/usr/bin/mysqladmin -u root -h zenny1.class.example.org password 'new-password'
-
-Alternatively you can run:
-/usr/bin/mysql_secure_installation
-
-which will also give you the option of removing the test
-databases and anonymous user created by default.  This is
-strongly recommended for production servers.
-
-See the manual for more instructions.
-
-Please report any problems at http://bugs.mysql.com/
-
-  Verifying  : MySQL-server-5.5.37-1.linux2.6.x86_64                        1/1 
-
-Installed:
-  MySQL-server.x86_64 0:5.5.37-1.linux2.6                                       
-
-Complete!
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-5.5.37-1.linux2.6.x86_64
-Marking MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package MySQL-shared.x86_64 0:5.5.37-1.linux2.6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package  Arch   Version           Repository                              Size
-================================================================================
-Installing:
- MySQL-shared
-          x86_64 5.5.37-1.linux2.6 /MySQL-shared-5.5.37-1.linux2.6.x86_64 6.6 M
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 6.6 M
-Installed size: 6.6 M
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : MySQL-shared-5.5.37-1.linux2.6.x86_64                        1/1 
-  Verifying  : MySQL-shared-5.5.37-1.linux2.6.x86_64                        1/1 
-
-Installed:
-  MySQL-shared.x86_64 0:5.5.37-1.linux2.6                                       
-
-Complete!
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-compat-5.5.37-1.linux2.6.x86_64
-Marking MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package
-   Arch   Version           Repository                                     Size
-================================================================================
-Installing:
- MySQL-shared-compat
-   x86_64 5.5.37-1.linux2.6 /MySQL-shared-compat-5.5.37-1.linux2.6.x86_64  11 M
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 11 M
-Installed size: 11 M
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : MySQL-shared-compat-5.5.37-1.linux2.6.x86_64                 1/1 
-  Verifying  : MySQL-shared-compat-5.5.37-1.linux2.6.x86_64                 1/1 
-
-Installed:
-  MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6                                
-
-Complete!
-Installing optimal /etc/my.cnf settings
-Configuring MySQL
-Starting MySQL.. SUCCESS! 
-Installing rrdtool
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Setting up Install Process
-Resolving Dependencies
---> Running transaction check
----> Package rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
---> Processing Dependency: perl(RRDp) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: ruby for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: perl(RRDs) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: libdbi.so.0()(64bit) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Running transaction check
----> Package libdbi.x86_64 0:0.8.3-4.el6 will be installed
----> Package perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
----> Package ruby.x86_64 0:1.8.7.374-4.el6_6 will be installed
---> Processing Dependency: ruby-libs = 1.8.7.374-4.el6_6 for package: ruby-1.8.7.374-4.el6_6.x86_64
---> Processing Dependency: libruby.so.1.8()(64bit) for package: ruby-1.8.7.374-4.el6_6.x86_64
---> Running transaction check
----> Package ruby-libs.x86_64 0:1.8.7.374-4.el6_6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package          Arch       Version                  Repository           Size
-================================================================================
-Installing:
- rrdtool          x86_64     1.4.7-1.el6.rfx          zenossdeps-repo     821 k
-Installing for dependencies:
- libdbi           x86_64     0.8.3-4.el6              base                 39 k
- perl-rrdtool     x86_64     1.4.7-1.el6.rfx          zenossdeps-repo      49 k
- ruby             x86_64     1.8.7.374-4.el6_6        base                538 k
- ruby-libs        x86_64     1.8.7.374-4.el6_6        base                1.7 M
-
-Transaction Summary
-================================================================================
-Install       5 Package(s)
-
-Total download size: 3.1 M
-Installed size: 10 M
-Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           271 kB/s | 3.1 MB     00:11     
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : ruby-libs-1.8.7.374-4.el6_6.x86_64                           1/5 
-  Installing : ruby-1.8.7.374-4.el6_6.x86_64                                2/5 
-  Installing : libdbi-0.8.3-4.el6.x86_64                                    3/5 
-  Installing : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          4/5 
-  Installing : rrdtool-1.4.7-1.el6.rfx.x86_64                               5/5 
-  Verifying  : rrdtool-1.4.7-1.el6.rfx.x86_64                               1/5 
-  Verifying  : libdbi-0.8.3-4.el6.x86_64                                    2/5 
-  Verifying  : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          3/5 
-  Verifying  : ruby-libs-1.8.7.374-4.el6_6.x86_64                           4/5 
-  Verifying  : ruby-1.8.7.374-4.el6_6.x86_64                                5/5 
-
-Installed:
-  rrdtool.x86_64 0:1.4.7-1.el6.rfx                                              
-
-Dependency Installed:
-  libdbi.x86_64 0:0.8.3-4.el6         perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx    
-  ruby.x86_64 0:1.8.7.374-4.el6_6     ruby-libs.x86_64 0:1.8.7.374-4.el6_6     
-
-Complete!
-===wget perl-common-sense.noarch====
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining perl-common-sense-3.5-1.el6.noarch.rpm: perl-common-sense-3.5-1.el6.noarch
-Marking perl-common-sense-3.5-1.el6.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package perl-common-sense.noarch 0:3.5-1.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package           Arch   Version     Repository                           Size
-================================================================================
-Installing:
- perl-common-sense noarch 3.5-1.el6   /perl-common-sense-3.5-1.el6.noarch  45 k
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 45 k
-Installed size: 45 k
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : perl-common-sense-3.5-1.el6.noarch                           1/1 
-  Verifying  : perl-common-sense-3.5-1.el6.noarch                           1/1 
-
-Installed:
-  perl-common-sense.noarch 0:3.5-1.el6                                          
-
-Complete!
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Cleaning repos: adobe-linux-x86_64 base epel epel-debuginfo epel-source extras
-              : updates zenossdeps-repo zenossdeps-update-repo
-Cleaning up Everything
-Cleaning up list of fastest mirrors
-Installing Zenoss
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Determining fastest mirrors
- * base: centos.serverspace.co.uk
- * epel: mirrors.coreix.net
- * epel-debuginfo: mirrors.coreix.net
- * epel-source: mirrors.coreix.net
- * extras: mirrors.clouvider.net
- * updates: centos.serverspace.co.uk
-Setting up Local Package Process
-Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
-Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
-Resolving Dependencies
---> Running transaction check
----> Package zenoss.x86_64 0:4.2.5-2108.el6 will be installed
---> Processing Dependency: memcached >= 1.4.4 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-dig >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-dns >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-http >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ircd >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ldap >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ntp >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-perl >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ping >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-rpc >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-tcp >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: redis for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: sysstat for package: zenoss-4.2.5-2108.el6.x86_64
---> Running transaction check
----> Package memcached.x86_64 0:1.4.4-3.el6_8.1 will be installed
----> Package nagios-plugins.x86_64 0:2.0.3-3.el6 will be installed
---> Processing Dependency: nagios-common >= 3.3.1-1 for package: nagios-plugins-2.0.3-3.el6.x86_64
----> Package nagios-plugins-dig.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-dns.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-http.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-ircd.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-ldap.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-ntp.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-perl.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-ping.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-rpc.x86_64 0:2.0.3-3.el6 will be installed
----> Package nagios-plugins-tcp.x86_64 0:2.0.3-3.el6 will be installed
----> Package redis.x86_64 0:2.4.10-1.el6 will be installed
----> Package sysstat.x86_64 0:9.0.4-31.el6 will be installed
---> Processing Dependency: /etc/cron.d for package: sysstat-9.0.4-31.el6.x86_64
---> Running transaction check
----> Package cronie.x86_64 0:1.4.4-16.el6_8.2 will be installed
---> Processing Dependency: dailyjobs for package: cronie-1.4.4-16.el6_8.2.x86_64
---> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-16.el6_8.2.x86_64
----> Package nagios-common.x86_64 0:3.5.1-1.el6 will be installed
---> Running transaction check
----> Package cronie-anacron.x86_64 0:1.4.4-16.el6_8.2 will be installed
---> Processing Dependency: crontabs for package: cronie-anacron-1.4.4-16.el6_8.2.x86_64
----> Package exim.x86_64 0:4.84.2-3.el6 will be installed
---> Running transaction check
----> Package crontabs.noarch 0:1.10-33.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package             Arch   Version          Repository                    Size
-================================================================================
-Installing:
- zenoss              x86_64 4.2.5-2108.el6   /zenoss_core-4.2.5-2108.el6.x86_64
-                                                                          326 M
-Installing for dependencies:
- cronie              x86_64 1.4.4-16.el6_8.2 updates                       75 k
- cronie-anacron      x86_64 1.4.4-16.el6_8.2 updates                       31 k
- crontabs            noarch 1.10-33.el6      base                          10 k
- exim                x86_64 4.84.2-3.el6     epel                         1.3 M
- memcached           x86_64 1.4.4-3.el6_8.1  updates                       68 k
- nagios-common       x86_64 3.5.1-1.el6      epel                          17 k
- nagios-plugins      x86_64 2.0.3-3.el6      epel                         233 k
- nagios-plugins-dig  x86_64 2.0.3-3.el6      epel                          39 k
- nagios-plugins-dns  x86_64 2.0.3-3.el6      epel                          41 k
- nagios-plugins-http x86_64 2.0.3-3.el6      epel                          52 k
- nagios-plugins-ircd x86_64 2.0.3-3.el6      epel                          17 k
- nagios-plugins-ldap x86_64 2.0.3-3.el6      epel                          38 k
- nagios-plugins-ntp  x86_64 2.0.3-3.el6      epel                          54 k
- nagios-plugins-perl x86_64 2.0.3-3.el6      epel                          15 k
- nagios-plugins-ping x86_64 2.0.3-3.el6      epel                          41 k
- nagios-plugins-rpc  x86_64 2.0.3-3.el6      epel                          18 k
- nagios-plugins-tcp  x86_64 2.0.3-3.el6      epel                          45 k
- redis               x86_64 2.4.10-1.el6     epel                         213 k
- sysstat             x86_64 9.0.4-31.el6     base                         234 k
-
-Transaction Summary
-================================================================================
-Install      20 Package(s)
-
-Total size: 328 M
-Total download size: 2.5 M
-Installed size: 333 M
-Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           493 kB/s | 2.5 MB     00:05     
-Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : memcached-1.4.4-3.el6_8.1.x86_64                            1/20 
-  Installing : exim-4.84.2-3.el6.x86_64                                    2/20 
-  Installing : cronie-1.4.4-16.el6_8.2.x86_64                              3/20 
-  Installing : crontabs-1.10-33.el6.noarch                                 4/20 
-  Installing : cronie-anacron-1.4.4-16.el6_8.2.x86_64                      5/20 
-  Installing : sysstat-9.0.4-31.el6.x86_64                                 6/20 
-  Installing : nagios-common-3.5.1-1.el6.x86_64                            7/20 
-  Installing : nagios-plugins-2.0.3-3.el6.x86_64                           8/20 
-  Installing : nagios-plugins-perl-2.0.3-3.el6.x86_64                      9/20 
-  Installing : nagios-plugins-rpc-2.0.3-3.el6.x86_64                      10/20 
-  Installing : nagios-plugins-ircd-2.0.3-3.el6.x86_64                     11/20 
-  Installing : nagios-plugins-dns-2.0.3-3.el6.x86_64                      12/20 
-  Installing : nagios-plugins-tcp-2.0.3-3.el6.x86_64                      13/20 
-  Installing : nagios-plugins-ntp-2.0.3-3.el6.x86_64                      14/20 
-  Installing : nagios-plugins-dig-2.0.3-3.el6.x86_64                      15/20 
-  Installing : nagios-plugins-ping-2.0.3-3.el6.x86_64                     16/20 
-  Installing : nagios-plugins-ldap-2.0.3-3.el6.x86_64                     17/20 
-  Installing : nagios-plugins-http-2.0.3-3.el6.x86_64                     18/20 
-  Installing : redis-2.4.10-1.el6.x86_64                                  19/20 
-  Installing : zenoss-4.2.5-2108.el6.x86_64                               20/20 
-  Verifying  : nagios-plugins-dns-2.0.3-3.el6.x86_64                       1/20 
-  Verifying  : crontabs-1.10-33.el6.noarch                                 2/20 
-  Verifying  : nagios-plugins-2.0.3-3.el6.x86_64                           3/20 
-  Verifying  : cronie-anacron-1.4.4-16.el6_8.2.x86_64                      4/20 
-  Verifying  : nagios-plugins-tcp-2.0.3-3.el6.x86_64                       5/20 
-  Verifying  : cronie-1.4.4-16.el6_8.2.x86_64                              6/20 
-  Verifying  : nagios-plugins-ntp-2.0.3-3.el6.x86_64                       7/20 
-  Verifying  : nagios-plugins-rpc-2.0.3-3.el6.x86_64                       8/20 
-  Verifying  : redis-2.4.10-1.el6.x86_64                                   9/20 
-  Verifying  : nagios-plugins-dig-2.0.3-3.el6.x86_64                      10/20 
-  Verifying  : nagios-plugins-ircd-2.0.3-3.el6.x86_64                     11/20 
-  Verifying  : nagios-plugins-perl-2.0.3-3.el6.x86_64                     12/20 
-  Verifying  : nagios-plugins-ping-2.0.3-3.el6.x86_64                     13/20 
-  Verifying  : nagios-plugins-ldap-2.0.3-3.el6.x86_64                     14/20 
-  Verifying  : nagios-common-3.5.1-1.el6.x86_64                           15/20 
-  Verifying  : zenoss-4.2.5-2108.el6.x86_64                               16/20 
-  Verifying  : sysstat-9.0.4-31.el6.x86_64                                17/20 
-  Verifying  : exim-4.84.2-3.el6.x86_64                                   18/20 
-  Verifying  : memcached-1.4.4-3.el6_8.1.x86_64                           19/20 
-  Verifying  : nagios-plugins-http-2.0.3-3.el6.x86_64                     20/20 
-
-Installed:
-  zenoss.x86_64 0:4.2.5-2108.el6                                                
-
-Dependency Installed:
-  cronie.x86_64 0:1.4.4-16.el6_8.2                                              
-  cronie-anacron.x86_64 0:1.4.4-16.el6_8.2                                      
-  crontabs.noarch 0:1.10-33.el6                                                 
-  exim.x86_64 0:4.84.2-3.el6                                                    
-  memcached.x86_64 0:1.4.4-3.el6_8.1                                            
-  nagios-common.x86_64 0:3.5.1-1.el6                                            
-  nagios-plugins.x86_64 0:2.0.3-3.el6                                           
-  nagios-plugins-dig.x86_64 0:2.0.3-3.el6                                       
-  nagios-plugins-dns.x86_64 0:2.0.3-3.el6                                       
-  nagios-plugins-http.x86_64 0:2.0.3-3.el6                                      
-  nagios-plugins-ircd.x86_64 0:2.0.3-3.el6                                      
-  nagios-plugins-ldap.x86_64 0:2.0.3-3.el6                                      
-  nagios-plugins-ntp.x86_64 0:2.0.3-3.el6                                       
-  nagios-plugins-perl.x86_64 0:2.0.3-3.el6                                      
-  nagios-plugins-ping.x86_64 0:2.0.3-3.el6                                      
-  nagios-plugins-rpc.x86_64 0:2.0.3-3.el6                                       
-  nagios-plugins-tcp.x86_64 0:2.0.3-3.el6                                       
-  redis.x86_64 0:2.4.10-1.el6                                                   
-  sysstat.x86_64 0:9.0.4-31.el6                                                 
-
-Complete!
-Securing Zenoss
-Restricting permissions on /opt/zenoss/etc/*.conf*
-Assigning secure password for global.conf:zodb-password
-Assigning secure password for global.conf:amqppassword
-Assigning secure password for global.conf:zep-password
-Assigning secure password for global.conf:hubpassword
-Assigning secure password for hubpassword:admin
-MySQL is configured with a blank root password.
-Forcing zeneventserver to only listen on 127.0.0.1:8084
-Configuring and Starting some Base Services and Zenoss...
-Starting memcached: [60G[[0;32m  OK  [0;39m]
-Starting snmpd: 
-Zenoss not initialized.  Performing first-boot initialization...
-Fresh install pre steps
-Checking RRDtool version >= 1.4.7: [ OK ] 1.4.7
-Adding RabbitMQ user: zenoss
-Adding RabbitMQ vhost: /zenoss
-Setting RabbitMQ permissions for user: zenoss
-Dropping database: zodb_session
-Creating database: zodb_session
-Applying schema version: 1
-Applying schema version: 2
-Applying schema version: 3
-Dropping database: zodb
-Creating database: zodb
-Applying schema version: 1
-Applying schema version: 2
-Applying schema version: 3
-Creating database: zenoss_zep
-Applying schema version: 1
-Applying schema version: 2
-Applying schema version: 3
-Applying schema version: 4
-Applying schema version: 5
-Applying schema version: 6
-make zope instance.
-Loading initial Zenoss objects into the Zeo database
-(this can take a few minutes)
-Zenoss initialization complete.
-Daemon: zeneventserver starting...
-Waiting for zeneventserver to start......
-2016-12-14 11:34:31,220 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
-2016-12-14 11:34:31,366 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:31,367 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:31,409 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
-2016-12-14 11:34:31,428 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
-2016-12-14 11:34:31,633 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
-2016-12-14 11:34:34,326 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2016-12-14 11:34:34,327 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:34,327 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:34,339 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2016-12-14 11:34:34,357 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-2016-12-14 11:34:42,082 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
-2016-12-14 11:34:42,215 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:42,215 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:42,224 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
-2016-12-14 11:34:42,240 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
-2016-12-14 11:34:44,855 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
-2016-12-14 11:34:44,894 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:44,895 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:44,924 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2016-12-14 11:34:44,942 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
-2016-12-14 11:34:47,757 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
-2016-12-14 11:34:47,783 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:47,785 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:47,809 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
-2016-12-14 11:34:47,830 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
-2016-12-14 11:34:50,374 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
-2016-12-14 11:34:50,411 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:50,411 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:50,449 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2016-12-14 11:34:50,468 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
-2016-12-14 11:34:53,164 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
-2016-12-14 11:34:53,318 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:53,319 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:53,365 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
-2016-12-14 11:34:53,384 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
-2016-12-14 11:34:56,241 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
-2016-12-14 11:34:56,284 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:56,284 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:56,323 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
-2016-12-14 11:34:56,357 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
-2016-12-14 11:34:59,031 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
-2016-12-14 11:34:59,066 INFO zen.AddToPack: End loading objects
-2016-12-14 11:34:59,066 INFO zen.AddToPack: Processing links
-2016-12-14 11:34:59,103 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2016-12-14 11:34:59,119 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
-2016-12-14 11:35:01,913 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
-2016-12-14 11:35:01,951 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:01,951 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:01,979 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2016-12-14 11:35:01,996 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
-2016-12-14 11:35:04,596 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
-2016-12-14 11:35:04,635 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:04,635 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:04,667 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2016-12-14 11:35:04,683 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
-2016-12-14 11:35:07,491 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
-2016-12-14 11:35:07,899 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:07,900 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:07,953 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
-2016-12-14 11:35:07,972 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
-2016-12-14 11:35:08,191 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
-2016-12-14 11:35:12,027 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
-2016-12-14 11:35:14,606 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
-2016-12-14 11:35:14,641 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:14,641 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:14,670 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2016-12-14 11:35:14,686 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
-2016-12-14 11:35:17,409 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
-2016-12-14 11:35:17,522 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:17,522 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:17,565 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
-2016-12-14 11:35:17,584 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
-Creating /opt/zenoss/zenjmx-libs
-2016-12-14 11:35:25,140 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
-2016-12-14 11:35:25,255 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:25,255 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:25,300 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
-2016-12-14 11:35:25,318 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
-2016-12-14 11:35:28,654 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
-2016-12-14 11:35:28,675 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:28,675 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:28,701 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
-2016-12-14 11:35:28,720 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
-2016-12-14 11:35:31,411 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
-2016-12-14 11:35:31,490 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:31,490 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:31,530 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
-2016-12-14 11:35:31,547 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
-2016-12-14 11:35:34,458 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
-2016-12-14 11:35:34,489 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:34,489 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:34,514 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2016-12-14 11:35:34,532 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
-2016-12-14 11:35:37,241 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-2016-12-14 11:35:39,938 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2016-12-14 11:35:41,048 INFO zen.AddToPack: End loading objects
-2016-12-14 11:35:41,048 INFO zen.AddToPack: Processing links
-2016-12-14 11:35:41,136 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
-2016-12-14 11:35:41,157 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-Zenpacks were installed. Restarting zenoss.
-=======
 [H[2J
 Welcome to the Zenoss 4.2.5 core-autodeploy script for Ubuntu and Debian! (http://hydruid-blog.com/?p=710)
 
@@ -3481,7 +2377,6 @@ Daemon: zeneventlog stopping...
 already stopped
 Daemon: zenwinperf stopping...
 already stopped
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 Daemon: zredis stopping...
 already stopped
 Daemon: zenprocess stopping...
@@ -3515,11 +2410,7 @@ Daemon: zeneventserver already stopped
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start........
 Daemon: zopectl . 
-<<<<<<< HEAD:zenoss425_install.out
-daemon process started, pid=9703
-=======
 daemon process started, pid=27253
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -3538,96 +2429,6 @@ Daemon: zenwinperf starting...
 Daemon: zeneventlog starting...
 Daemon: zenwin starting...
 Daemon: zenjmx starting...
-<<<<<<< HEAD:zenoss425_install.out
-
-Fresh install post step
---2016-12-14 11:36:59--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
-Resolving zenny1.class.example.org... 192.168.10.133
-Connecting to zenny1.class.example.org|192.168.10.133|:8080... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: `/dev/null'
-
-     0K .......... ..                                          1.95K=6.3s
-
-2016-12-14 11:37:05 (1.95 KB/s) - `/dev/null' saved [12651]
-
-Zenoss installation completed.
-Securing configuration files...
-Zenoss Core 4.2.5-2108 install completed successfully!
-
-Please visit http://127.0.0.1:8080 in your favorite Web browser to complete
-setup.
-
-NOTE: You may need to disable or modify this server's firewall to access port
-8080. To disable this system's firewall, type:
-
-# service iptables save
-# service iptables stop
-# chkconfig iptables off
-
-Alternatively, you can modify your firewall to enable incoming connections to
-port 8080. Here is a full list of all the ports Zenoss accepts incoming
-connections from, and their purpose:
-
-	8080 (TCP)                 Web user interface
-	11211 (TCP and UDP)        memcached
-	514 (UDP)                  syslog
-	162 (UDP)                  SNMP traps
-
-
-If you encounter problems with this script, please report them on the
-following wiki page:
-
-http://wiki.zenoss.org/index.php?title=Talk:Install_Zenoss
-
-Thank you for using Zenoss. Happy monitoring!
-====================== Installing zenup and SUP 671 =======================
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Setting up Local Package Process
-Examining zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: zenup-1.1.0.267.869d67a-1.el6.x86_64
-Marking zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * epel: mirrors.coreix.net
- * epel-debuginfo: mirrors.coreix.net
- * epel-source: mirrors.coreix.net
- * extras: mirrors.clouvider.net
- * updates: centos.serverspace.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package zenup.x86_64 0:1.1.0.267.869d67a-1.el6 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package
-     Arch   Version                 Repository                             Size
-================================================================================
-Installing:
- zenup
-     x86_64 1.1.0.267.869d67a-1.el6 /zenup-1.1.0.267.869d67a-1.el6.x86_64  12 M
-
-Transaction Summary
-================================================================================
-Install       1 Package(s)
-
-Total size: 12 M
-Installed size: 12 M
-Downloading Packages:
-Running rpm_check_debug
-Running Transaction Test
-Transaction Test Succeeded
-Running Transaction
-  Installing : zenup-1.1.0.267.869d67a-1.el6.x86_64                         1/1 
-  Verifying  : zenup-1.1.0.267.869d67a-1.el6.x86_64                         1/1 
-
-Installed:
-  zenup.x86_64 0:1.1.0.267.869d67a-1.el6                                        
-
-Complete!
-=======
 Daemon: zenpython starting...
 ...Check log didn't find any errors
 Getting .bash_profile for zenoss user for use in su
@@ -3641,7 +2442,6 @@ Preparing to unpack .../zenup_1.1.0.267.869d67a-2_amd64.deb ...
 Unpacking zenup (1.1.0.267.869d67a-2) ...
 Setting up zenup (1.1.0.267.869d67a-2) ...
 New zenup installed - ensuring zenoss:zenoss owns /usr/local/zenoss/var/Data.fs
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 Initializing new product: zenoss-core-4.2.5
 Running installation script
 Replacing Resource Manager shebang in python files.
@@ -3763,15 +2563,9 @@ Comparing affected files
 Running pre-copy steps
 
 Zenpacks to update:
-<<<<<<< HEAD:zenoss425_install.out
-/tmp/tmpWuDHhB/zenoss_core-4.2.5-SP671-zenup11.zup_mRczfc/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
-/tmp/tmpWuDHhB/zenoss_core-4.2.5-SP671-zenup11.zup_mRczfc/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-/tmp/tmpWuDHhB/zenoss_core-4.2.5-SP671-zenup11.zup_mRczfc/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
-=======
 /tmp/tmpHlw7rF/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup_zQhTxy/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 /tmp/tmpHlw7rF/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup_zQhTxy/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
 /tmp/tmpHlw7rF/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup_zQhTxy/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 
 Zenmigrate scripts to run:
@@ -3873,13 +2667,8 @@ Installing protocols.tgz to /usr/local/zenoss/lib/python/zenoss/ ...
 
 
 Copying JS files into place...
-<<<<<<< HEAD:zenoss425_install.out
-/tmp/tmpWuDHhB/zenoss_core-4.2.5-SP671-zenup11.zup_mRczfc/custom/blobs/el6/zenoss-compiled.js
-/tmp/tmpWuDHhB/zenoss_core-4.2.5-SP671-zenup11.zup_mRczfc/custom/blobs/el6/zenoss-compiled-debug.js
-=======
 /tmp/tmpHlw7rF/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup_zQhTxy/custom/blobs/el6/zenoss-compiled-debug.js
 /tmp/tmpHlw7rF/zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup_zQhTxy/custom/blobs/el6/zenoss-compiled.js
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 Processing defusedxml-0.4.1-py2.7.egg
 Copying defusedxml-0.4.1-py2.7.egg to /usr/local/zenoss/lib/python2.7/site-packages
@@ -3924,17 +2713,10 @@ Starting zeneventserver...
 Applying schema version: 7
 Applying schema version: 8
 starting...
-<<<<<<< HEAD:zenoss425_install.out
-Waiting for zeneventserver to start.......
-2016-12-14 11:39:40: waiting a maximum of 15 seconds for ZEP to be available...
-
-2016-12-14 11:39:43: is ZEP available: True 
-=======
 Waiting for zeneventserver to start........
 2016-12-12 15:44:38: waiting a maximum of 15 seconds for ZEP to be available...
 
 2016-12-12 15:44:40: is ZEP available: True 
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 Sorting zenpacks ...
 Sorting zenpacks in zenpack_updates.txt is done
@@ -3943,28 +2725,6 @@ Updating zenpacks ...
 Installing: ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.DeviceSearch
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.DeviceSearch; launching process
-<<<<<<< HEAD:zenoss425_install.out
-2016-12-14 11:39:53,743 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
-INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
-INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.PythonCollector; launching process
-2016-12-14 11:39:59,678 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2016-12-14 11:39:59,678 INFO zen.AddToPack: End loading objects
-2016-12-14 11:39:59,679 INFO zen.AddToPack: Processing links
-2016-12-14 11:39:59,687 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2016-12-14 11:39:59,694 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-Installing: ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.Microsoft.Windows
-INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launching process
-2016-12-14 11:40:05,974 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2016-12-14 11:40:07,217 INFO zen.AddToPack: End loading objects
-2016-12-14 11:40:07,218 INFO zen.AddToPack: Processing links
-2016-12-14 11:40:07,362 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
-2016-12-14 11:40:07,386 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-2016-12-14 11:40:08,130 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
-2016-12-14 11:40:08,130 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
-2016-12-14 11:40:08,131 INFO zen.migrate: Migrating zDBInstances for /
-=======
 2016-12-12 15:44:52,577 INFO zen.HookReportLoader: Loading reports from /usr/local/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
 Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
@@ -3985,7 +2745,6 @@ INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launch
 2016-12-12 15:45:08,298 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
 2016-12-12 15:45:08,299 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
 2016-12-12 15:45:08,300 INFO zen.migrate: Migrating zDBInstances for /
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 Stopping zeneventserver...
 stopping...
 
@@ -4120,17 +2879,10 @@ Daemon: zeneventserver already stopped
 
 Starting zeneventserver...
 starting...
-<<<<<<< HEAD:zenoss425_install.out
-Waiting for zeneventserver to start.......
-2016-12-14 11:40:26: waiting a maximum of 15 seconds for ZEP to be available...
-
-2016-12-14 11:40:28: is ZEP available: True 
-=======
 Waiting for zeneventserver to start.........
 2016-12-12 15:45:30: waiting a maximum of 15 seconds for ZEP to be available...
 
 2016-12-12 15:45:33: is ZEP available: True 
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 Running zenmigrate...
 INFO:zen.migrate:Will execute these steps: AddMissedRunsMonitorGraph
@@ -4215,28 +2967,6 @@ INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
 
 Running reportloader...
-<<<<<<< HEAD:zenoss425_install.out
-2016-12-14 11:41:36,932 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
-2016-12-14 11:41:36,979 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
-2016-12-14 11:41:37,020 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
-2016-12-14 11:41:37,130 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
-2016-12-14 11:41:37,151 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
-2016-12-14 11:41:37,162 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
-2016-12-14 11:41:37,186 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
-2016-12-14 11:41:37,211 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
-2016-12-14 11:41:37,237 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
-2016-12-14 11:41:37,248 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
-2016-12-14 11:41:37,263 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
-2016-12-14 11:41:37,278 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
-2016-12-14 11:41:37,295 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
-2016-12-14 11:41:37,310 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
-2016-12-14 11:41:37,323 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
-2016-12-14 11:41:37,340 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
-2016-12-14 11:41:37,352 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
-2016-12-14 11:41:37,366 INFO zen.ReportLoader: loading: /Device Reports/All Devices
-2016-12-14 11:41:37,379 INFO zen.ReportLoader: loading: /Device Reports/New Devices
-2016-12-14 11:41:37,393 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
-=======
 2016-12-12 15:46:46,759 INFO zen.ReportLoader: Loading reports from /usr/local/zenoss/Products/ZenReports/reports
 2016-12-12 15:46:46,832 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
 2016-12-12 15:46:46,905 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
@@ -4257,7 +2987,6 @@ Running reportloader...
 2016-12-12 15:46:47,695 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
 2016-12-12 15:46:47,726 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
 2016-12-12 15:46:47,754 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 
 ---------------------------------------------------------------------------
@@ -4279,11 +3008,7 @@ Home: /usr/local/zenoss
 Revision: 671
 Upgrading: None
 Minimum: 671
-<<<<<<< HEAD:zenoss425_install.out
-Updated On: Wed Dec 14 11:41:38 2016
-=======
 Updated On: Mon Dec 12 15:46:49 2016
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 
 Fixes:
 [UTF-8] =?UTF-8?q?Revert=20"fixes=20ZEN-21106:=20Device=20C?=
@@ -15737,11 +14462,7 @@ Merge ZenPacks.zenoss.CiscoMonitor 5.1.7 into 4.2.5 RPS.
 
 Daemon: zeneventserver is already running
 Daemon: zopectl . 
-<<<<<<< HEAD:zenoss425_install.out
-daemon process started, pid=14993
-=======
 daemon process started, pid=32702
->>>>>>> 78da1dc886ed921bb8b9cb8f8f3b887152572e4e:zenoss425_ubuntu_install.out
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
