@@ -129,14 +129,11 @@ if [ -n "$openjdk" ]; then
 	try rpm -e $openjdk
 fi
 
-# Defaults for user provided input
-arch="x86_64"
-
 # Auto-detect latest build:
 build=4.2.5-2108
 rmqv=2.8.7
 zenoss_base_url="http://downloads.sourceforge.net/project/zenoss/zenoss-4.2/zenoss-4.2.5/"
-zenoss_rpm_file="zenoss_core-$build.$els.$arch.rpm"
+zenoss_rpm_file="zenoss_core-$build.$els.x86_64.rpm"
 
 # Let's grab Zenoss first...
 
@@ -165,7 +162,7 @@ mysql_client_rpm="MySQL-client-$mysql_v.linux2.6.x86_64.rpm"
 mysql_server_rpm="MySQL-server-$mysql_v.linux2.6.x86_64.rpm"
 mysql_shared_rpm="MySQL-shared-$mysql_v.linux2.6.x86_64.rpm"
 mysql_compat_rpm="MySQL-shared-compat-$mysql_v.linux2.6.x86_64.rpm"
-epel_rpm_url=http://dl.fedoraproject.org/pub/epel/$elv/$arch
+epel_rpm_url=http://dl.fedoraproject.org/pub/epel/$elv/x86_64
 
 #JC - disable rpmforge repo if present - it can cause problems
 disable_repo rpmforge
@@ -181,7 +178,7 @@ echo "Installing EPEL Repo"
 #   centos so you can just do `yum install epel-release` and avoid the wget too. (thanks baileytj)
 
 #wget --no-check-certificate -r -l1 --no-parent -A 'epel*.rpm' $epel_rpm_url
-#try yum -y --nogpgcheck localinstall */pub/epel/$elv/$arch/epel-*.rpm
+#try yum -y --nogpgcheck localinstall */pub/epel/$elv/x86_64/epel-*.rpm
 yum install -y --nogpgcheck epel-release
 disable_repo epel
 
