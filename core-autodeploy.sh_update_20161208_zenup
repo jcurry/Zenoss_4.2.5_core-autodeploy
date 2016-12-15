@@ -75,7 +75,7 @@ die() {
 disable_repo() {
 	local conf=/etc/yum.repos.d/$1.repo
 	if [ ! -e "$conf" ]; then
-		die "Yum repo config $conf not found -- exiting."
+		echo "Yum repo config $conf not found"
 	else
 		sed -i -e 's/^enabled.*/enabled = 0/g' $conf
 	fi
