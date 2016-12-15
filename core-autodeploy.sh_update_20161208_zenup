@@ -105,15 +105,6 @@ else
 	die "Unable to determine version. I can't continue"
 fi
 
-# MySQL's official download RPM has different naming for RHEL 5...
-
-if [ "$elv" = "5" ]; then
-	myels="rhel5"
-else
-	myels="el$elv"
-fi
-
-
 echo "Ensuring Zenoss RPMs are not already present"
 if [ `rpm -qa | grep -c -i ^zenoss` -gt 0 ]; then
 	die "I see Zenoss Packages already installed. I can't handle that"
@@ -140,8 +131,6 @@ fi
 
 # Defaults for user provided input
 arch="x86_64"
-# ftp mirror for MySQL to use for version auto-detection:
-mysql_ftp_mirror="http://www.mirrorservice.org/sites/ftp.mysql.com/Downloads/MySQL-5.5/"
 
 # Auto-detect latest build:
 build=4.2.5-2108
@@ -168,8 +157,6 @@ if [ `rpm -qa gpg-pubkey* | grep -c "aa5a1ad7-4829c08a"` -eq 0  ];then
 fi
 
 #MySQL 5.29 creates dependancy issues, we'll force 5.28 for the remainder of the life of 4.2
-try rm -f .listing
-try wget --no-check-certificate --no-remove-listing $mysql_ftp_mirror >/dev/null 2>&1
 mysql_v="5.5.37-1"
 echo "Using MySQL Community Release version $mysql_v"
 
