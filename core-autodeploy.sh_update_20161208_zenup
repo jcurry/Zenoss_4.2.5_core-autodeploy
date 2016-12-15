@@ -306,12 +306,12 @@ EOF
 
 echo "====================== Installing zenup and SUP 671 ======================="
 # Get zenup package and install - downloads go in the temporary directory created under /tmp
-wget --no-check-certificate http://sourceforge.net/projects/zenoss/files/zenup-1.1/zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm/download
+wget --no-check-certificate http://sourceforge.net/projects/zenoss/files/zenup-1.1/zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm/download -O zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm
 try yum --nogpgcheck -y localinstall zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm
 
 #Get pristine and SUP671
-wget --no-check-certificate  http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2014-08-06/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz/download
-wget --no-check-certificate  http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2016-02-26/zenoss_core-4.2.5-SP671-zenup11.zup/download
+wget --no-check-certificate http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2014-08-06/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz/download -O zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
+wget --no-check-certificate  http://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2016-02-26/zenoss_core-4.2.5-SP671-zenup11.zup/download -O zenoss_core-4.2.5-SP671-zenup11.zup
 
 # Copy the pristine and zup files to /tmp and change ownership to zenoss
 cp zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz /tmp
