@@ -142,8 +142,8 @@ zenoss_gpg_key="http://wiki.zenoss.org/download/core/gpg/RPM-GPG-KEY-zenoss"
 # and placed it in the same directory as the core-autodeploy script. The RPM install parts
 # have also been modified to use the pre-downloaded version if available.
 url="$zenoss_base_url/$zenoss_rpm_file"
-if [ ! -f "${url##*/}" ] && [ ! -f "$SCRIPTPATH/${url##*/}" ];then
-    echo "Downloading ${url##*/}..."
+if [ ! -f "$zenoss_rpm_file" ] && [ ! -f "$SCRIPTPATH/$zenoss_rpm_file" ];then
+    echo "Downloading $zenoss_rpm_file..."
     try wget --no-check-certificate -N $url
 fi
 
