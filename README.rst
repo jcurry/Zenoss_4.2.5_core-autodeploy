@@ -88,7 +88,10 @@ Script to install on Debian is zo425_ubuntu-debian_with_zenup_for_debian.sh . wg
 get variables.sh now uses this repository rather than hydruid's - detect-os function only checked
 for "Debian GNU/Linux 7"; this version also checks for "Debian GNU/Linux 8".
 
-Tested on Debian 8.6.
+Tested on Debian 8.6.  Installation works but stack dumps on zenmodeler and Segmentation Fault
+on zentrap.  Currently abandoned.
+
+Also installed on Debian 7.11 - install fails with GLIBC_2.14 prereqs - also abandoned.
 
 
 With thanks to "baileytj", "dfrye" and "yuppie" for tidying and testing.
