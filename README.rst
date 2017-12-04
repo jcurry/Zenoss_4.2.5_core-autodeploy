@@ -1,5 +1,5 @@
 ============================================================
-Zenoss Core 4.2.5 updated auto deploy script - December 2016
+Zenoss Core 4.2.5 updated auto deploy script - December 2017
 ============================================================
 
 The Zenoss wiki has a link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
@@ -9,7 +9,7 @@ Unfortunately some of the pre-req / co-req chain appears to have broken as at
 December 2016.  There is a forum append documenting some of the issues at
 http://www.zenoss.org/forum/146626 
 
-This repository contains a new version, core-autodeploy.sh_update_20161208_zenup ,
+This repository contains a new version, core-autodeploy.sh_update_20171204_zenup ,
 which should replace the core-autodeploy.sh file that is downloaded with the package documented
 on the wiki.  Other than that, the wiki article remains the same. Thus, as the root user, change
 to a suitable directory (may well be root's home directory), and:
@@ -17,8 +17,8 @@ to a suitable directory (may well be root's home directory), and:
   * wget https://github.com/zenoss/core-autodeploy/tarball/4.2.5 -O auto.tar.gz
   * tar -xzvf auto.tar.gz                           (this unpacks the download)
   * cd zenoss-core-autodeploy-aeb5289               (change to the unpacked directory)
-  * cp <path to new script>/core-autodeploy.sh_update_20161208_zenup .
-  * ./core-autodeploy.sh_update_20161208_zenup
+  * cp <path to new script>/core-autodeploy.sh_update_20171204_zenup .
+  * ./core-autodeploy.sh_update_20171204_zenup
 
 
 The pre-requisites for Zenoss Core 4.2.5 are automatically installed by the script but some of
@@ -28,7 +28,7 @@ in this repository in the pre_req_downloads subdirectory.  You should not need t
 help someone digging around in the future if stuff changes / moves again.
 
 The script now also installs zenup, the latest pristine file and the latest SUP update file
-(as of Dec 8th, 2016) - SUP671.
+(as of Dec 4th, 2017) - SUP732.
 
 If you need to re-run the script, note that you will need to use "yum remove" to remove
 the four MySQL packages installed.  To be sure, you might want to remove all of the following:
