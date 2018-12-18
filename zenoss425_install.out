@@ -325,15 +325,16 @@ Install continues....
 Ensuring Zenoss RPMs are not already present
 Disabling SELinux...
 Downloading zenoss_core-4.2.5-2108.el6.x86_64.rpm...
+Importing Zenoss GPG Key
 Using MySQL Community Release version 5.5.37-1
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenossdeps-4.2.x-1.el6.noarch.rpm: zenossdeps-4.2.x-1.el6.noarch
 Marking zenossdeps-4.2.x-1.el6.noarch.rpm to be installed
 Determining fastest mirrors
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenossdeps.noarch 0:4.2.x-1.el6 will be installed
@@ -368,9 +369,9 @@ Complete!
 Installing EPEL Repo
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Setting up Install Process
 Resolving Dependencies
 --> Running transaction check
@@ -406,14 +407,447 @@ Complete!
 Installing RabbitMQ
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * epel: mirrors.coreix.net
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * epel: ftp.nluug.nl
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Setting up Local Package Process
 Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
-rabbitmq-server-2.8.7-1.noarch.rpm: does not update installed package.
-Nothing to do
+Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package rabbitmq-server.noarch 0:2.8.7-1 will be installed
+--> Processing Dependency: erlang >= R12B-3 for package: rabbitmq-server-2.8.7-1.noarch
+--> Running transaction check
+---> Package erlang.x86_64 0:R14B-04.3.el6 will be installed
+--> Processing Dependency: erlang-xmerl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-wx(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-webtool(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-typer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-tv(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-toolbar(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-test_server(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-syntax_tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-stdlib(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-ssl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-ssh(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-snmp(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-sasl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-runtime_tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-reltool(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-public_key(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-pman(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-percept(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-parsetools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-otp_mibs(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-os_mon(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-orber(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-odbc(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-observer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-mnesia(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-megaco(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-kernel(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-jinterface(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-inviso(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-inets(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-ic(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-hipe(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-gs(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-examples(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-eunit(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-et(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-erts(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-erl_interface(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-erl_docgen(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-edoc(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-docbuilder(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-diameter(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-dialyzer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-debugger(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-crypto(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosTransactions(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosTime(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosProperty(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosNotification(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosFileTransfer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosEventDomain(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-cosEvent(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-compiler(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-common_test(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-asn1(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Processing Dependency: erlang-appmon(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+--> Running transaction check
+---> Package erlang-appmon.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-asn1.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-common_test.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-compiler.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosEvent.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosEventDomain.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosFileTransfer.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosNotification.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosProperty.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosTime.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-cosTransactions.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-crypto.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-debugger.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-dialyzer.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-diameter.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-docbuilder.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-edoc.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-erl_docgen.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-erl_interface.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-erts.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-et.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-eunit.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-examples.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-gs.x86_64 0:R14B-04.3.el6 will be installed
+--> Processing Dependency: tk for package: erlang-gs-R14B-04.3.el6.x86_64
+---> Package erlang-hipe.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-ic.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-inets.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-inviso.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-jinterface.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-kernel.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-megaco.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-mnesia.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-observer.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-odbc.x86_64 0:R14B-04.3.el6 will be installed
+--> Processing Dependency: libodbc.so.2()(64bit) for package: erlang-odbc-R14B-04.3.el6.x86_64
+---> Package erlang-orber.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-os_mon.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-otp_mibs.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-parsetools.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-percept.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-pman.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-public_key.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-reltool.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-runtime_tools.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-sasl.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-snmp.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-ssh.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-ssl.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-stdlib.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-syntax_tools.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-test_server.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-toolbar.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-tools.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-tv.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-typer.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-webtool.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-wx.x86_64 0:R14B-04.3.el6 will be installed
+--> Processing Dependency: libwx_gtk2u_xrc-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_stc-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_html-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_gl-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_core-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_aui-2.8.so.0(WXU_2.8.5)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_aui-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_adv-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_baseu-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_xrc-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_stc-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_html-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_gl-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_core-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_aui-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_gtk2u_adv-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_baseu_xml-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+--> Processing Dependency: libwx_baseu-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
+---> Package erlang-xmerl.x86_64 0:R14B-04.3.el6 will be installed
+--> Running transaction check
+---> Package tk.x86_64 1:8.5.7-5.el6 will be installed
+---> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
+---> Package wxBase.x86_64 0:2.8.12-1.el6.centos will be installed
+---> Package wxGTK.x86_64 0:2.8.12-1.el6.centos will be installed
+---> Package wxGTK-gl.x86_64 0:2.8.12-1.el6.centos will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch   Version             Repository              Size
+================================================================================
+Installing:
+ rabbitmq-server        noarch 2.8.7-1             /rabbitmq-server-2.8.7-1.noarch
+                                                                          3.3 M
+Installing for dependencies:
+ erlang                 x86_64 R14B-04.3.el6       epel                    26 k
+ erlang-appmon          x86_64 R14B-04.3.el6       epel                   145 k
+ erlang-asn1            x86_64 R14B-04.3.el6       epel                   993 k
+ erlang-common_test     x86_64 R14B-04.3.el6       epel                   508 k
+ erlang-compiler        x86_64 R14B-04.3.el6       epel                   987 k
+ erlang-cosEvent        x86_64 R14B-04.3.el6       epel                   149 k
+ erlang-cosEventDomain  x86_64 R14B-04.3.el6       epel                   113 k
+ erlang-cosFileTransfer x86_64 R14B-04.3.el6       epel                   168 k
+ erlang-cosNotification x86_64 R14B-04.3.el6       epel                   718 k
+ erlang-cosProperty     x86_64 R14B-04.3.el6       epel                   161 k
+ erlang-cosTime         x86_64 R14B-04.3.el6       epel                   106 k
+ erlang-cosTransactions x86_64 R14B-04.3.el6       epel                   164 k
+ erlang-crypto          x86_64 R14B-04.3.el6       epel                    50 k
+ erlang-debugger        x86_64 R14B-04.3.el6       epel                   440 k
+ erlang-dialyzer        x86_64 R14B-04.3.el6       epel                   567 k
+ erlang-diameter        x86_64 R14B-04.3.el6       epel                   449 k
+ erlang-docbuilder      x86_64 R14B-04.3.el6       epel                   192 k
+ erlang-edoc            x86_64 R14B-04.3.el6       epel                   301 k
+ erlang-erl_docgen      x86_64 R14B-04.3.el6       epel                   109 k
+ erlang-erl_interface   x86_64 R14B-04.3.el6       epel                   149 k
+ erlang-erts            x86_64 R14B-04.3.el6       epel                   2.0 M
+ erlang-et              x86_64 R14B-04.3.el6       epel                   197 k
+ erlang-eunit           x86_64 R14B-04.3.el6       epel                   139 k
+ erlang-examples        x86_64 R14B-04.3.el6       epel                   832 k
+ erlang-gs              x86_64 R14B-04.3.el6       epel                   608 k
+ erlang-hipe            x86_64 R14B-04.3.el6       epel                   1.0 M
+ erlang-ic              x86_64 R14B-04.3.el6       epel                   845 k
+ erlang-inets           x86_64 R14B-04.3.el6       epel                   749 k
+ erlang-inviso          x86_64 R14B-04.3.el6       epel                   154 k
+ erlang-jinterface      x86_64 R14B-04.3.el6       epel                    95 k
+ erlang-kernel          x86_64 R14B-04.3.el6       epel                   1.0 M
+ erlang-megaco          x86_64 R14B-04.3.el6       epel                   7.8 M
+ erlang-mnesia          x86_64 R14B-04.3.el6       epel                   662 k
+ erlang-observer        x86_64 R14B-04.3.el6       epel                   205 k
+ erlang-odbc            x86_64 R14B-04.3.el6       epel                    59 k
+ erlang-orber           x86_64 R14B-04.3.el6       epel                   909 k
+ erlang-os_mon          x86_64 R14B-04.3.el6       epel                   104 k
+ erlang-otp_mibs        x86_64 R14B-04.3.el6       epel                    28 k
+ erlang-parsetools      x86_64 R14B-04.3.el6       epel                   164 k
+ erlang-percept         x86_64 R14B-04.3.el6       epel                   140 k
+ erlang-pman            x86_64 R14B-04.3.el6       epel                   105 k
+ erlang-public_key      x86_64 R14B-04.3.el6       epel                   402 k
+ erlang-reltool         x86_64 R14B-04.3.el6       epel                   296 k
+ erlang-runtime_tools   x86_64 R14B-04.3.el6       epel                   210 k
+ erlang-sasl            x86_64 R14B-04.3.el6       epel                   263 k
+ erlang-snmp            x86_64 R14B-04.3.el6       epel                   1.5 M
+ erlang-ssh             x86_64 R14B-04.3.el6       epel                   361 k
+ erlang-ssl             x86_64 R14B-04.3.el6       epel                   378 k
+ erlang-stdlib          x86_64 R14B-04.3.el6       epel                   2.1 M
+ erlang-syntax_tools    x86_64 R14B-04.3.el6       epel                   317 k
+ erlang-test_server     x86_64 R14B-04.3.el6       epel                   272 k
+ erlang-toolbar         x86_64 R14B-04.3.el6       epel                    49 k
+ erlang-tools           x86_64 R14B-04.3.el6       epel                   535 k
+ erlang-tv              x86_64 R14B-04.3.el6       epel                   377 k
+ erlang-typer           x86_64 R14B-04.3.el6       epel                    58 k
+ erlang-webtool         x86_64 R14B-04.3.el6       epel                    45 k
+ erlang-wx              x86_64 R14B-04.3.el6       epel                   2.4 M
+ erlang-xmerl           x86_64 R14B-04.3.el6       epel                   939 k
+ tk                     x86_64 1:8.5.7-5.el6       base                   1.4 M
+ unixODBC               x86_64 2.2.14-14.el6       base                   378 k
+ wxBase                 x86_64 2.8.12-1.el6.centos extras                 572 k
+ wxGTK                  x86_64 2.8.12-1.el6.centos extras                 2.9 M
+ wxGTK-gl               x86_64 2.8.12-1.el6.centos extras                  31 k
+
+Transaction Summary
+================================================================================
+Install      64 Package(s)
+
+Total size: 43 M
+Total download size: 40 M
+Installed size: 84 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           947 kB/s |  40 MB     00:42     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : erlang-crypto-R14B-04.3.el6.x86_64                          1/64 
+  Installing : erlang-erts-R14B-04.3.el6.x86_64                            2/64 
+  Installing : erlang-kernel-R14B-04.3.el6.x86_64                          3/64 
+  Installing : erlang-hipe-R14B-04.3.el6.x86_64                            4/64 
+  Installing : erlang-syntax_tools-R14B-04.3.el6.x86_64                    5/64 
+  Installing : erlang-stdlib-R14B-04.3.el6.x86_64                          6/64 
+  Installing : erlang-compiler-R14B-04.3.el6.x86_64                        7/64 
+  Installing : erlang-runtime_tools-R14B-04.3.el6.x86_64                   8/64 
+  Installing : erlang-mnesia-R14B-04.3.el6.x86_64                          9/64 
+  Installing : erlang-snmp-R14B-04.3.el6.x86_64                           10/64 
+  Installing : erlang-xmerl-R14B-04.3.el6.x86_64                          11/64 
+  Installing : erlang-public_key-R14B-04.3.el6.x86_64                     12/64 
+  Installing : erlang-ssl-R14B-04.3.el6.x86_64                            13/64 
+  Installing : erlang-inets-R14B-04.3.el6.x86_64                          14/64 
+  Installing : erlang-orber-R14B-04.3.el6.x86_64                          15/64 
+  Installing : erlang-cosEvent-R14B-04.3.el6.x86_64                       16/64 
+  Installing : wxBase-2.8.12-1.el6.centos.x86_64                          17/64 
+  Installing : wxGTK-2.8.12-1.el6.centos.x86_64                           18/64 
+  Installing : erlang-cosTime-R14B-04.3.el6.x86_64                        19/64 
+  Installing : erlang-cosNotification-R14B-04.3.el6.x86_64                20/64 
+  Installing : erlang-cosProperty-R14B-04.3.el6.x86_64                    21/64 
+  Installing : erlang-edoc-R14B-04.3.el6.x86_64                           22/64 
+  Installing : erlang-ssh-R14B-04.3.el6.x86_64                            23/64 
+  Installing : erlang-otp_mibs-R14B-04.3.el6.x86_64                       24/64 
+  Installing : erlang-asn1-R14B-04.3.el6.x86_64                           25/64 
+  Installing : erlang-docbuilder-R14B-04.3.el6.x86_64                     26/64 
+  Installing : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                27/64 
+  Installing : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 28/64 
+  Installing : wxGTK-gl-2.8.12-1.el6.centos.x86_64                        29/64 
+  Installing : erlang-wx-R14B-04.3.el6.x86_64                             30/64 
+  Installing : erlang-cosTransactions-R14B-04.3.el6.x86_64                31/64 
+  Installing : erlang-percept-R14B-04.3.el6.x86_64                        32/64 
+  Installing : erlang-inviso-R14B-04.3.el6.x86_64                         33/64 
+  Installing : erlang-parsetools-R14B-04.3.el6.x86_64                     34/64 
+  Installing : erlang-eunit-R14B-04.3.el6.x86_64                          35/64 
+  Installing : erlang-diameter-R14B-04.3.el6.x86_64                       36/64 
+  Installing : erlang-ic-R14B-04.3.el6.x86_64                             37/64 
+  Installing : erlang-jinterface-R14B-04.3.el6.x86_64                     38/64 
+  Installing : erlang-erl_interface-R14B-04.3.el6.x86_64                  39/64 
+  Installing : erlang-erl_docgen-R14B-04.3.el6.x86_64                     40/64 
+  Installing : unixODBC-2.2.14-14.el6.x86_64                              41/64 
+  Installing : erlang-odbc-R14B-04.3.el6.x86_64                           42/64 
+  Installing : 1:tk-8.5.7-5.el6.x86_64                                    43/64 
+  Installing : erlang-gs-R14B-04.3.el6.x86_64                             44/64 
+  Installing : erlang-debugger-R14B-04.3.el6.x86_64                       45/64 
+  Installing : erlang-et-R14B-04.3.el6.x86_64                             46/64 
+  Installing : erlang-webtool-R14B-04.3.el6.x86_64                        47/64 
+  Installing : erlang-observer-R14B-04.3.el6.x86_64                       48/64 
+  Installing : erlang-tools-R14B-04.3.el6.x86_64                          49/64 
+  Installing : erlang-sasl-R14B-04.3.el6.x86_64                           50/64 
+  Installing : erlang-test_server-R14B-04.3.el6.x86_64                    51/64 
+  Installing : erlang-pman-R14B-04.3.el6.x86_64                           52/64 
+  Installing : erlang-dialyzer-R14B-04.3.el6.x86_64                       53/64 
+  Installing : erlang-typer-R14B-04.3.el6.x86_64                          54/64 
+  Installing : erlang-tv-R14B-04.3.el6.x86_64                             55/64 
+  Installing : erlang-common_test-R14B-04.3.el6.x86_64                    56/64 
+  Installing : erlang-reltool-R14B-04.3.el6.x86_64                        57/64 
+  Installing : erlang-os_mon-R14B-04.3.el6.x86_64                         58/64 
+  Installing : erlang-megaco-R14B-04.3.el6.x86_64                         59/64 
+  Installing : erlang-appmon-R14B-04.3.el6.x86_64                         60/64 
+  Installing : erlang-toolbar-R14B-04.3.el6.x86_64                        61/64 
+  Installing : erlang-examples-R14B-04.3.el6.x86_64                       62/64 
+  Installing : erlang-R14B-04.3.el6.x86_64                                63/64 
+  Installing : rabbitmq-server-2.8.7-1.noarch                             64/64 
+  Verifying  : erlang-docbuilder-R14B-04.3.el6.x86_64                      1/64 
+  Verifying  : erlang-compiler-R14B-04.3.el6.x86_64                        2/64 
+  Verifying  : erlang-webtool-R14B-04.3.el6.x86_64                         3/64 
+  Verifying  : erlang-parsetools-R14B-04.3.el6.x86_64                      4/64 
+  Verifying  : erlang-xmerl-R14B-04.3.el6.x86_64                           5/64 
+  Verifying  : erlang-sasl-R14B-04.3.el6.x86_64                            6/64 
+  Verifying  : wxBase-2.8.12-1.el6.centos.x86_64                           7/64 
+  Verifying  : erlang-cosTime-R14B-04.3.el6.x86_64                         8/64 
+  Verifying  : erlang-appmon-R14B-04.3.el6.x86_64                          9/64 
+  Verifying  : erlang-examples-R14B-04.3.el6.x86_64                       10/64 
+  Verifying  : erlang-reltool-R14B-04.3.el6.x86_64                        11/64 
+  Verifying  : erlang-jinterface-R14B-04.3.el6.x86_64                     12/64 
+  Verifying  : erlang-edoc-R14B-04.3.el6.x86_64                           13/64 
+  Verifying  : 1:tk-8.5.7-5.el6.x86_64                                    14/64 
+  Verifying  : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 15/64 
+  Verifying  : erlang-eunit-R14B-04.3.el6.x86_64                          16/64 
+  Verifying  : wxGTK-gl-2.8.12-1.el6.centos.x86_64                        17/64 
+  Verifying  : erlang-toolbar-R14B-04.3.el6.x86_64                        18/64 
+  Verifying  : erlang-inets-R14B-04.3.el6.x86_64                          19/64 
+  Verifying  : erlang-hipe-R14B-04.3.el6.x86_64                           20/64 
+  Verifying  : erlang-wx-R14B-04.3.el6.x86_64                             21/64 
+  Verifying  : erlang-debugger-R14B-04.3.el6.x86_64                       22/64 
+  Verifying  : unixODBC-2.2.14-14.el6.x86_64                              23/64 
+  Verifying  : erlang-test_server-R14B-04.3.el6.x86_64                    24/64 
+  Verifying  : erlang-orber-R14B-04.3.el6.x86_64                          25/64 
+  Verifying  : erlang-crypto-R14B-04.3.el6.x86_64                         26/64 
+  Verifying  : erlang-runtime_tools-R14B-04.3.el6.x86_64                  27/64 
+  Verifying  : erlang-diameter-R14B-04.3.el6.x86_64                       28/64 
+  Verifying  : erlang-stdlib-R14B-04.3.el6.x86_64                         29/64 
+  Verifying  : erlang-ic-R14B-04.3.el6.x86_64                             30/64 
+  Verifying  : erlang-pman-R14B-04.3.el6.x86_64                           31/64 
+  Verifying  : erlang-cosProperty-R14B-04.3.el6.x86_64                    32/64 
+  Verifying  : erlang-erts-R14B-04.3.el6.x86_64                           33/64 
+  Verifying  : erlang-tv-R14B-04.3.el6.x86_64                             34/64 
+  Verifying  : erlang-erl_interface-R14B-04.3.el6.x86_64                  35/64 
+  Verifying  : erlang-megaco-R14B-04.3.el6.x86_64                         36/64 
+  Verifying  : erlang-kernel-R14B-04.3.el6.x86_64                         37/64 
+  Verifying  : erlang-common_test-R14B-04.3.el6.x86_64                    38/64 
+  Verifying  : erlang-public_key-R14B-04.3.el6.x86_64                     39/64 
+  Verifying  : erlang-erl_docgen-R14B-04.3.el6.x86_64                     40/64 
+  Verifying  : rabbitmq-server-2.8.7-1.noarch                             41/64 
+  Verifying  : erlang-asn1-R14B-04.3.el6.x86_64                           42/64 
+  Verifying  : erlang-ssh-R14B-04.3.el6.x86_64                            43/64 
+  Verifying  : erlang-otp_mibs-R14B-04.3.el6.x86_64                       44/64 
+  Verifying  : erlang-cosTransactions-R14B-04.3.el6.x86_64                45/64 
+  Verifying  : wxGTK-2.8.12-1.el6.centos.x86_64                           46/64 
+  Verifying  : erlang-inviso-R14B-04.3.el6.x86_64                         47/64 
+  Verifying  : erlang-observer-R14B-04.3.el6.x86_64                       48/64 
+  Verifying  : erlang-mnesia-R14B-04.3.el6.x86_64                         49/64 
+  Verifying  : erlang-syntax_tools-R14B-04.3.el6.x86_64                   50/64 
+  Verifying  : erlang-cosNotification-R14B-04.3.el6.x86_64                51/64 
+  Verifying  : erlang-tools-R14B-04.3.el6.x86_64                          52/64 
+  Verifying  : erlang-percept-R14B-04.3.el6.x86_64                        53/64 
+  Verifying  : erlang-typer-R14B-04.3.el6.x86_64                          54/64 
+  Verifying  : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                55/64 
+  Verifying  : erlang-et-R14B-04.3.el6.x86_64                             56/64 
+  Verifying  : erlang-R14B-04.3.el6.x86_64                                57/64 
+  Verifying  : erlang-gs-R14B-04.3.el6.x86_64                             58/64 
+  Verifying  : erlang-os_mon-R14B-04.3.el6.x86_64                         59/64 
+  Verifying  : erlang-odbc-R14B-04.3.el6.x86_64                           60/64 
+  Verifying  : erlang-ssl-R14B-04.3.el6.x86_64                            61/64 
+  Verifying  : erlang-dialyzer-R14B-04.3.el6.x86_64                       62/64 
+  Verifying  : erlang-snmp-R14B-04.3.el6.x86_64                           63/64 
+  Verifying  : erlang-cosEvent-R14B-04.3.el6.x86_64                       64/64 
+
+Installed:
+  rabbitmq-server.noarch 0:2.8.7-1                                              
+
+Dependency Installed:
+  erlang.x86_64 0:R14B-04.3.el6                                                 
+  erlang-appmon.x86_64 0:R14B-04.3.el6                                          
+  erlang-asn1.x86_64 0:R14B-04.3.el6                                            
+  erlang-common_test.x86_64 0:R14B-04.3.el6                                     
+  erlang-compiler.x86_64 0:R14B-04.3.el6                                        
+  erlang-cosEvent.x86_64 0:R14B-04.3.el6                                        
+  erlang-cosEventDomain.x86_64 0:R14B-04.3.el6                                  
+  erlang-cosFileTransfer.x86_64 0:R14B-04.3.el6                                 
+  erlang-cosNotification.x86_64 0:R14B-04.3.el6                                 
+  erlang-cosProperty.x86_64 0:R14B-04.3.el6                                     
+  erlang-cosTime.x86_64 0:R14B-04.3.el6                                         
+  erlang-cosTransactions.x86_64 0:R14B-04.3.el6                                 
+  erlang-crypto.x86_64 0:R14B-04.3.el6                                          
+  erlang-debugger.x86_64 0:R14B-04.3.el6                                        
+  erlang-dialyzer.x86_64 0:R14B-04.3.el6                                        
+  erlang-diameter.x86_64 0:R14B-04.3.el6                                        
+  erlang-docbuilder.x86_64 0:R14B-04.3.el6                                      
+  erlang-edoc.x86_64 0:R14B-04.3.el6                                            
+  erlang-erl_docgen.x86_64 0:R14B-04.3.el6                                      
+  erlang-erl_interface.x86_64 0:R14B-04.3.el6                                   
+  erlang-erts.x86_64 0:R14B-04.3.el6                                            
+  erlang-et.x86_64 0:R14B-04.3.el6                                              
+  erlang-eunit.x86_64 0:R14B-04.3.el6                                           
+  erlang-examples.x86_64 0:R14B-04.3.el6                                        
+  erlang-gs.x86_64 0:R14B-04.3.el6                                              
+  erlang-hipe.x86_64 0:R14B-04.3.el6                                            
+  erlang-ic.x86_64 0:R14B-04.3.el6                                              
+  erlang-inets.x86_64 0:R14B-04.3.el6                                           
+  erlang-inviso.x86_64 0:R14B-04.3.el6                                          
+  erlang-jinterface.x86_64 0:R14B-04.3.el6                                      
+  erlang-kernel.x86_64 0:R14B-04.3.el6                                          
+  erlang-megaco.x86_64 0:R14B-04.3.el6                                          
+  erlang-mnesia.x86_64 0:R14B-04.3.el6                                          
+  erlang-observer.x86_64 0:R14B-04.3.el6                                        
+  erlang-odbc.x86_64 0:R14B-04.3.el6                                            
+  erlang-orber.x86_64 0:R14B-04.3.el6                                           
+  erlang-os_mon.x86_64 0:R14B-04.3.el6                                          
+  erlang-otp_mibs.x86_64 0:R14B-04.3.el6                                        
+  erlang-parsetools.x86_64 0:R14B-04.3.el6                                      
+  erlang-percept.x86_64 0:R14B-04.3.el6                                         
+  erlang-pman.x86_64 0:R14B-04.3.el6                                            
+  erlang-public_key.x86_64 0:R14B-04.3.el6                                      
+  erlang-reltool.x86_64 0:R14B-04.3.el6                                         
+  erlang-runtime_tools.x86_64 0:R14B-04.3.el6                                   
+  erlang-sasl.x86_64 0:R14B-04.3.el6                                            
+  erlang-snmp.x86_64 0:R14B-04.3.el6                                            
+  erlang-ssh.x86_64 0:R14B-04.3.el6                                             
+  erlang-ssl.x86_64 0:R14B-04.3.el6                                             
+  erlang-stdlib.x86_64 0:R14B-04.3.el6                                          
+  erlang-syntax_tools.x86_64 0:R14B-04.3.el6                                    
+  erlang-test_server.x86_64 0:R14B-04.3.el6                                     
+  erlang-toolbar.x86_64 0:R14B-04.3.el6                                         
+  erlang-tools.x86_64 0:R14B-04.3.el6                                           
+  erlang-tv.x86_64 0:R14B-04.3.el6                                              
+  erlang-typer.x86_64 0:R14B-04.3.el6                                           
+  erlang-webtool.x86_64 0:R14B-04.3.el6                                         
+  erlang-wx.x86_64 0:R14B-04.3.el6                                              
+  erlang-xmerl.x86_64 0:R14B-04.3.el6                                           
+  tk.x86_64 1:8.5.7-5.el6                                                       
+  unixODBC.x86_64 0:2.2.14-14.el6                                               
+  wxBase.x86_64 0:2.8.12-1.el6.centos                                           
+  wxGTK.x86_64 0:2.8.12-1.el6.centos                                            
+  wxGTK-gl.x86_64 0:2.8.12-1.el6.centos                                         
+
+Complete!
 Starting rabbitmq-server: SUCCESS
 rabbitmq-server.
 Downloading Files
@@ -425,6 +859,15 @@ Extracting...
 UnZipSFX 5.50 of 17 February 2002, by Info-ZIP (Zip-Bugs@lists.wku.edu).
   inflating: jre-6u31-linux-amd64.rpm  
 Preparing...                ##################################################
+jre                         ##################################################
+Unpacking JAR files...
+	rt.jar...
+	jsse.jar...
+	charsets.jar...
+	localedata.jar...
+	plugin.jar...
+	javaws.jar...
+	deploy.jar...
  
 Done.
 Downloading and installing MySQL RPMs
@@ -433,9 +876,9 @@ Setting up Local Package Process
 Examining MySQL-client-5.5.37-1.linux2.6.x86_64.rpm: MySQL-client-5.5.37-1.linux2.6.x86_64
 Marking MySQL-client-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-client.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -473,9 +916,9 @@ Setting up Local Package Process
 Examining MySQL-server-5.5.37-1.linux2.6.x86_64.rpm: MySQL-server-5.5.37-1.linux2.6.x86_64
 Marking MySQL-server-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-server.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -502,6 +945,24 @@ Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
   Installing : MySQL-server-5.5.37-1.linux2.6.x86_64                        1/1 
+
+PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
+To do so, start the server, then issue the following commands:
+
+/usr/bin/mysqladmin -u root password 'new-password'
+/usr/bin/mysqladmin -u root -h zenny1.class.example.org password 'new-password'
+
+Alternatively you can run:
+/usr/bin/mysql_secure_installation
+
+which will also give you the option of removing the test
+databases and anonymous user created by default.  This is
+strongly recommended for production servers.
+
+See the manual for more instructions.
+
+Please report any problems at http://bugs.mysql.com/
+
   Verifying  : MySQL-server-5.5.37-1.linux2.6.x86_64                        1/1 
 
 Installed:
@@ -513,9 +974,9 @@ Setting up Local Package Process
 Examining MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -553,9 +1014,9 @@ Setting up Local Package Process
 Examining MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-compat-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -595,12 +1056,72 @@ Starting MySQL.. SUCCESS!
 Installing rrdtool
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: mirror.netw.io
- * extras: repo.uk.bigstepcloud.com
- * updates: mirror.netw.io
+ * base: centos.mirrors.nublue.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: mozart.ee.ic.ac.uk
 Setting up Install Process
-Package rrdtool-1.4.7-1.el6.rfx.x86_64 already installed and latest version
-Nothing to do
+Resolving Dependencies
+--> Running transaction check
+---> Package rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
+--> Processing Dependency: perl(RRDp) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
+--> Processing Dependency: ruby for package: rrdtool-1.4.7-1.el6.rfx.x86_64
+--> Processing Dependency: perl(RRDs) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
+--> Processing Dependency: libdbi.so.0()(64bit) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
+--> Running transaction check
+---> Package libdbi.x86_64 0:0.8.3-4.el6 will be installed
+---> Package perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
+---> Package ruby.x86_64 0:1.8.7.374-5.el6 will be installed
+--> Processing Dependency: ruby-libs = 1.8.7.374-5.el6 for package: ruby-1.8.7.374-5.el6.x86_64
+--> Processing Dependency: libruby.so.1.8()(64bit) for package: ruby-1.8.7.374-5.el6.x86_64
+--> Running transaction check
+---> Package ruby-libs.x86_64 0:1.8.7.374-5.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch        Version               Repository            Size
+================================================================================
+Installing:
+ rrdtool           x86_64      1.4.7-1.el6.rfx       zenossdeps-repo      821 k
+Installing for dependencies:
+ libdbi            x86_64      0.8.3-4.el6           base                  39 k
+ perl-rrdtool      x86_64      1.4.7-1.el6.rfx       zenossdeps-repo       49 k
+ ruby              x86_64      1.8.7.374-5.el6       base                 538 k
+ ruby-libs         x86_64      1.8.7.374-5.el6       base                 1.7 M
+
+Transaction Summary
+================================================================================
+Install       5 Package(s)
+
+Total download size: 3.1 M
+Installed size: 10 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                            85 kB/s | 3.1 MB     00:37     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : ruby-libs-1.8.7.374-5.el6.x86_64                             1/5 
+  Installing : ruby-1.8.7.374-5.el6.x86_64                                  2/5 
+  Installing : libdbi-0.8.3-4.el6.x86_64                                    3/5 
+  Installing : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          4/5 
+  Installing : rrdtool-1.4.7-1.el6.rfx.x86_64                               5/5 
+  Verifying  : rrdtool-1.4.7-1.el6.rfx.x86_64                               1/5 
+  Verifying  : libdbi-0.8.3-4.el6.x86_64                                    2/5 
+  Verifying  : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          3/5 
+  Verifying  : ruby-1.8.7.374-5.el6.x86_64                                  4/5 
+  Verifying  : ruby-libs-1.8.7.374-5.el6.x86_64                             5/5 
+
+Installed:
+  rrdtool.x86_64 0:1.4.7-1.el6.rfx                                              
+
+Dependency Installed:
+  libdbi.x86_64 0:0.8.3-4.el6        perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx     
+  ruby.x86_64 0:1.8.7.374-5.el6      ruby-libs.x86_64 0:1.8.7.374-5.el6        
+
+Complete!
 ===wget perl-common-sense.noarch====
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
@@ -613,18 +1134,19 @@ Cleaning up list of fastest mirrors
 Installing Zenoss
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Determining fastest mirrors
- * base: mirror.netw.io
+ * base: mirrors.vooservers.com
  * epel: mirror.freethought-internet.co.uk
  * epel-debuginfo: mirror.freethought-internet.co.uk
  * epel-source: mirror.freethought-internet.co.uk
- * extras: mirrors.clouvider.net
- * updates: mirror.netw.io
+ * extras: mirror.freethought-internet.co.uk
+ * updates: mirror.freethought-internet.co.uk
 Setting up Local Package Process
 Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
 Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenoss.x86_64 0:4.2.5-2108.el6 will be installed
+--> Processing Dependency: memcached >= 1.4.4 for package: zenoss-4.2.5-2108.el6.x86_64
 --> Processing Dependency: nagios-plugins >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
 --> Processing Dependency: nagios-plugins-dig >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
 --> Processing Dependency: nagios-plugins-dns >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
@@ -636,7 +1158,10 @@ Resolving Dependencies
 --> Processing Dependency: nagios-plugins-ping >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
 --> Processing Dependency: nagios-plugins-rpc >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
 --> Processing Dependency: nagios-plugins-tcp >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
+--> Processing Dependency: redis for package: zenoss-4.2.5-2108.el6.x86_64
+--> Processing Dependency: sysstat for package: zenoss-4.2.5-2108.el6.x86_64
 --> Running transaction check
+---> Package memcached.x86_64 0:1.4.4-5.el6 will be installed
 ---> Package nagios-plugins.x86_64 0:2.2.1-4git.el6 will be installed
 --> Processing Dependency: nagios-common >= 3.3.1-1 for package: nagios-plugins-2.2.1-4git.el6.x86_64
 ---> Package nagios-plugins-dig.x86_64 0:2.2.1-4git.el6 will be installed
@@ -649,78 +1174,123 @@ Resolving Dependencies
 ---> Package nagios-plugins-ping.x86_64 0:2.2.1-4git.el6 will be installed
 ---> Package nagios-plugins-rpc.x86_64 0:2.2.1-4git.el6 will be installed
 ---> Package nagios-plugins-tcp.x86_64 0:2.2.1-4git.el6 will be installed
+---> Package redis.x86_64 0:3.2.12-2.el6 will be installed
+--> Processing Dependency: libjemalloc.so.1()(64bit) for package: redis-3.2.12-2.el6.x86_64
+---> Package sysstat.x86_64 0:9.0.4-33.el6_9.1 will be installed
+--> Processing Dependency: /etc/cron.d for package: sysstat-9.0.4-33.el6_9.1.x86_64
 --> Running transaction check
----> Package nagios-common.x86_64 0:4.3.4-4.el6 will be installed
+---> Package cronie.x86_64 0:1.4.4-16.el6_8.2 will be installed
+--> Processing Dependency: dailyjobs for package: cronie-1.4.4-16.el6_8.2.x86_64
+--> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-16.el6_8.2.x86_64
+---> Package jemalloc.x86_64 0:3.6.0-1.el6 will be installed
+---> Package nagios-common.x86_64 0:4.3.4-7.el6 will be installed
+--> Running transaction check
+---> Package cronie-anacron.x86_64 0:1.4.4-16.el6_8.2 will be installed
+--> Processing Dependency: crontabs for package: cronie-anacron-1.4.4-16.el6_8.2.x86_64
+---> Package exim.x86_64 0:4.91-1.el6 will be installed
+--> Running transaction check
+---> Package crontabs.noarch 0:1.10-33.el6 will be installed
 --> Finished Dependency Resolution
 
 Dependencies Resolved
 
 ================================================================================
- Package             Arch   Version        Repository                      Size
+ Package             Arch   Version          Repository                    Size
 ================================================================================
 Installing:
- zenoss              x86_64 4.2.5-2108.el6 /zenoss_core-4.2.5-2108.el6.x86_64
+ zenoss              x86_64 4.2.5-2108.el6   /zenoss_core-4.2.5-2108.el6.x86_64
                                                                           326 M
 Installing for dependencies:
- nagios-common       x86_64 4.3.4-4.el6    epel                            24 k
- nagios-plugins      x86_64 2.2.1-4git.el6 epel                           260 k
- nagios-plugins-dig  x86_64 2.2.1-4git.el6 epel                            44 k
- nagios-plugins-dns  x86_64 2.2.1-4git.el6 epel                            45 k
- nagios-plugins-http x86_64 2.2.1-4git.el6 epel                            59 k
- nagios-plugins-ircd x86_64 2.2.1-4git.el6 epel                            20 k
- nagios-plugins-ldap x86_64 2.2.1-4git.el6 epel                            42 k
- nagios-plugins-ntp  x86_64 2.2.1-4git.el6 epel                            59 k
- nagios-plugins-perl x86_64 2.2.1-4git.el6 epel                            18 k
- nagios-plugins-ping x86_64 2.2.1-4git.el6 epel                            44 k
- nagios-plugins-rpc  x86_64 2.2.1-4git.el6 epel                            20 k
- nagios-plugins-tcp  x86_64 2.2.1-4git.el6 epel                            47 k
+ cronie              x86_64 1.4.4-16.el6_8.2 base                          75 k
+ cronie-anacron      x86_64 1.4.4-16.el6_8.2 base                          31 k
+ crontabs            noarch 1.10-33.el6      base                          10 k
+ exim                x86_64 4.91-1.el6       epel                         1.4 M
+ jemalloc            x86_64 3.6.0-1.el6      epel                         100 k
+ memcached           x86_64 1.4.4-5.el6      base                          69 k
+ nagios-common       x86_64 4.3.4-7.el6      epel                          24 k
+ nagios-plugins      x86_64 2.2.1-4git.el6   epel                         260 k
+ nagios-plugins-dig  x86_64 2.2.1-4git.el6   epel                          44 k
+ nagios-plugins-dns  x86_64 2.2.1-4git.el6   epel                          45 k
+ nagios-plugins-http x86_64 2.2.1-4git.el6   epel                          59 k
+ nagios-plugins-ircd x86_64 2.2.1-4git.el6   epel                          20 k
+ nagios-plugins-ldap x86_64 2.2.1-4git.el6   epel                          42 k
+ nagios-plugins-ntp  x86_64 2.2.1-4git.el6   epel                          59 k
+ nagios-plugins-perl x86_64 2.2.1-4git.el6   epel                          18 k
+ nagios-plugins-ping x86_64 2.2.1-4git.el6   epel                          44 k
+ nagios-plugins-rpc  x86_64 2.2.1-4git.el6   epel                          20 k
+ nagios-plugins-tcp  x86_64 2.2.1-4git.el6   epel                          47 k
+ redis               x86_64 3.2.12-2.el6     epel                         522 k
+ sysstat             x86_64 9.0.4-33.el6_9.1 base                         234 k
 
 Transaction Summary
 ================================================================================
-Install      13 Package(s)
+Install      21 Package(s)
 
-Total size: 326 M
-Total download size: 682 k
-Installed size: 327 M
+Total size: 329 M
+Total download size: 3.1 M
+Installed size: 335 M
 Downloading Packages:
 --------------------------------------------------------------------------------
-Total                                           1.3 MB/s | 682 kB     00:00     
+Total                                           2.1 MB/s | 3.1 MB     00:01     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : nagios-common-4.3.4-4.el6.x86_64                            1/13 
-  Installing : nagios-plugins-2.2.1-4git.el6.x86_64                        2/13 
-  Installing : nagios-plugins-perl-2.2.1-4git.el6.x86_64                   3/13 
-  Installing : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                   4/13 
-  Installing : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                    5/13 
-  Installing : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                    6/13 
-  Installing : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                   7/13 
-  Installing : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                    8/13 
-  Installing : nagios-plugins-dns-2.2.1-4git.el6.x86_64                    9/13 
-  Installing : nagios-plugins-http-2.2.1-4git.el6.x86_64                  10/13 
-  Installing : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  11/13 
-  Installing : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   12/13 
-  Installing : zenoss-4.2.5-2108.el6.x86_64                               13/13 
-  Verifying  : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                    1/13 
-  Verifying  : nagios-plugins-perl-2.2.1-4git.el6.x86_64                   2/13 
-  Verifying  : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                   3/13 
-  Verifying  : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                   4/13 
-  Verifying  : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                    5/13 
-  Verifying  : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                    6/13 
-  Verifying  : nagios-plugins-2.2.1-4git.el6.x86_64                        7/13 
-  Verifying  : nagios-plugins-dns-2.2.1-4git.el6.x86_64                    8/13 
-  Verifying  : zenoss-4.2.5-2108.el6.x86_64                                9/13 
-  Verifying  : nagios-plugins-http-2.2.1-4git.el6.x86_64                  10/13 
-  Verifying  : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  11/13 
-  Verifying  : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   12/13 
-  Verifying  : nagios-common-4.3.4-4.el6.x86_64                           13/13 
+  Installing : jemalloc-3.6.0-1.el6.x86_64                                 1/21 
+  Installing : redis-3.2.12-2.el6.x86_64                                   2/21 
+  Installing : memcached-1.4.4-5.el6.x86_64                                3/21 
+  Installing : exim-4.91-1.el6.x86_64                                      4/21 
+  Installing : crontabs-1.10-33.el6.noarch                                 5/21 
+  Installing : cronie-anacron-1.4.4-16.el6_8.2.x86_64                      6/21 
+  Installing : cronie-1.4.4-16.el6_8.2.x86_64                              7/21 
+  Installing : sysstat-9.0.4-33.el6_9.1.x86_64                             8/21 
+  Installing : nagios-common-4.3.4-7.el6.x86_64                            9/21 
+  Installing : nagios-plugins-2.2.1-4git.el6.x86_64                       10/21 
+  Installing : nagios-plugins-perl-2.2.1-4git.el6.x86_64                  11/21 
+  Installing : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                  12/21 
+  Installing : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                   13/21 
+  Installing : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                   14/21 
+  Installing : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                  15/21 
+  Installing : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                   16/21 
+  Installing : nagios-plugins-dns-2.2.1-4git.el6.x86_64                   17/21 
+  Installing : nagios-plugins-http-2.2.1-4git.el6.x86_64                  18/21 
+  Installing : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  19/21 
+  Installing : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   20/21 
+  Installing : zenoss-4.2.5-2108.el6.x86_64                               21/21 
+  Verifying  : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                    1/21 
+  Verifying  : nagios-plugins-perl-2.2.1-4git.el6.x86_64                   2/21 
+  Verifying  : nagios-common-4.3.4-7.el6.x86_64                            3/21 
+  Verifying  : cronie-1.4.4-16.el6_8.2.x86_64                              4/21 
+  Verifying  : exim-4.91-1.el6.x86_64                                      5/21 
+  Verifying  : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                   6/21 
+  Verifying  : sysstat-9.0.4-33.el6_9.1.x86_64                             7/21 
+  Verifying  : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                   8/21 
+  Verifying  : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                    9/21 
+  Verifying  : crontabs-1.10-33.el6.noarch                                10/21 
+  Verifying  : memcached-1.4.4-5.el6.x86_64                               11/21 
+  Verifying  : jemalloc-3.6.0-1.el6.x86_64                                12/21 
+  Verifying  : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                   13/21 
+  Verifying  : redis-3.2.12-2.el6.x86_64                                  14/21 
+  Verifying  : nagios-plugins-2.2.1-4git.el6.x86_64                       15/21 
+  Verifying  : nagios-plugins-dns-2.2.1-4git.el6.x86_64                   16/21 
+  Verifying  : zenoss-4.2.5-2108.el6.x86_64                               17/21 
+  Verifying  : nagios-plugins-http-2.2.1-4git.el6.x86_64                  18/21 
+  Verifying  : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  19/21 
+  Verifying  : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   20/21 
+  Verifying  : cronie-anacron-1.4.4-16.el6_8.2.x86_64                     21/21 
 
 Installed:
   zenoss.x86_64 0:4.2.5-2108.el6                                                
 
 Dependency Installed:
-  nagios-common.x86_64 0:4.3.4-4.el6                                            
+  cronie.x86_64 0:1.4.4-16.el6_8.2                                              
+  cronie-anacron.x86_64 0:1.4.4-16.el6_8.2                                      
+  crontabs.noarch 0:1.10-33.el6                                                 
+  exim.x86_64 0:4.91-1.el6                                                      
+  jemalloc.x86_64 0:3.6.0-1.el6                                                 
+  memcached.x86_64 0:1.4.4-5.el6                                                
+  nagios-common.x86_64 0:4.3.4-7.el6                                            
   nagios-plugins.x86_64 0:2.2.1-4git.el6                                        
   nagios-plugins-dig.x86_64 0:2.2.1-4git.el6                                    
   nagios-plugins-dns.x86_64 0:2.2.1-4git.el6                                    
@@ -732,18 +1302,28 @@ Dependency Installed:
   nagios-plugins-ping.x86_64 0:2.2.1-4git.el6                                   
   nagios-plugins-rpc.x86_64 0:2.2.1-4git.el6                                    
   nagios-plugins-tcp.x86_64 0:2.2.1-4git.el6                                    
+  redis.x86_64 0:3.2.12-2.el6                                                   
+  sysstat.x86_64 0:9.0.4-33.el6_9.1                                             
 
 Complete!
 Securing Zenoss
 Restricting permissions on /opt/zenoss/etc/*.conf*
+Assigning secure password for global.conf:zodb-password
+Assigning secure password for global.conf:amqppassword
+Assigning secure password for global.conf:zep-password
+Assigning secure password for global.conf:hubpassword
 Assigning secure password for hubpassword:admin
 MySQL is configured with a blank root password.
+Forcing zeneventserver to only listen on 127.0.0.1:8084
 Configuring and Starting some Base Services and Zenoss...
-Starting memcached: 
+Starting memcached: [60G[[0;32m  OK  [0;39m]
 Starting snmpd: 
 Zenoss not initialized.  Performing first-boot initialization...
 Fresh install pre steps
 Checking RRDtool version >= 1.4.7: [ OK ] 1.4.7
+Adding RabbitMQ user: zenoss
+Adding RabbitMQ vhost: /zenoss
+Setting RabbitMQ permissions for user: zenoss
 Dropping database: zodb_session
 Creating database: zodb_session
 Applying schema version: 1
@@ -755,117 +1335,121 @@ Applying schema version: 1
 Applying schema version: 2
 Applying schema version: 3
 Creating database: zenoss_zep
+Applying schema version: 1
+Applying schema version: 2
+Applying schema version: 3
+Applying schema version: 4
+Applying schema version: 5
+Applying schema version: 6
 make zope instance.
 Loading initial Zenoss objects into the Zeo database
 (this can take a few minutes)
 Zenoss initialization complete.
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
-2017-12-04 12:13:12,038 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
-2017-12-04 12:13:12,153 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:12,153 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:12,198 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
-2017-12-04 12:13:12,221 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
-2017-12-04 12:13:12,401 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
-2017-12-04 12:13:15,495 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2017-12-04 12:13:15,496 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:15,496 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:15,506 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2017-12-04 12:13:15,527 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-2017-12-04 12:13:18,263 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
-2017-12-04 12:13:18,412 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:18,412 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:18,421 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
-2017-12-04 12:13:18,442 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
-2017-12-04 12:13:21,307 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
-2017-12-04 12:13:21,346 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:21,346 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:21,377 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2017-12-04 12:13:21,395 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
-2017-12-04 12:13:24,256 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
-2017-12-04 12:13:24,281 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:24,282 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:24,309 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
-2017-12-04 12:13:24,331 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
-2017-12-04 12:13:27,473 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
-2017-12-04 12:13:27,528 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:27,529 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:27,573 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2017-12-04 12:13:27,597 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
-2017-12-04 12:13:30,573 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
-2017-12-04 12:13:30,745 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:30,746 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:30,795 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
-2017-12-04 12:13:30,819 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
-2017-12-04 12:13:33,864 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
-2017-12-04 12:13:33,909 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:33,909 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:33,948 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
-2017-12-04 12:13:33,989 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
-2017-12-04 12:13:37,018 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
-2017-12-04 12:13:37,055 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:37,056 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:37,094 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2017-12-04 12:13:37,117 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
-2017-12-04 12:13:40,003 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
-2017-12-04 12:13:40,038 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:40,038 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:40,069 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2017-12-04 12:13:40,088 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
-2017-12-04 12:13:42,952 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
-2017-12-04 12:13:42,993 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:42,994 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:43,025 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2017-12-04 12:13:43,050 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
-2017-12-04 12:13:46,029 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
-2017-12-04 12:13:46,438 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:46,439 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:46,497 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
-2017-12-04 12:13:46,515 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
-2017-12-04 12:13:46,699 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
-2017-12-04 12:13:50,596 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
-2017-12-04 12:13:53,572 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
-2017-12-04 12:13:53,606 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:53,607 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:53,637 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2017-12-04 12:13:53,658 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
-2017-12-04 12:13:56,800 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
-2017-12-04 12:13:56,925 INFO zen.AddToPack: End loading objects
-2017-12-04 12:13:56,926 INFO zen.AddToPack: Processing links
-2017-12-04 12:13:56,978 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
-2017-12-04 12:13:57,002 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
-2017-12-04 12:14:00,198 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
-2017-12-04 12:14:00,330 INFO zen.AddToPack: End loading objects
-2017-12-04 12:14:00,330 INFO zen.AddToPack: Processing links
-2017-12-04 12:14:00,371 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
-2017-12-04 12:14:00,390 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
-2017-12-04 12:14:03,675 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
-2017-12-04 12:14:03,692 INFO zen.AddToPack: End loading objects
-2017-12-04 12:14:03,693 INFO zen.AddToPack: Processing links
-2017-12-04 12:14:03,717 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
-2017-12-04 12:14:03,739 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
-2017-12-04 12:14:06,535 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
-2017-12-04 12:14:06,622 INFO zen.AddToPack: End loading objects
-2017-12-04 12:14:06,622 INFO zen.AddToPack: Processing links
-2017-12-04 12:14:06,669 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
-2017-12-04 12:14:06,708 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
-2017-12-04 12:14:10,593 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
-2017-12-04 12:14:10,625 INFO zen.AddToPack: End loading objects
-2017-12-04 12:14:10,625 INFO zen.AddToPack: Processing links
-2017-12-04 12:14:10,655 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2017-12-04 12:14:10,673 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
-2017-12-04 12:14:13,596 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-2017-12-04 12:14:16,530 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2017-12-04 12:14:17,653 INFO zen.AddToPack: End loading objects
-2017-12-04 12:14:17,653 INFO zen.AddToPack: Processing links
-2017-12-04 12:14:17,742 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
-2017-12-04 12:14:17,764 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2018-12-18 16:27:32,557 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
+2018-12-18 16:27:32,657 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:32,657 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:32,722 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
+2018-12-18 16:27:32,742 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
+2018-12-18 16:27:32,930 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
+2018-12-18 16:27:35,784 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2018-12-18 16:27:35,785 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:35,785 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:35,797 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2018-12-18 16:27:35,820 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2018-12-18 16:27:43,310 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
+2018-12-18 16:27:43,456 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:43,457 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:43,469 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
+2018-12-18 16:27:43,489 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
+2018-12-18 16:27:46,231 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
+2018-12-18 16:27:46,272 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:46,272 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:46,302 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2018-12-18 16:27:46,318 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
+2018-12-18 16:27:48,924 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
+2018-12-18 16:27:48,958 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:48,958 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:48,985 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
+2018-12-18 16:27:49,002 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
+2018-12-18 16:27:51,630 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
+2018-12-18 16:27:51,665 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:51,666 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:51,695 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-18 16:27:51,711 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
+2018-12-18 16:27:54,366 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
+2018-12-18 16:27:54,520 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:54,520 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:54,558 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
+2018-12-18 16:27:54,574 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
+2018-12-18 16:27:57,702 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
+2018-12-18 16:27:57,747 INFO zen.AddToPack: End loading objects
+2018-12-18 16:27:57,748 INFO zen.AddToPack: Processing links
+2018-12-18 16:27:57,790 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
+2018-12-18 16:27:57,821 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
+2018-12-18 16:28:00,551 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
+2018-12-18 16:28:00,587 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:00,587 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:00,617 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-18 16:28:00,637 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
+2018-12-18 16:28:03,356 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
+2018-12-18 16:28:03,394 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:03,394 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:03,425 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-18 16:28:03,441 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
+2018-12-18 16:28:06,082 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
+2018-12-18 16:28:06,129 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:06,129 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:06,161 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2018-12-18 16:28:06,182 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
+2018-12-18 16:28:08,961 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
+2018-12-18 16:28:09,411 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:09,411 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:09,469 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
+2018-12-18 16:28:09,486 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
+2018-12-18 16:28:09,664 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
+2018-12-18 16:28:13,484 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
+2018-12-18 16:28:16,185 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
+2018-12-18 16:28:16,223 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:16,223 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:16,253 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-18 16:28:16,270 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
+2018-12-18 16:28:19,075 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
+2018-12-18 16:28:19,193 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:19,193 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:19,238 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
+2018-12-18 16:28:19,259 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
+Creating /opt/zenoss/zenjmx-libs
+2018-12-18 16:28:27,311 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
+2018-12-18 16:28:27,440 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:27,440 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:27,487 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
+2018-12-18 16:28:27,509 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
+2018-12-18 16:28:30,969 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
+2018-12-18 16:28:30,987 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:30,987 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:31,014 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
+2018-12-18 16:28:31,037 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
+2018-12-18 16:28:33,806 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
+2018-12-18 16:28:33,891 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:33,891 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:33,933 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
+2018-12-18 16:28:33,959 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
+2018-12-18 16:28:36,992 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
+2018-12-18 16:28:37,028 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:37,029 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:37,059 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-18 16:28:37,078 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
+2018-12-18 16:28:40,228 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2018-12-18 16:28:42,953 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2018-12-18 16:28:44,081 INFO zen.AddToPack: End loading objects
+2018-12-18 16:28:44,081 INFO zen.AddToPack: Processing links
+2018-12-18 16:28:44,181 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
+2018-12-18 16:28:44,202 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
 Zenpacks were installed. Restarting zenoss.
-Daemon: zenjmx stopping...
-already stopped
-Daemon: zenpython stopping...
-already stopped
 Daemon: zredis stopping...
+already stopped
 Daemon: zenprocess stopping...
 already stopped
 Daemon: zencommand stopping...
@@ -897,7 +1481,7 @@ Daemon: zeneventserver stopping...
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
 Daemon: zopectl . 
-daemon process started, pid=25794
+daemon process started, pid=9389
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -916,16 +1500,16 @@ Daemon: zenpython starting...
 Daemon: zenjmx starting...
 
 Fresh install post step
---2017-12-04 12:15:38--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
+--2018-12-18 16:30:05--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
 Resolving zenny1.class.example.org... 192.168.10.133
 Connecting to zenny1.class.example.org|192.168.10.133|:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `/dev/null'
 
-     0K .......... ..                                          2.03K=6.1s
+     0K .......... ..                                          1.81K=6.8s
 
-2017-12-04 12:15:44 (2.03 KB/s) - `/dev/null' saved [12651]
+2018-12-18 16:30:12 (1.81 KB/s) - `/dev/null' saved [12651]
 
 Zenoss installation completed.
 Securing configuration files...
@@ -961,8 +1545,47 @@ Thank you for using Zenoss. Happy monitoring!
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: zenup-1.1.0.267.869d67a-1.el6.x86_64
-zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: does not update installed package.
-Nothing to do
+Marking zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: mirrors.vooservers.com
+ * epel: mirror.freethought-internet.co.uk
+ * epel-debuginfo: mirror.freethought-internet.co.uk
+ * epel-source: mirror.freethought-internet.co.uk
+ * extras: mirror.freethought-internet.co.uk
+ * updates: mirror.freethought-internet.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package zenup.x86_64 0:1.1.0.267.869d67a-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package
+     Arch   Version                 Repository                             Size
+================================================================================
+Installing:
+ zenup
+     x86_64 1.1.0.267.869d67a-1.el6 /zenup-1.1.0.267.869d67a-1.el6.x86_64  12 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 12 M
+Installed size: 12 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : zenup-1.1.0.267.869d67a-1.el6.x86_64                         1/1 
+  Verifying  : zenup-1.1.0.267.869d67a-1.el6.x86_64                         1/1 
+
+Installed:
+  zenup.x86_64 0:1.1.0.267.869d67a-1.el6                                        
+
+Complete!
 Initializing new product: zenoss-core-4.2.5
 Running installation script
 Replacing Resource Manager shebang in python files.
@@ -970,6 +1593,7 @@ Checking for zenquilt installation
 
 Copying pristine source
 Success!
+Pristine file zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz installed
 WARNING: You will not be able to downgrade after installing this zup.  Press ENTER to continue or <CTRL+C> to quit.
 Install Steps:
   1) Non-Destructive Pre-Install Steps:
@@ -1085,9 +1709,9 @@ Comparing affected files
 Running pre-copy steps
 
 Zenpacks to update:
-/tmp/tmpaRjNEK/zenoss_core-4.2.5-SP732-zenup11.zup_Jjdix3/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
-/tmp/tmpaRjNEK/zenoss_core-4.2.5-SP732-zenup11.zup_Jjdix3/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-/tmp/tmpaRjNEK/zenoss_core-4.2.5-SP732-zenup11.zup_Jjdix3/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
+/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
+/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
+/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 
 
 Zenmigrate scripts to run:
@@ -1130,8 +1754,8 @@ Saved /opt/zenoss/./webapps to /opt/zenoss/webapps-bak.tgz...
 -rw-r--r-- zenoss/zenoss   1278 2014-03-11 23:38 webapps/zeneventserver/WEB-INF/web.xml
 
 Installing webapps.tgz to /opt/zenoss/./ ...
--rwxr-xr-x tomcat6/tomcat6 116 2017-02-22 20:46 webapps/zeneventserver/META-INF/maven/org.zenoss.zep/zep-webapp/pom.properties
--rwxr-xr-x tomcat6/tomcat6 76746 2017-02-22 20:44 webapps/zeneventserver/WEB-INF/lib/amqp-api-1.2.2-SNAPSHOT.jar
+-rwxr-xr-x tomcat6/tomcat6 116 2017-06-21 08:56 webapps/zeneventserver/META-INF/maven/org.zenoss.zep/zep-webapp/pom.properties
+-rwxr-xr-x tomcat6/tomcat6 76746 2017-06-21 08:54 webapps/zeneventserver/WEB-INF/lib/amqp-api-1.2.2-SNAPSHOT.jar
 -rwxr-xr-x tomcat6/tomcat6 43033 2011-10-28 17:43 webapps/zeneventserver/WEB-INF/lib/asm-3.1.jar
 -rwxr-xr-x tomcat6/tomcat6 2172168 2014-05-20 23:11 webapps/zeneventserver/WEB-INF/lib/guava-15.0.jar
 -rwxr-xr-x tomcat6/tomcat6   33491 2014-07-15 16:38 webapps/zeneventserver/WEB-INF/lib/jackson-annotations-2.2.2.jar
@@ -1150,10 +1774,10 @@ Installing webapps.tgz to /opt/zenoss/./ ...
 -rwxr-xr-x tomcat6/tomcat6   30867 2014-07-15 16:38 webapps/zeneventserver/WEB-INF/lib/metrics-jvm-3.0.1.jar
 -rwxr-xr-x tomcat6/tomcat6   15741 2014-07-15 16:38 webapps/zeneventserver/WEB-INF/lib/metrics-servlets-3.0.1.jar
 -rwxr-xr-x tomcat6/tomcat6   99252 2014-07-15 16:38 webapps/zeneventserver/WEB-INF/lib/metrics-spring-3.0.1.jar
--rwxr-xr-x tomcat6/tomcat6  825495 2017-02-22 20:44 webapps/zeneventserver/WEB-INF/lib/protobufs-1.2.2-SNAPSHOT.jar
--rwxr-xr-x tomcat6/tomcat6   32643 2017-02-22 20:43 webapps/zeneventserver/WEB-INF/lib/utils-1.2-SNAPSHOT.jar
--rwxr-xr-x tomcat6/tomcat6  418795 2017-02-22 20:46 webapps/zeneventserver/WEB-INF/lib/zep-core-1.2-SNAPSHOT.jar
--rwxr-xr-x tomcat6/tomcat6    1743 2017-02-22 20:07 webapps/zeneventserver/WEB-INF/web.xml
+-rwxr-xr-x tomcat6/tomcat6  825495 2017-06-21 08:54 webapps/zeneventserver/WEB-INF/lib/protobufs-1.2.2-SNAPSHOT.jar
+-rwxr-xr-x tomcat6/tomcat6   32643 2017-06-21 08:53 webapps/zeneventserver/WEB-INF/lib/utils-1.2-SNAPSHOT.jar
+-rwxr-xr-x tomcat6/tomcat6  418795 2017-06-21 08:56 webapps/zeneventserver/WEB-INF/lib/zep-core-1.2-SNAPSHOT.jar
+-rwxr-xr-x tomcat6/tomcat6    1743 2017-06-21 08:21 webapps/zeneventserver/WEB-INF/web.xml
   webapps is up to update
 
 Attempting removal of file /opt/zenoss/webapps/zeneventserver/WEB-INF/lib/guava-r09.jar
@@ -1178,15 +1802,15 @@ Saved /opt/zenoss/lib/python/zenoss/protocols to /opt/zenoss/protocols-bak.tgz..
 -rw-r--r-- zenoss/zenoss 15619 2014-03-11 23:38 protocols/twisted/amqp.py
 
 Installing protocols.tgz to /opt/zenoss/lib/python/zenoss/ ...
--rw-r--r-- tomcat6/tomcat6 9180 2017-02-22 20:07 protocols/services/__init__.py
--rw-r--r-- tomcat6/tomcat6 13173 2017-02-22 20:07 protocols/services/zep.py
--rw-r--r-- tomcat6/tomcat6 15561 2017-02-22 20:07 protocols/twisted/amqp.py
+-rw-r--r-- tomcat6/tomcat6 9180 2017-06-21 08:21 protocols/services/__init__.py
+-rw-r--r-- tomcat6/tomcat6 13173 2017-06-21 08:21 protocols/services/zep.py
+-rw-r--r-- tomcat6/tomcat6 16613 2017-06-21 08:21 protocols/twisted/amqp.py
   lib/python/zenoss/protocols is up to update
 
 
 Copying JS files into place...
-/tmp/tmpaRjNEK/zenoss_core-4.2.5-SP732-zenup11.zup_Jjdix3/custom/blobs/el6/zenoss-compiled.js
-/tmp/tmpaRjNEK/zenoss_core-4.2.5-SP732-zenup11.zup_Jjdix3/custom/blobs/el6/zenoss-compiled-debug.js
+/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/zenoss-compiled.js
+/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/zenoss-compiled-debug.js
 
 Processing Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
 creating /opt/zenoss/lib/python2.7/site-packages/Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
@@ -1259,6 +1883,14 @@ Installing tap2rpm script to /opt/zenoss/bin
 Installed /opt/zenoss/lib/python2.7/site-packages/Twisted-15.5.0-py2.7-linux-x86_64.egg
 Processing dependencies for Twisted==15.5.0
 Finished processing dependencies for Twisted==15.5.0
+Processing txAMQP-0.6.2-py2.7.egg
+creating /opt/zenoss/lib/python2.7/site-packages/txAMQP-0.6.2-py2.7.egg
+Extracting txAMQP-0.6.2-py2.7.egg to /opt/zenoss/lib/python2.7/site-packages
+Adding txAMQP 0.6.2 to easy-install.pth file
+
+Installed /opt/zenoss/lib/python2.7/site-packages/txAMQP-0.6.2-py2.7.egg
+Processing dependencies for txAMQP==0.6.2
+Finished processing dependencies for txAMQP==0.6.2
 
 
 Patching post install files...
@@ -1296,9 +1928,9 @@ Applying schema version: 7
 Applying schema version: 8
 starting...
 Waiting for zeneventserver to start.......
-2017-12-04 12:18:09: waiting a maximum of 15 seconds for ZEP to be available...
+2018-12-18 16:32:05: waiting a maximum of 15 seconds for ZEP to be available...
 
-2017-12-04 12:18:12: is ZEP available: True 
+2018-12-18 16:32:08: is ZEP available: True 
 
 Sorting zenpacks ...
 Sorting zenpacks in zenpack_updates.txt is done
@@ -1307,26 +1939,26 @@ Updating zenpacks ...
 Installing: ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.DeviceSearch
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.DeviceSearch; launching process
-2017-12-04 12:18:23,128 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2018-12-18 16:32:19,188 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
 Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.PythonCollector; launching process
-2017-12-04 12:18:29,726 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2017-12-04 12:18:29,727 INFO zen.AddToPack: End loading objects
-2017-12-04 12:18:29,727 INFO zen.AddToPack: Processing links
-2017-12-04 12:18:29,747 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2017-12-04 12:18:29,764 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2018-12-18 16:32:25,557 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2018-12-18 16:32:25,558 INFO zen.AddToPack: End loading objects
+2018-12-18 16:32:25,558 INFO zen.AddToPack: Processing links
+2018-12-18 16:32:25,589 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2018-12-18 16:32:25,602 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
 Installing: ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.Microsoft.Windows
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launching process
-2017-12-04 12:18:36,671 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2017-12-04 12:18:39,449 INFO zen.AddToPack: End loading objects
-2017-12-04 12:18:39,450 INFO zen.AddToPack: Processing links
-2017-12-04 12:18:39,608 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
-2017-12-04 12:18:39,643 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-2017-12-04 12:18:40,084 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
-2017-12-04 12:18:40,085 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
-2017-12-04 12:18:40,085 INFO zen.migrate: Migrating zDBInstances for /
+2018-12-18 16:32:32,678 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2018-12-18 16:32:35,410 INFO zen.AddToPack: End loading objects
+2018-12-18 16:32:35,411 INFO zen.AddToPack: Processing links
+2018-12-18 16:32:35,563 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
+2018-12-18 16:32:35,588 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2018-12-18 16:32:36,427 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
+2018-12-18 16:32:36,427 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
+2018-12-18 16:32:36,428 INFO zen.migrate: Migrating zDBInstances for /
 Stopping zeneventserver...
 stopping...
 
@@ -1456,9 +2088,9 @@ Daemon: zeneventserver already stopped
 Starting zeneventserver...
 starting...
 Waiting for zeneventserver to start.......
-2017-12-04 12:19:01: waiting a maximum of 15 seconds for ZEP to be available...
+2018-12-18 16:32:58: waiting a maximum of 15 seconds for ZEP to be available...
 
-2017-12-04 12:19:04: is ZEP available: True 
+2018-12-18 16:33:01: is ZEP available: True 
 
 Running zenmigrate...
 INFO:zen.migrate:Will execute these steps: AddDisablePingPerspectiveOption
@@ -1561,26 +2193,26 @@ INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
 
 Running reportloader...
-2017-12-04 12:20:22,965 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
-2017-12-04 12:20:23,099 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
-2017-12-04 12:20:23,145 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
-2017-12-04 12:20:23,177 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
-2017-12-04 12:20:23,204 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
-2017-12-04 12:20:23,216 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
-2017-12-04 12:20:23,245 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
-2017-12-04 12:20:23,276 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
-2017-12-04 12:20:23,305 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
-2017-12-04 12:20:23,322 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
-2017-12-04 12:20:23,337 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
-2017-12-04 12:20:23,358 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
-2017-12-04 12:20:23,378 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
-2017-12-04 12:20:23,394 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
-2017-12-04 12:20:23,409 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
-2017-12-04 12:20:23,426 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
-2017-12-04 12:20:23,443 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
-2017-12-04 12:20:23,458 INFO zen.ReportLoader: loading: /Device Reports/All Devices
-2017-12-04 12:20:23,476 INFO zen.ReportLoader: loading: /Device Reports/New Devices
-2017-12-04 12:20:23,493 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
+2018-12-18 16:34:18,786 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
+2018-12-18 16:34:18,916 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
+2018-12-18 16:34:18,965 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
+2018-12-18 16:34:18,998 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
+2018-12-18 16:34:19,026 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
+2018-12-18 16:34:19,042 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
+2018-12-18 16:34:19,071 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
+2018-12-18 16:34:19,102 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
+2018-12-18 16:34:19,132 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
+2018-12-18 16:34:19,146 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
+2018-12-18 16:34:19,165 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
+2018-12-18 16:34:19,182 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
+2018-12-18 16:34:19,203 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
+2018-12-18 16:34:19,220 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
+2018-12-18 16:34:19,235 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
+2018-12-18 16:34:19,255 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
+2018-12-18 16:34:19,266 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
+2018-12-18 16:34:19,286 INFO zen.ReportLoader: loading: /Device Reports/All Devices
+2018-12-18 16:34:19,297 INFO zen.ReportLoader: loading: /Device Reports/New Devices
+2018-12-18 16:34:19,318 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
 
 
 ---------------------------------------------------------------------------
@@ -1596,18 +2228,23 @@ Running 'zencheckzends truncate'
 
 Updating product information
 Success!
+SUP file zenoss_core-4.2.5-SP743-zenup11.zup installed
+Fixing Device.py for production state change - see ticket ZEN-30167.
+patching file Products/ZenModel/Device.py
+Fixing actions.py for paging notification issue with SUP743
+patching file Products/ZenModel/actions.py
 
 Product: zenoss-core-4.2.5 (id = zenoss-core-4.2.5)
 Home: /opt/zenoss
-Revision: 732
+Revision: 743
 Upgrading: None
-Minimum: 732
-Updated On: Mon Dec  4 12:20:24 2017
+Minimum: 743
+Updated On: Tue Dec 18 16:34:20 2018
 
 Fixes:
-[UTF-8] =?UTF-8?q?Revert=20"ZEN-18291:=20GOM=20-=20amqp=20d?=
- =?UTF-8?q?eliveryMode=20is=20set=20to=20non-persistent=20(messages=E2=80=A6?=
- =?UTF-8?q?"?=
+[UTF-8] =?UTF-8?q?Revert=20"ZEN-21346:=20Lucene=20DB=20Sync?=
+ =?UTF-8?q?=20issue=20-=20Unable=20to=20delete=20events=20from=20event=20=E2?=
+ =?UTF-8?q?=80=A6"?=
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -1620,9 +2257,9 @@ Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
 
-=?UTF-8?q?Revert=20"ZEN-21346:=20Lucene=20DB=20Sync?=
- =?UTF-8?q?=20issue=20-=20Unable=20to=20delete=20events=20from=20event=20=E2?=
- =?UTF-8?q?=80=A6"?=
+=?UTF-8?q?Revert=20"ZEN-18291:=20GOM=20-=20amqp=20d?=
+ =?UTF-8?q?eliveryMode=20is=20set=20to=20non-persistent=20(messages=E2=80=A6?=
+ =?UTF-8?q?"?=
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -1891,12 +2528,12 @@ Merge ZenPacks.zenoss.vSphere 3.0.4 into 4.2.5 RPS.
 * Ignore pNICs with empty MAC addresses. (ZEN-10836)
 
 [ZEN-11186] ZEN-11186 Object Watchlist URL doesn't load events
- properly which clicked.
+ properly which clicked. Made a mistake in previous
+ patch.
 
 
 ZEN-11186 Object Watchlist URL doesn't load events
- properly which clicked. Made a mistake in previous
- patch.
+ properly which clicked.
 
 
 [ZEN-11192] ZEN-11192: fixed sequence changes randomly and added
@@ -2099,10 +2736,10 @@ Conflicts:
  the same attribute OID
 
 
-[ZEN-11851] ZEN-11851: Add "Group Filter" to LDAP Configuration
+[ZEN-11851] ZEN-11851: bump version number
 
 
-ZEN-11851: bump version number
+ZEN-11851: Add "Group Filter" to LDAP Configuration
 
 
 [ZEN-11870] ZEN-11870 zenoss.snmp.InterfaceMap Doesn't Support
@@ -2185,11 +2822,11 @@ ZEN-12023: Microsoft Windows ZenPack - Adding
 [ZEN-12494] ZEN-12494 fixed typo
 
 
+ZEN-12494 again fixed typos
+
+
 ZEN-12494 CallHome can fail to gather data on larger
  systems due to SSH timeout
-
-
-ZEN-12494 again fixed typos
 
 
 [ZEN-12495] ZEN-12495: SP464 - Overwriting custom template
@@ -2440,7 +3077,11 @@ ZEN-14089 zenbatchdump fails on UCS
  longer than a configurable threshold.
 
 
-[ZEN-14155] Revert "ZEN-14155: zencommand and zenmodeler does
+[ZEN-14155] ZEN-14155: Regression: zencommand and zenmodeler
+ does not release SSH connection
+
+
+Revert "ZEN-14155: zencommand and zenmodeler does
  not release SSH connections un..."
 
 
@@ -2452,28 +3093,24 @@ ZEN-14155: zencommand and zenmodeler does not
  release SSH connections under certain conditions
 
 
-ZEN-14155: Regression: zencommand and zenmodeler
- does not release SSH connection
+[ZEN-14185] ZEN-14185 refactored due to Jason's comments.
 
 
-[ZEN-14185] ZEN-14185 fixed migrate script. Update network tree
+ZEN-14185 fixed migrate script. Update network tree
  for all subnetworks if remove locally binded
  property or set a new value.
-
-
-ZEN-14185 Override setZenProperty and
- deleteZenProperty for IpNetwork class, remove
- transaction commit from migrate script.
 
 
 ZEN-14185 getChildLinks() call on
  /zport/dmd/Locations is taking too long to respond
 
 
-ZEN-14185 refactored due to Jason's comments.
-
-
 ZEN-14185 removed unnecessary lambda
+
+
+ZEN-14185 Override setZenProperty and
+ deleteZenProperty for IpNetwork class, remove
+ transaction commit from migrate script.
 
 
 [ZEN-14188] ZEN-14188: Google maps portlet will not refresh if
@@ -2484,11 +3121,11 @@ ZEN-14185 removed unnecessary lambda
  minProcessCount / maxProcessCount
 
 
-[ZEN-14297] ZEN-14297: newline at config EOF
-
-
-ZEN-14297: zenackevents is much faster, if password
+[ZEN-14297] ZEN-14297: zenackevents is much faster, if password
  is given. Config file added
+
+
+ZEN-14297: newline at config EOF
 
 
 ZEN-14297: added password obfuscation and better
@@ -2566,15 +3203,7 @@ ZEN-14750:ZEP performance drops by 95%, long running
  the EventsRouter JSON interface
 
 
-[ZEN-14798] ZEN-14798: Add a lock on process run
-
-We should use process locking to ensure two runs of zencheckzends
-cannot run at the same time
-
-ZEN-14798: Add handler to log into file
-
-
-ZEN-14798: Use argparse instead of optparse
+[ZEN-14798] ZEN-14798: Use argparse instead of optparse
 
 This was made to output usage instructions if no parameters, not a
 pre-rendered string and specify the mandatory argument for zencheckzends
@@ -2587,6 +3216,14 @@ usage: ZenCheckZenDS.py [-h] [-m MINUTES] [-d DATABASES] [-u USERNAME]
                         {install,install-silent,check,kill,truncate}
 
 Group imports according to PEP8
+
+ZEN-14798: Add a lock on process run
+
+We should use process locking to ensure two runs of zencheckzends
+cannot run at the same time
+
+ZEN-14798: Add handler to log into file
+
 
 [ZEN-14812] ZEN-14812 Group enumeration too slow for large
  groups
@@ -2699,12 +3336,6 @@ Fixes ZEN-15319
 [ZEN-15360] Fixes ZEN-15360: Instrumentation in zeneventd.py
 
 
-ZEN-15360: Flake8 feedback changes
-
-
-ZEN-15360: Feedback and refactor from code review
-
-
 ZEN-15360: Changing log messages to be more
  efficient
 
@@ -2712,34 +3343,40 @@ ZEN-15360: Changing log messages to be more
 ZEN-15360: Flake8 feedback changes
 
 
-[ZEN-15364] Revert "ZEN-15364: watchdog now intercepts SIGTERM"
-
-This reverts commit a578e0545d4974db45b1480e6e9f26feb47aadb4.
-
-ZEN-15364: update bash script && cleanup
+ZEN-15360: Feedback and refactor from code review
 
 
-ZEN-15364 Configure watchdog functionality in conf
+ZEN-15360: Flake8 feedback changes
+
+
+[ZEN-15364] ZEN-15364 Configure watchdog functionality in conf
  file
-
-
-ZEN-15364: watchdog now intercepts SIGTERM
-
-
-(ZEN-15364) Add watchdog functionality for
- zeneventserver
 
 
 Revert "ZEN-15364: update bash script && cleanup"
 
 This reverts commit 5e690806d4674ff1faebccc6238573e9b36079a8.
 
+(ZEN-15364) Add watchdog functionality for
+ zeneventserver
+
+
+ZEN-15364: watchdog now intercepts SIGTERM
+
+
+ZEN-15364: update bash script && cleanup
+
+
+ZEN-15364: watchdog for ZEP
+
+
 Revert "ZEN-15364: watchdog for ZEP"
 
 This reverts commit a1cdc62544e531247a31a26760cacd835d08b4ba.
 
-ZEN-15364: watchdog for ZEP
+Revert "ZEN-15364: watchdog now intercepts SIGTERM"
 
+This reverts commit a578e0545d4974db45b1480e6e9f26feb47aadb4.
 
 [ZEN-15391] ZEN-15391: run CallHome every 30 days and delay
  metrics gathering for 5 minutes after server
@@ -2788,18 +3425,22 @@ ZEN-15364: watchdog for ZEP
 * Enable autodiscovery for 6500 switches.
 * Add support for zCredentialsZProperties.
 
-[ZEN-15545] ZEN-15545: Revert ZEN-15187: Disable pke prevention
- from zenossdbpack until performance is improved
+[ZEN-15509] ZEN-15509 Deletion of organizational group does not
+ cleanly remove groups from devices
 
-This reverts commit be441d22202678ddb8c5f149af2e73c3882ca1ff.
+
+[ZEN-15545] ZEN-15545: Improve performance of new zenossdbpack.
+ Code review comments
+
 
 ZEN-15545: Improve new version of zenossdbpack
  performace
 
 
-ZEN-15545: Improve performance of new zenossdbpack.
- Code review comments
+ZEN-15545: Revert ZEN-15187: Disable pke prevention
+ from zenossdbpack until performance is improved
 
+This reverts commit be441d22202678ddb8c5f149af2e73c3882ca1ff.
 
 ZEN-15545: Improve new version of zenossdbpack
  performace. Code Review
@@ -2881,13 +3522,13 @@ ZEN-15615 OS process count is incorrect.
  10:32:20 2014 -0600)
 
 
-[ZEN-15743] ZEN-15743: Use $ZENHOME, not `/opt/zenoss/` to build
- path
-
-
-ZEN-15743: Add logrotate for redis
+[ZEN-15743] ZEN-15743: Add logrotate for redis
 
 Co-Authored-By: "Henry Hollenstain <hhollenstain@zenoss.com>"
+
+ZEN-15743: Use $ZENHOME, not `/opt/zenoss/` to build
+ path
+
 
 [ZEN-15827] ZEN-15827: (edit exceptions) SSH monitored Linux
  devices with long uptimes can't get their network
@@ -2909,14 +3550,14 @@ ZEN-15827: SSH monitored Linux devices with long
  messages in format "anystring: anotherstring"
 
 
-[ZEN-16003] Additional changes for ZEN-16003
-
-
-ZEN-16003 - Export button to device list view on
+[ZEN-16003] ZEN-16003 - Export button to device list view on
  Infrastructure page
 
 
 ZEN-16003: Not limiting number of exported devices.
+
+
+Additional changes for ZEN-16003
 
 
 [ZEN-16074] ZEN-16074: On Events console on a device, when you
@@ -3035,24 +3676,24 @@ ZEN-16846 (adding raise) ZenPack install fails to
 [ZEN-16855] ZEN-16855: Linux_ifconfig Command Plugin fails on
  CentOS 7
 
-Fixed __metaclass__ specification.
-
-ZEN-16855: Linux_ifconfig Command Plugin fails on
- CentOS 7
-
-
-ZEN-16855: Linux_ifconfig Command Plugin fails on
- CentOS 7
-
-
-ZEN-16855: Linux_ifconfig Command Plugin fails on
- CentOS 7
-
 
 ZEN-16855: Linux_ifconfig Command Plugin fails on
  CentOS 7
 
 Removed unnecessary comment.
+
+ZEN-16855: Linux_ifconfig Command Plugin fails on
+ CentOS 7
+
+
+ZEN-16855: Linux_ifconfig Command Plugin fails on
+ CentOS 7
+
+
+ZEN-16855: Linux_ifconfig Command Plugin fails on
+ CentOS 7
+
+Fixed __metaclass__ specification.
 
 ZEN-16855: Linux_ifconfig Command Plugin fails on
  CentOS 7
@@ -3065,21 +3706,21 @@ ZEN-16855: Linux_ifconfig Command Plugin fails on
 	modified:   src/core/Products/DataCollector/plugins/zenoss/cmd/linux/netstat_an.py
 	modified:   src/core/Products/DataCollector/plugins/zenoss/cmd/linux/netstat_rn.py
 
-[ZEN-16860] Revert "fixes ZEN-16860 : Index organizers: device
+[ZEN-16860] fixes ZEN-16860 : Index organizers: device
+ organizers, groups, systems, locations
+
+
+fixes ZEN-16860: Index organizers: device
+ organizers, groups, systems, locations
+
+
+Revert "fixes ZEN-16860 : Index organizers: device
  organizers, groups, systems, locations"
 
 This reverts commit dbc3b55ec503ac32299acc876fdc313c4adf52d9.
 
 Revert "fixes ZEN-16860 : Index organizers: device
  organizers, groups, systems, ..."
-
-
-fixes ZEN-16860 : Index organizers: device
- organizers, groups, systems, locations
-
-
-fixes ZEN-16860: Index organizers: device
- organizers, groups, systems, locations
 
 
 fixes ZEN-16860 : Index organizers: device
@@ -3114,35 +3755,35 @@ fixes ZEN-17028: Problem exporting IP to CSV through
  'export all' on a custom report
 
 
-[ZEN-17033] Revert "ZEN-17033 Disable TRACE for ZenJMX port"
+[ZEN-17033] ZEN-17033 Disable TRACE for ZenJMX port
+
+
+Revert "ZEN-17033 Disable TRACE for ZenJMX port"
 
 
 ZEN-17033 Bump ZenJMX version
 
 
-ZEN-17033 Disable TRACE for ZenJMX port
-
-
-[ZEN-17048] ZEN-17048 Infrastructure IP Address filter is not
- working
-
-
-Revert "ZEN-17048 Infrastructure IP Address filter
+[ZEN-17048] Revert "ZEN-17048 Infrastructure IP Address filter
  is not working"
+
+
+ZEN-17048 Infrastructure IP Address filter is not
+ working
 
 
 [ZEN-17062] ZEN-17062 removing snmp communities from add
  multiple devices hangs zenjobs.
 
 
-[ZEN-17077] Revert "ZEN-17077: "Sort Column" and "Sort Sense"
+[ZEN-17077] ZEN-17077: "Sort Column" and "Sort Sense" didn't
+ work on Custom Device Report
+
+
+Revert "ZEN-17077: "Sort Column" and "Sort Sense"
  didn't work on Custom Device Report"
 
 This reverts commit 9e5fa01baa6b86174204c8b06a5ef30d37874060.
-
-ZEN-17077: "Sort Column" and "Sort Sense" didn't
- work on Custom Device Report
-
 
 ZEN-17077: "Sort Column" and "Sort Sense" don't work
  on Custom Device Report
@@ -3162,26 +3803,10 @@ ZEN-17077: "Sort Column" and "Sort Sense" don't work
  Fri Apr 10 17:10:05 2015 -0500)
 
 
-[ZEN-17128] ZEN-17128: unused debug output removed
-
-
-ZEN-17128: Backward/forward instead of more/less
-
-
-ZEN-17128: optionally build network tree from
- catalog. use old method by default.
-
-
-ZEN-17128: small optimization.
-
-
-ZEN-17128: PageUp/Down for networks in UI
+[ZEN-17128] ZEN-17128: PageUp/Down for networks in UI
 
 
 ZEN-17128: reloading only one network tree
-
-
-ZEN-17128: Raw draft. Commit to not lose it.
 
 
 ZEN-17128: Backward/forward paging implemented
@@ -3190,7 +3815,29 @@ ZEN-17128: Backward/forward paging implemented
 ZEN-17128: Pagination
 
 
-[ZEN-17130] ZEN-17130: Cycle Time configured for Command Data
+ZEN-17128: small optimization.
+
+
+ZEN-17128: optionally build network tree from
+ catalog. use old method by default.
+
+
+ZEN-17128: Raw draft. Commit to not lose it.
+
+
+ZEN-17128: unused debug output removed
+
+
+ZEN-17128: Backward/forward instead of more/less
+
+
+[ZEN-17130] ZEN-17130: (new comment) Cycle Time configured for
+ Command Data Source not always followed (Originally
+ authored by olst [ostyhar@zenoss.com] & Committed
+ on Fri Apr 10 17:10:25 2015 -0500)
+
+
+ZEN-17130: Cycle Time configured for Command Data
  Source not always followed (Originally authored by
  olst [ostyhar@zenoss.com] & Committed on Fri Apr 10
  17:10:12 2015 -0500)
@@ -3200,12 +3847,6 @@ ZEN-17130: (some updates) Cycle Time configured for
  Command Data Source not always followed (Originally
  authored by olst [ostyhar@zenoss.com] & Committed
  on Fri Apr 10 17:10:19 2015 -0500)
-
-
-ZEN-17130: (new comment) Cycle Time configured for
- Command Data Source not always followed (Originally
- authored by olst [ostyhar@zenoss.com] & Committed
- on Fri Apr 10 17:10:25 2015 -0500)
 
 
 [ZEN-17191] ZEN-17191 Add a possibility to disable auto refresh
@@ -3221,22 +3862,22 @@ ZEN-17130: (new comment) Cycle Time configured for
  updated
 
 
-[ZEN-17273] Revert "ZEN-17273: zup 410: Traceback when
- installing a ZenPack"
-
-
-ZEN-17273: zup 410: Traceback when installing a
+[ZEN-17273] ZEN-17273: zup 410: Traceback when installing a
  ZenPack
+
+
+Revert "ZEN-17273: zup 410: Traceback when
+ installing a ZenPack"
 
 
 [ZEN-17369] ZEN-17369: SNMP Agent Down Events Not Detected for
  /Server/Linux & /Network/Cisco
 
 
-[ZEN-17402] ZEN-17402: (changing event scope) SNMP Agent Down
- Events Not Detected during device modeling
- (Originally authored by olst [ostyhar@zenoss.com] &
- Committed on Fri Apr 10 17:10:58 2015 -0500)
+[ZEN-17402] ZEN-17402: (status event) SNMP Agent Down Events Not
+ Detected during device modeling (Originally
+ authored by olst [ostyhar@zenoss.com] & Committed
+ on Fri Apr 10 17:11:05 2015 -0500)
 
 
 ZEN-17402: SNMP Agent Down Events Not Detected
@@ -3245,10 +3886,10 @@ ZEN-17402: SNMP Agent Down Events Not Detected
  17:10:51 2015 -0500)
 
 
-ZEN-17402: (status event) SNMP Agent Down Events Not
- Detected during device modeling (Originally
- authored by olst [ostyhar@zenoss.com] & Committed
- on Fri Apr 10 17:11:05 2015 -0500)
+ZEN-17402: (changing event scope) SNMP Agent Down
+ Events Not Detected during device modeling
+ (Originally authored by olst [ostyhar@zenoss.com] &
+ Committed on Fri Apr 10 17:10:58 2015 -0500)
 
 
 [ZEN-17415] ZEN-17415: Port europa's indexing improvements to
@@ -3305,13 +3946,17 @@ ZEN-17518: Linux 3.x kernel (RHEL/CentOS 7) changes
 [ZEN-17611] ZEN-17611: Update vSphere ZP
 
 
-[ZEN-17625] small fixes after CR; ZEN-17625
-
-	modified:   src/core/Products/DataCollector/plugins/zenoss/cmd/linux/ifconfig.py
-
-Added compatibility for ip util; ZEN-17625 
+[ZEN-17625] Added compatibility for ip util; ZEN-17625 
  modified:  
  src/core/Products/DataCollector/plugins/zenoss/cmd/linux/ifconfig.py
+
+
+ZEN-17625: Linux_ifconfig Command Plugin fails on
+ CentOS 7 [modeling issue]
+
+
+ZEN-17625: Linux_ifconfig Command Plugin fails on
+ CentOS 7 [modeling issue]
 
 
 Port from 5.1: Changed interface flag and  Renamed
@@ -3320,13 +3965,9 @@ Port from 5.1: Changed interface flag and  Renamed
  src/core/Products/DataCollector/plugins/zenoss/cmd/linux/ifconfig.py
 
 
-ZEN-17625: Linux_ifconfig Command Plugin fails on
- CentOS 7 [modeling issue]
+small fixes after CR; ZEN-17625
 
-
-ZEN-17625: Linux_ifconfig Command Plugin fails on
- CentOS 7 [modeling issue]
-
+	modified:   src/core/Products/DataCollector/plugins/zenoss/cmd/linux/ifconfig.py
 
 Fixed indentation; ZEN-17625
 
@@ -3336,17 +3977,17 @@ Fixed indentation; ZEN-17625
  execute script bug'
 
 
-[ZEN-17647] ZEN-17647 updated name of migrate script
-
-
-ZEN-17647 fixed a typo.
+[ZEN-17647] ZEN-17647 fix version in migrate script.
 
 
 ZEN-17647 connection_info can slow down start up due
  to table locking
 
 
-ZEN-17647 fix version in migrate script.
+ZEN-17647 fixed a typo.
+
+
+ZEN-17647 updated name of migrate script
 
 
 [ZEN-17651] ZEN-17651: Event Source and Source information is
@@ -3391,34 +4032,10 @@ ZEN-17752: Users can see graph reports for devices
  processing message
 
 
-[ZEN-17985] ZEN-17985; Linux_ifconfig Command Plugin fails on
- CentOS 7 [monitoring issue] 	modified:  
- src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/objects/objects.xml
- 	modified:  
+[ZEN-17985] ZEN-17985;  ZEN-17985; Linux_ifconfig Command Plugin
+ fails on CentOS 7 [monitoring issue] - updated file
+ after review 	modified:  
  src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/parsers/linux/ifconfig.py
- 	modified:  
- src/enterprise/ZenPacks.zenoss.EnterpriseLinux/setup.py
-
-
-ZEN-17985 - fixed mistake during patching 
- modified:  
- src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/objects/objects.xml
-
-
-ZEN-17985: updated migrate script. Linux_ifconfig
- Command Plugin fails on CentOS 7 [monitoring issue]
-
-
-ZEN-17985: added migrate script. Linux_ifconfig
- Command Plugin fails on CentOS 7 [monitoring issue]
-
-
-ZEN-17985: deleted migrate script (after Joseph's
- comment). Linux_ifconfig Command Plugin fails on
- CentOS 7 [monitoring issue]
-
-
-ZEN-17985; fix code comment
 
 
 ZEN-17985 - fixed mistakeZEN-17985 - fixed
@@ -12417,10 +13034,34 @@ ZEN-17985 - fixed mistakeZEN-17985 - fixed
  src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/objects/objects.xml
 
 
-ZEN-17985;  ZEN-17985; Linux_ifconfig Command Plugin
- fails on CentOS 7 [monitoring issue] - updated file
- after review 	modified:  
+ZEN-17985; fix code comment
+
+
+ZEN-17985: deleted migrate script (after Joseph's
+ comment). Linux_ifconfig Command Plugin fails on
+ CentOS 7 [monitoring issue]
+
+
+ZEN-17985; Linux_ifconfig Command Plugin fails on
+ CentOS 7 [monitoring issue] 	modified:  
+ src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/objects/objects.xml
+ 	modified:  
  src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/parsers/linux/ifconfig.py
+ 	modified:  
+ src/enterprise/ZenPacks.zenoss.EnterpriseLinux/setup.py
+
+
+ZEN-17985: updated migrate script. Linux_ifconfig
+ Command Plugin fails on CentOS 7 [monitoring issue]
+
+
+ZEN-17985 - fixed mistake during patching 
+ modified:  
+ src/enterprise/ZenPacks.zenoss.EnterpriseLinux/ZenPacks/zenoss/EnterpriseLinux/objects/objects.xml
+
+
+ZEN-17985: added migrate script. Linux_ifconfig
+ Command Plugin fails on CentOS 7 [monitoring issue]
 
 
 [ZEN-18067] ZEN-18067 Showing notifications in the UI is slow
@@ -12490,12 +13131,12 @@ ZEN-18291 GOM - amqp deliveryMode is set to
  get locally set to blank values on it.
 
 
-[ZEN-18319] ZEN-18319: (del payloads variable) ZenMail does not
- support Content-Transfer-Encoding Base64
-
-
-ZEN-18319: ZenMail does not support
+[ZEN-18319] ZEN-18319: ZenMail does not support
  Content-Transfer-Encoding Base64
+
+
+ZEN-18319: (del payloads variable) ZenMail does not
+ support Content-Transfer-Encoding Base64
 
 
 [ZEN-18357] fixes ZEN-18357: Editing the "Details" of a manually
@@ -12533,16 +13174,16 @@ fixes ZEN-18357: Editing the "Details" of a manually
  group, system or location
 
 
-[ZEN-18548] ZEN-18548: zendisc ignores --deviceclass and
- --prod_state parameters if --range or --walk is
- used and --prod_state is ignored in router
- discovery
-
-
-ZEN-18548: (del hardcoded default value) zendisc
+[ZEN-18548] ZEN-18548: (del hardcoded default value) zendisc
  ignores --deviceclass and --prod_state parameters
  if --range or --walk is used and --prod_state is
  ignored in router discovery
+
+
+ZEN-18548: zendisc ignores --deviceclass and
+ --prod_state parameters if --range or --walk is
+ used and --prod_state is ignored in router
+ discovery
 
 
 [ZEN-18617] ZEN-18617 - Account for non-standard zodb and
@@ -12593,25 +13234,25 @@ fixes ZEN-18717: Invalid regex search might cascade
  into UI outage
 
 
-fixes ZEN-18717: Invalid regex search might cascade
- into UI outage
-
-
-fixes ZEN-18717: Invalid regex search might cascade
- into UI outage
-
-
-fixes ZEN-18717: Invalid regex search might cascade
- into UI outage
-
-
-fixes ZEN-18717: Invalid regex search might cascade
- into UI outage
-
-
 ZEN-18717; removed js regex check because it didn't
  work as expected and checked params variable before
  use
+
+
+fixes ZEN-18717: Invalid regex search might cascade
+ into UI outage
+
+
+fixes ZEN-18717: Invalid regex search might cascade
+ into UI outage
+
+
+fixes ZEN-18717: Invalid regex search might cascade
+ into UI outage
+
+
+fixes ZEN-18717: Invalid regex search might cascade
+ into UI outage
 
 
 [ZEN-18718] ZEN-18718 AIX parser fix for ZEN-18497
@@ -12647,11 +13288,11 @@ ZEN-18936: Many popup dialogs reference absolute_url
  instead of absolute_url_path
 
 
-[ZEN-18944] ZEN-18944: collector daemons need ping perspective
+[ZEN-18944] ZEN-18944 fixed option name
+
+
+ZEN-18944: collector daemons need ping perspective
  enabled
-
-
-ZEN-18944 fixed option name
 
 
 [ZEN-19043] ZEN-19043 Removing of ip network causes an error
@@ -12661,7 +13302,11 @@ ZEN-18944 fixed option name
  lucene
 
 
-[ZEN-19146] ZEN-19146: Regression: zencommand does not release
+[ZEN-19146] ZEN-19146: zencommand and zenmodeler does not
+ release SSH connections under certain conditions
+
+
+ZEN-19146: Regression: zencommand does not release
  tasks under certain conditions
 
 
@@ -12669,15 +13314,7 @@ ZEN-19146: Regression: zencommand does not release
  tasks under certain conditions
 
 
-ZEN-19146: zencommand and zenmodeler does not
- release SSH connections under certain conditions
-
-
-[ZEN-19165] ZEN-19165: Add a basic test on set the value with
- _setProperty() with type select
-
-
-ZEN-19165: Select-type cProp results in site error
+[ZEN-19165] ZEN-19165: Select-type cProp results in site error
  on creation
 
 Added some validation in custom attribute creation code.
@@ -12691,6 +13328,10 @@ property or the custom property from (1) as the `Value`.
 
 In this case the second cProp has a working drop down filled with the contents
 from the 1st cProp.
+
+ZEN-19165: Add a basic test on set the value with
+ _setProperty() with type select
+
 
 [ZEN-19177] ZEN-19177: When creating a graph in Zenoss 4.x the
  min value is not honoured
@@ -12716,11 +13357,11 @@ fixes ZEN-19192: Graphs in Reports : Zoom In/Out and
  wrapper
 
 
-[ZEN-19243] ZEN-19243 ldap performance issues when loading ldap
+[ZEN-19243] ZEN-19243: ldap performance issues when loading ldap
  settings page
 
 
-ZEN-19243: ldap performance issues when loading ldap
+ZEN-19243 ldap performance issues when loading ldap
  settings page
 
 
@@ -12731,11 +13372,11 @@ ZEN-19243: ldap performance issues when loading ldap
 [ZEN-19298] ZEN-19298:Event Flapping Detection Not Working
 
 
-[ZEN-19387] ZEN-19387 removed useless statement
-
-
-ZEN-19387 Heartbeat events showing up for devices
+[ZEN-19387] ZEN-19387 Heartbeat events showing up for devices
  that are not collectors.
+
+
+ZEN-19387 removed useless statement
 
 
 [ZEN-19400] ZEN-19400: Use component, related to device, to
@@ -12758,12 +13399,7 @@ ZEN-19400: Add a test, that missed components are
  id out of sync
 
 
-[ZEN-19413] ZEN-19413 Sending an event through the UI with
- MultiRealm zenpack installed fails to link the
- device context to the event.
-
-
-ZEN-19413 add default value for a collectors field
+[ZEN-19413] ZEN-19413 add default value for a collectors field
  and disallow to be blank.
 
 
@@ -12772,6 +13408,11 @@ ZEN-19413 forgot to use a new value
 
 ZEN-19413 changed a name of a column according to
  Joseph's comment.
+
+
+ZEN-19413 Sending an event through the UI with
+ MultiRealm zenpack installed fails to link the
+ device context to the event.
 
 
 ZEN-19413 missed the fact that we already have
@@ -12797,10 +13438,7 @@ ZEN-19566: Perform refactoring according to the
  Notification Schedule
 
 
-[ZEN-19702] revert ZEN-19702
-
-
-fixes ZEN-19702: The way zenmodeler finds devices is
+[ZEN-19702] fixes ZEN-19702: The way zenmodeler finds devices is
  currently case insensitive
 
 
@@ -12808,18 +13446,21 @@ fixes ZEN-19702: The way zenmodeler finds devices is
  currently case insensitive
 
 
+revert ZEN-19702
+
+
 fixes ZEN-19702: The way zenmodeler finds devices is
  currently case insensitive
 
 
-[ZEN-19825] ZEN-19825 another change to the log message
+[ZEN-19825] ZEN-19825 fixed log message to not use % operator
 
 
 ZEN-19825 zenoss.snmp.InterfaceMap Plugin Does not
  Handle Interface Objects with No Description
 
 
-ZEN-19825 fixed log message to not use % operator
+ZEN-19825 another change to the log message
 
 
 [ZEN-19902] ZEN-19902: ImportError: cannot import name messaging
@@ -12829,12 +13470,13 @@ Products/ZenRelations/ZenPropertyManager.py because of the circular
 imports. Moved `import messaging` instruction into function code to make
 this import lazy and fix this issue.
 
-[ZEN-20067] Revert "ZEN-20067: Keep IP address value during the
+[ZEN-20067] ZEN-20067: Fix test failures in testTransforms.py
+
+Added required attributes to the EventPipelineProcessor class in
+afterSetUp() method to be able to run tests from testTransforms.py
+
+Revert "ZEN-20067: Keep IP address value during the
  event transformation"
-
-
-ZEN-20067: Test that IP address keeps during the
- event transformation
 
 
 ZEN-20067: Keep IP address value during the event
@@ -12847,10 +13489,9 @@ event.device to device that doesn't exist in Zenoss, so let's leave it there.
 Fixes: ZEN-20067 - evt.ipAddress cannot be set in a transform for a device
                    that doesn't exist in Zenoss
 
-ZEN-20067: Fix test failures in testTransforms.py
+ZEN-20067: Test that IP address keeps during the
+ event transformation
 
-Added required attributes to the EventPipelineProcessor class in
-afterSetUp() method to be able to run tests from testTransforms.py
 
 [ZEN-20069] ZEN-20069: Network Topology report not working
 
@@ -12901,11 +13542,8 @@ ZEN-20842 LDAP users are not assigned a role in
 
 
 [ZEN-20886] ZEN-20886: Refactor maintenance window device
- processing for increased performance
-
-
-ZEN-20886: Refactor maintenance window device
- processing for increased performance (minor fixes)
+ processing for increased performance (notification
+ schedules fix)
 
 
 ZEN-20886: Refactor maintenance window device
@@ -12914,8 +13552,11 @@ ZEN-20886: Refactor maintenance window device
 
 
 ZEN-20886: Refactor maintenance window device
- processing for increased performance (notification
- schedules fix)
+ processing for increased performance
+
+
+ZEN-20886: Refactor maintenance window device
+ processing for increased performance (minor fixes)
 
 
 [ZEN-20891] ZEN-20891:Incorrect Components displaying when
@@ -12941,11 +13582,7 @@ we can safely remove this method to clean code.
 
 Proted from https://github.com/zenoss/zenoss-prodbin/commit/9cbc789bf3824269ce5467ec0b504295c4d6660c
 
-[ZEN-21025] ZEN-21025 zenrender vulnerable to clickjacking
- exploit
-
-
-Revert "ZEN-21025 zenrender vulnerable to
+[ZEN-21025] Revert "ZEN-21025 zenrender vulnerable to
  clickjacking exploit"
 
 
@@ -12953,12 +13590,16 @@ ZEN-21025 zenrender vulnerable to clickjacking
  exploit
 
 
-[ZEN-21090] fixes ZEN-21090: Fix for ZEN-17576 needs to be made
- configurable in daemon config files.
+ZEN-21025 zenrender vulnerable to clickjacking
+ exploit
 
 
-fixes ZEN-21090: updated config files with a correct
+[ZEN-21090] fixes ZEN-21090: updated config files with a correct
  option name
+
+
+fixes ZEN-21090: Fix for ZEN-17576 needs to be made
+ configurable in daemon config files.
 
 
 [ZEN-21095] ZEN-21095: Make propertyItems() accessible only from
@@ -13006,13 +13647,13 @@ fixes ZEN-21106: Device Class filter in Event
 [ZEN-21331] ZEN-21331 User Enumeration via User Manager
 
 
-[ZEN-21337] ZEN-21337: restore code for setting severity
-
-
-ZEN-21337: Add datasource name to the eventKey
+[ZEN-21337] ZEN-21337: Add datasource name to the eventKey
 
 Added the datasource name to the eventKey to be able
 to separate events, related to the different devices.
+
+ZEN-21337: restore code for setting severity
+
 
 [ZEN-21341] fixes ZEN-21341: Cisco ACS Syslog Processing RegEx
  sets IP address field in events as hostname
@@ -13026,15 +13667,7 @@ to separate events, related to the different devices.
  when running zendisc
 
 
-[ZEN-21495] ZEN-21495: add new flag to remove extra zeros in
- OIDs
-
-When runnig zenmib to some MIB files it adds an extra zeros to TRAP OIDs
-since smidump parse the file according to SNMPv2.
-To remove that extra zeros from OIDs add new flag '--removeMiddleZeros'.
-By default it will keep those zeros.
-
-ZEN-21495: smidump introduces zeroes into Zenoss
+[ZEN-21495] ZEN-21495: smidump introduces zeroes into Zenoss
  MIBs
 
 
@@ -13047,6 +13680,14 @@ Changed log message as suggested.
 
 ZEN-21495: add a warning for user.
 
+
+ZEN-21495: add new flag to remove extra zeros in
+ OIDs
+
+When runnig zenmib to some MIB files it adds an extra zeros to TRAP OIDs
+since smidump parse the file according to SNMPv2.
+To remove that extra zeros from OIDs add new flag '--removeMiddleZeros'.
+By default it will keep those zeros.
 
 Revert "ZEN-21495: smidump introduces zeroes into
  Zenoss MIBs"
@@ -13067,22 +13708,22 @@ Revert "ZEN-21495: smidump introduces zeroes into
  Graphs Hosted on Remote Collectors
 
 
-[ZEN-21837] ZEN-21837: Add CSRF protection tokens to users
+[ZEN-21837] ZEN-21837: Restrict access to PAS management
+
+
+ZEN-21837: Add CSRF protection tokens to users
  management
 
 
-ZEN-21837: Add CSRF protection tokens to ZenPacks
- management
-
-
-ZEN-21837: Restrict access to PAS management
+ZEN-21837: Add CSRF protection tokens to user
+ commands management
 
 
 ZEN-21837: Add code to handle CSRF tokens
 
 
-ZEN-21837: Add CSRF protection tokens to user
- commands management
+ZEN-21837: Add CSRF protection tokens to ZenPacks
+ management
 
 
 ZEN-21837: Protect router URLs from CSRF attack
@@ -13108,11 +13749,11 @@ ZEN-22092: User with restricted access unable
 [ZEN-22131] ZEN-22131: User Commands button timeout broken
 
 
-ZEN-22131: User Commands button timeout broken
-
-
 Revert "ZEN-22131: User Commands button timeout
  broken"
+
+
+ZEN-22131: User Commands button timeout broken
 
 
 [ZEN-22399] ZEN-22399: Open Events portlet in Dashboard ZenPack
@@ -13158,7 +13799,15 @@ fixes ZEN-22697: Virtually impossible for end users
 [ZEN-22711] ZEN-22711: Can't add graphs to graph reports
 
 
-[ZEN-22773] ZEN-22773: Audit log lacking detail for changes to
+[ZEN-22773] ZEN-22773 Audit log lacking detail for changes to
+ mappings
+
+
+ZEN-22773 Audit log lacking detail for changes to
+ mappings
+
+
+ZEN-22773: Audit log lacking detail for changes to
  mappings
 
 
@@ -13181,15 +13830,15 @@ fixes ZEN-22697: Virtually impossible for end users
  Invalidated
 
 
-[ZEN-23543]       ZEN-23543 Zenpack Install can create duplicate
- mappings
-
-
-ZEN-23543 raise ValueError in case of duplicated
+[ZEN-23543] ZEN-23543 raise ValueError in case of duplicated
  mapping
 
 
 ZEN-23543 zenpack install can create duplicate
+ mappings
+
+
+      ZEN-23543 Zenpack Install can create duplicate
  mappings
 
 
@@ -13216,6 +13865,10 @@ Disabled boolean field in component details are very light grey,
 so it's hard to read.
 Made it not so light grey, by increasing opacity to the relevant
 css class.
+
+[ZEN-24034] ZEN-24034 Invalid TALES expressions cause
+ notifications to fail
+
 
 [ZEN-24565] ZEN-24565: Move production state into a separate
  join table in zodb.
@@ -13280,6 +13933,33 @@ ZEN-24827 production state portlet is not workin
  to avoid dupes
 
 
+[ZEN-27093] ZEN-27093 Resource Manager will allow duplicate IPs
+ for devices
+
+
+[ZEN-27216] ZEN-27216: reconnect to rabbit it case it closes the
+ channel. Better exception handling in
+ processInvalidations
+
+
+ZEN-27216: add logic to be able to set the prefetch
+ count
+
+
+[ZEN-27290] ZEN-27290 ProdStateNotSetError when filtering on
+ production state AND sorting other fields, backport
+ https://github.com/zenoss/zenoss-prodbin/pull/2177
+
+
+[ZEN-27578] ZEN-27578 RelStorage Uses MyISAM Temporary Tables
+ for Storing Objects backport:
+ https://github.com/zenoss/zenoss-prodbin/pull/2364
+
+
+[ZEN-27783] ZEN-27783: zenossdbpack needs further optimization,
+ dies with OOM error in large environments
+
+
 [ZEN-7150] Multiple updates to CiscoMonitor ZenPack.
 
 Merge ZenPacks.zenoss.CiscoMonitor 5.1.7 into 4.2.5 RPS.
@@ -13326,7 +14006,7 @@ Merge ZenPacks.zenoss.CiscoMonitor 5.1.7 into 4.2.5 RPS.
 
 Daemon: zeneventserver is already running
 Daemon: zopectl . 
-daemon process started, pid=31279
+daemon process started, pid=14935
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
