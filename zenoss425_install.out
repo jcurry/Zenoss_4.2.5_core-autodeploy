@@ -331,10 +331,10 @@ Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenossdeps-4.2.x-1.el6.noarch.rpm: zenossdeps-4.2.x-1.el6.noarch
 Marking zenossdeps-4.2.x-1.el6.noarch.rpm to be installed
-Determining fastest mirrors
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+Loading mirror speeds from cached hostfile
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenossdeps.noarch 0:4.2.x-1.el6 will be installed
@@ -369,9 +369,9 @@ Complete!
 Installing EPEL Repo
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Setting up Install Process
 Resolving Dependencies
 --> Running transaction check
@@ -407,10 +407,10 @@ Complete!
 Installing RabbitMQ
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * epel: ftp.nluug.nl
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * epel: mirrors.coreix.net
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Setting up Local Package Process
 Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
 Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
@@ -645,7 +645,7 @@ Total download size: 40 M
 Installed size: 84 M
 Downloading Packages:
 --------------------------------------------------------------------------------
-Total                                           947 kB/s |  40 MB     00:42     
+Total                                           3.7 MB/s |  40 MB     00:10     
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
@@ -876,9 +876,9 @@ Setting up Local Package Process
 Examining MySQL-client-5.5.37-1.linux2.6.x86_64.rpm: MySQL-client-5.5.37-1.linux2.6.x86_64
 Marking MySQL-client-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-client.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -916,9 +916,9 @@ Setting up Local Package Process
 Examining MySQL-server-5.5.37-1.linux2.6.x86_64.rpm: MySQL-server-5.5.37-1.linux2.6.x86_64
 Marking MySQL-server-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-server.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -974,9 +974,9 @@ Setting up Local Package Process
 Examining MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1014,9 +1014,9 @@ Setting up Local Package Process
 Examining MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-compat-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1056,9 +1056,9 @@ Starting MySQL.. SUCCESS!
 Installing rrdtool
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Loading mirror speeds from cached hostfile
- * base: centos.mirrors.nublue.co.uk
- * extras: centos.serverspace.co.uk
- * updates: mozart.ee.ic.ac.uk
+ * base: mirror.netweaver.uk
+ * extras: mozart.ee.ic.ac.uk
+ * updates: mirrors.coreix.net
 Setting up Install Process
 Resolving Dependencies
 --> Running transaction check
@@ -1098,7 +1098,7 @@ Total download size: 3.1 M
 Installed size: 10 M
 Downloading Packages:
 --------------------------------------------------------------------------------
-Total                                            85 kB/s | 3.1 MB     00:37     
+Total                                           638 kB/s | 3.1 MB     00:04     
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
@@ -1134,12 +1134,12 @@ Cleaning up list of fastest mirrors
 Installing Zenoss
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Determining fastest mirrors
- * base: mirrors.vooservers.com
- * epel: mirror.freethought-internet.co.uk
- * epel-debuginfo: mirror.freethought-internet.co.uk
- * epel-source: mirror.freethought-internet.co.uk
- * extras: mirror.freethought-internet.co.uk
- * updates: mirror.freethought-internet.co.uk
+ * base: mirrors.clouvider.net
+ * epel: mirrors.coreix.net
+ * epel-debuginfo: mirrors.coreix.net
+ * epel-source: mirrors.coreix.net
+ * extras: mirror.sov.uk.goscomb.net
+ * updates: mirror.sov.uk.goscomb.net
 Setting up Local Package Process
 Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
 Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
@@ -1231,7 +1231,7 @@ Total download size: 3.1 M
 Installed size: 335 M
 Downloading Packages:
 --------------------------------------------------------------------------------
-Total                                           2.1 MB/s | 3.1 MB     00:01     
+Total                                           2.5 MB/s | 3.1 MB     00:01     
 Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 Running rpm_check_debug
 Running Transaction Test
@@ -1346,107 +1346,107 @@ Loading initial Zenoss objects into the Zeo database
 (this can take a few minutes)
 Zenoss initialization complete.
 Daemon: zeneventserver starting...
-Waiting for zeneventserver to start......
-2018-12-18 16:27:32,557 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
-2018-12-18 16:27:32,657 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:32,657 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:32,722 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
-2018-12-18 16:27:32,742 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
-2018-12-18 16:27:32,930 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
-2018-12-18 16:27:35,784 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2018-12-18 16:27:35,785 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:35,785 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:35,797 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2018-12-18 16:27:35,820 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-2018-12-18 16:27:43,310 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
-2018-12-18 16:27:43,456 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:43,457 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:43,469 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
-2018-12-18 16:27:43,489 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
-2018-12-18 16:27:46,231 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
-2018-12-18 16:27:46,272 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:46,272 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:46,302 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2018-12-18 16:27:46,318 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
-2018-12-18 16:27:48,924 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
-2018-12-18 16:27:48,958 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:48,958 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:48,985 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
-2018-12-18 16:27:49,002 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
-2018-12-18 16:27:51,630 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
-2018-12-18 16:27:51,665 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:51,666 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:51,695 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2018-12-18 16:27:51,711 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
-2018-12-18 16:27:54,366 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
-2018-12-18 16:27:54,520 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:54,520 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:54,558 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
-2018-12-18 16:27:54,574 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
-2018-12-18 16:27:57,702 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
-2018-12-18 16:27:57,747 INFO zen.AddToPack: End loading objects
-2018-12-18 16:27:57,748 INFO zen.AddToPack: Processing links
-2018-12-18 16:27:57,790 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
-2018-12-18 16:27:57,821 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
-2018-12-18 16:28:00,551 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
-2018-12-18 16:28:00,587 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:00,587 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:00,617 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2018-12-18 16:28:00,637 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
-2018-12-18 16:28:03,356 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
-2018-12-18 16:28:03,394 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:03,394 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:03,425 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2018-12-18 16:28:03,441 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
-2018-12-18 16:28:06,082 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
-2018-12-18 16:28:06,129 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:06,129 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:06,161 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2018-12-18 16:28:06,182 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
-2018-12-18 16:28:08,961 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
-2018-12-18 16:28:09,411 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:09,411 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:09,469 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
-2018-12-18 16:28:09,486 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
-2018-12-18 16:28:09,664 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
-2018-12-18 16:28:13,484 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
-2018-12-18 16:28:16,185 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
-2018-12-18 16:28:16,223 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:16,223 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:16,253 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2018-12-18 16:28:16,270 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
-2018-12-18 16:28:19,075 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
-2018-12-18 16:28:19,193 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:19,193 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:19,238 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
-2018-12-18 16:28:19,259 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
+Waiting for zeneventserver to start.......
+2018-12-19 19:17:19,049 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
+2018-12-19 19:17:19,217 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:19,217 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:19,261 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
+2018-12-19 19:17:19,282 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
+2018-12-19 19:17:19,467 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
+2018-12-19 19:17:22,168 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2018-12-19 19:17:22,168 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:22,169 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:22,179 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2018-12-19 19:17:22,198 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2018-12-19 19:17:29,791 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
+2018-12-19 19:17:29,959 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:29,959 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:29,969 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
+2018-12-19 19:17:29,986 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
+2018-12-19 19:17:32,733 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
+2018-12-19 19:17:32,775 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:32,775 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:32,806 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2018-12-19 19:17:32,826 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
+2018-12-19 19:17:35,485 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
+2018-12-19 19:17:35,516 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:35,516 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:35,540 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
+2018-12-19 19:17:35,563 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
+2018-12-19 19:17:38,202 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
+2018-12-19 19:17:38,240 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:38,241 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:38,273 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-19 19:17:38,289 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
+2018-12-19 19:17:40,978 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
+2018-12-19 19:17:41,165 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:41,166 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:41,204 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
+2018-12-19 19:17:41,221 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
+2018-12-19 19:17:44,101 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
+2018-12-19 19:17:44,148 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:44,148 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:44,189 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
+2018-12-19 19:17:44,232 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
+2018-12-19 19:17:46,964 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
+2018-12-19 19:17:47,001 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:47,001 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:47,033 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-19 19:17:47,051 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
+2018-12-19 19:17:49,907 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
+2018-12-19 19:17:49,944 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:49,944 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:49,976 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-19 19:17:49,993 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
+2018-12-19 19:17:52,611 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
+2018-12-19 19:17:52,653 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:52,653 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:52,687 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2018-12-19 19:17:52,709 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
+2018-12-19 19:17:55,533 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
+2018-12-19 19:17:55,956 INFO zen.AddToPack: End loading objects
+2018-12-19 19:17:55,956 INFO zen.AddToPack: Processing links
+2018-12-19 19:17:56,017 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
+2018-12-19 19:17:56,036 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
+2018-12-19 19:17:56,219 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
+2018-12-19 19:17:59,987 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
+2018-12-19 19:18:02,734 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
+2018-12-19 19:18:02,776 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:02,776 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:02,809 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-19 19:18:02,832 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
+2018-12-19 19:18:05,638 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
+2018-12-19 19:18:05,752 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:05,753 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:05,797 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
+2018-12-19 19:18:05,819 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
 Creating /opt/zenoss/zenjmx-libs
-2018-12-18 16:28:27,311 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
-2018-12-18 16:28:27,440 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:27,440 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:27,487 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
-2018-12-18 16:28:27,509 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
-2018-12-18 16:28:30,969 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
-2018-12-18 16:28:30,987 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:30,987 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:31,014 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
-2018-12-18 16:28:31,037 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
-2018-12-18 16:28:33,806 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
-2018-12-18 16:28:33,891 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:33,891 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:33,933 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
-2018-12-18 16:28:33,959 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
-2018-12-18 16:28:36,992 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
-2018-12-18 16:28:37,028 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:37,029 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:37,059 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2018-12-18 16:28:37,078 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
-2018-12-18 16:28:40,228 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-2018-12-18 16:28:42,953 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2018-12-18 16:28:44,081 INFO zen.AddToPack: End loading objects
-2018-12-18 16:28:44,081 INFO zen.AddToPack: Processing links
-2018-12-18 16:28:44,181 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
-2018-12-18 16:28:44,202 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2018-12-19 19:18:13,665 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
+2018-12-19 19:18:13,791 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:13,792 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:13,833 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
+2018-12-19 19:18:13,856 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
+2018-12-19 19:18:17,276 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
+2018-12-19 19:18:17,294 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:17,295 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:17,322 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
+2018-12-19 19:18:17,345 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
+2018-12-19 19:18:20,089 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
+2018-12-19 19:18:20,178 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:20,179 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:20,220 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
+2018-12-19 19:18:20,247 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
+2018-12-19 19:18:23,254 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
+2018-12-19 19:18:23,287 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:23,287 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:23,318 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2018-12-19 19:18:23,337 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
+2018-12-19 19:18:26,217 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2018-12-19 19:18:28,993 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2018-12-19 19:18:30,137 INFO zen.AddToPack: End loading objects
+2018-12-19 19:18:30,138 INFO zen.AddToPack: Processing links
+2018-12-19 19:18:30,228 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
+2018-12-19 19:18:30,250 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
 Zenpacks were installed. Restarting zenoss.
 Daemon: zredis stopping...
 already stopped
@@ -1481,7 +1481,7 @@ Daemon: zeneventserver stopping...
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
 Daemon: zopectl . 
-daemon process started, pid=9389
+daemon process started, pid=9261
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -1500,16 +1500,16 @@ Daemon: zenpython starting...
 Daemon: zenjmx starting...
 
 Fresh install post step
---2018-12-18 16:30:05--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
+--2018-12-19 19:19:51--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
 Resolving zenny1.class.example.org... 192.168.10.133
 Connecting to zenny1.class.example.org|192.168.10.133|:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `/dev/null'
 
-     0K .......... ..                                          1.81K=6.8s
+     0K .......... ..                                          2.01K=6.2s
 
-2018-12-18 16:30:12 (1.81 KB/s) - `/dev/null' saved [12651]
+2018-12-19 19:19:58 (2.01 KB/s) - `/dev/null' saved [12651]
 
 Zenoss installation completed.
 Securing configuration files...
@@ -1541,18 +1541,18 @@ following wiki page:
 http://wiki.zenoss.org/index.php?title=Talk:Install_Zenoss
 
 Thank you for using Zenoss. Happy monitoring!
-====================== Installing zenup and SUP 732 =======================
+====================== Installing zenup and SUP 743 =======================
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: zenup-1.1.0.267.869d67a-1.el6.x86_64
 Marking zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.vooservers.com
- * epel: mirror.freethought-internet.co.uk
- * epel-debuginfo: mirror.freethought-internet.co.uk
- * epel-source: mirror.freethought-internet.co.uk
- * extras: mirror.freethought-internet.co.uk
- * updates: mirror.freethought-internet.co.uk
+ * base: mirrors.clouvider.net
+ * epel: mirrors.coreix.net
+ * epel-debuginfo: mirrors.coreix.net
+ * epel-source: mirrors.coreix.net
+ * extras: mirror.sov.uk.goscomb.net
+ * updates: mirror.sov.uk.goscomb.net
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenup.x86_64 0:1.1.0.267.869d67a-1.el6 will be installed
@@ -1586,6 +1586,7 @@ Installed:
   zenup.x86_64 0:1.1.0.267.869d67a-1.el6                                        
 
 Complete!
+Downloading zenoss_community_edition-4.2.5-SP743-zenup11.zup...
 Initializing new product: zenoss-core-4.2.5
 Running installation script
 Replacing Resource Manager shebang in python files.
@@ -1709,9 +1710,9 @@ Comparing affected files
 Running pre-copy steps
 
 Zenpacks to update:
-/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
-/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
+/tmp/tmpnXbbcN/zenoss_community_edition-4.2.5-SP743-zenup11.zup_ACNAYt/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
+/tmp/tmpnXbbcN/zenoss_community_edition-4.2.5-SP743-zenup11.zup_ACNAYt/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
+/tmp/tmpnXbbcN/zenoss_community_edition-4.2.5-SP743-zenup11.zup_ACNAYt/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 
 
 Zenmigrate scripts to run:
@@ -1809,8 +1810,8 @@ Installing protocols.tgz to /opt/zenoss/lib/python/zenoss/ ...
 
 
 Copying JS files into place...
-/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/zenoss-compiled.js
-/tmp/tmprGYwjw/zenoss_core-4.2.5-SP743-zenup11.zup_bMg39j/custom/blobs/el6/zenoss-compiled-debug.js
+/tmp/tmpnXbbcN/zenoss_community_edition-4.2.5-SP743-zenup11.zup_ACNAYt/custom/blobs/el6/zenoss-compiled.js
+/tmp/tmpnXbbcN/zenoss_community_edition-4.2.5-SP743-zenup11.zup_ACNAYt/custom/blobs/el6/zenoss-compiled-debug.js
 
 Processing Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
 creating /opt/zenoss/lib/python2.7/site-packages/Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
@@ -1928,9 +1929,9 @@ Applying schema version: 7
 Applying schema version: 8
 starting...
 Waiting for zeneventserver to start.......
-2018-12-18 16:32:05: waiting a maximum of 15 seconds for ZEP to be available...
+2018-12-19 19:21:55: waiting a maximum of 15 seconds for ZEP to be available...
 
-2018-12-18 16:32:08: is ZEP available: True 
+2018-12-19 19:21:58: is ZEP available: True 
 
 Sorting zenpacks ...
 Sorting zenpacks in zenpack_updates.txt is done
@@ -1939,26 +1940,26 @@ Updating zenpacks ...
 Installing: ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.DeviceSearch
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.DeviceSearch; launching process
-2018-12-18 16:32:19,188 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2018-12-19 19:22:09,696 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
 Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.PythonCollector; launching process
-2018-12-18 16:32:25,557 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2018-12-18 16:32:25,558 INFO zen.AddToPack: End loading objects
-2018-12-18 16:32:25,558 INFO zen.AddToPack: Processing links
-2018-12-18 16:32:25,589 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2018-12-18 16:32:25,602 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2018-12-19 19:22:16,188 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2018-12-19 19:22:16,189 INFO zen.AddToPack: End loading objects
+2018-12-19 19:22:16,189 INFO zen.AddToPack: Processing links
+2018-12-19 19:22:16,213 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2018-12-19 19:22:16,224 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
 Installing: ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.Microsoft.Windows
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launching process
-2018-12-18 16:32:32,678 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2018-12-18 16:32:35,410 INFO zen.AddToPack: End loading objects
-2018-12-18 16:32:35,411 INFO zen.AddToPack: Processing links
-2018-12-18 16:32:35,563 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
-2018-12-18 16:32:35,588 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-2018-12-18 16:32:36,427 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
-2018-12-18 16:32:36,427 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
-2018-12-18 16:32:36,428 INFO zen.migrate: Migrating zDBInstances for /
+2018-12-19 19:22:23,201 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2018-12-19 19:22:26,048 INFO zen.AddToPack: End loading objects
+2018-12-19 19:22:26,048 INFO zen.AddToPack: Processing links
+2018-12-19 19:22:26,199 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
+2018-12-19 19:22:26,220 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2018-12-19 19:22:27,092 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
+2018-12-19 19:22:27,093 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
+2018-12-19 19:22:27,094 INFO zen.migrate: Migrating zDBInstances for /
 Stopping zeneventserver...
 stopping...
 
@@ -2088,9 +2089,9 @@ Daemon: zeneventserver already stopped
 Starting zeneventserver...
 starting...
 Waiting for zeneventserver to start.......
-2018-12-18 16:32:58: waiting a maximum of 15 seconds for ZEP to be available...
+2018-12-19 19:22:49: waiting a maximum of 15 seconds for ZEP to be available...
 
-2018-12-18 16:33:01: is ZEP available: True 
+2018-12-19 19:22:52: is ZEP available: True 
 
 Running zenmigrate...
 INFO:zen.migrate:Will execute these steps: AddDisablePingPerspectiveOption
@@ -2154,8 +2155,8 @@ INFO:zen.migrate:Will execute these steps: ProcessCountThreshold
 INFO:zen.migrate:Installing ProcessCountThreshold (4.2.5)
 INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
-/zport/dmd/Devices/rrdTemplates/OSProcess/thresholds/count ['count_count'] <MinMaxThreshold at count>
 /zport/dmd/Devices/Server/Microsoft/rrdTemplates/OSProcess/thresholds/count ['process_count'] <MinMaxThreshold at count>
+/zport/dmd/Devices/rrdTemplates/OSProcess/thresholds/count ['count_count'] <MinMaxThreshold at count>
 INFO:zen.migrate:Will execute these steps: RegenerateComponentSearchCatalog
 INFO:zen.migrate:Installing RegenerateComponentSearchCatalog (4.2.5)
 Regenerating componentSearch catalog for 1 devices. This may take some time...
@@ -2193,26 +2194,26 @@ INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
 
 Running reportloader...
-2018-12-18 16:34:18,786 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
-2018-12-18 16:34:18,916 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
-2018-12-18 16:34:18,965 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
-2018-12-18 16:34:18,998 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
-2018-12-18 16:34:19,026 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
-2018-12-18 16:34:19,042 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
-2018-12-18 16:34:19,071 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
-2018-12-18 16:34:19,102 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
-2018-12-18 16:34:19,132 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
-2018-12-18 16:34:19,146 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
-2018-12-18 16:34:19,165 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
-2018-12-18 16:34:19,182 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
-2018-12-18 16:34:19,203 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
-2018-12-18 16:34:19,220 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
-2018-12-18 16:34:19,235 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
-2018-12-18 16:34:19,255 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
-2018-12-18 16:34:19,266 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
-2018-12-18 16:34:19,286 INFO zen.ReportLoader: loading: /Device Reports/All Devices
-2018-12-18 16:34:19,297 INFO zen.ReportLoader: loading: /Device Reports/New Devices
-2018-12-18 16:34:19,318 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
+2018-12-19 19:24:11,558 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
+2018-12-19 19:24:11,688 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
+2018-12-19 19:24:11,737 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
+2018-12-19 19:24:11,774 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
+2018-12-19 19:24:11,805 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
+2018-12-19 19:24:11,825 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
+2018-12-19 19:24:11,858 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
+2018-12-19 19:24:11,891 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
+2018-12-19 19:24:11,922 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
+2018-12-19 19:24:11,942 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
+2018-12-19 19:24:11,958 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
+2018-12-19 19:24:11,981 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
+2018-12-19 19:24:12,003 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
+2018-12-19 19:24:12,020 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
+2018-12-19 19:24:12,037 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
+2018-12-19 19:24:12,059 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
+2018-12-19 19:24:12,071 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
+2018-12-19 19:24:12,098 INFO zen.ReportLoader: loading: /Device Reports/All Devices
+2018-12-19 19:24:12,109 INFO zen.ReportLoader: loading: /Device Reports/New Devices
+2018-12-19 19:24:12,134 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
 
 
 ---------------------------------------------------------------------------
@@ -2228,7 +2229,7 @@ Running 'zencheckzends truncate'
 
 Updating product information
 Success!
-SUP file zenoss_core-4.2.5-SP743-zenup11.zup installed
+SUP file zenoss_community_edition-4.2.5-SP743-zenup11.zup installed
 Fixing Device.py for production state change - see ticket ZEN-30167.
 patching file Products/ZenModel/Device.py
 Fixing actions.py for paging notification issue with SUP743
@@ -2239,7 +2240,7 @@ Home: /opt/zenoss
 Revision: 743
 Upgrading: None
 Minimum: 743
-Updated On: Tue Dec 18 16:34:20 2018
+Updated On: Wed Dec 19 19:24:13 2018
 
 Fixes:
 [UTF-8] =?UTF-8?q?Revert=20"ZEN-21346:=20Lucene=20DB=20Sync?=
@@ -14006,7 +14007,7 @@ Merge ZenPacks.zenoss.CiscoMonitor 5.1.7 into 4.2.5 RPS.
 
 Daemon: zeneventserver is already running
 Daemon: zopectl . 
-daemon process started, pid=14935
+daemon process started, pid=14785
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
