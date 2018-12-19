@@ -328,7 +328,7 @@ cp "$SCRIPTPATH/pre_req_downloads/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz"
 #cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP743-zenup11.zup .
 
 # Get the SP743 zup file from SourceForge
-zenoss_zup_file="zenoss_core-4.2.5-SP743-zenup11.zup"
+zenoss_zup_file="zenoss_community_edition-4.2.5-SP743-zenup11.zup"
 url="$zenoss_base_url/$zenoss_zup_file"
 if [ ! -f "$zenoss_zup_file" ] && [ ! -f "$SCRIPTPATH/$zenoss_zup_file" ];then
     echo "Downloading $zenoss_zup_file..."
