@@ -1,0 +1,37 @@
+--- Products/ZenModel/actions.py_pre_jay_patch	2018-12-18 12:59:44.221898998 +0000
++++ Products/ZenModel/actions.py	2018-12-18 13:21:03.933972094 +0000
+@@ -385,13 +385,15 @@
+         self.setupAction(notification.dmd)
+ 
+         data = self._signalToContextDict(signal, notification)
++        skipfails = notification.content.get('skipfails', False)
++
+         if signal.clear:
+             log.debug('This is a clearing signal.')
+-            subject = processTalSource(notification.content['clear_subject_format'], notification.content['skipfails'], **data)
+-            body = processTalSource(notification.content['clear_body_format'], notification.content['skipfails'], **data)
++            subject = processTalSource(notification.content['clear_subject_format'], skipfails, **data)
++            body = processTalSource(notification.content['clear_body_format'], skipfails, **data)
+         else:
+-            subject = processTalSource(notification.content['subject_format'], notification.content['skipfails'], **data)
+-            body = processTalSource(notification.content['body_format'], notification.content['skipfails'], **data)
++            subject = processTalSource(notification.content['subject_format'], skipfails, **data)
++            body = processTalSource(notification.content['body_format'], skipfails, **data)
+ 
+         log.debug('Sending this subject: %s', subject)
+ 
+@@ -494,11 +496,12 @@
+         self.setupAction(notification.dmd)
+         log.debug('Executing page action: %s', self.name)
+         data = self._signalToContextDict(signal, notification)
++        skipfails = notification.content.get('skipfails', False)
+         if signal.clear:
+             log.debug('This is a clearing signal.')
+-            subject = processTalSource(notification.content['clear_subject_format'], notification.content['skipfails'], **data)
++            subject = processTalSource(notification.content['clear_subject_format'], skipfails, **data)
+         else:
+-            subject = processTalSource(notification.content['subject_format'], notification.content['skipfails'], **data)
++            subject = processTalSource(notification.content['subject_format'], skipfails, **data)
+ 
+         msg = str(subject)
+ 

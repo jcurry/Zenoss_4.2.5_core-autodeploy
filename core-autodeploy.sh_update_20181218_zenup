@@ -323,7 +323,13 @@ try yum --nogpgcheck -y localinstall zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm
 
 cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz .
 #cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP732-zenup11.zup .
-cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP743-zenup11.zup .
+#cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP743-zenup11.zup .
+zenoss_zup_file="zenoss_core-4.2.5-SP743-zenup11.zup"
+url="$zenoss_base_url/$zenoss_zup_file"
+if [ ! -f "$zenoss_zup_file" ] && [ ! -f "$SCRIPTPATH/$zenoss_zup_file" ];then
+    echo "Downloading $zenoss_zup_file..."
+    try wget --no-check-certificate -N $url
+fi
 
 # Copy the pristine and zup files to /tmp and change ownership to zenoss
 cp zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz /tmp
@@ -338,7 +344,7 @@ su -l -c "cp /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz \$ZENHOME/../ze
 
 echo "Pristine file zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz installed"
 #  Copy sup file to $ZENHOME/../zenup  and run zenup install
-# Install SUP732 supply ENTER to respond with default to 2 questions
+# Install SUP743 supply ENTER to respond with default to 2 questions
 su -l -c "cp /tmp/zenoss_core-4.2.5-SP743-zenup11.zup \$ZENHOME/../zenup && (echo ''; echo '') | zenup install \$ZENHOME/../zenup/zenoss_core-4.2.5-SP743-zenup11.zup" zenoss
 
 echo "SUP file zenoss_core-4.2.5-SP743-zenup11.zup installed"
