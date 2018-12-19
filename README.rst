@@ -1,5 +1,5 @@
 ============================================================
-Zenoss Core 4.2.5 updated auto deploy script - December 2017
+Zenoss Core 4.2.5 updated auto deploy script - December 2018
 ============================================================
 
 The Zenoss wiki has a link to deploy Zenoss Core 4.2.5 with an auto deploy script - 

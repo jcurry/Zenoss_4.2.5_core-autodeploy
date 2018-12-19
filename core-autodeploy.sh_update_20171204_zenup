@@ -327,6 +327,7 @@ su -l -c "cp /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz \$ZENHOME/../ze
 # Install SUP732 supply ENTER to respond with default to 2 questions
 su -l -c "cp /tmp/zenoss_core-4.2.5-SP732-zenup11.zup \$ZENHOME/../zenup && (echo ''; echo '') | zenup install \$ZENHOME/../zenup/zenoss_core-4.2.5-SP732-zenup11.zup" zenoss
 
+
 # Check zenup status
 su -l -c "zenup status --verbose" zenoss
 
