@@ -17,9 +17,8 @@ to a suitable directory (may well be root's home directory), and:
   * wget https://github.com/zenoss/core-autodeploy/tarball/4.2.5 -O auto.tar.gz
   * tar -xzvf auto.tar.gz                           (this unpacks the download)
   * cd zenoss-core-autodeploy-aeb5289               (change to the unpacked directory)
-  * cp <path to new script>/core-autodeploy.sh_update_20190110_zenup .
-  * cp <path to new script>/pre_req_downloads/``*``.patch .
-  * ./core-autodeploy.sh_update_201190110_zenup
+  * cp <path to new script>/core-autodeploy.sh_update_20181208_zenup .
+  * ./core-autodeploy.sh_update_20181208_zenup
 
 Code is pulled from the Zenoss project at SourceForge; note that the location of Zenoss code
 changed in December 2018 so earlier versions of the autodeploy script will fail.
