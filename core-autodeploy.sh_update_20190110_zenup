@@ -371,8 +371,7 @@ echo "SUP file $zenoss_zup_file  installed"
 echo "Fixing Device.py for production state change - see ticket ZEN-30167."
 #cp /mnt/hgfs/rwshare/ZEN-30167/ZEN-30167_for_SUP743_from_opt_zenoss.patch /tmp
 cp "$SCRIPTPATH/ZEN-30167_for_SUP743_from_opt_zenoss.patch" /tmp
-# JC - commented out patch for now
-#su -l -c "cp /tmp/ZEN-30167_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < ZEN-30167_for_SUP743_from_opt_zenoss.patch" zenoss
+su -l -c "cp /tmp/ZEN-30167_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < ZEN-30167_for_SUP743_from_opt_zenoss.patch" zenoss
 
 
 # There is an issue with code from SUP743 that affects some paging notifications.
@@ -382,8 +381,7 @@ echo "Fixing actions.py for paging notification issue with SUP743"
 #cp /mnt/hgfs/rwshare/ZEN-30167/actions_skipfails_for_SUP743_from_opt_zenoss.patch /tmp
 #cp "$CODEPATH/pre_req_downloads/actions_skipfails_for_SUP743_from_opt_zenoss.patch" /tmp
 cp "$SCRIPTPATH/actions_skipfails_for_SUP743_from_opt_zenoss.patch" /tmp
-# JC - commented out patch for now
-#su -l -c "cp /tmp/actions_skipfails_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < actions_skipfails_for_SUP743_from_opt_zenoss.patch" zenoss
+su -l -c "cp /tmp/actions_skipfails_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < actions_skipfails_for_SUP743_from_opt_zenoss.patch" zenoss
 
 
 # Check zenup status - verbose flag gives ALL patches - LOTS of output

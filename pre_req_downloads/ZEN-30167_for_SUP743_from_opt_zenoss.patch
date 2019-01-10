@@ -1,5 +1,5 @@
---- Products/ZenModel/Device.py_pre_jay_patch	2018-12-18 12:49:26.120956614 +0000
-+++ Products/ZenModel/Device.py	2018-12-18 13:16:56.773957332 +0000
+--- Products/ZenModel/Device.py
++++ Products/ZenModel/Device.py
 @@ -1344,6 +1344,9 @@
          """
          # Set production state on all components that inherit from this device
