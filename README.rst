@@ -19,7 +19,7 @@ to a suitable directory (may well be root's home directory), and:
   * cd zenoss-core-autodeploy-aeb5289               (change to the unpacked directory)
   * cp <path to new script>/core-autodeploy.sh_update_20190110_zenup .
   * cp <path to new script>/pre_req_downloads/``*``.patch .
-  * ./core-autodeploy.sh_update_201190110_zenup
+  * ./core-autodeploy.sh_update_20190110_zenup
 
 Code is pulled from the Zenoss project at SourceForge; note that the location of Zenoss code
 changed in December 2018 so earlier versions of the autodeploy script will fail.
