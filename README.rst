@@ -1,5 +1,5 @@
 ============================================================
-Zenoss Core 4.2.5 updated auto deploy script - December 2018
+Zenoss Core 4.2.5 updated auto deploy script - January 2019
 ============================================================
 
 The Zenoss wiki has a link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
@@ -9,7 +9,7 @@ Unfortunately some of the pre-req / co-req chain appears to have broken as at
 December 2016.  There is a forum append documenting some of the issues at
 http://www.zenoss.org/forum/146626  (sorry this appears to have completely vanished by Dec 2018).
 
-This git repository contains a new version, core-autodeploy.sh_update_20181208_zenup ,
+This git repository contains a new version, core-autodeploy.sh_update_20190110_zenup ,
 which should replace the core-autodeploy.sh file that is downloaded with the package documented
 on the wiki.  Other than that, the wiki article remains the same. Thus, as the root user, change
 to a suitable directory (may well be root's home directory), and:

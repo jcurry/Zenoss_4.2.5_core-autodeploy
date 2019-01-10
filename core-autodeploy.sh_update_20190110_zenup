@@ -308,36 +308,21 @@ EOF
 
 echo "====================== Installing zenup and SUP 743 ======================="
 # Get zenup package and install - downloads go in the temporary directory created under /tmp
-# JC testing - url is wrong - stash zenup code in auto-deploy directory directly
-#try wget --no-check-certificate https://sourceforge.net/projects/zenoss/files/zenup-1.1/zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm/download -O zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm
 
 zenuprpm="zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm"
 zenuprpmurl="$zenoss_base_url/$zenuprpm"
 try wget --no-check-certificate -N $zenuprpmurl
-
-#CODEPATH="/home/jane/Zenoss_4.2.5_core-autodeploy"
-#cp /mnt/hgfs/code/zenoss/zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm .
-#cp "$CODEPATH/pre_req_downloads/zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm" .
-#try yum --nogpgcheck -y localinstall zenup-1.1.0.267.869d67a-1.$els.x86_64.rpm
 try yum --nogpgcheck -y localinstall $zenuprpm
 
-#Get pristine and SUP732
-# JC testing - url is wrong - stash pristine code in auto-deploy directory directly
-#try wget --no-check-certificate https://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2014-08-06/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz/download -O zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz
-#try wget --no-check-certificate  https://sourceforge.net/projects/zenoss/files/zenoss-4.2/zenoss-4.2.5/updates/2016-02-26/zenoss_core-4.2.5-SP732-zenup11.zup/download -O zenoss_core-4.2.5-SP732-zenup11.zup
-# JC testing - url is wrong - stash SUP in auto-deploy directory directly
-#try wget --no-check-certificate  https://community-artifacts.s3.amazonaws.com/zenoss_core-4.2.5-SP732-zenup11.zup -O zenoss_core-4.2.5-SP732-zenup11.zup
+#Get pristine and SUP743
 
 pristine="zenoss_core-4.2.5-2108.el6-pristine-SP743.tgz"
 pristineurl="$zenoss_base_url/$pristine"
-try wget --no-check-certificate -N $pristineurl
+if [ ! -f "$pristine" ] && [ ! -f "$SCRIPTPATH/$pristine" ];then
+    echo "Downloading $pristine ..."
+    try wget --no-check-certificate -N $pristineurl
+fi
 
-#cp "$CODEPATH/pre_req_downloads/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz" .
-#cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-2108.el6-pristine-SP203.tgz .
-#cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP732-zenup11.zup .
-#cp /mnt/hgfs/code/zenoss/zenoss_core-4.2.5-SP743-zenup11.zup .
-
-# Get the SP743 zup file from SourceForge
 zenoss_zup_file="zenoss_core-4.2.5-SP743-zenup11.zup"
 url="$zenoss_base_url/$zenoss_zup_file"
 if [ ! -f "$zenoss_zup_file" ] && [ ! -f "$SCRIPTPATH/$zenoss_zup_file" ];then
@@ -348,16 +333,14 @@ fi
 # Copy the pristine and zup files to /tmp and change ownership to zenoss
 cp $pristine /tmp
 try chown zenoss:zenoss /tmp/$pristine
-#cp zenoss_core-4.2.5-SP732-zenup11.zup /tmp
-#try chown zenoss:zenoss /tmp/zenoss_core-4.2.5-SP732-zenup11.zup
 cp $zenoss_zup_file /tmp
 try chown zenoss:zenoss /tmp/$zenoss_zup_file
 
 #  Copy pristine to $ZENHOME/../zenup  and run zenup init
-#su -l -c "cp /tmp/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz \$ZENHOME/../zenup && zenup init \$ZENHOME/../zenup/zenoss_core-4.2.5-2108.$els-pristine-SP203.tgz \$ZENHOME" zenoss
 su -l -c "cp /tmp/$pristine \$ZENHOME/../zenup && zenup init \$ZENHOME/../zenup/$pristine \$ZENHOME" zenoss
 
 echo "Pristine file $pristine installed"
+
 #  Copy sup file to $ZENHOME/../zenup  and run zenup install
 # Install SUP743 supply ENTER to respond with default to 2 questions
 su -l -c "cp /tmp/$zenoss_zup_file \$ZENHOME/../zenup && (echo ''; echo '') | zenup install \$ZENHOME/../zenup/$zenoss_zup_file" zenoss
@@ -369,7 +352,6 @@ echo "SUP file $zenoss_zup_file  installed"
 #    This file changed between SUP732 and SUP743 but not to fix this production status issue.
 
 echo "Fixing Device.py for production state change - see ticket ZEN-30167."
-#cp /mnt/hgfs/rwshare/ZEN-30167/ZEN-30167_for_SUP743_from_opt_zenoss.patch /tmp
 cp "$SCRIPTPATH/ZEN-30167_for_SUP743_from_opt_zenoss.patch" /tmp
 su -l -c "cp /tmp/ZEN-30167_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < ZEN-30167_for_SUP743_from_opt_zenoss.patch" zenoss
 
@@ -378,8 +360,6 @@ su -l -c "cp /tmp/ZEN-30167_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$
 #    Thanks to Jay for the patch.  It only affects /opt/zenoss/products/ZenModel/actions.py.
 
 echo "Fixing actions.py for paging notification issue with SUP743"
-#cp /mnt/hgfs/rwshare/ZEN-30167/actions_skipfails_for_SUP743_from_opt_zenoss.patch /tmp
-#cp "$CODEPATH/pre_req_downloads/actions_skipfails_for_SUP743_from_opt_zenoss.patch" /tmp
 cp "$SCRIPTPATH/actions_skipfails_for_SUP743_from_opt_zenoss.patch" /tmp
 su -l -c "cp /tmp/actions_skipfails_for_SUP743_from_opt_zenoss.patch \$ZENHOME &&  cd \$ZENHOME && patch -p0 < actions_skipfails_for_SUP743_from_opt_zenoss.patch" zenoss
 
