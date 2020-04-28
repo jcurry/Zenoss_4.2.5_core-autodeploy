@@ -36,6 +36,7 @@ Building Zenoss 4.2.5
 You need to start with a Centos6.3 operating system. I started with the following groups installed:
 
 Installed Groups:
+
 *   Additional Development
 *   Base
 *   Compatibility libraries
