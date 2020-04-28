@@ -13,12 +13,15 @@ This git repository contains a new standalone version of the script, core-autode
 It uses a directory called *pre_req_downloads* to hold all the prereqs to build
 Zenoss 4.2.5 with the latest zenup patch SUP SP743, plus a couple of later spot patches.
 
+Unfortunately, the Zenoss Core rpm, zenoss_core-4.2.5-2108.el6.x86_64.rpm, is too big for
+github at about 120MB.  This must be retrieved separately.
+
 Retrieving the build package
 ============================
 
 Zenoss 4.2.5 can be retrieved in several ways:
 
-*  If you comfortable with git then clone this git directory
+*  If you are comfortable with git then clone this git directory
 *  If you are not a happy git user: 
   *  Click the "Clone or download" button from this page 
   *  Click the "Download ZIP" button. 
@@ -31,48 +34,65 @@ Building Zenoss 4.2.5
 ======================
 
 You need to start with a Centos6.3 operating system. I started with the following groups installed:
+
 Installed Groups:
-   Additional Development
-   Base
-   Compatibility libraries
-   Debugging Tools
-   Desktop
-   Desktop Debugging and Performance Tools
-   Development tools
-   Dial-up Networking Support
-   Directory Client
-   E-mail server
-   FTP server
-   Fonts
-   General Purpose Desktop
-   Graphical Administration Tools
-   Graphics Creation Tools
-   Hardware monitoring utilities
-   Input Methods
-   Internet Applications
-   Internet Browser
-   Legacy UNIX compatibility
-   Legacy X Window System compatibility
-   Network Infrastructure Server
-   Network file system client
-   Networking Tools
-   Performance Tools
-   Perl Support
-   PostgreSQL Database client
-   Print Server
-   Printing client
-   Ruby Support
-   SNMP Support
-   Scientific support
-   Security Tools
-   System administration tools
-   Web Server
-   X Window System
+*   Additional Development
+*   Base
+*   Compatibility libraries
+*   Debugging Tools
+*   Desktop
+*   Desktop Debugging and Performance Tools
+*   Development tools
+*   Dial-up Networking Support
+*   Directory Client
+*   E-mail server
+*   FTP server
+*   Fonts
+*   General Purpose Desktop
+*   Graphical Administration Tools
+*   Graphics Creation Tools
+*   Hardware monitoring utilities
+*   Input Methods
+*   Internet Applications
+*   Internet Browser
+*   Legacy UNIX compatibility
+*   Legacy X Window System compatibility
+*   Network Infrastructure Server
+*   Network file system client
+*   Networking Tools
+*   Performance Tools
+*   Perl Support
+*   PostgreSQL Database client
+*   Print Server
+*   Printing client
+*   Ruby Support
+*   SNMP Support
+*   Scientific support
+*   Security Tools
+*   System administration tools
+*   Web Server
+*   X Window System
 
 
 You need to build as the root user.  I created a directory, zb, under root's home directory
 and dropped the package into that.  You need to start by changing directory to the
-pre_req_downloads directory of the package - everything is in there. Simply run::
+pre_req_downloads directory of the package - everything is in there 
+except zenoss_core-4.2.5-2108.el6.x86_64.rpm .
+
+To get the Zenoss core file, make sure you are in the pre_req_downloads directory and run::
+
+    wget --no-check-certificate -N https://sourceforge.net/projects/zenoss/files/Community%20Edition%20v4%20%28final%29/zenoss_core-4.2.5-2108.el6.x86_64.rpm
+
+You should also get the Zenoss GPG key::
+
+  zenoss_gpg_key="http://wiki.zenoss.org/download/core/gpg/RPM-GPG-KEY-zenoss"
+  if [ `rpm -qa gpg-pubkey* | grep -c "aa5a1ad7-4829c08a"` -eq 0  ]
+  then
+     echo "Importing Zenoss GPG Key"
+     rpm --import $zenoss_gpg_key
+  fi
+
+You should now have a full build set.  Simply run::
 
     core-autodeploy_20200428.sh
 
@@ -83,8 +103,7 @@ license (with an ENTER and a "yes").  After that, it should run through standalo
 Output is tee'ed into /tmp/zenoss425_install.out so you can inspect progress by checking
 that file (a copy of my output file is in the top directory of this package).
 
-The script now also installs zenup, the latest pristine file and the latest SUP update file
- - SUP743.
+The script now also installs zenup, the latest pristine file and the latest SUP update file - SUP743.
 
 There are two known glitches with SUP743 which are patched by this auto-deploy script.  One is to
 do with production status being changed WTHOUT needing to restart daemons.  It is documented in
@@ -107,10 +126,13 @@ the four MySQL packages, Zenoss, nagios modules and epel.
   * yum remove epel*
   * yum clean all
 
-There is a small yum_removes.sh script to do this.
+There is a small yum_removes.sh script to do this in the top directory of this package.
 
-The new install script will install and enable the epel-release repository.
-
+The new install script will install and disable the epel-release repository.  You should not need
+epel hopefully as everything should be in the pre_req_downloads directory; however, if you do
+need to get packages from epel and if it gives trouble, change directory to 
+*/etc/yum.repos.d* and replace epel.repo and epel-testing.repo with the versions supplied
+in the pre_req_downloads directory.
 
 I would appreciate feedback from anyone else who uses it.
 
