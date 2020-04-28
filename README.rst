@@ -1,37 +1,90 @@
 ============================================================
-Zenoss Core 4.2.5 updated auto deploy script - January 2019
+Zenoss Core 4.2.5 updated auto deploy script - April 2020
 ============================================================
 
-The Zenoss wiki has a link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
-http://wiki.zenoss.org/Install_Zenoss#Auto-deploy_Installation 
+The Zenoss wiki has a (somewhat hidden)link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
+http://wiki.zenoss.org/index.php?title=Install_Zenoss&oldid=17203 
 
 Unfortunately some of the pre-req / co-req chain appears to have broken as at
 December 2016.  There is a forum append documenting some of the issues at
 http://www.zenoss.org/forum/146626  (sorry this appears to have completely vanished by Dec 2018).
 
-This git repository contains a new version, core-autodeploy.sh_update_20190110_zenup ,
-which should replace the core-autodeploy.sh file that is downloaded with the package documented
-on the wiki.  Other than that, the wiki article remains the same. Thus, as the root user, change
-to a suitable directory (may well be root's home directory), and:
+This git repository contains a new standalone version of the script, core-autodeploy_20200428.sh.
+It uses a directory called *pre_req_downloads* to hold all the prereqs to build
+Zenoss 4.2.5 with the latest zenup patch SUP SP743, plus a couple of later spot patches.
 
-  * wget https://github.com/zenoss/core-autodeploy/tarball/4.2.5 -O auto.tar.gz
-  * tar -xzvf auto.tar.gz                           (this unpacks the download)
-  * cd zenoss-core-autodeploy-aeb5289               (change to the unpacked directory)
-  * cp <path to new script>/core-autodeploy.sh_update_20190110_zenup .
-  * cp <path to new script>/pre_req_downloads/``*``.patch .
-  * ./core-autodeploy.sh_update_20190110_zenup
+Retrieving the build package
+============================
 
-Code is pulled from the Zenoss project at SourceForge; note that the location of Zenoss code
-changed in December 2018 so earlier versions of the autodeploy script will fail.
+Zenoss 4.2.5 can be retrieved in several ways:
 
-The pre-requisites for Zenoss Core 4.2.5 are automatically installed by the script but some of
-the versions of packages need to be rather older than the latest.  Packages that are obtained by
-wget are put under the /tmp directory in a random-name subdirectory.  Those packages are included
-in this repository in the pre_req_downloads subdirectory.  You should not need them but it may
-help someone digging around in the future if stuff changes / moves again.
+*  If you comfortable with git then clone this git directory
+*  If you are not a happy git user: 
+  *  Click the "Clone or download" button from this page 
+  *  Click the "Download ZIP" button. 
+  *  The file Zenoss_4.2.5_core-autodeploy-master.zip should be downloaded.  Use:
+  *       unzip Zenoss_4.2.5_core-autodeploy-master.zip
+  *  This will unzip the file into the Zenoss_4.2.5_core-autodeploy-master subdirectory
+*  Install the VMware OVA virtual machine which should be ready-to-go
+
+Building Zenoss 4.2.5
+======================
+
+You need to start with a Centos6.3 operating system. I started with the following groups installed:
+Installed Groups:
+   Additional Development
+   Base
+   Compatibility libraries
+   Debugging Tools
+   Desktop
+   Desktop Debugging and Performance Tools
+   Development tools
+   Dial-up Networking Support
+   Directory Client
+   E-mail server
+   FTP server
+   Fonts
+   General Purpose Desktop
+   Graphical Administration Tools
+   Graphics Creation Tools
+   Hardware monitoring utilities
+   Input Methods
+   Internet Applications
+   Internet Browser
+   Legacy UNIX compatibility
+   Legacy X Window System compatibility
+   Network Infrastructure Server
+   Network file system client
+   Networking Tools
+   Performance Tools
+   Perl Support
+   PostgreSQL Database client
+   Print Server
+   Printing client
+   Ruby Support
+   SNMP Support
+   Scientific support
+   Security Tools
+   System administration tools
+   Web Server
+   X Window System
+
+
+You need to build as the root user.  I created a directory, zb, under root's home directory
+and dropped the package into that.  You need to start by changing directory to the
+pre_req_downloads directory of the package - everything is in there. Simply run::
+
+    core-autodeploy_20200428.sh
+
+
+The only user interaction is right at the start where you have to accept the Oracle Java
+license (with an ENTER and a "yes").  After that, it should run through standalone.
+
+Output is tee'ed into /tmp/zenoss425_install.out so you can inspect progress by checking
+that file (a copy of my output file is in the top directory of this package).
 
 The script now also installs zenup, the latest pristine file and the latest SUP update file
-(as of Dec 18th, 2018) - SUP743.
+ - SUP743.
 
 There are two known glitches with SUP743 which are patched by this auto-deploy script.  One is to
 do with production status being changed WTHOUT needing to restart daemons.  It is documented in
@@ -45,7 +98,7 @@ addresses this issue and is also invoked at the end of the deployment.  Enormous
 Jay Stanley for diagnosing these issues and providing the patches.
 
 If you need to re-run the script, note that you will need to use "yum remove" to remove
-the four MySQL packages installed.  To be sure, you might want to remove all of the following:
+the four MySQL packages, Zenoss, nagios modules and epel.
 
   * yum remove MySQL*
   * yum remove mysql*
@@ -54,49 +107,12 @@ the four MySQL packages installed.  To be sure, you might want to remove all of 
   * yum remove epel*
   * yum clean all
 
-There is a small yum_removes.sh script to help do this.
+There is a small yum_removes.sh script to do this.
 
 The new install script will install and enable the epel-release repository.
 
-Output is tee'ed to /tmp/zenoss425_install.out .
-
-I have tested this script against a CentOS 6.3 system.
 
 I would appreciate feedback from anyone else who uses it.
-
-Ubuntu
-------
-(Not updated in 2018)
-
-The equivalent script for Ubuntu was built by Zenoss Master "hydruid" and although he has
-now largely moved away from Zenoss, his auto-install script is still available in GitHub at
-https://github.com/hydruid/zenoss/blob/master/core-autodeploy/4.2.5/zo425_ubuntu-debian.sh .
-There is also a copy of a useful blog item on the wayback machine at
-https://web.archive.org/web/20140701000137/http://hydruid-blog.com/?p=710
-
-Note that the location of the zenoss rpm in hydruid's autodeploy script needs to be changed from
-http://softlayer-dal.dl.sourceforge.net/project/zenossforubuntu/zenoss-core-425-2108_03c_amd64.deb to
-https://sourceforge.net/projects/zenossforubuntu/files/zenoss-core-425-2108_03c_amd64.deb/download .
-
-The ubuntu branch of this git repository contains a slightly modified version of his script.
-Note that there is no requirement to run any of the commands at 
-http://wiki.zenoss.org/Install_Zenoss#Auto-deploy_Installation   - this script downloads everything
-required.
-
-The original hydruid script had an incorporated zenup at version 1.0.  This script replaces the
-zenup package with the latest zenup 1.1.0, installs the latest pristine and then applies the latest
-(as of December 2016) SUP 671. The zenup package was converted from an rpm format to a deb format with
-the "alien" utility and the --scripts parameter and  is available from the ubuntu branch of this repository.
-
-SUP671 does not install cleanly under Ubuntu as it uses the dash shell rather than bash.  One of
-the check scripts bundled into sup671, check_mibs, uses the "local" construct which dash interprets
-differently and check_mibs does not have a #!/bin/bash shebang at the top.  I have exploded the
-standard zup (it's just a tgz file), added the shebang to check_mibs, and repackaged it as
-zenoss_core-4.2.5-SP671-zenup11_Ubuntu.zup which is available from the ubuntu branch of this
-repository.
-
-Run zo425_ubuntu-debian_with_zenup.sh as the root user (sudo bash).  Output goes to
-/tmp/zenoss425_ubuntu_install.out .  Tested on Ubuntu 14.04.
 
 
 With thanks to "baileytj", "dfrye" and "yuppie" for tidying and testing.

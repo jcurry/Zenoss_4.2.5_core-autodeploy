@@ -324,17 +324,16 @@ Press Enter to continue.
 Install continues....
 Ensuring Zenoss RPMs are not already present
 Disabling SELinux...
-Downloading zenoss_core-4.2.5-2108.el6.x86_64.rpm...
-Importing Zenoss GPG Key
 Using MySQL Community Release version 5.5.37-1
+Install the Zenoss dependencies - zenossdeps-4.2.x-1.el6.noarch.rpm
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenossdeps-4.2.x-1.el6.noarch.rpm: zenossdeps-4.2.x-1.el6.noarch
 Marking zenossdeps-4.2.x-1.el6.noarch.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenossdeps.noarch 0:4.2.x-1.el6 will be installed
@@ -368,11 +367,13 @@ Installed:
 Complete!
 Installing EPEL Repo
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining epel-release-6-8.noarch.rpm: epel-release-6-8.noarch
+Marking epel-release-6-8.noarch.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
-Setting up Install Process
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package epel-release.noarch 0:6-8 will be installed
@@ -381,16 +382,16 @@ Resolving Dependencies
 Dependencies Resolved
 
 ================================================================================
- Package                Arch             Version         Repository        Size
+ Package            Arch         Version   Repository                      Size
 ================================================================================
 Installing:
- epel-release           noarch           6-8             extras            14 k
+ epel-release       noarch       6-8       /epel-release-6-8.noarch        22 k
 
 Transaction Summary
 ================================================================================
 Install       1 Package(s)
 
-Total download size: 14 k
+Total size: 22 k
 Installed size: 22 k
 Downloading Packages:
 Running rpm_check_debug
@@ -404,79 +405,256 @@ Installed:
   epel-release.noarch 0:6-8                                                     
 
 Complete!
-Installing RabbitMQ
+Installing erlang-R14B-04.3.el6.x86_64.rpm
 Loaded plugins: fastestmirror, refresh-packagekit, security
-Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * epel: mirror.freethought-internet.co.uk
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
 Setting up Local Package Process
-Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
-Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
+Examining tk-8.5.7-5.el6.x86_64.rpm: 1:tk-8.5.7-5.el6.x86_64
+Marking tk-8.5.7-5.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
----> Package rabbitmq-server.noarch 0:2.8.7-1 will be installed
---> Processing Dependency: erlang >= R12B-3 for package: rabbitmq-server-2.8.7-1.noarch
+---> Package tk.x86_64 1:8.5.7-5.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch         Version               Repository                    Size
+================================================================================
+Installing:
+ tk       x86_64       1:8.5.7-5.el6         /tk-8.5.7-5.el6.x86_64       3.3 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 3.3 M
+Installed size: 3.3 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : 1:tk-8.5.7-5.el6.x86_64                                      1/1 
+  Verifying  : 1:tk-8.5.7-5.el6.x86_64                                      1/1 
+
+Installed:
+  tk.x86_64 1:8.5.7-5.el6                                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining unixODBC-2.2.14-14.el6.x86_64.rpm: unixODBC-2.2.14-14.el6.x86_64
+Marking unixODBC-2.2.14-14.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
 --> Running transaction check
----> Package erlang.x86_64 0:R14B-04.3.el6 will be installed
---> Processing Dependency: erlang-xmerl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-wx(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-webtool(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-typer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-tv(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-toolbar(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-test_server(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-syntax_tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-stdlib(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-ssl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-ssh(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-snmp(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-sasl(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-runtime_tools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-reltool(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-public_key(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-pman(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-percept(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-parsetools(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-otp_mibs(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-os_mon(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-orber(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-odbc(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-observer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-mnesia(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-megaco(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-kernel(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-jinterface(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-inviso(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-inets(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-ic(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-hipe(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-gs(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-examples(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-eunit(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-et(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-erts(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-erl_interface(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-erl_docgen(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-edoc(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-docbuilder(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-diameter(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-dialyzer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-debugger(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-crypto(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosTransactions(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosTime(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosProperty(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosNotification(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosFileTransfer(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosEventDomain(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-cosEvent(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-compiler(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-common_test(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-asn1(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
---> Processing Dependency: erlang-appmon(x86-64) = R14B-04.3.el6 for package: erlang-R14B-04.3.el6.x86_64
+---> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch      Version          Repository                         Size
+================================================================================
+Installing:
+ unixODBC    x86_64    2.2.14-14.el6    /unixODBC-2.2.14-14.el6.x86_64    1.1 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 1.1 M
+Installed size: 1.1 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : unixODBC-2.2.14-14.el6.x86_64                                1/1 
+  Verifying  : unixODBC-2.2.14-14.el6.x86_64                                1/1 
+
+Installed:
+  unixODBC.x86_64 0:2.2.14-14.el6                                               
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining wxBase-2.8.12-1.el6.centos.x86_64.rpm: wxBase-2.8.12-1.el6.centos.x86_64
+Marking wxBase-2.8.12-1.el6.centos.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Examining wxGTK-2.8.12-1.el6.centos.x86_64.rpm: wxGTK-2.8.12-1.el6.centos.x86_64
+Marking wxGTK-2.8.12-1.el6.centos.x86_64.rpm to be installed
+Examining wxGTK-gl-2.8.12-1.el6.centos.x86_64.rpm: wxGTK-gl-2.8.12-1.el6.centos.x86_64
+Marking wxGTK-gl-2.8.12-1.el6.centos.x86_64.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package wxBase.x86_64 0:2.8.12-1.el6.centos will be installed
+---> Package wxGTK.x86_64 0:2.8.12-1.el6.centos will be installed
+---> Package wxGTK-gl.x86_64 0:2.8.12-1.el6.centos will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch   Version             Repository                            Size
+================================================================================
+Installing:
+ wxBase   x86_64 2.8.12-1.el6.centos /wxBase-2.8.12-1.el6.centos.x86_64   1.7 M
+ wxGTK    x86_64 2.8.12-1.el6.centos /wxGTK-2.8.12-1.el6.centos.x86_64     11 M
+ wxGTK-gl x86_64 2.8.12-1.el6.centos /wxGTK-gl-2.8.12-1.el6.centos.x86_64  52 k
+
+Transaction Summary
+================================================================================
+Install       3 Package(s)
+
+Total size: 13 M
+Installed size: 13 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : wxBase-2.8.12-1.el6.centos.x86_64                            1/3 
+  Installing : wxGTK-2.8.12-1.el6.centos.x86_64                             2/3 
+  Installing : wxGTK-gl-2.8.12-1.el6.centos.x86_64                          3/3 
+  Verifying  : wxBase-2.8.12-1.el6.centos.x86_64                            1/3 
+  Verifying  : wxGTK-gl-2.8.12-1.el6.centos.x86_64                          2/3 
+  Verifying  : wxGTK-2.8.12-1.el6.centos.x86_64                             3/3 
+
+Installed:
+  wxBase.x86_64 0:2.8.12-1.el6.centos      wxGTK.x86_64 0:2.8.12-1.el6.centos   
+  wxGTK-gl.x86_64 0:2.8.12-1.el6.centos   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining erlang-appmon-R14B-04.3.el6.x86_64.rpm: erlang-appmon-R14B-04.3.el6.x86_64
+Marking erlang-appmon-R14B-04.3.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Examining erlang-kernel-R14B-04.3.el6.x86_64.rpm: erlang-kernel-R14B-04.3.el6.x86_64
+Marking erlang-kernel-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-asn1-R14B-04.3.el6.x86_64.rpm: erlang-asn1-R14B-04.3.el6.x86_64
+Marking erlang-asn1-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-megaco-R14B-04.3.el6.x86_64.rpm: erlang-megaco-R14B-04.3.el6.x86_64
+Marking erlang-megaco-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-common_test-R14B-04.3.el6.x86_64.rpm: erlang-common_test-R14B-04.3.el6.x86_64
+Marking erlang-common_test-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-mnesia-R14B-04.3.el6.x86_64.rpm: erlang-mnesia-R14B-04.3.el6.x86_64
+Marking erlang-mnesia-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-compiler-R14B-04.3.el6.x86_64.rpm: erlang-compiler-R14B-04.3.el6.x86_64
+Marking erlang-compiler-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-observer-R14B-04.3.el6.x86_64.rpm: erlang-observer-R14B-04.3.el6.x86_64
+Marking erlang-observer-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosEventDomain-R14B-04.3.el6.x86_64.rpm: erlang-cosEventDomain-R14B-04.3.el6.x86_64
+Marking erlang-cosEventDomain-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-odbc-R14B-04.3.el6.x86_64.rpm: erlang-odbc-R14B-04.3.el6.x86_64
+Marking erlang-odbc-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosEvent-R14B-04.3.el6.x86_64.rpm: erlang-cosEvent-R14B-04.3.el6.x86_64
+Marking erlang-cosEvent-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-orber-R14B-04.3.el6.x86_64.rpm: erlang-orber-R14B-04.3.el6.x86_64
+Marking erlang-orber-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosFileTransfer-R14B-04.3.el6.x86_64.rpm: erlang-cosFileTransfer-R14B-04.3.el6.x86_64
+Marking erlang-cosFileTransfer-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-os_mon-R14B-04.3.el6.x86_64.rpm: erlang-os_mon-R14B-04.3.el6.x86_64
+Marking erlang-os_mon-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosNotification-R14B-04.3.el6.x86_64.rpm: erlang-cosNotification-R14B-04.3.el6.x86_64
+Marking erlang-cosNotification-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-otp_mibs-R14B-04.3.el6.x86_64.rpm: erlang-otp_mibs-R14B-04.3.el6.x86_64
+Marking erlang-otp_mibs-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosProperty-R14B-04.3.el6.x86_64.rpm: erlang-cosProperty-R14B-04.3.el6.x86_64
+Marking erlang-cosProperty-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-parsetools-R14B-04.3.el6.x86_64.rpm: erlang-parsetools-R14B-04.3.el6.x86_64
+Marking erlang-parsetools-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosTime-R14B-04.3.el6.x86_64.rpm: erlang-cosTime-R14B-04.3.el6.x86_64
+Marking erlang-cosTime-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-percept-R14B-04.3.el6.x86_64.rpm: erlang-percept-R14B-04.3.el6.x86_64
+Marking erlang-percept-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-cosTransactions-R14B-04.3.el6.x86_64.rpm: erlang-cosTransactions-R14B-04.3.el6.x86_64
+Marking erlang-cosTransactions-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-pman-R14B-04.3.el6.x86_64.rpm: erlang-pman-R14B-04.3.el6.x86_64
+Marking erlang-pman-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-crypto-R14B-04.3.el6.x86_64.rpm: erlang-crypto-R14B-04.3.el6.x86_64
+Marking erlang-crypto-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-public_key-R14B-04.3.el6.x86_64.rpm: erlang-public_key-R14B-04.3.el6.x86_64
+Marking erlang-public_key-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-debugger-R14B-04.3.el6.x86_64.rpm: erlang-debugger-R14B-04.3.el6.x86_64
+Marking erlang-debugger-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-dialyzer-R14B-04.3.el6.x86_64.rpm: erlang-dialyzer-R14B-04.3.el6.x86_64
+Marking erlang-dialyzer-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-reltool-R14B-04.3.el6.x86_64.rpm: erlang-reltool-R14B-04.3.el6.x86_64
+Marking erlang-reltool-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-diameter-R14B-04.3.el6.x86_64.rpm: erlang-diameter-R14B-04.3.el6.x86_64
+Marking erlang-diameter-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-runtime_tools-R14B-04.3.el6.x86_64.rpm: erlang-runtime_tools-R14B-04.3.el6.x86_64
+Marking erlang-runtime_tools-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-docbuilder-R14B-04.3.el6.x86_64.rpm: erlang-docbuilder-R14B-04.3.el6.x86_64
+Marking erlang-docbuilder-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-sasl-R14B-04.3.el6.x86_64.rpm: erlang-sasl-R14B-04.3.el6.x86_64
+Marking erlang-sasl-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-edoc-R14B-04.3.el6.x86_64.rpm: erlang-edoc-R14B-04.3.el6.x86_64
+Marking erlang-edoc-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-snmp-R14B-04.3.el6.x86_64.rpm: erlang-snmp-R14B-04.3.el6.x86_64
+Marking erlang-snmp-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-erl_docgen-R14B-04.3.el6.x86_64.rpm: erlang-erl_docgen-R14B-04.3.el6.x86_64
+Marking erlang-erl_docgen-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-ssh-R14B-04.3.el6.x86_64.rpm: erlang-ssh-R14B-04.3.el6.x86_64
+Marking erlang-ssh-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-erl_interface-R14B-04.3.el6.x86_64.rpm: erlang-erl_interface-R14B-04.3.el6.x86_64
+Marking erlang-erl_interface-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-ssl-R14B-04.3.el6.x86_64.rpm: erlang-ssl-R14B-04.3.el6.x86_64
+Marking erlang-ssl-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-erts-R14B-04.3.el6.x86_64.rpm: erlang-erts-R14B-04.3.el6.x86_64
+Marking erlang-erts-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-stdlib-R14B-04.3.el6.x86_64.rpm: erlang-stdlib-R14B-04.3.el6.x86_64
+Marking erlang-stdlib-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-et-R14B-04.3.el6.x86_64.rpm: erlang-et-R14B-04.3.el6.x86_64
+Marking erlang-et-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-syntax_tools-R14B-04.3.el6.x86_64.rpm: erlang-syntax_tools-R14B-04.3.el6.x86_64
+Marking erlang-syntax_tools-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-eunit-R14B-04.3.el6.x86_64.rpm: erlang-eunit-R14B-04.3.el6.x86_64
+Marking erlang-eunit-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-test_server-R14B-04.3.el6.x86_64.rpm: erlang-test_server-R14B-04.3.el6.x86_64
+Marking erlang-test_server-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-toolbar-R14B-04.3.el6.x86_64.rpm: erlang-toolbar-R14B-04.3.el6.x86_64
+Marking erlang-toolbar-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-gs-R14B-04.3.el6.x86_64.rpm: erlang-gs-R14B-04.3.el6.x86_64
+Marking erlang-gs-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-tools-R14B-04.3.el6.x86_64.rpm: erlang-tools-R14B-04.3.el6.x86_64
+Marking erlang-tools-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-hipe-R14B-04.3.el6.x86_64.rpm: erlang-hipe-R14B-04.3.el6.x86_64
+Marking erlang-hipe-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-tv-R14B-04.3.el6.x86_64.rpm: erlang-tv-R14B-04.3.el6.x86_64
+Marking erlang-tv-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-ic-R14B-04.3.el6.x86_64.rpm: erlang-ic-R14B-04.3.el6.x86_64
+Marking erlang-ic-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-typer-R14B-04.3.el6.x86_64.rpm: erlang-typer-R14B-04.3.el6.x86_64
+Marking erlang-typer-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-inets-R14B-04.3.el6.x86_64.rpm: erlang-inets-R14B-04.3.el6.x86_64
+Marking erlang-inets-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-webtool-R14B-04.3.el6.x86_64.rpm: erlang-webtool-R14B-04.3.el6.x86_64
+Marking erlang-webtool-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-inviso-R14B-04.3.el6.x86_64.rpm: erlang-inviso-R14B-04.3.el6.x86_64
+Marking erlang-inviso-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-wx-R14B-04.3.el6.x86_64.rpm: erlang-wx-R14B-04.3.el6.x86_64
+Marking erlang-wx-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-jinterface-R14B-04.3.el6.x86_64.rpm: erlang-jinterface-R14B-04.3.el6.x86_64
+Marking erlang-jinterface-R14B-04.3.el6.x86_64.rpm to be installed
+Examining erlang-xmerl-R14B-04.3.el6.x86_64.rpm: erlang-xmerl-R14B-04.3.el6.x86_64
+Marking erlang-xmerl-R14B-04.3.el6.x86_64.rpm to be installed
+Resolving Dependencies
 --> Running transaction check
 ---> Package erlang-appmon.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-asn1.x86_64 0:R14B-04.3.el6 will be installed
@@ -500,9 +678,7 @@ Resolving Dependencies
 ---> Package erlang-erts.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-et.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-eunit.x86_64 0:R14B-04.3.el6 will be installed
----> Package erlang-examples.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-gs.x86_64 0:R14B-04.3.el6 will be installed
---> Processing Dependency: tk for package: erlang-gs-R14B-04.3.el6.x86_64
 ---> Package erlang-hipe.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-ic.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-inets.x86_64 0:R14B-04.3.el6 will be installed
@@ -513,7 +689,6 @@ Resolving Dependencies
 ---> Package erlang-mnesia.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-observer.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-odbc.x86_64 0:R14B-04.3.el6 will be installed
---> Processing Dependency: libodbc.so.2()(64bit) for package: erlang-odbc-R14B-04.3.el6.x86_64
 ---> Package erlang-orber.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-os_mon.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-otp_mibs.x86_64 0:R14B-04.3.el6 will be installed
@@ -536,254 +711,239 @@ Resolving Dependencies
 ---> Package erlang-typer.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-webtool.x86_64 0:R14B-04.3.el6 will be installed
 ---> Package erlang-wx.x86_64 0:R14B-04.3.el6 will be installed
---> Processing Dependency: libwx_gtk2u_xrc-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_stc-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_html-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_gl-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_core-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_aui-2.8.so.0(WXU_2.8.5)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_aui-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_adv-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_baseu-2.8.so.0(WXU_2.8)(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_xrc-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_stc-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_html-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_gl-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_core-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_aui-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_gtk2u_adv-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_baseu_xml-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
---> Processing Dependency: libwx_baseu-2.8.so.0()(64bit) for package: erlang-wx-R14B-04.3.el6.x86_64
 ---> Package erlang-xmerl.x86_64 0:R14B-04.3.el6 will be installed
---> Running transaction check
----> Package tk.x86_64 1:8.5.7-5.el6 will be installed
----> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
----> Package wxBase.x86_64 0:2.8.12-1.el6.centos will be installed
----> Package wxGTK.x86_64 0:2.8.12-1.el6.centos will be installed
----> Package wxGTK-gl.x86_64 0:2.8.12-1.el6.centos will be installed
 --> Finished Dependency Resolution
 
 Dependencies Resolved
 
 ================================================================================
- Package                Arch   Version             Repository              Size
+ Package       Arch   Version       Repository                             Size
 ================================================================================
 Installing:
- rabbitmq-server        noarch 2.8.7-1             /rabbitmq-server-2.8.7-1.noarch
-                                                                          3.3 M
-Installing for dependencies:
- erlang                 x86_64 R14B-04.3.el6       epel                    26 k
- erlang-appmon          x86_64 R14B-04.3.el6       epel                   145 k
- erlang-asn1            x86_64 R14B-04.3.el6       epel                   993 k
- erlang-common_test     x86_64 R14B-04.3.el6       epel                   508 k
- erlang-compiler        x86_64 R14B-04.3.el6       epel                   987 k
- erlang-cosEvent        x86_64 R14B-04.3.el6       epel                   149 k
- erlang-cosEventDomain  x86_64 R14B-04.3.el6       epel                   113 k
- erlang-cosFileTransfer x86_64 R14B-04.3.el6       epel                   168 k
- erlang-cosNotification x86_64 R14B-04.3.el6       epel                   718 k
- erlang-cosProperty     x86_64 R14B-04.3.el6       epel                   161 k
- erlang-cosTime         x86_64 R14B-04.3.el6       epel                   106 k
- erlang-cosTransactions x86_64 R14B-04.3.el6       epel                   164 k
- erlang-crypto          x86_64 R14B-04.3.el6       epel                    50 k
- erlang-debugger        x86_64 R14B-04.3.el6       epel                   440 k
- erlang-dialyzer        x86_64 R14B-04.3.el6       epel                   567 k
- erlang-diameter        x86_64 R14B-04.3.el6       epel                   449 k
- erlang-docbuilder      x86_64 R14B-04.3.el6       epel                   192 k
- erlang-edoc            x86_64 R14B-04.3.el6       epel                   301 k
- erlang-erl_docgen      x86_64 R14B-04.3.el6       epel                   109 k
- erlang-erl_interface   x86_64 R14B-04.3.el6       epel                   149 k
- erlang-erts            x86_64 R14B-04.3.el6       epel                   2.0 M
- erlang-et              x86_64 R14B-04.3.el6       epel                   197 k
- erlang-eunit           x86_64 R14B-04.3.el6       epel                   139 k
- erlang-examples        x86_64 R14B-04.3.el6       epel                   832 k
- erlang-gs              x86_64 R14B-04.3.el6       epel                   608 k
- erlang-hipe            x86_64 R14B-04.3.el6       epel                   1.0 M
- erlang-ic              x86_64 R14B-04.3.el6       epel                   845 k
- erlang-inets           x86_64 R14B-04.3.el6       epel                   749 k
- erlang-inviso          x86_64 R14B-04.3.el6       epel                   154 k
- erlang-jinterface      x86_64 R14B-04.3.el6       epel                    95 k
- erlang-kernel          x86_64 R14B-04.3.el6       epel                   1.0 M
- erlang-megaco          x86_64 R14B-04.3.el6       epel                   7.8 M
- erlang-mnesia          x86_64 R14B-04.3.el6       epel                   662 k
- erlang-observer        x86_64 R14B-04.3.el6       epel                   205 k
- erlang-odbc            x86_64 R14B-04.3.el6       epel                    59 k
- erlang-orber           x86_64 R14B-04.3.el6       epel                   909 k
- erlang-os_mon          x86_64 R14B-04.3.el6       epel                   104 k
- erlang-otp_mibs        x86_64 R14B-04.3.el6       epel                    28 k
- erlang-parsetools      x86_64 R14B-04.3.el6       epel                   164 k
- erlang-percept         x86_64 R14B-04.3.el6       epel                   140 k
- erlang-pman            x86_64 R14B-04.3.el6       epel                   105 k
- erlang-public_key      x86_64 R14B-04.3.el6       epel                   402 k
- erlang-reltool         x86_64 R14B-04.3.el6       epel                   296 k
- erlang-runtime_tools   x86_64 R14B-04.3.el6       epel                   210 k
- erlang-sasl            x86_64 R14B-04.3.el6       epel                   263 k
- erlang-snmp            x86_64 R14B-04.3.el6       epel                   1.5 M
- erlang-ssh             x86_64 R14B-04.3.el6       epel                   361 k
- erlang-ssl             x86_64 R14B-04.3.el6       epel                   378 k
- erlang-stdlib          x86_64 R14B-04.3.el6       epel                   2.1 M
- erlang-syntax_tools    x86_64 R14B-04.3.el6       epel                   317 k
- erlang-test_server     x86_64 R14B-04.3.el6       epel                   272 k
- erlang-toolbar         x86_64 R14B-04.3.el6       epel                    49 k
- erlang-tools           x86_64 R14B-04.3.el6       epel                   535 k
- erlang-tv              x86_64 R14B-04.3.el6       epel                   377 k
- erlang-typer           x86_64 R14B-04.3.el6       epel                    58 k
- erlang-webtool         x86_64 R14B-04.3.el6       epel                    45 k
- erlang-wx              x86_64 R14B-04.3.el6       epel                   2.4 M
- erlang-xmerl           x86_64 R14B-04.3.el6       epel                   939 k
- tk                     x86_64 1:8.5.7-5.el6       base                   1.4 M
- unixODBC               x86_64 2.2.14-14.el6       base                   378 k
- wxBase                 x86_64 2.8.12-1.el6.centos extras                 572 k
- wxGTK                  x86_64 2.8.12-1.el6.centos extras                 2.9 M
- wxGTK-gl               x86_64 2.8.12-1.el6.centos extras                  31 k
+ erlang-appmon x86_64 R14B-04.3.el6 /erlang-appmon-R14B-04.3.el6.x86_64   180 k
+ erlang-asn1   x86_64 R14B-04.3.el6 /erlang-asn1-R14B-04.3.el6.x86_64     1.3 M
+ erlang-common_test
+               x86_64 R14B-04.3.el6 /erlang-common_test-R14B-04.3.el6.x86_64
+                                                                          750 k
+ erlang-compiler
+               x86_64 R14B-04.3.el6 /erlang-compiler-R14B-04.3.el6.x86_64 1.4 M
+ erlang-cosEvent
+               x86_64 R14B-04.3.el6 /erlang-cosEvent-R14B-04.3.el6.x86_64 216 k
+ erlang-cosEventDomain
+               x86_64 R14B-04.3.el6 /erlang-cosEventDomain-R14B-04.3.el6.x86_64
+                                                                          186 k
+ erlang-cosFileTransfer
+               x86_64 R14B-04.3.el6 /erlang-cosFileTransfer-R14B-04.3.el6.x86_64
+                                                                          235 k
+ erlang-cosNotification
+               x86_64 R14B-04.3.el6 /erlang-cosNotification-R14B-04.3.el6.x86_64
+                                                                          1.1 M
+ erlang-cosProperty
+               x86_64 R14B-04.3.el6 /erlang-cosProperty-R14B-04.3.el6.x86_64
+                                                                          233 k
+ erlang-cosTime
+               x86_64 R14B-04.3.el6 /erlang-cosTime-R14B-04.3.el6.x86_64  143 k
+ erlang-cosTransactions
+               x86_64 R14B-04.3.el6 /erlang-cosTransactions-R14B-04.3.el6.x86_64
+                                                                          237 k
+ erlang-crypto x86_64 R14B-04.3.el6 /erlang-crypto-R14B-04.3.el6.x86_64    96 k
+ erlang-debugger
+               x86_64 R14B-04.3.el6 /erlang-debugger-R14B-04.3.el6.x86_64 597 k
+ erlang-dialyzer
+               x86_64 R14B-04.3.el6 /erlang-dialyzer-R14B-04.3.el6.x86_64 769 k
+ erlang-diameter
+               x86_64 R14B-04.3.el6 /erlang-diameter-R14B-04.3.el6.x86_64 714 k
+ erlang-docbuilder
+               x86_64 R14B-04.3.el6 /erlang-docbuilder-R14B-04.3.el6.x86_64
+                                                                          375 k
+ erlang-edoc   x86_64 R14B-04.3.el6 /erlang-edoc-R14B-04.3.el6.x86_64     422 k
+ erlang-erl_docgen
+               x86_64 R14B-04.3.el6 /erlang-erl_docgen-R14B-04.3.el6.x86_64
+                                                                          401 k
+ erlang-erl_interface
+               x86_64 R14B-04.3.el6 /erlang-erl_interface-R14B-04.3.el6.x86_64
+                                                                          1.0 M
+ erlang-erts   x86_64 R14B-04.3.el6 /erlang-erts-R14B-04.3.el6.x86_64     5.6 M
+ erlang-et     x86_64 R14B-04.3.el6 /erlang-et-R14B-04.3.el6.x86_64       261 k
+ erlang-eunit  x86_64 R14B-04.3.el6 /erlang-eunit-R14B-04.3.el6.x86_64    192 k
+ erlang-gs     x86_64 R14B-04.3.el6 /erlang-gs-R14B-04.3.el6.x86_64       1.1 M
+ erlang-hipe   x86_64 R14B-04.3.el6 /erlang-hipe-R14B-04.3.el6.x86_64     1.4 M
+ erlang-ic     x86_64 R14B-04.3.el6 /erlang-ic-R14B-04.3.el6.x86_64       1.2 M
+ erlang-inets  x86_64 R14B-04.3.el6 /erlang-inets-R14B-04.3.el6.x86_64    1.1 M
+ erlang-inviso x86_64 R14B-04.3.el6 /erlang-inviso-R14B-04.3.el6.x86_64   234 k
+ erlang-jinterface
+               x86_64 R14B-04.3.el6 /erlang-jinterface-R14B-04.3.el6.x86_64
+                                                                           89 k
+ erlang-kernel x86_64 R14B-04.3.el6 /erlang-kernel-R14B-04.3.el6.x86_64   1.7 M
+ erlang-megaco x86_64 R14B-04.3.el6 /erlang-megaco-R14B-04.3.el6.x86_64    14 M
+ erlang-mnesia x86_64 R14B-04.3.el6 /erlang-mnesia-R14B-04.3.el6.x86_64   946 k
+ erlang-observer
+               x86_64 R14B-04.3.el6 /erlang-observer-R14B-04.3.el6.x86_64 278 k
+ erlang-odbc   x86_64 R14B-04.3.el6 /erlang-odbc-R14B-04.3.el6.x86_64      92 k
+ erlang-orber  x86_64 R14B-04.3.el6 /erlang-orber-R14B-04.3.el6.x86_64    1.3 M
+ erlang-os_mon x86_64 R14B-04.3.el6 /erlang-os_mon-R14B-04.3.el6.x86_64   182 k
+ erlang-otp_mibs
+               x86_64 R14B-04.3.el6 /erlang-otp_mibs-R14B-04.3.el6.x86_64  52 k
+ erlang-parsetools
+               x86_64 R14B-04.3.el6 /erlang-parsetools-R14B-04.3.el6.x86_64
+                                                                          237 k
+ erlang-percept
+               x86_64 R14B-04.3.el6 /erlang-percept-R14B-04.3.el6.x86_64  186 k
+ erlang-pman   x86_64 R14B-04.3.el6 /erlang-pman-R14B-04.3.el6.x86_64     124 k
+ erlang-public_key
+               x86_64 R14B-04.3.el6 /erlang-public_key-R14B-04.3.el6.x86_64
+                                                                          1.1 M
+ erlang-reltool
+               x86_64 R14B-04.3.el6 /erlang-reltool-R14B-04.3.el6.x86_64  399 k
+ erlang-runtime_tools
+               x86_64 R14B-04.3.el6 /erlang-runtime_tools-R14B-04.3.el6.x86_64
+                                                                          303 k
+ erlang-sasl   x86_64 R14B-04.3.el6 /erlang-sasl-R14B-04.3.el6.x86_64     395 k
+ erlang-snmp   x86_64 R14B-04.3.el6 /erlang-snmp-R14B-04.3.el6.x86_64     3.0 M
+ erlang-ssh    x86_64 R14B-04.3.el6 /erlang-ssh-R14B-04.3.el6.x86_64      523 k
+ erlang-ssl    x86_64 R14B-04.3.el6 /erlang-ssl-R14B-04.3.el6.x86_64      542 k
+ erlang-stdlib x86_64 R14B-04.3.el6 /erlang-stdlib-R14B-04.3.el6.x86_64   3.5 M
+ erlang-syntax_tools
+               x86_64 R14B-04.3.el6 /erlang-syntax_tools-R14B-04.3.el6.x86_64
+                                                                          557 k
+ erlang-test_server
+               x86_64 R14B-04.3.el6 /erlang-test_server-R14B-04.3.el6.x86_64
+                                                                          380 k
+ erlang-toolbar
+               x86_64 R14B-04.3.el6 /erlang-toolbar-R14B-04.3.el6.x86_64   48 k
+ erlang-tools  x86_64 R14B-04.3.el6 /erlang-tools-R14B-04.3.el6.x86_64    1.1 M
+ erlang-tv     x86_64 R14B-04.3.el6 /erlang-tv-R14B-04.3.el6.x86_64       489 k
+ erlang-typer  x86_64 R14B-04.3.el6 /erlang-typer-R14B-04.3.el6.x86_64     69 k
+ erlang-webtool
+               x86_64 R14B-04.3.el6 /erlang-webtool-R14B-04.3.el6.x86_64   44 k
+ erlang-wx     x86_64 R14B-04.3.el6 /erlang-wx-R14B-04.3.el6.x86_64       6.4 M
+ erlang-xmerl  x86_64 R14B-04.3.el6 /erlang-xmerl-R14B-04.3.el6.x86_64    1.5 M
 
 Transaction Summary
 ================================================================================
-Install      64 Package(s)
+Install      56 Package(s)
 
-Total size: 43 M
-Total download size: 40 M
-Installed size: 84 M
+Total size: 61 M
+Installed size: 61 M
 Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           2.8 MB/s |  40 MB     00:14     
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : erlang-crypto-R14B-04.3.el6.x86_64                          1/64 
-  Installing : erlang-erts-R14B-04.3.el6.x86_64                            2/64 
-  Installing : erlang-kernel-R14B-04.3.el6.x86_64                          3/64 
-  Installing : erlang-hipe-R14B-04.3.el6.x86_64                            4/64 
-  Installing : erlang-syntax_tools-R14B-04.3.el6.x86_64                    5/64 
-  Installing : erlang-stdlib-R14B-04.3.el6.x86_64                          6/64 
-  Installing : erlang-compiler-R14B-04.3.el6.x86_64                        7/64 
-  Installing : erlang-runtime_tools-R14B-04.3.el6.x86_64                   8/64 
-  Installing : erlang-mnesia-R14B-04.3.el6.x86_64                          9/64 
-  Installing : erlang-snmp-R14B-04.3.el6.x86_64                           10/64 
-  Installing : erlang-xmerl-R14B-04.3.el6.x86_64                          11/64 
-  Installing : erlang-public_key-R14B-04.3.el6.x86_64                     12/64 
-  Installing : erlang-ssl-R14B-04.3.el6.x86_64                            13/64 
-  Installing : erlang-inets-R14B-04.3.el6.x86_64                          14/64 
-  Installing : erlang-orber-R14B-04.3.el6.x86_64                          15/64 
-  Installing : erlang-cosEvent-R14B-04.3.el6.x86_64                       16/64 
-  Installing : wxBase-2.8.12-1.el6.centos.x86_64                          17/64 
-  Installing : wxGTK-2.8.12-1.el6.centos.x86_64                           18/64 
-  Installing : erlang-cosTime-R14B-04.3.el6.x86_64                        19/64 
-  Installing : erlang-cosNotification-R14B-04.3.el6.x86_64                20/64 
-  Installing : erlang-cosProperty-R14B-04.3.el6.x86_64                    21/64 
-  Installing : erlang-edoc-R14B-04.3.el6.x86_64                           22/64 
-  Installing : erlang-ssh-R14B-04.3.el6.x86_64                            23/64 
-  Installing : erlang-otp_mibs-R14B-04.3.el6.x86_64                       24/64 
-  Installing : erlang-asn1-R14B-04.3.el6.x86_64                           25/64 
-  Installing : erlang-docbuilder-R14B-04.3.el6.x86_64                     26/64 
-  Installing : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                27/64 
-  Installing : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 28/64 
-  Installing : wxGTK-gl-2.8.12-1.el6.centos.x86_64                        29/64 
-  Installing : erlang-wx-R14B-04.3.el6.x86_64                             30/64 
-  Installing : erlang-cosTransactions-R14B-04.3.el6.x86_64                31/64 
-  Installing : erlang-percept-R14B-04.3.el6.x86_64                        32/64 
-  Installing : erlang-inviso-R14B-04.3.el6.x86_64                         33/64 
-  Installing : erlang-parsetools-R14B-04.3.el6.x86_64                     34/64 
-  Installing : erlang-eunit-R14B-04.3.el6.x86_64                          35/64 
-  Installing : erlang-diameter-R14B-04.3.el6.x86_64                       36/64 
-  Installing : erlang-ic-R14B-04.3.el6.x86_64                             37/64 
-  Installing : erlang-jinterface-R14B-04.3.el6.x86_64                     38/64 
-  Installing : erlang-erl_interface-R14B-04.3.el6.x86_64                  39/64 
-  Installing : erlang-erl_docgen-R14B-04.3.el6.x86_64                     40/64 
-  Installing : unixODBC-2.2.14-14.el6.x86_64                              41/64 
-  Installing : erlang-odbc-R14B-04.3.el6.x86_64                           42/64 
-  Installing : 1:tk-8.5.7-5.el6.x86_64                                    43/64 
-  Installing : erlang-gs-R14B-04.3.el6.x86_64                             44/64 
-  Installing : erlang-debugger-R14B-04.3.el6.x86_64                       45/64 
-  Installing : erlang-et-R14B-04.3.el6.x86_64                             46/64 
-  Installing : erlang-webtool-R14B-04.3.el6.x86_64                        47/64 
-  Installing : erlang-observer-R14B-04.3.el6.x86_64                       48/64 
-  Installing : erlang-tools-R14B-04.3.el6.x86_64                          49/64 
-  Installing : erlang-sasl-R14B-04.3.el6.x86_64                           50/64 
-  Installing : erlang-test_server-R14B-04.3.el6.x86_64                    51/64 
-  Installing : erlang-pman-R14B-04.3.el6.x86_64                           52/64 
-  Installing : erlang-dialyzer-R14B-04.3.el6.x86_64                       53/64 
-  Installing : erlang-typer-R14B-04.3.el6.x86_64                          54/64 
-  Installing : erlang-tv-R14B-04.3.el6.x86_64                             55/64 
-  Installing : erlang-common_test-R14B-04.3.el6.x86_64                    56/64 
-  Installing : erlang-reltool-R14B-04.3.el6.x86_64                        57/64 
-  Installing : erlang-os_mon-R14B-04.3.el6.x86_64                         58/64 
-  Installing : erlang-megaco-R14B-04.3.el6.x86_64                         59/64 
-  Installing : erlang-appmon-R14B-04.3.el6.x86_64                         60/64 
-  Installing : erlang-toolbar-R14B-04.3.el6.x86_64                        61/64 
-  Installing : erlang-examples-R14B-04.3.el6.x86_64                       62/64 
-  Installing : erlang-R14B-04.3.el6.x86_64                                63/64 
-  Installing : rabbitmq-server-2.8.7-1.noarch                             64/64 
-  Verifying  : erlang-docbuilder-R14B-04.3.el6.x86_64                      1/64 
-  Verifying  : erlang-compiler-R14B-04.3.el6.x86_64                        2/64 
-  Verifying  : erlang-webtool-R14B-04.3.el6.x86_64                         3/64 
-  Verifying  : erlang-parsetools-R14B-04.3.el6.x86_64                      4/64 
-  Verifying  : erlang-xmerl-R14B-04.3.el6.x86_64                           5/64 
-  Verifying  : erlang-sasl-R14B-04.3.el6.x86_64                            6/64 
-  Verifying  : wxBase-2.8.12-1.el6.centos.x86_64                           7/64 
-  Verifying  : erlang-cosTime-R14B-04.3.el6.x86_64                         8/64 
-  Verifying  : erlang-appmon-R14B-04.3.el6.x86_64                          9/64 
-  Verifying  : erlang-examples-R14B-04.3.el6.x86_64                       10/64 
-  Verifying  : erlang-reltool-R14B-04.3.el6.x86_64                        11/64 
-  Verifying  : erlang-jinterface-R14B-04.3.el6.x86_64                     12/64 
-  Verifying  : erlang-edoc-R14B-04.3.el6.x86_64                           13/64 
-  Verifying  : 1:tk-8.5.7-5.el6.x86_64                                    14/64 
-  Verifying  : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 15/64 
-  Verifying  : erlang-eunit-R14B-04.3.el6.x86_64                          16/64 
-  Verifying  : wxGTK-gl-2.8.12-1.el6.centos.x86_64                        17/64 
-  Verifying  : erlang-toolbar-R14B-04.3.el6.x86_64                        18/64 
-  Verifying  : erlang-inets-R14B-04.3.el6.x86_64                          19/64 
-  Verifying  : erlang-hipe-R14B-04.3.el6.x86_64                           20/64 
-  Verifying  : erlang-wx-R14B-04.3.el6.x86_64                             21/64 
-  Verifying  : erlang-debugger-R14B-04.3.el6.x86_64                       22/64 
-  Verifying  : unixODBC-2.2.14-14.el6.x86_64                              23/64 
-  Verifying  : erlang-test_server-R14B-04.3.el6.x86_64                    24/64 
-  Verifying  : erlang-orber-R14B-04.3.el6.x86_64                          25/64 
-  Verifying  : erlang-crypto-R14B-04.3.el6.x86_64                         26/64 
-  Verifying  : erlang-runtime_tools-R14B-04.3.el6.x86_64                  27/64 
-  Verifying  : erlang-diameter-R14B-04.3.el6.x86_64                       28/64 
-  Verifying  : erlang-stdlib-R14B-04.3.el6.x86_64                         29/64 
-  Verifying  : erlang-ic-R14B-04.3.el6.x86_64                             30/64 
-  Verifying  : erlang-pman-R14B-04.3.el6.x86_64                           31/64 
-  Verifying  : erlang-cosProperty-R14B-04.3.el6.x86_64                    32/64 
-  Verifying  : erlang-erts-R14B-04.3.el6.x86_64                           33/64 
-  Verifying  : erlang-tv-R14B-04.3.el6.x86_64                             34/64 
-  Verifying  : erlang-erl_interface-R14B-04.3.el6.x86_64                  35/64 
-  Verifying  : erlang-megaco-R14B-04.3.el6.x86_64                         36/64 
-  Verifying  : erlang-kernel-R14B-04.3.el6.x86_64                         37/64 
-  Verifying  : erlang-common_test-R14B-04.3.el6.x86_64                    38/64 
-  Verifying  : erlang-public_key-R14B-04.3.el6.x86_64                     39/64 
-  Verifying  : erlang-erl_docgen-R14B-04.3.el6.x86_64                     40/64 
-  Verifying  : rabbitmq-server-2.8.7-1.noarch                             41/64 
-  Verifying  : erlang-asn1-R14B-04.3.el6.x86_64                           42/64 
-  Verifying  : erlang-ssh-R14B-04.3.el6.x86_64                            43/64 
-  Verifying  : erlang-otp_mibs-R14B-04.3.el6.x86_64                       44/64 
-  Verifying  : erlang-cosTransactions-R14B-04.3.el6.x86_64                45/64 
-  Verifying  : wxGTK-2.8.12-1.el6.centos.x86_64                           46/64 
-  Verifying  : erlang-inviso-R14B-04.3.el6.x86_64                         47/64 
-  Verifying  : erlang-observer-R14B-04.3.el6.x86_64                       48/64 
-  Verifying  : erlang-mnesia-R14B-04.3.el6.x86_64                         49/64 
-  Verifying  : erlang-syntax_tools-R14B-04.3.el6.x86_64                   50/64 
-  Verifying  : erlang-cosNotification-R14B-04.3.el6.x86_64                51/64 
-  Verifying  : erlang-tools-R14B-04.3.el6.x86_64                          52/64 
-  Verifying  : erlang-percept-R14B-04.3.el6.x86_64                        53/64 
-  Verifying  : erlang-typer-R14B-04.3.el6.x86_64                          54/64 
-  Verifying  : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                55/64 
-  Verifying  : erlang-et-R14B-04.3.el6.x86_64                             56/64 
-  Verifying  : erlang-R14B-04.3.el6.x86_64                                57/64 
-  Verifying  : erlang-gs-R14B-04.3.el6.x86_64                             58/64 
-  Verifying  : erlang-os_mon-R14B-04.3.el6.x86_64                         59/64 
-  Verifying  : erlang-odbc-R14B-04.3.el6.x86_64                           60/64 
-  Verifying  : erlang-ssl-R14B-04.3.el6.x86_64                            61/64 
-  Verifying  : erlang-dialyzer-R14B-04.3.el6.x86_64                       62/64 
-  Verifying  : erlang-snmp-R14B-04.3.el6.x86_64                           63/64 
-  Verifying  : erlang-cosEvent-R14B-04.3.el6.x86_64                       64/64 
+  Installing : erlang-crypto-R14B-04.3.el6.x86_64                          1/56 
+  Installing : erlang-syntax_tools-R14B-04.3.el6.x86_64                    2/56 
+  Installing : erlang-hipe-R14B-04.3.el6.x86_64                            3/56 
+  Installing : erlang-kernel-R14B-04.3.el6.x86_64                          4/56 
+  Installing : erlang-erts-R14B-04.3.el6.x86_64                            5/56 
+  Installing : erlang-stdlib-R14B-04.3.el6.x86_64                          6/56 
+  Installing : erlang-compiler-R14B-04.3.el6.x86_64                        7/56 
+  Installing : erlang-runtime_tools-R14B-04.3.el6.x86_64                   8/56 
+  Installing : erlang-gs-R14B-04.3.el6.x86_64                              9/56 
+  Installing : erlang-mnesia-R14B-04.3.el6.x86_64                         10/56 
+  Installing : erlang-wx-R14B-04.3.el6.x86_64                             11/56 
+  Installing : erlang-snmp-R14B-04.3.el6.x86_64                           12/56 
+  Installing : erlang-xmerl-R14B-04.3.el6.x86_64                          13/56 
+  Installing : erlang-debugger-R14B-04.3.el6.x86_64                       14/56 
+  Installing : erlang-et-R14B-04.3.el6.x86_64                             15/56 
+  Installing : erlang-public_key-R14B-04.3.el6.x86_64                     16/56 
+  Installing : erlang-ssl-R14B-04.3.el6.x86_64                            17/56 
+  Installing : erlang-inets-R14B-04.3.el6.x86_64                          18/56 
+  Installing : erlang-orber-R14B-04.3.el6.x86_64                          19/56 
+  Installing : erlang-webtool-R14B-04.3.el6.x86_64                        20/56 
+  Installing : erlang-observer-R14B-04.3.el6.x86_64                       21/56 
+  Installing : erlang-tools-R14B-04.3.el6.x86_64                          22/56 
+  Installing : erlang-sasl-R14B-04.3.el6.x86_64                           23/56 
+  Installing : erlang-cosEvent-R14B-04.3.el6.x86_64                       24/56 
+  Installing : erlang-cosTime-R14B-04.3.el6.x86_64                        25/56 
+  Installing : erlang-cosNotification-R14B-04.3.el6.x86_64                26/56 
+  Installing : erlang-test_server-R14B-04.3.el6.x86_64                    27/56 
+  Installing : erlang-cosProperty-R14B-04.3.el6.x86_64                    28/56 
+  Installing : erlang-edoc-R14B-04.3.el6.x86_64                           29/56 
+  Installing : erlang-ssh-R14B-04.3.el6.x86_64                            30/56 
+  Installing : erlang-otp_mibs-R14B-04.3.el6.x86_64                       31/56 
+  Installing : erlang-dialyzer-R14B-04.3.el6.x86_64                       32/56 
+  Installing : erlang-pman-R14B-04.3.el6.x86_64                           33/56 
+  Installing : erlang-asn1-R14B-04.3.el6.x86_64                           34/56 
+  Installing : erlang-megaco-R14B-04.3.el6.x86_64                         35/56 
+  Installing : erlang-tv-R14B-04.3.el6.x86_64                             36/56 
+  Installing : erlang-typer-R14B-04.3.el6.x86_64                          37/56 
+  Installing : erlang-os_mon-R14B-04.3.el6.x86_64                         38/56 
+  Installing : erlang-common_test-R14B-04.3.el6.x86_64                    39/56 
+  Installing : erlang-docbuilder-R14B-04.3.el6.x86_64                     40/56 
+  Installing : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                41/56 
+  Installing : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 42/56 
+  Installing : erlang-reltool-R14B-04.3.el6.x86_64                        43/56 
+  Installing : erlang-cosTransactions-R14B-04.3.el6.x86_64                44/56 
+  Installing : erlang-appmon-R14B-04.3.el6.x86_64                         45/56 
+  Installing : erlang-percept-R14B-04.3.el6.x86_64                        46/56 
+  Installing : erlang-toolbar-R14B-04.3.el6.x86_64                        47/56 
+  Installing : erlang-inviso-R14B-04.3.el6.x86_64                         48/56 
+  Installing : erlang-parsetools-R14B-04.3.el6.x86_64                     49/56 
+  Installing : erlang-eunit-R14B-04.3.el6.x86_64                          50/56 
+  Installing : erlang-diameter-R14B-04.3.el6.x86_64                       51/56 
+  Installing : erlang-ic-R14B-04.3.el6.x86_64                             52/56 
+  Installing : erlang-odbc-R14B-04.3.el6.x86_64                           53/56 
+  Installing : erlang-jinterface-R14B-04.3.el6.x86_64                     54/56 
+  Installing : erlang-erl_docgen-R14B-04.3.el6.x86_64                     55/56 
+  Installing : erlang-erl_interface-R14B-04.3.el6.x86_64                  56/56 
+  Verifying  : erlang-docbuilder-R14B-04.3.el6.x86_64                      1/56 
+  Verifying  : erlang-compiler-R14B-04.3.el6.x86_64                        2/56 
+  Verifying  : erlang-edoc-R14B-04.3.el6.x86_64                            3/56 
+  Verifying  : erlang-parsetools-R14B-04.3.el6.x86_64                      4/56 
+  Verifying  : erlang-common_test-R14B-04.3.el6.x86_64                     5/56 
+  Verifying  : erlang-crypto-R14B-04.3.el6.x86_64                          6/56 
+  Verifying  : erlang-syntax_tools-R14B-04.3.el6.x86_64                    7/56 
+  Verifying  : erlang-asn1-R14B-04.3.el6.x86_64                            8/56 
+  Verifying  : erlang-reltool-R14B-04.3.el6.x86_64                         9/56 
+  Verifying  : erlang-jinterface-R14B-04.3.el6.x86_64                     10/56 
+  Verifying  : erlang-webtool-R14B-04.3.el6.x86_64                        11/56 
+  Verifying  : erlang-cosEventDomain-R14B-04.3.el6.x86_64                 12/56 
+  Verifying  : erlang-eunit-R14B-04.3.el6.x86_64                          13/56 
+  Verifying  : erlang-toolbar-R14B-04.3.el6.x86_64                        14/56 
+  Verifying  : erlang-inets-R14B-04.3.el6.x86_64                          15/56 
+  Verifying  : erlang-hipe-R14B-04.3.el6.x86_64                           16/56 
+  Verifying  : erlang-test_server-R14B-04.3.el6.x86_64                    17/56 
+  Verifying  : erlang-debugger-R14B-04.3.el6.x86_64                       18/56 
+  Verifying  : erlang-xmerl-R14B-04.3.el6.x86_64                          19/56 
+  Verifying  : erlang-orber-R14B-04.3.el6.x86_64                          20/56 
+  Verifying  : erlang-sasl-R14B-04.3.el6.x86_64                           21/56 
+  Verifying  : erlang-runtime_tools-R14B-04.3.el6.x86_64                  22/56 
+  Verifying  : erlang-diameter-R14B-04.3.el6.x86_64                       23/56 
+  Verifying  : erlang-stdlib-R14B-04.3.el6.x86_64                         24/56 
+  Verifying  : erlang-ic-R14B-04.3.el6.x86_64                             25/56 
+  Verifying  : erlang-pman-R14B-04.3.el6.x86_64                           26/56 
+  Verifying  : erlang-cosProperty-R14B-04.3.el6.x86_64                    27/56 
+  Verifying  : erlang-dialyzer-R14B-04.3.el6.x86_64                       28/56 
+  Verifying  : erlang-tv-R14B-04.3.el6.x86_64                             29/56 
+  Verifying  : erlang-megaco-R14B-04.3.el6.x86_64                         30/56 
+  Verifying  : erlang-kernel-R14B-04.3.el6.x86_64                         31/56 
+  Verifying  : erlang-public_key-R14B-04.3.el6.x86_64                     32/56 
+  Verifying  : erlang-erl_docgen-R14B-04.3.el6.x86_64                     33/56 
+  Verifying  : erlang-cosFileTransfer-R14B-04.3.el6.x86_64                34/56 
+  Verifying  : erlang-cosTime-R14B-04.3.el6.x86_64                        35/56 
+  Verifying  : erlang-ssh-R14B-04.3.el6.x86_64                            36/56 
+  Verifying  : erlang-otp_mibs-R14B-04.3.el6.x86_64                       37/56 
+  Verifying  : erlang-cosTransactions-R14B-04.3.el6.x86_64                38/56 
+  Verifying  : erlang-inviso-R14B-04.3.el6.x86_64                         39/56 
+  Verifying  : erlang-observer-R14B-04.3.el6.x86_64                       40/56 
+  Verifying  : erlang-mnesia-R14B-04.3.el6.x86_64                         41/56 
+  Verifying  : erlang-erl_interface-R14B-04.3.el6.x86_64                  42/56 
+  Verifying  : erlang-wx-R14B-04.3.el6.x86_64                             43/56 
+  Verifying  : erlang-cosNotification-R14B-04.3.el6.x86_64                44/56 
+  Verifying  : erlang-tools-R14B-04.3.el6.x86_64                          45/56 
+  Verifying  : erlang-odbc-R14B-04.3.el6.x86_64                           46/56 
+  Verifying  : erlang-typer-R14B-04.3.el6.x86_64                          47/56 
+  Verifying  : erlang-et-R14B-04.3.el6.x86_64                             48/56 
+  Verifying  : erlang-gs-R14B-04.3.el6.x86_64                             49/56 
+  Verifying  : erlang-appmon-R14B-04.3.el6.x86_64                         50/56 
+  Verifying  : erlang-os_mon-R14B-04.3.el6.x86_64                         51/56 
+  Verifying  : erlang-percept-R14B-04.3.el6.x86_64                        52/56 
+  Verifying  : erlang-ssl-R14B-04.3.el6.x86_64                            53/56 
+  Verifying  : erlang-erts-R14B-04.3.el6.x86_64                           54/56 
+  Verifying  : erlang-snmp-R14B-04.3.el6.x86_64                           55/56 
+  Verifying  : erlang-cosEvent-R14B-04.3.el6.x86_64                       56/56 
 
 Installed:
-  rabbitmq-server.noarch 0:2.8.7-1                                              
-
-Dependency Installed:
-  erlang.x86_64 0:R14B-04.3.el6                                                 
   erlang-appmon.x86_64 0:R14B-04.3.el6                                          
   erlang-asn1.x86_64 0:R14B-04.3.el6                                            
   erlang-common_test.x86_64 0:R14B-04.3.el6                                     
@@ -806,7 +966,6 @@ Dependency Installed:
   erlang-erts.x86_64 0:R14B-04.3.el6                                            
   erlang-et.x86_64 0:R14B-04.3.el6                                              
   erlang-eunit.x86_64 0:R14B-04.3.el6                                           
-  erlang-examples.x86_64 0:R14B-04.3.el6                                        
   erlang-gs.x86_64 0:R14B-04.3.el6                                              
   erlang-hipe.x86_64 0:R14B-04.3.el6                                            
   erlang-ic.x86_64 0:R14B-04.3.el6                                              
@@ -841,17 +1000,97 @@ Dependency Installed:
   erlang-webtool.x86_64 0:R14B-04.3.el6                                         
   erlang-wx.x86_64 0:R14B-04.3.el6                                              
   erlang-xmerl.x86_64 0:R14B-04.3.el6                                           
-  tk.x86_64 1:8.5.7-5.el6                                                       
-  unixODBC.x86_64 0:2.2.14-14.el6                                               
-  wxBase.x86_64 0:2.8.12-1.el6.centos                                           
-  wxGTK.x86_64 0:2.8.12-1.el6.centos                                            
-  wxGTK-gl.x86_64 0:2.8.12-1.el6.centos                                         
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining erlang-R14B-04.3.el6.x86_64.rpm: erlang-R14B-04.3.el6.x86_64
+Marking erlang-R14B-04.3.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Examining erlang-examples-R14B-04.3.el6.x86_64.rpm: erlang-examples-R14B-04.3.el6.x86_64
+Marking erlang-examples-R14B-04.3.el6.x86_64.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package erlang.x86_64 0:R14B-04.3.el6 will be installed
+---> Package erlang-examples.x86_64 0:R14B-04.3.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version       Repository                             Size
+================================================================================
+Installing:
+ erlang        x86_64 R14B-04.3.el6 /erlang-R14B-04.3.el6.x86_64           31 k
+ erlang-examples
+               x86_64 R14B-04.3.el6 /erlang-examples-R14B-04.3.el6.x86_64 1.8 M
+
+Transaction Summary
+================================================================================
+Install       2 Package(s)
+
+Total size: 1.8 M
+Installed size: 1.8 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : erlang-R14B-04.3.el6.x86_64                                  1/2 
+  Installing : erlang-examples-R14B-04.3.el6.x86_64                         2/2 
+  Verifying  : erlang-examples-R14B-04.3.el6.x86_64                         1/2 
+  Verifying  : erlang-R14B-04.3.el6.x86_64                                  2/2 
+
+Installed:
+  erlang.x86_64 0:R14B-04.3.el6      erlang-examples.x86_64 0:R14B-04.3.el6     
+
+Complete!
+Installing RabbitMQ
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
+Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package rabbitmq-server.noarch 0:2.8.7-1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch     Version     Repository                         Size
+================================================================================
+Installing:
+ rabbitmq-server   noarch   2.8.7-1     /rabbitmq-server-2.8.7-1.noarch   3.3 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 3.3 M
+Installed size: 3.3 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : rabbitmq-server-2.8.7-1.noarch                               1/1 
+  Verifying  : rabbitmq-server-2.8.7-1.noarch                               1/1 
+
+Installed:
+  rabbitmq-server.noarch 0:2.8.7-1                                              
 
 Complete!
 Starting rabbitmq-server: SUCCESS
 rabbitmq-server.
 Downloading Files
-Downloading Oracle JRE
 Installing JRE
 Unpacking...
 Checksumming...
@@ -876,9 +1115,9 @@ Setting up Local Package Process
 Examining MySQL-client-5.5.37-1.linux2.6.x86_64.rpm: MySQL-client-5.5.37-1.linux2.6.x86_64
 Marking MySQL-client-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-client.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -916,9 +1155,9 @@ Setting up Local Package Process
 Examining MySQL-server-5.5.37-1.linux2.6.x86_64.rpm: MySQL-server-5.5.37-1.linux2.6.x86_64
 Marking MySQL-server-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-server.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -974,9 +1213,9 @@ Setting up Local Package Process
 Examining MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1014,9 +1253,9 @@ Setting up Local Package Process
 Examining MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-compat-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1055,24 +1294,14 @@ Configuring MySQL
 Starting MySQL.. SUCCESS! 
 Installing rrdtool
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining ruby-libs-1.8.7.374-5.el6.x86_64.rpm: ruby-libs-1.8.7.374-5.el6.x86_64
+Marking ruby-libs-1.8.7.374-5.el6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mozart.ee.ic.ac.uk
- * updates: mirror.econdc.com
-Setting up Install Process
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
---> Running transaction check
----> Package rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
---> Processing Dependency: perl(RRDp) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: ruby for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: perl(RRDs) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Processing Dependency: libdbi.so.0()(64bit) for package: rrdtool-1.4.7-1.el6.rfx.x86_64
---> Running transaction check
----> Package libdbi.x86_64 0:0.8.3-4.el6 will be installed
----> Package perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
----> Package ruby.x86_64 0:1.8.7.374-5.el6 will be installed
---> Processing Dependency: ruby-libs = 1.8.7.374-5.el6 for package: ruby-1.8.7.374-5.el6.x86_64
---> Processing Dependency: libruby.so.1.8()(64bit) for package: ruby-1.8.7.374-5.el6.x86_64
 --> Running transaction check
 ---> Package ruby-libs.x86_64 0:1.8.7.374-5.el6 will be installed
 --> Finished Dependency Resolution
@@ -1080,230 +1309,1664 @@ Resolving Dependencies
 Dependencies Resolved
 
 ================================================================================
- Package           Arch        Version               Repository            Size
+ Package    Arch    Version            Repository                          Size
 ================================================================================
 Installing:
- rrdtool           x86_64      1.4.7-1.el6.rfx       zenossdeps-repo      821 k
-Installing for dependencies:
- libdbi            x86_64      0.8.3-4.el6           base                  39 k
- perl-rrdtool      x86_64      1.4.7-1.el6.rfx       zenossdeps-repo       49 k
- ruby              x86_64      1.8.7.374-5.el6       base                 538 k
- ruby-libs         x86_64      1.8.7.374-5.el6       base                 1.7 M
+ ruby-libs  x86_64  1.8.7.374-5.el6    /ruby-libs-1.8.7.374-5.el6.x86_64  5.7 M
 
 Transaction Summary
 ================================================================================
-Install       5 Package(s)
+Install       1 Package(s)
 
-Total download size: 3.1 M
-Installed size: 10 M
+Total size: 5.7 M
+Installed size: 5.7 M
 Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           328 kB/s | 3.1 MB     00:09     
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : ruby-libs-1.8.7.374-5.el6.x86_64                             1/5 
-  Installing : ruby-1.8.7.374-5.el6.x86_64                                  2/5 
-  Installing : libdbi-0.8.3-4.el6.x86_64                                    3/5 
-  Installing : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          4/5 
-  Installing : rrdtool-1.4.7-1.el6.rfx.x86_64                               5/5 
-  Verifying  : rrdtool-1.4.7-1.el6.rfx.x86_64                               1/5 
-  Verifying  : libdbi-0.8.3-4.el6.x86_64                                    2/5 
-  Verifying  : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          3/5 
-  Verifying  : ruby-1.8.7.374-5.el6.x86_64                                  4/5 
-  Verifying  : ruby-libs-1.8.7.374-5.el6.x86_64                             5/5 
+  Installing : ruby-libs-1.8.7.374-5.el6.x86_64                             1/1 
+  Verifying  : ruby-libs-1.8.7.374-5.el6.x86_64                             1/1 
 
 Installed:
-  rrdtool.x86_64 0:1.4.7-1.el6.rfx                                              
-
-Dependency Installed:
-  libdbi.x86_64 0:0.8.3-4.el6        perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx     
-  ruby.x86_64 0:1.8.7.374-5.el6      ruby-libs.x86_64 0:1.8.7.374-5.el6        
+  ruby-libs.x86_64 0:1.8.7.374-5.el6                                            
 
 Complete!
-===wget perl-common-sense.noarch====
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
-Nothing to do
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Cleaning repos: adobe-linux-x86_64 base epel epel-debuginfo epel-source extras
-              : updates zenossdeps-repo zenossdeps-update-repo
-Cleaning up Everything
-Cleaning up list of fastest mirrors
-Installing Zenoss
-Loaded plugins: fastestmirror, refresh-packagekit, security
-Determining fastest mirrors
- * base: mirror.freethought-internet.co.uk
- * epel: mirror.freethought-internet.co.uk
- * epel-debuginfo: mirror.freethought-internet.co.uk
- * epel-source: mirror.freethought-internet.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: mirror.sov.uk.goscomb.net
-Setting up Local Package Process
-Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
-Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
+Examining ruby-1.8.7.374-5.el6.x86_64.rpm: ruby-1.8.7.374-5.el6.x86_64
+Marking ruby-1.8.7.374-5.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
----> Package zenoss.x86_64 0:4.2.5-2108.el6 will be installed
---> Processing Dependency: memcached >= 1.4.4 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-dig >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-dns >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-http >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ircd >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ldap >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ntp >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-perl >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-ping >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-rpc >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: nagios-plugins-tcp >= 1.4.15 for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: redis for package: zenoss-4.2.5-2108.el6.x86_64
---> Processing Dependency: sysstat for package: zenoss-4.2.5-2108.el6.x86_64
---> Running transaction check
----> Package memcached.x86_64 0:1.4.4-5.el6 will be installed
----> Package nagios-plugins.x86_64 0:2.2.1-4git.el6 will be installed
---> Processing Dependency: nagios-common >= 3.3.1-1 for package: nagios-plugins-2.2.1-4git.el6.x86_64
----> Package nagios-plugins-dig.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-dns.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-http.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-ircd.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-ldap.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-ntp.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-perl.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-ping.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-rpc.x86_64 0:2.2.1-4git.el6 will be installed
----> Package nagios-plugins-tcp.x86_64 0:2.2.1-4git.el6 will be installed
----> Package redis.x86_64 0:3.2.12-2.el6 will be installed
---> Processing Dependency: libjemalloc.so.1()(64bit) for package: redis-3.2.12-2.el6.x86_64
----> Package sysstat.x86_64 0:9.0.4-33.el6_9.1 will be installed
---> Processing Dependency: /etc/cron.d for package: sysstat-9.0.4-33.el6_9.1.x86_64
---> Running transaction check
----> Package cronie.x86_64 0:1.4.4-16.el6_8.2 will be installed
---> Processing Dependency: dailyjobs for package: cronie-1.4.4-16.el6_8.2.x86_64
---> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-16.el6_8.2.x86_64
----> Package jemalloc.x86_64 0:3.6.0-1.el6 will be installed
----> Package nagios-common.x86_64 0:4.3.4-7.el6 will be installed
---> Running transaction check
----> Package cronie-anacron.x86_64 0:1.4.4-16.el6_8.2 will be installed
---> Processing Dependency: crontabs for package: cronie-anacron-1.4.4-16.el6_8.2.x86_64
----> Package exim.x86_64 0:4.91-1.el6 will be installed
---> Running transaction check
----> Package crontabs.noarch 0:1.10-33.el6 will be installed
+---> Package ruby.x86_64 0:1.8.7.374-5.el6 will be installed
 --> Finished Dependency Resolution
 
 Dependencies Resolved
 
 ================================================================================
- Package             Arch   Version          Repository                    Size
+ Package  Arch       Version             Repository                        Size
 ================================================================================
 Installing:
- zenoss              x86_64 4.2.5-2108.el6   /zenoss_core-4.2.5-2108.el6.x86_64
-                                                                          326 M
-Installing for dependencies:
- cronie              x86_64 1.4.4-16.el6_8.2 base                          75 k
- cronie-anacron      x86_64 1.4.4-16.el6_8.2 base                          31 k
- crontabs            noarch 1.10-33.el6      base                          10 k
- exim                x86_64 4.91-1.el6       epel                         1.4 M
- jemalloc            x86_64 3.6.0-1.el6      epel                         100 k
- memcached           x86_64 1.4.4-5.el6      base                          69 k
- nagios-common       x86_64 4.3.4-7.el6      epel                          24 k
- nagios-plugins      x86_64 2.2.1-4git.el6   epel                         260 k
- nagios-plugins-dig  x86_64 2.2.1-4git.el6   epel                          44 k
- nagios-plugins-dns  x86_64 2.2.1-4git.el6   epel                          45 k
- nagios-plugins-http x86_64 2.2.1-4git.el6   epel                          59 k
- nagios-plugins-ircd x86_64 2.2.1-4git.el6   epel                          20 k
- nagios-plugins-ldap x86_64 2.2.1-4git.el6   epel                          42 k
- nagios-plugins-ntp  x86_64 2.2.1-4git.el6   epel                          59 k
- nagios-plugins-perl x86_64 2.2.1-4git.el6   epel                          18 k
- nagios-plugins-ping x86_64 2.2.1-4git.el6   epel                          44 k
- nagios-plugins-rpc  x86_64 2.2.1-4git.el6   epel                          20 k
- nagios-plugins-tcp  x86_64 2.2.1-4git.el6   epel                          47 k
- redis               x86_64 3.2.12-2.el6     epel                         522 k
- sysstat             x86_64 9.0.4-33.el6_9.1 base                         234 k
+ ruby     x86_64     1.8.7.374-5.el6     /ruby-1.8.7.374-5.el6.x86_64     1.8 M
 
 Transaction Summary
 ================================================================================
-Install      21 Package(s)
+Install       1 Package(s)
 
-Total size: 329 M
-Total download size: 3.1 M
-Installed size: 335 M
+Total size: 1.8 M
+Installed size: 1.8 M
 Downloading Packages:
---------------------------------------------------------------------------------
-Total                                           2.2 MB/s | 3.1 MB     00:01     
-Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 Running rpm_check_debug
 Running Transaction Test
 Transaction Test Succeeded
 Running Transaction
-  Installing : jemalloc-3.6.0-1.el6.x86_64                                 1/21 
-  Installing : redis-3.2.12-2.el6.x86_64                                   2/21 
-  Installing : memcached-1.4.4-5.el6.x86_64                                3/21 
-  Installing : exim-4.91-1.el6.x86_64                                      4/21 
-  Installing : crontabs-1.10-33.el6.noarch                                 5/21 
-  Installing : cronie-anacron-1.4.4-16.el6_8.2.x86_64                      6/21 
-  Installing : cronie-1.4.4-16.el6_8.2.x86_64                              7/21 
-  Installing : sysstat-9.0.4-33.el6_9.1.x86_64                             8/21 
-  Installing : nagios-common-4.3.4-7.el6.x86_64                            9/21 
-  Installing : nagios-plugins-2.2.1-4git.el6.x86_64                       10/21 
-  Installing : nagios-plugins-perl-2.2.1-4git.el6.x86_64                  11/21 
-  Installing : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                  12/21 
-  Installing : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                   13/21 
-  Installing : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                   14/21 
-  Installing : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                  15/21 
-  Installing : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                   16/21 
-  Installing : nagios-plugins-dns-2.2.1-4git.el6.x86_64                   17/21 
-  Installing : nagios-plugins-http-2.2.1-4git.el6.x86_64                  18/21 
-  Installing : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  19/21 
-  Installing : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   20/21 
-  Installing : zenoss-4.2.5-2108.el6.x86_64                               21/21 
-  Verifying  : nagios-plugins-ntp-2.2.1-4git.el6.x86_64                    1/21 
-  Verifying  : nagios-plugins-perl-2.2.1-4git.el6.x86_64                   2/21 
-  Verifying  : nagios-common-4.3.4-7.el6.x86_64                            3/21 
-  Verifying  : cronie-1.4.4-16.el6_8.2.x86_64                              4/21 
-  Verifying  : exim-4.91-1.el6.x86_64                                      5/21 
-  Verifying  : nagios-plugins-ircd-2.2.1-4git.el6.x86_64                   6/21 
-  Verifying  : sysstat-9.0.4-33.el6_9.1.x86_64                             7/21 
-  Verifying  : nagios-plugins-ldap-2.2.1-4git.el6.x86_64                   8/21 
-  Verifying  : nagios-plugins-rpc-2.2.1-4git.el6.x86_64                    9/21 
-  Verifying  : crontabs-1.10-33.el6.noarch                                10/21 
-  Verifying  : memcached-1.4.4-5.el6.x86_64                               11/21 
-  Verifying  : jemalloc-3.6.0-1.el6.x86_64                                12/21 
-  Verifying  : nagios-plugins-tcp-2.2.1-4git.el6.x86_64                   13/21 
-  Verifying  : redis-3.2.12-2.el6.x86_64                                  14/21 
-  Verifying  : nagios-plugins-2.2.1-4git.el6.x86_64                       15/21 
-  Verifying  : nagios-plugins-dns-2.2.1-4git.el6.x86_64                   16/21 
-  Verifying  : zenoss-4.2.5-2108.el6.x86_64                               17/21 
-  Verifying  : nagios-plugins-http-2.2.1-4git.el6.x86_64                  18/21 
-  Verifying  : nagios-plugins-ping-2.2.1-4git.el6.x86_64                  19/21 
-  Verifying  : nagios-plugins-dig-2.2.1-4git.el6.x86_64                   20/21 
-  Verifying  : cronie-anacron-1.4.4-16.el6_8.2.x86_64                     21/21 
+  Installing : ruby-1.8.7.374-5.el6.x86_64                                  1/1 
+  Verifying  : ruby-1.8.7.374-5.el6.x86_64                                  1/1 
+
+Installed:
+  ruby.x86_64 0:1.8.7.374-5.el6                                                 
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining libdbi-0.8.3-4.el6.x86_64.rpm: libdbi-0.8.3-4.el6.x86_64
+Marking libdbi-0.8.3-4.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package libdbi.x86_64 0:0.8.3-4.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch        Version          Repository                       Size
+================================================================================
+Installing:
+ libdbi      x86_64      0.8.3-4.el6      /libdbi-0.8.3-4.el6.x86_64       91 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 91 k
+Installed size: 91 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : libdbi-0.8.3-4.el6.x86_64                                    1/1 
+  Verifying  : libdbi-0.8.3-4.el6.x86_64                                    1/1 
+
+Installed:
+  libdbi.x86_64 0:0.8.3-4.el6                                                   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining rrdtool-1.4.7-1.el6.rfx.x86_64.rpm: rrdtool-1.4.7-1.el6.rfx.x86_64
+Marking rrdtool-1.4.7-1.el6.rfx.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Examining perl-rrdtool-1.4.7-1.el6.rfx.x86_64.rpm: perl-rrdtool-1.4.7-1.el6.rfx.x86_64
+Marking perl-rrdtool-1.4.7-1.el6.rfx.x86_64.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
+---> Package rrdtool.x86_64 0:1.4.7-1.el6.rfx will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch   Version         Repository                            Size
+================================================================================
+Installing:
+ perl-rrdtool x86_64 1.4.7-1.el6.rfx /perl-rrdtool-1.4.7-1.el6.rfx.x86_64 118 k
+ rrdtool      x86_64 1.4.7-1.el6.rfx /rrdtool-1.4.7-1.el6.rfx.x86_64      2.3 M
+
+Transaction Summary
+================================================================================
+Install       2 Package(s)
+
+Total size: 2.4 M
+Installed size: 2.4 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          1/2 
+  Installing : rrdtool-1.4.7-1.el6.rfx.x86_64                               2/2 
+  Verifying  : rrdtool-1.4.7-1.el6.rfx.x86_64                               1/2 
+  Verifying  : perl-rrdtool-1.4.7-1.el6.rfx.x86_64                          2/2 
+
+Installed:
+  perl-rrdtool.x86_64 0:1.4.7-1.el6.rfx     rrdtool.x86_64 0:1.4.7-1.el6.rfx    
+
+Complete!
+===wget perl-common-sense.noarch====
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-common-sense-3.5-1.el6.noarch.rpm: perl-common-sense-3.5-1.el6.noarch
+Marking perl-common-sense-3.5-1.el6.noarch.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-common-sense.noarch 0:3.5-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch   Version     Repository                           Size
+================================================================================
+Installing:
+ perl-common-sense noarch 3.5-1.el6   /perl-common-sense-3.5-1.el6.noarch  45 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 45 k
+Installed size: 45 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-common-sense-3.5-1.el6.noarch                           1/1 
+  Verifying  : perl-common-sense-3.5-1.el6.noarch                           1/1 
+
+Installed:
+  perl-common-sense.noarch 0:3.5-1.el6                                          
+
+Complete!
+Installing Zenoss prereqs
+Installing Zenoss
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nspr-4.21.0-1.el6_10.x86_64.rpm: nspr-4.21.0-1.el6_10.x86_64
+Marking nspr-4.21.0-1.el6_10.x86_64.rpm as an update to nspr-4.10.8-2.el6_7.x86_64
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Marking nspr-4.21.0-1.el6_10.x86_64.rpm as an update to nspr-4.10.8-2.el6_7.i686
+Examining nspr-4.21.0-1.el6_10.i686.rpm: nspr-4.21.0-1.el6_10.i686
+Marking nspr-4.21.0-1.el6_10.i686.rpm as an update to nspr-4.10.8-2.el6_7.x86_64
+Marking nspr-4.21.0-1.el6_10.i686.rpm as an update to nspr-4.10.8-2.el6_7.i686
+Examining nspr-devel-4.21.0-1.el6_10.x86_64.rpm: nspr-devel-4.21.0-1.el6_10.x86_64
+Marking nspr-devel-4.21.0-1.el6_10.x86_64.rpm as an update to nspr-devel-4.10.8-2.el6_7.x86_64
+Resolving Dependencies
+--> Running transaction check
+---> Package nspr.i686 0:4.10.8-2.el6_7 will be updated
+---> Package nspr.x86_64 0:4.10.8-2.el6_7 will be updated
+---> Package nspr.i686 0:4.21.0-1.el6_10 will be an update
+---> Package nspr.x86_64 0:4.21.0-1.el6_10 will be an update
+---> Package nspr-devel.x86_64 0:4.10.8-2.el6_7 will be updated
+---> Package nspr-devel.x86_64 0:4.21.0-1.el6_10 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch    Version          Repository                           Size
+================================================================================
+Updating:
+ nspr        i686    4.21.0-1.el6_10  /nspr-4.21.0-1.el6_10.i686          271 k
+ nspr        x86_64  4.21.0-1.el6_10  /nspr-4.21.0-1.el6_10.x86_64        271 k
+ nspr-devel  x86_64  4.21.0-1.el6_10  /nspr-devel-4.21.0-1.el6_10.x86_64  448 k
+
+Transaction Summary
+================================================================================
+Upgrade       3 Package(s)
+
+Total size: 990 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : nspr-4.21.0-1.el6_10.x86_64                                  1/6 
+  Updating   : nspr-devel-4.21.0-1.el6_10.x86_64                            2/6 
+  Updating   : nspr-4.21.0-1.el6_10.i686                                    3/6 
+  Cleanup    : nspr-devel-4.10.8-2.el6_7.x86_64                             4/6 
+  Cleanup    : nspr-4.10.8-2.el6_7                                          5/6 
+  Cleanup    : nspr-4.10.8-2.el6_7                                          6/6 
+  Verifying  : nspr-devel-4.21.0-1.el6_10.x86_64                            1/6 
+  Verifying  : nspr-4.21.0-1.el6_10.i686                                    2/6 
+  Verifying  : nspr-4.21.0-1.el6_10.x86_64                                  3/6 
+  Verifying  : nspr-4.10.8-2.el6_7.x86_64                                   4/6 
+  Verifying  : nspr-devel-4.10.8-2.el6_7.x86_64                             5/6 
+  Verifying  : nspr-4.10.8-2.el6_7.i686                                     6/6 
+
+Updated:
+  nspr.i686 0:4.21.0-1.el6_10               nspr.x86_64 0:4.21.0-1.el6_10      
+  nspr-devel.x86_64 0:4.21.0-1.el6_10      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nss-util-3.44.0-1.el6_10.x86_64.rpm: nss-util-3.44.0-1.el6_10.x86_64
+Marking nss-util-3.44.0-1.el6_10.x86_64.rpm as an update to nss-util-3.19.1-2.el6_7.x86_64
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Marking nss-util-3.44.0-1.el6_10.x86_64.rpm as an update to nss-util-3.19.1-2.el6_7.i686
+Examining nss-util-3.44.0-1.el6_10.i686.rpm: nss-util-3.44.0-1.el6_10.i686
+Marking nss-util-3.44.0-1.el6_10.i686.rpm as an update to nss-util-3.19.1-2.el6_7.x86_64
+Marking nss-util-3.44.0-1.el6_10.i686.rpm as an update to nss-util-3.19.1-2.el6_7.i686
+Examining nss-util-devel-3.44.0-1.el6_10.x86_64.rpm: nss-util-devel-3.44.0-1.el6_10.x86_64
+Marking nss-util-devel-3.44.0-1.el6_10.x86_64.rpm as an update to nss-util-devel-3.19.1-2.el6_7.x86_64
+Resolving Dependencies
+--> Running transaction check
+---> Package nss-util.i686 0:3.19.1-2.el6_7 will be updated
+---> Package nss-util.x86_64 0:3.19.1-2.el6_7 will be updated
+---> Package nss-util.i686 0:3.44.0-1.el6_10 will be an update
+---> Package nss-util.x86_64 0:3.44.0-1.el6_10 will be an update
+---> Package nss-util-devel.x86_64 0:3.19.1-2.el6_7 will be updated
+---> Package nss-util-devel.x86_64 0:3.44.0-1.el6_10 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package    Arch   Version         Repository                              Size
+================================================================================
+Updating:
+ nss-util   i686   3.44.0-1.el6_10 /nss-util-3.44.0-1.el6_10.i686         162 k
+ nss-util   x86_64 3.44.0-1.el6_10 /nss-util-3.44.0-1.el6_10.x86_64       191 k
+ nss-util-devel
+            x86_64 3.44.0-1.el6_10 /nss-util-devel-3.44.0-1.el6_10.x86_64 263 k
+
+Transaction Summary
+================================================================================
+Upgrade       3 Package(s)
+
+Total size: 617 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : nss-util-3.44.0-1.el6_10.x86_64                              1/6 
+  Updating   : nss-util-devel-3.44.0-1.el6_10.x86_64                        2/6 
+  Updating   : nss-util-3.44.0-1.el6_10.i686                                3/6 
+  Cleanup    : nss-util-devel-3.19.1-2.el6_7.x86_64                         4/6 
+  Cleanup    : nss-util-3.19.1-2.el6_7                                      5/6 
+  Cleanup    : nss-util-3.19.1-2.el6_7                                      6/6 
+  Verifying  : nss-util-3.44.0-1.el6_10.i686                                1/6 
+  Verifying  : nss-util-devel-3.44.0-1.el6_10.x86_64                        2/6 
+  Verifying  : nss-util-3.44.0-1.el6_10.x86_64                              3/6 
+  Verifying  : nss-util-devel-3.19.1-2.el6_7.x86_64                         4/6 
+  Verifying  : nss-util-3.19.1-2.el6_7.x86_64                               5/6 
+  Verifying  : nss-util-3.19.1-2.el6_7.i686                                 6/6 
+
+Updated:
+  nss-util.i686 0:3.44.0-1.el6_10           nss-util.x86_64 0:3.44.0-1.el6_10  
+  nss-util-devel.x86_64 0:3.44.0-1.el6_10  
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nss-softokn-3.44.0-6.el6_10.x86_64.rpm: nss-softokn-3.44.0-6.el6_10.x86_64
+Marking nss-softokn-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-3.14.3-23.el6_7.x86_64
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Marking nss-softokn-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-3.14.3-23.el6_7.i686
+Examining nss-softokn-3.44.0-6.el6_10.i686.rpm: nss-softokn-3.44.0-6.el6_10.i686
+Marking nss-softokn-3.44.0-6.el6_10.i686.rpm as an update to nss-softokn-3.14.3-23.el6_7.x86_64
+Marking nss-softokn-3.44.0-6.el6_10.i686.rpm as an update to nss-softokn-3.14.3-23.el6_7.i686
+Examining nss-softokn-devel-3.44.0-6.el6_10.x86_64.rpm: nss-softokn-devel-3.44.0-6.el6_10.x86_64
+Marking nss-softokn-devel-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-devel-3.14.3-23.el6_7.x86_64
+Examining nss-softokn-freebl-3.44.0-6.el6_10.x86_64.rpm: nss-softokn-freebl-3.44.0-6.el6_10.x86_64
+Marking nss-softokn-freebl-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-freebl-3.14.3-23.el6_7.x86_64
+Marking nss-softokn-freebl-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-freebl-3.14.3-23.el6_7.i686
+Examining nss-softokn-freebl-3.44.0-6.el6_10.i686.rpm: nss-softokn-freebl-3.44.0-6.el6_10.i686
+Marking nss-softokn-freebl-3.44.0-6.el6_10.i686.rpm as an update to nss-softokn-freebl-3.14.3-23.el6_7.x86_64
+Marking nss-softokn-freebl-3.44.0-6.el6_10.i686.rpm as an update to nss-softokn-freebl-3.14.3-23.el6_7.i686
+Examining nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64.rpm: nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64
+Marking nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-freebl-devel-3.14.3-23.el6_7.x86_64
+Resolving Dependencies
+--> Running transaction check
+---> Package nss-softokn.i686 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn.x86_64 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn.i686 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn.x86_64 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn-devel.x86_64 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn-devel.x86_64 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn-freebl.i686 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn-freebl.x86_64 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn-freebl.i686 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn-freebl.x86_64 0:3.44.0-6.el6_10 will be an update
+---> Package nss-softokn-freebl-devel.x86_64 0:3.14.3-23.el6_7 will be updated
+---> Package nss-softokn-freebl-devel.x86_64 0:3.44.0-6.el6_10 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package
+     Arch   Version          Repository                                    Size
+================================================================================
+Updating:
+ nss-softokn
+     i686   3.44.0-6.el6_10  /nss-softokn-3.44.0-6.el6_10.i686            1.2 M
+ nss-softokn
+     x86_64 3.44.0-6.el6_10  /nss-softokn-3.44.0-6.el6_10.x86_64          1.1 M
+ nss-softokn-devel
+     x86_64 3.44.0-6.el6_10  /nss-softokn-devel-3.44.0-6.el6_10.x86_64     11 k
+ nss-softokn-freebl
+     i686   3.44.0-6.el6_10  /nss-softokn-freebl-3.44.0-6.el6_10.i686     521 k
+ nss-softokn-freebl
+     x86_64 3.44.0-6.el6_10  /nss-softokn-freebl-3.44.0-6.el6_10.x86_64   559 k
+ nss-softokn-freebl-devel
+     x86_64 3.44.0-6.el6_10  /nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64
+                                                                          739 k
+
+Transaction Summary
+================================================================================
+Upgrade       6 Package(s)
+
+Total size: 4.1 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : nss-softokn-freebl-3.44.0-6.el6_10.x86_64                   1/12 
+  Updating   : nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64             2/12 
+  Updating   : nss-softokn-3.44.0-6.el6_10.x86_64                          3/12 
+  Updating   : nss-softokn-freebl-3.44.0-6.el6_10.i686                     4/12 
+  Updating   : nss-softokn-devel-3.44.0-6.el6_10.x86_64                    5/12 
+  Updating   : nss-softokn-3.44.0-6.el6_10.i686                            6/12 
+  Cleanup    : nss-softokn-devel-3.14.3-23.el6_7.x86_64                    7/12 
+  Cleanup    : nss-softokn-freebl-devel-3.14.3-23.el6_7.x86_64             8/12 
+  Cleanup    : nss-softokn-3.14.3-23.el6_7                                 9/12 
+  Cleanup    : nss-softokn-3.14.3-23.el6_7                                10/12 
+  Cleanup    : nss-softokn-freebl-3.14.3-23.el6_7                         11/12 
+  Cleanup    : nss-softokn-freebl-3.14.3-23.el6_7                         12/12 
+  Verifying  : nss-softokn-3.44.0-6.el6_10.i686                            1/12 
+  Verifying  : nss-softokn-freebl-3.44.0-6.el6_10.i686                     2/12 
+  Verifying  : nss-softokn-freebl-devel-3.44.0-6.el6_10.x86_64             3/12 
+  Verifying  : nss-softokn-freebl-3.44.0-6.el6_10.x86_64                   4/12 
+  Verifying  : nss-softokn-3.44.0-6.el6_10.x86_64                          5/12 
+  Verifying  : nss-softokn-devel-3.44.0-6.el6_10.x86_64                    6/12 
+  Verifying  : nss-softokn-freebl-3.14.3-23.el6_7.i686                     7/12 
+  Verifying  : nss-softokn-3.14.3-23.el6_7.i686                            8/12 
+  Verifying  : nss-softokn-3.14.3-23.el6_7.x86_64                          9/12 
+  Verifying  : nss-softokn-freebl-3.14.3-23.el6_7.x86_64                  10/12 
+  Verifying  : nss-softokn-freebl-devel-3.14.3-23.el6_7.x86_64            11/12 
+  Verifying  : nss-softokn-devel-3.14.3-23.el6_7.x86_64                   12/12 
+
+Updated:
+  nss-softokn.i686 0:3.44.0-6.el6_10                                            
+  nss-softokn.x86_64 0:3.44.0-6.el6_10                                          
+  nss-softokn-devel.x86_64 0:3.44.0-6.el6_10                                    
+  nss-softokn-freebl.i686 0:3.44.0-6.el6_10                                     
+  nss-softokn-freebl.x86_64 0:3.44.0-6.el6_10                                   
+  nss-softokn-freebl-devel.x86_64 0:3.44.0-6.el6_10                             
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nss-3.44.0-7.el6_10.x86_64.rpm: nss-3.44.0-7.el6_10.x86_64
+Marking nss-3.44.0-7.el6_10.x86_64.rpm as an update to nss-3.19.1-8.el6_7.x86_64
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Marking nss-3.44.0-7.el6_10.x86_64.rpm as an update to nss-3.19.1-8.el6_7.i686
+Examining nss-3.44.0-7.el6_10.i686.rpm: nss-3.44.0-7.el6_10.i686
+Marking nss-3.44.0-7.el6_10.i686.rpm as an update to nss-3.19.1-8.el6_7.x86_64
+Marking nss-3.44.0-7.el6_10.i686.rpm as an update to nss-3.19.1-8.el6_7.i686
+Examining nss-sysinit-3.44.0-7.el6_10.x86_64.rpm: nss-sysinit-3.44.0-7.el6_10.x86_64
+Marking nss-sysinit-3.44.0-7.el6_10.x86_64.rpm as an update to nss-sysinit-3.19.1-8.el6_7.x86_64
+Examining nss-devel-3.44.0-7.el6_10.x86_64.rpm: nss-devel-3.44.0-7.el6_10.x86_64
+Marking nss-devel-3.44.0-7.el6_10.x86_64.rpm as an update to nss-devel-3.19.1-8.el6_7.x86_64
+Examining nss-tools-3.44.0-7.el6_10.x86_64.rpm: nss-tools-3.44.0-7.el6_10.x86_64
+Marking nss-tools-3.44.0-7.el6_10.x86_64.rpm as an update to nss-tools-3.19.1-8.el6_7.x86_64
+Resolving Dependencies
+--> Running transaction check
+---> Package nss.i686 0:3.19.1-8.el6_7 will be updated
+---> Package nss.x86_64 0:3.19.1-8.el6_7 will be updated
+---> Package nss.i686 0:3.44.0-7.el6_10 will be an update
+---> Package nss.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-devel.x86_64 0:3.19.1-8.el6_7 will be updated
+---> Package nss-devel.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-sysinit.x86_64 0:3.19.1-8.el6_7 will be updated
+---> Package nss-sysinit.x86_64 0:3.44.0-7.el6_10 will be an update
+---> Package nss-tools.x86_64 0:3.19.1-8.el6_7 will be updated
+---> Package nss-tools.x86_64 0:3.44.0-7.el6_10 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch   Version           Repository                           Size
+================================================================================
+Updating:
+ nss         i686   3.44.0-7.el6_10   /nss-3.44.0-7.el6_10.i686           2.4 M
+ nss         x86_64 3.44.0-7.el6_10   /nss-3.44.0-7.el6_10.x86_64         2.6 M
+ nss-devel   x86_64 3.44.0-7.el6_10   /nss-devel-3.44.0-7.el6_10.x86_64   861 k
+ nss-sysinit x86_64 3.44.0-7.el6_10   /nss-sysinit-3.44.0-7.el6_10.x86_64  32 k
+ nss-tools   x86_64 3.44.0-7.el6_10   /nss-tools-3.44.0-7.el6_10.x86_64   2.0 M
+
+Transaction Summary
+================================================================================
+Upgrade       5 Package(s)
+
+Total size: 7.9 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : nss-3.44.0-7.el6_10.x86_64                                  1/10 
+  Updating   : nss-sysinit-3.44.0-7.el6_10.x86_64                          2/10 
+  Updating   : nss-devel-3.44.0-7.el6_10.x86_64                            3/10 
+  Updating   : nss-tools-3.44.0-7.el6_10.x86_64                            4/10 
+  Updating   : nss-3.44.0-7.el6_10.i686                                    5/10 
+  Cleanup    : nss-devel-3.19.1-8.el6_7.x86_64                             6/10 
+  Cleanup    : nss-3.19.1-8.el6_7                                          7/10 
+  Cleanup    : nss-tools-3.19.1-8.el6_7.x86_64                             8/10 
+  Cleanup    : nss-3.19.1-8.el6_7                                          9/10 
+  Cleanup    : nss-sysinit-3.19.1-8.el6_7.x86_64                          10/10 
+  Verifying  : nss-3.44.0-7.el6_10.i686                                    1/10 
+  Verifying  : nss-devel-3.44.0-7.el6_10.x86_64                            2/10 
+  Verifying  : nss-tools-3.44.0-7.el6_10.x86_64                            3/10 
+  Verifying  : nss-sysinit-3.44.0-7.el6_10.x86_64                          4/10 
+  Verifying  : nss-3.44.0-7.el6_10.x86_64                                  5/10 
+  Verifying  : nss-3.19.1-8.el6_7.i686                                     6/10 
+  Verifying  : nss-devel-3.19.1-8.el6_7.x86_64                             7/10 
+  Verifying  : nss-3.19.1-8.el6_7.x86_64                                   8/10 
+  Verifying  : nss-tools-3.19.1-8.el6_7.x86_64                             9/10 
+  Verifying  : nss-sysinit-3.19.1-8.el6_7.x86_64                          10/10 
+
+Updated:
+  nss.i686 0:3.44.0-7.el6_10            nss.x86_64 0:3.44.0-7.el6_10           
+  nss-devel.x86_64 0:3.44.0-7.el6_10    nss-sysinit.x86_64 0:3.44.0-7.el6_10   
+  nss-tools.x86_64 0:3.44.0-7.el6_10   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining crontabs-1.10-33.el6.noarch.rpm: crontabs-1.10-33.el6.noarch
+Marking crontabs-1.10-33.el6.noarch.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Examining cronie-1.4.4-16.el6_8.2.x86_64.rpm: cronie-1.4.4-16.el6_8.2.x86_64
+Marking cronie-1.4.4-16.el6_8.2.x86_64.rpm to be installed
+Examining cronie-anacron-1.4.4-16.el6_8.2.x86_64.rpm: cronie-anacron-1.4.4-16.el6_8.2.x86_64
+Marking cronie-anacron-1.4.4-16.el6_8.2.x86_64.rpm to be installed
+Examining postfix-2.6.6-8.el6.x86_64.rpm: 2:postfix-2.6.6-8.el6.x86_64
+Marking postfix-2.6.6-8.el6.x86_64.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package cronie.x86_64 0:1.4.4-16.el6_8.2 will be installed
+---> Package cronie-anacron.x86_64 0:1.4.4-16.el6_8.2 will be installed
+---> Package crontabs.noarch 0:1.10-33.el6 will be installed
+---> Package postfix.x86_64 2:2.6.6-8.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch   Version          Repository                               Size
+================================================================================
+Installing:
+ cronie   x86_64 1.4.4-16.el6_8.2 /cronie-1.4.4-16.el6_8.2.x86_64         174 k
+ cronie-anacron
+          x86_64 1.4.4-16.el6_8.2 /cronie-anacron-1.4.4-16.el6_8.2.x86_64  43 k
+ crontabs noarch 1.10-33.el6      /crontabs-1.10-33.el6.noarch            2.4 k
+ postfix  x86_64 2:2.6.6-8.el6    /postfix-2.6.6-8.el6.x86_64             9.7 M
+
+Transaction Summary
+================================================================================
+Install       4 Package(s)
+
+Total size: 9.9 M
+Installed size: 9.9 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : 2:postfix-2.6.6-8.el6.x86_64                                 1/4 
+  Installing : cronie-1.4.4-16.el6_8.2.x86_64                               2/4 
+  Installing : crontabs-1.10-33.el6.noarch                                  3/4 
+  Installing : cronie-anacron-1.4.4-16.el6_8.2.x86_64                       4/4 
+  Verifying  : crontabs-1.10-33.el6.noarch                                  1/4 
+  Verifying  : 2:postfix-2.6.6-8.el6.x86_64                                 2/4 
+  Verifying  : cronie-anacron-1.4.4-16.el6_8.2.x86_64                       3/4 
+  Verifying  : cronie-1.4.4-16.el6_8.2.x86_64                               4/4 
+
+Installed:
+  cronie.x86_64 0:1.4.4-16.el6_8.2   cronie-anacron.x86_64 0:1.4.4-16.el6_8.2  
+  crontabs.noarch 0:1.10-33.el6      postfix.x86_64 2:2.6.6-8.el6              
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-Async-Interrupt-1.05-1.el6.rf.x86_64.rpm: perl-Async-Interrupt-1.05-1.el6.rf.x86_64
+Marking perl-Async-Interrupt-1.05-1.el6.rf.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-Async-Interrupt.x86_64 0:1.05-1.el6.rf will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch   Version       Repository                                  Size
+================================================================================
+Installing:
+ perl-Async-Interrupt
+          x86_64 1.05-1.el6.rf /perl-Async-Interrupt-1.05-1.el6.rf.x86_64 176 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 176 k
+Installed size: 176 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-Async-Interrupt-1.05-1.el6.rf.x86_64                    1/1 
+  Verifying  : perl-Async-Interrupt-1.05-1.el6.rf.x86_64                    1/1 
+
+Installed:
+  perl-Async-Interrupt.x86_64 0:1.05-1.el6.rf                                   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-JSON-XS-2.27-2.el6.x86_64.rpm: 1:perl-JSON-XS-2.27-2.el6.x86_64
+Marking perl-JSON-XS-2.27-2.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-JSON-XS.x86_64 1:2.27-2.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch     Version        Repository                         Size
+================================================================================
+Installing:
+ perl-JSON-XS   x86_64   1:2.27-2.el6   /perl-JSON-XS-2.27-2.el6.x86_64   228 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 228 k
+Installed size: 228 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : 1:perl-JSON-XS-2.27-2.el6.x86_64                             1/1 
+  Verifying  : 1:perl-JSON-XS-2.27-2.el6.x86_64                             1/1 
+
+Installed:
+  perl-JSON-XS.x86_64 1:2.27-2.el6                                              
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining tzdata-java-2019c-1.el6.noarch.rpm: tzdata-java-2019c-1.el6.noarch
+Marking tzdata-java-2019c-1.el6.noarch.rpm as an update to tzdata-java-2012c-3.el6.noarch
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package tzdata-java.noarch 0:2012c-3.el6 will be updated
+---> Package tzdata-java.noarch 0:2019c-1.el6 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch     Version         Repository                         Size
+================================================================================
+Updating:
+ tzdata-java   noarch   2019c-1.el6     /tzdata-java-2019c-1.el6.noarch   365 k
+
+Transaction Summary
+================================================================================
+Upgrade       1 Package(s)
+
+Total size: 365 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : tzdata-java-2019c-1.el6.noarch                               1/2 
+  Cleanup    : tzdata-java-2012c-3.el6.noarch                               2/2 
+  Verifying  : tzdata-java-2019c-1.el6.noarch                               1/2 
+  Verifying  : tzdata-java-2012c-3.el6.noarch                               2/2 
+
+Updated:
+  tzdata-java.noarch 0:2019c-1.el6                                              
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-TermReadKey-2.30-13.el6.x86_64.rpm: perl-TermReadKey-2.30-13.el6.x86_64
+Marking perl-TermReadKey-2.30-13.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-TermReadKey.x86_64 0:2.30-13.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch   Version     Repository                            Size
+================================================================================
+Installing:
+ perl-TermReadKey x86_64 2.30-13.el6 /perl-TermReadKey-2.30-13.el6.x86_64  62 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 62 k
+Installed size: 62 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-TermReadKey-2.30-13.el6.x86_64                          1/1 
+  Verifying  : perl-TermReadKey-2.30-13.el6.x86_64                          1/1 
+
+Installed:
+  perl-TermReadKey.x86_64 0:2.30-13.el6                                         
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining exim-4.92.3-1.el6.x86_64.rpm: exim-4.92.3-1.el6.x86_64
+Marking exim-4.92.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package exim.x86_64 0:4.92.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package   Arch        Version             Repository                      Size
+================================================================================
+Installing:
+ exim      x86_64      4.92.3-1.el6        /exim-4.92.3-1.el6.x86_64      4.4 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 4.4 M
+Installed size: 4.4 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : exim-4.92.3-1.el6.x86_64                                     1/1 
+  Verifying  : exim-4.92.3-1.el6.x86_64                                     1/1 
+
+Installed:
+  exim.x86_64 0:4.92.3-1.el6                                                    
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining sysstat-9.0.4-33.el6_9.1.x86_64.rpm: sysstat-9.0.4-33.el6_9.1.x86_64
+Marking sysstat-9.0.4-33.el6_9.1.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package sysstat.x86_64 0:9.0.4-33.el6_9.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package   Arch     Version            Repository                          Size
+================================================================================
+Installing:
+ sysstat   x86_64   9.0.4-33.el6_9.1   /sysstat-9.0.4-33.el6_9.1.x86_64   826 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 826 k
+Installed size: 826 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : sysstat-9.0.4-33.el6_9.1.x86_64                              1/1 
+  Verifying  : sysstat-9.0.4-33.el6_9.1.x86_64                              1/1 
+
+Installed:
+  sysstat.x86_64 0:9.0.4-33.el6_9.1                                             
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-common-4.4.3-3.el6.x86_64.rpm: nagios-common-4.4.3-3.el6.x86_64
+Marking nagios-common-4.4.3-3.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-common.x86_64 0:4.4.3-3.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch    Version        Repository                          Size
+================================================================================
+Installing:
+ nagios-common  x86_64  4.4.3-3.el6    /nagios-common-4.4.3-3.el6.x86_64  0.0  
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Installed size: 0  
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-common-4.4.3-3.el6.x86_64                             1/1 
+  Verifying  : nagios-common-4.4.3-3.el6.x86_64                             1/1 
+
+Installed:
+  nagios-common.x86_64 0:4.4.3-3.el6                                            
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-2.3.3-1.el6.x86_64.rpm: nagios-plugins-2.3.3-1.el6.x86_64
+Marking nagios-plugins-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch    Version      Repository                           Size
+================================================================================
+Installing:
+ nagios-plugins  x86_64  2.3.3-1.el6  /nagios-plugins-2.3.3-1.el6.x86_64  281 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 281 k
+Installed size: 281 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-2.3.3-1.el6.x86_64                            1/1 
+  Verifying  : nagios-plugins-2.3.3-1.el6.x86_64                            1/1 
+
+Installed:
+  nagios-plugins.x86_64 0:2.3.3-1.el6                                           
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-perl-2.3.3-1.el6.x86_64.rpm: nagios-plugins-perl-2.3.3-1.el6.x86_64
+Marking nagios-plugins-perl-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-perl.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version     Repository                               Size
+================================================================================
+Installing:
+ nagios-plugins-perl
+               x86_64 2.3.3-1.el6 /nagios-plugins-perl-2.3.3-1.el6.x86_64 2.1 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 2.1 k
+Installed size: 2.1 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-perl-2.3.3-1.el6.x86_64                       1/1 
+  Verifying  : nagios-plugins-perl-2.3.3-1.el6.x86_64                       1/1 
+
+Installed:
+  nagios-plugins-perl.x86_64 0:2.3.3-1.el6                                      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-ircd-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ircd-2.3.3-1.el6.x86_64
+Marking nagios-plugins-ircd-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-ircd.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version     Repository                               Size
+================================================================================
+Installing:
+ nagios-plugins-ircd
+               x86_64 2.3.3-1.el6 /nagios-plugins-ircd-2.3.3-1.el6.x86_64 6.8 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 6.8 k
+Installed size: 6.8 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-ircd-2.3.3-1.el6.x86_64                       1/1 
+  Verifying  : nagios-plugins-ircd-2.3.3-1.el6.x86_64                       1/1 
+
+Installed:
+  nagios-plugins-ircd.x86_64 0:2.3.3-1.el6                                      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-rpc-2.3.3-1.el6.x86_64.rpm: nagios-plugins-rpc-2.3.3-1.el6.x86_64
+Marking nagios-plugins-rpc-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-rpc.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch   Version     Repository                              Size
+================================================================================
+Installing:
+ nagios-plugins-rpc
+                x86_64 2.3.3-1.el6 /nagios-plugins-rpc-2.3.3-1.el6.x86_64 9.5 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 9.5 k
+Installed size: 9.5 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-rpc-2.3.3-1.el6.x86_64                        1/1 
+  Verifying  : nagios-plugins-rpc-2.3.3-1.el6.x86_64                        1/1 
+
+Installed:
+  nagios-plugins-rpc.x86_64 0:2.3.3-1.el6                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-http-2.3.3-1.el6.x86_64.rpm: nagios-plugins-http-2.3.3-1.el6.x86_64
+Marking nagios-plugins-http-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-http.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version     Repository                               Size
+================================================================================
+Installing:
+ nagios-plugins-http
+               x86_64 2.3.3-1.el6 /nagios-plugins-http-2.3.3-1.el6.x86_64 133 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 133 k
+Installed size: 133 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-http-2.3.3-1.el6.x86_64                       1/1 
+  Verifying  : nagios-plugins-http-2.3.3-1.el6.x86_64                       1/1 
+
+Installed:
+  nagios-plugins-http.x86_64 0:2.3.3-1.el6                                      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-tcp-2.3.3-1.el6.x86_64.rpm: nagios-plugins-tcp-2.3.3-1.el6.x86_64
+Marking nagios-plugins-tcp-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-tcp.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch   Version     Repository                              Size
+================================================================================
+Installing:
+ nagios-plugins-tcp
+                x86_64 2.3.3-1.el6 /nagios-plugins-tcp-2.3.3-1.el6.x86_64  60 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 60 k
+Installed size: 60 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-tcp-2.3.3-1.el6.x86_64                        1/1 
+  Verifying  : nagios-plugins-tcp-2.3.3-1.el6.x86_64                        1/1 
+
+Installed:
+  nagios-plugins-tcp.x86_64 0:2.3.3-1.el6                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-dig-2.3.3-1.el6.x86_64.rpm: nagios-plugins-dig-2.3.3-1.el6.x86_64
+Marking nagios-plugins-dig-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-dig.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch   Version     Repository                              Size
+================================================================================
+Installing:
+ nagios-plugins-dig
+                x86_64 2.3.3-1.el6 /nagios-plugins-dig-2.3.3-1.el6.x86_64  56 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 56 k
+Installed size: 56 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-dig-2.3.3-1.el6.x86_64                        1/1 
+  Verifying  : nagios-plugins-dig-2.3.3-1.el6.x86_64                        1/1 
+
+Installed:
+  nagios-plugins-dig.x86_64 0:2.3.3-1.el6                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-ntp-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ntp-2.3.3-1.el6.x86_64
+Marking nagios-plugins-ntp-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-ntp.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch   Version     Repository                              Size
+================================================================================
+Installing:
+ nagios-plugins-ntp
+                x86_64 2.3.3-1.el6 /nagios-plugins-ntp-2.3.3-1.el6.x86_64 165 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 165 k
+Installed size: 165 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-ntp-2.3.3-1.el6.x86_64                        1/1 
+  Verifying  : nagios-plugins-ntp-2.3.3-1.el6.x86_64                        1/1 
+
+Installed:
+  nagios-plugins-ntp.x86_64 0:2.3.3-1.el6                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-ldap-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ldap-2.3.3-1.el6.x86_64
+Marking nagios-plugins-ldap-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-ldap.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version     Repository                               Size
+================================================================================
+Installing:
+ nagios-plugins-ldap
+               x86_64 2.3.3-1.el6 /nagios-plugins-ldap-2.3.3-1.el6.x86_64  61 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 61 k
+Installed size: 61 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-ldap-2.3.3-1.el6.x86_64                       1/1 
+  Verifying  : nagios-plugins-ldap-2.3.3-1.el6.x86_64                       1/1 
+
+Installed:
+  nagios-plugins-ldap.x86_64 0:2.3.3-1.el6                                      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-dns-2.3.3-1.el6.x86_64.rpm: nagios-plugins-dns-2.3.3-1.el6.x86_64
+Marking nagios-plugins-dns-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-dns.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch   Version     Repository                              Size
+================================================================================
+Installing:
+ nagios-plugins-dns
+                x86_64 2.3.3-1.el6 /nagios-plugins-dns-2.3.3-1.el6.x86_64  80 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 80 k
+Installed size: 80 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-dns-2.3.3-1.el6.x86_64                        1/1 
+  Verifying  : nagios-plugins-dns-2.3.3-1.el6.x86_64                        1/1 
+
+Installed:
+  nagios-plugins-dns.x86_64 0:2.3.3-1.el6                                       
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining nagios-plugins-ping-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ping-2.3.3-1.el6.x86_64
+Marking nagios-plugins-ping-2.3.3-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package nagios-plugins-ping.x86_64 0:2.3.3-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version     Repository                               Size
+================================================================================
+Installing:
+ nagios-plugins-ping
+               x86_64 2.3.3-1.el6 /nagios-plugins-ping-2.3.3-1.el6.x86_64  57 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 57 k
+Installed size: 57 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : nagios-plugins-ping-2.3.3-1.el6.x86_64                       1/1 
+  Verifying  : nagios-plugins-ping-2.3.3-1.el6.x86_64                       1/1 
+
+Installed:
+  nagios-plugins-ping.x86_64 0:2.3.3-1.el6                                      
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining lksctp-tools-1.0.10-7.el6.x86_64.rpm: lksctp-tools-1.0.10-7.el6.x86_64
+Marking lksctp-tools-1.0.10-7.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package lksctp-tools.x86_64 0:1.0.10-7.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch    Version         Repository                          Size
+================================================================================
+Installing:
+ lksctp-tools  x86_64  1.0.10-7.el6    /lksctp-tools-1.0.10-7.el6.x86_64  206 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 206 k
+Installed size: 206 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : lksctp-tools-1.0.10-7.el6.x86_64                             1/1 
+  Verifying  : lksctp-tools-1.0.10-7.el6.x86_64                             1/1 
+
+Installed:
+  lksctp-tools.x86_64 0:1.0.10-7.el6                                            
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining jemalloc-3.6.0-1.el6.x86_64.rpm: jemalloc-3.6.0-1.el6.x86_64
+Marking jemalloc-3.6.0-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package jemalloc.x86_64 0:3.6.0-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch       Version         Repository                        Size
+================================================================================
+Installing:
+ jemalloc     x86_64     3.6.0-1.el6     /jemalloc-3.6.0-1.el6.x86_64     315 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 315 k
+Installed size: 315 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : jemalloc-3.6.0-1.el6.x86_64                                  1/1 
+  Verifying  : jemalloc-3.6.0-1.el6.x86_64                                  1/1 
+
+Installed:
+  jemalloc.x86_64 0:3.6.0-1.el6                                                 
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining redis-3.2.12-2.el6.x86_64.rpm: redis-3.2.12-2.el6.x86_64
+Marking redis-3.2.12-2.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package redis.x86_64 0:3.2.12-2.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package    Arch        Version           Repository                       Size
+================================================================================
+Installing:
+ redis      x86_64      3.2.12-2.el6      /redis-3.2.12-2.el6.x86_64      1.3 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 1.3 M
+Installed size: 1.3 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : redis-3.2.12-2.el6.x86_64                                    1/1 
+  Verifying  : redis-3.2.12-2.el6.x86_64                                    1/1 
+
+Installed:
+  redis.x86_64 0:3.2.12-2.el6                                                   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-EV-4.03-6.el6.x86_64.rpm: perl-EV-4.03-6.el6.x86_64
+Marking perl-EV-4.03-6.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-EV.x86_64 0:4.03-6.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch        Version         Repository                       Size
+================================================================================
+Installing:
+ perl-EV      x86_64      4.03-6.el6      /perl-EV-4.03-6.el6.x86_64      630 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 630 k
+Installed size: 630 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-EV-4.03-6.el6.x86_64                                    1/1 
+  Verifying  : perl-EV-4.03-6.el6.x86_64                                    1/1 
+
+Installed:
+  perl-EV.x86_64 0:4.03-6.el6                                                   
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-JSON-2.50-1.el6.rfx.noarch.rpm: perl-JSON-2.50-1.el6.rfx.noarch
+Marking perl-JSON-2.50-1.el6.rfx.noarch.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-JSON.noarch 0:2.50-1.el6.rfx will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch     Version          Repository                          Size
+================================================================================
+Installing:
+ perl-JSON   noarch   2.50-1.el6.rfx   /perl-JSON-2.50-1.el6.rfx.noarch   237 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 237 k
+Installed size: 237 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-JSON-2.50-1.el6.rfx.noarch                              1/1 
+  Verifying  : perl-JSON-2.50-1.el6.rfx.noarch                              1/1 
+
+Installed:
+  perl-JSON.noarch 0:2.50-1.el6.rfx                                             
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-Guard-1.022-1.el6.x86_64.rpm: perl-Guard-1.022-1.el6.x86_64
+Marking perl-Guard-1.022-1.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-Guard.x86_64 0:1.022-1.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch      Version        Repository                         Size
+================================================================================
+Installing:
+ perl-Guard    x86_64    1.022-1.el6    /perl-Guard-1.022-1.el6.x86_64     31 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 31 k
+Installed size: 31 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-Guard-1.022-1.el6.x86_64                                1/1 
+  Verifying  : perl-Guard-1.022-1.el6.x86_64                                1/1 
+
+Installed:
+  perl-Guard.x86_64 0:1.022-1.el6                                               
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-AnyEvent-5.340-1.el6.rf.x86_64.rpm: perl-AnyEvent-5.340-1.el6.rf.x86_64
+Marking perl-AnyEvent-5.340-1.el6.rf.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-AnyEvent.x86_64 0:5.340-1.el6.rf will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch   Version        Repository                            Size
+================================================================================
+Installing:
+ perl-AnyEvent x86_64 5.340-1.el6.rf /perl-AnyEvent-5.340-1.el6.rf.x86_64 733 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 733 k
+Installed size: 733 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-AnyEvent-5.340-1.el6.rf.x86_64                          1/1 
+  Verifying  : perl-AnyEvent-5.340-1.el6.rf.x86_64                          1/1 
+
+Installed:
+  perl-AnyEvent.x86_64 0:5.340-1.el6.rf                                         
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining perl-YAML-0.72-1.el6.rfx.noarch.rpm: perl-YAML-0.72-1.el6.rfx.noarch
+Marking perl-YAML-0.72-1.el6.rfx.noarch.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package perl-YAML.noarch 0:0.72-1.el6.rfx will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package     Arch     Version          Repository                          Size
+================================================================================
+Installing:
+ perl-YAML   noarch   0.72-1.el6.rfx   /perl-YAML-0.72-1.el6.rfx.noarch   177 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 177 k
+Installed size: 177 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : perl-YAML-0.72-1.el6.rfx.noarch                              1/1 
+  Verifying  : perl-YAML-0.72-1.el6.rfx.noarch                              1/1 
+
+Installed:
+  perl-YAML.noarch 0:0.72-1.el6.rfx                                             
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining memcached-1.4.14-1.el6.rfx.x86_64.rpm: memcached-1.4.14-1.el6.rfx.x86_64
+Marking memcached-1.4.14-1.el6.rfx.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package memcached.x86_64 0:1.4.14-1.el6.rfx will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package    Arch    Version           Repository                           Size
+================================================================================
+Installing:
+ memcached  x86_64  1.4.14-1.el6.rfx  /memcached-1.4.14-1.el6.rfx.x86_64  202 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 202 k
+Installed size: 202 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : memcached-1.4.14-1.el6.rfx.x86_64                            1/1 
+  Verifying  : memcached-1.4.14-1.el6.rfx.x86_64                            1/1 
+
+Installed:
+  memcached.x86_64 0:1.4.14-1.el6.rfx                                           
+
+Complete!
+Loaded plugins: fastestmirror, refresh-packagekit, security
+Setting up Local Package Process
+Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
+Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
+Loading mirror speeds from cached hostfile
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package zenoss.x86_64 0:4.2.5-2108.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package  Arch     Version           Repository                            Size
+================================================================================
+Installing:
+ zenoss   x86_64   4.2.5-2108.el6    /zenoss_core-4.2.5-2108.el6.x86_64   326 M
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total size: 326 M
+Installed size: 326 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : zenoss-4.2.5-2108.el6.x86_64                                 1/1 
+  Verifying  : zenoss-4.2.5-2108.el6.x86_64                                 1/1 
 
 Installed:
   zenoss.x86_64 0:4.2.5-2108.el6                                                
-
-Dependency Installed:
-  cronie.x86_64 0:1.4.4-16.el6_8.2                                              
-  cronie-anacron.x86_64 0:1.4.4-16.el6_8.2                                      
-  crontabs.noarch 0:1.10-33.el6                                                 
-  exim.x86_64 0:4.91-1.el6                                                      
-  jemalloc.x86_64 0:3.6.0-1.el6                                                 
-  memcached.x86_64 0:1.4.4-5.el6                                                
-  nagios-common.x86_64 0:4.3.4-7.el6                                            
-  nagios-plugins.x86_64 0:2.2.1-4git.el6                                        
-  nagios-plugins-dig.x86_64 0:2.2.1-4git.el6                                    
-  nagios-plugins-dns.x86_64 0:2.2.1-4git.el6                                    
-  nagios-plugins-http.x86_64 0:2.2.1-4git.el6                                   
-  nagios-plugins-ircd.x86_64 0:2.2.1-4git.el6                                   
-  nagios-plugins-ldap.x86_64 0:2.2.1-4git.el6                                   
-  nagios-plugins-ntp.x86_64 0:2.2.1-4git.el6                                    
-  nagios-plugins-perl.x86_64 0:2.2.1-4git.el6                                   
-  nagios-plugins-ping.x86_64 0:2.2.1-4git.el6                                   
-  nagios-plugins-rpc.x86_64 0:2.2.1-4git.el6                                    
-  nagios-plugins-tcp.x86_64 0:2.2.1-4git.el6                                    
-  redis.x86_64 0:3.2.12-2.el6                                                   
-  sysstat.x86_64 0:9.0.4-33.el6_9.1                                             
 
 Complete!
 Securing Zenoss
@@ -1346,107 +3009,107 @@ Loading initial Zenoss objects into the Zeo database
 (this can take a few minutes)
 Zenoss initialization complete.
 Daemon: zeneventserver starting...
-Waiting for zeneventserver to start.........
-2019-01-10 16:40:01,814 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
-2019-01-10 16:40:02,022 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:02,026 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:02,119 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
-2019-01-10 16:40:02,178 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
-2019-01-10 16:40:02,693 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
-2019-01-10 16:40:08,491 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2019-01-10 16:40:08,491 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:08,491 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:08,510 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2019-01-10 16:40:08,542 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-2019-01-10 16:40:16,909 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
-2019-01-10 16:40:17,069 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:17,070 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:17,079 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
-2019-01-10 16:40:17,099 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
-2019-01-10 16:40:19,748 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
-2019-01-10 16:40:19,788 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:19,788 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:19,822 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2019-01-10 16:40:19,843 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
-2019-01-10 16:40:22,530 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
-2019-01-10 16:40:22,556 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:22,556 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:22,584 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
-2019-01-10 16:40:22,604 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
-2019-01-10 16:40:25,202 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
-2019-01-10 16:40:25,239 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:25,239 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:25,269 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2019-01-10 16:40:25,286 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
-2019-01-10 16:40:27,828 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
-2019-01-10 16:40:27,978 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:27,978 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:28,016 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
-2019-01-10 16:40:28,033 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
-2019-01-10 16:40:30,857 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
-2019-01-10 16:40:30,901 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:30,901 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:30,943 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
-2019-01-10 16:40:30,985 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
-2019-01-10 16:40:33,718 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
-2019-01-10 16:40:33,754 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:33,755 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:33,785 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2019-01-10 16:40:33,802 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
-2019-01-10 16:40:36,397 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
-2019-01-10 16:40:36,432 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:36,433 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:36,465 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2019-01-10 16:40:36,482 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
-2019-01-10 16:40:39,090 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
-2019-01-10 16:40:39,132 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:39,133 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:39,164 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2019-01-10 16:40:39,187 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
-2019-01-10 16:40:41,918 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
-2019-01-10 16:40:42,325 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:42,325 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:42,387 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
-2019-01-10 16:40:42,408 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
-2019-01-10 16:40:42,588 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
-2019-01-10 16:40:46,298 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
-2019-01-10 16:40:48,892 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
-2019-01-10 16:40:48,931 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:48,931 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:48,962 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2019-01-10 16:40:48,979 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
-2019-01-10 16:40:51,714 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
-2019-01-10 16:40:51,825 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:51,826 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:51,872 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
-2019-01-10 16:40:51,894 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
+Waiting for zeneventserver to start......
+2020-04-28 18:18:31,372 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
+2020-04-28 18:18:31,527 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:31,527 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:31,578 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
+2020-04-28 18:18:31,601 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
+2020-04-28 18:18:31,782 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
+2020-04-28 18:18:34,434 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2020-04-28 18:18:34,435 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:34,435 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:34,445 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2020-04-28 18:18:34,460 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2020-04-28 18:18:41,317 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
+2020-04-28 18:18:41,456 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:41,456 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:41,465 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
+2020-04-28 18:18:41,481 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
+2020-04-28 18:18:44,026 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
+2020-04-28 18:18:44,070 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:44,070 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:44,100 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2020-04-28 18:18:44,119 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
+2020-04-28 18:18:46,703 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
+2020-04-28 18:18:46,728 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:46,729 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:46,755 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
+2020-04-28 18:18:46,775 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
+2020-04-28 18:18:49,465 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
+2020-04-28 18:18:49,499 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:49,500 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:49,528 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2020-04-28 18:18:49,544 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
+2020-04-28 18:18:51,998 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
+2020-04-28 18:18:52,162 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:52,162 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:52,198 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
+2020-04-28 18:18:52,215 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
+2020-04-28 18:18:54,975 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
+2020-04-28 18:18:55,018 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:55,019 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:55,059 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
+2020-04-28 18:18:55,085 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
+2020-04-28 18:18:57,632 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
+2020-04-28 18:18:57,667 INFO zen.AddToPack: End loading objects
+2020-04-28 18:18:57,667 INFO zen.AddToPack: Processing links
+2020-04-28 18:18:57,701 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2020-04-28 18:18:57,716 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
+2020-04-28 18:19:00,210 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
+2020-04-28 18:19:00,244 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:00,244 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:00,273 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2020-04-28 18:19:00,290 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
+2020-04-28 18:19:02,786 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
+2020-04-28 18:19:02,825 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:02,825 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:02,854 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2020-04-28 18:19:02,869 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
+2020-04-28 18:19:05,466 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
+2020-04-28 18:19:05,864 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:05,864 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:05,918 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
+2020-04-28 18:19:05,938 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
+2020-04-28 18:19:06,115 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
+2020-04-28 18:19:09,720 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
+2020-04-28 18:19:12,208 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
+2020-04-28 18:19:12,245 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:12,246 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:12,276 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2020-04-28 18:19:12,292 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
+2020-04-28 18:19:14,862 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
+2020-04-28 18:19:14,969 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:14,969 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:15,022 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
+2020-04-28 18:19:15,043 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
 Creating /opt/zenoss/zenjmx-libs
-2019-01-10 16:40:59,780 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
-2019-01-10 16:40:59,903 INFO zen.AddToPack: End loading objects
-2019-01-10 16:40:59,903 INFO zen.AddToPack: Processing links
-2019-01-10 16:40:59,945 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
-2019-01-10 16:40:59,967 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
-2019-01-10 16:41:03,154 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
-2019-01-10 16:41:03,173 INFO zen.AddToPack: End loading objects
-2019-01-10 16:41:03,173 INFO zen.AddToPack: Processing links
-2019-01-10 16:41:03,203 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
-2019-01-10 16:41:03,225 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
-2019-01-10 16:41:05,926 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
-2019-01-10 16:41:06,009 INFO zen.AddToPack: End loading objects
-2019-01-10 16:41:06,009 INFO zen.AddToPack: Processing links
-2019-01-10 16:41:06,051 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
-2019-01-10 16:41:06,073 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
-2019-01-10 16:41:09,024 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
-2019-01-10 16:41:09,056 INFO zen.AddToPack: End loading objects
-2019-01-10 16:41:09,057 INFO zen.AddToPack: Processing links
-2019-01-10 16:41:09,080 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2019-01-10 16:41:09,104 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
-2019-01-10 16:41:11,839 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-2019-01-10 16:41:14,537 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2019-01-10 16:41:15,622 INFO zen.AddToPack: End loading objects
-2019-01-10 16:41:15,622 INFO zen.AddToPack: Processing links
-2019-01-10 16:41:15,726 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
-2019-01-10 16:41:15,747 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2020-04-28 18:19:22,621 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
+2020-04-28 18:19:22,746 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:22,746 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:22,786 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
+2020-04-28 18:19:22,807 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
+2020-04-28 18:19:25,848 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
+2020-04-28 18:19:25,865 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:25,865 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:25,890 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
+2020-04-28 18:19:25,911 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
+2020-04-28 18:19:28,784 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
+2020-04-28 18:19:28,865 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:28,865 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:28,904 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
+2020-04-28 18:19:28,922 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
+2020-04-28 18:19:31,707 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
+2020-04-28 18:19:31,738 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:31,739 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:31,762 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2020-04-28 18:19:31,783 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
+2020-04-28 18:19:34,403 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2020-04-28 18:19:36,996 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2020-04-28 18:19:38,065 INFO zen.AddToPack: End loading objects
+2020-04-28 18:19:38,065 INFO zen.AddToPack: Processing links
+2020-04-28 18:19:38,181 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
+2020-04-28 18:19:38,201 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
 Zenpacks were installed. Restarting zenoss.
 Daemon: zredis stopping...
 already stopped
@@ -1481,7 +3144,7 @@ Daemon: zeneventserver stopping...
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
 Daemon: zopectl . 
-daemon process started, pid=9360
+daemon process started, pid=9830
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -1500,59 +3163,28 @@ Daemon: zenpython starting...
 Daemon: zenjmx starting...
 
 Fresh install post step
---2019-01-10 16:42:34--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
+--2020-04-28 18:20:52--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
 Resolving zenny1.class.example.org... 192.168.10.133
 Connecting to zenny1.class.example.org|192.168.10.133|:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `/dev/null'
 
-     0K .......... ..                                          1.99K=6.2s
+     0K .......... ..                                          2.16K=5.7s
 
-2019-01-10 16:42:40 (1.99 KB/s) - `/dev/null' saved [12651]
+2020-04-28 18:20:59 (2.16 KB/s) - `/dev/null' saved [12651]
 
 Zenoss installation completed.
 Securing configuration files...
-Zenoss Core 4.2.5-2108 install completed successfully!
-
-Please visit http://127.0.0.1:8080 in your favorite Web browser to complete
-setup.
-
-NOTE: You may need to disable or modify this server's firewall to access port
-8080. To disable this system's firewall, type:
-
-# service iptables save
-# service iptables stop
-# chkconfig iptables off
-
-Alternatively, you can modify your firewall to enable incoming connections to
-port 8080. Here is a full list of all the ports Zenoss accepts incoming
-connections from, and their purpose:
-
-	8080 (TCP)                 Web user interface
-	11211 (TCP and UDP)        memcached
-	514 (UDP)                  syslog
-	162 (UDP)                  SNMP traps
-
-
-If you encounter problems with this script, please report them on the
-following wiki page:
-
-http://wiki.zenoss.org/index.php?title=Talk:Install_Zenoss
-
-Thank you for using Zenoss. Happy monitoring!
 ====================== Installing zenup and SUP 743 =======================
 Loaded plugins: fastestmirror, refresh-packagekit, security
 Setting up Local Package Process
 Examining zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: zenup-1.1.0.267.869d67a-1.el6.x86_64
 Marking zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm to be installed
 Loading mirror speeds from cached hostfile
- * base: mirror.freethought-internet.co.uk
- * epel: mirror.freethought-internet.co.uk
- * epel-debuginfo: mirror.freethought-internet.co.uk
- * epel-source: mirror.freethought-internet.co.uk
- * extras: mirror.sov.uk.goscomb.net
- * updates: mirror.sov.uk.goscomb.net
+ * base: centos.serverspace.co.uk
+ * extras: centos.serverspace.co.uk
+ * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenup.x86_64 0:1.1.0.267.869d67a-1.el6 will be installed
@@ -1586,7 +3218,6 @@ Installed:
   zenup.x86_64 0:1.1.0.267.869d67a-1.el6                                        
 
 Complete!
-Downloading zenoss_core-4.2.5-SP743-zenup11.zup...
 Initializing new product: zenoss-core-4.2.5
 Running installation script
 Replacing Resource Manager shebang in python files.
@@ -1710,9 +3341,9 @@ Comparing affected files
 Running pre-copy steps
 
 Zenpacks to update:
-/tmp/tmphxsyXK/zenoss_core-4.2.5-SP743-zenup11.zup_K_sqd6/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
-/tmp/tmphxsyXK/zenoss_core-4.2.5-SP743-zenup11.zup_K_sqd6/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-/tmp/tmphxsyXK/zenoss_core-4.2.5-SP743-zenup11.zup_K_sqd6/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
+/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
+/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
+/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 
 
 Zenmigrate scripts to run:
@@ -1810,8 +3441,8 @@ Installing protocols.tgz to /opt/zenoss/lib/python/zenoss/ ...
 
 
 Copying JS files into place...
-/tmp/tmphxsyXK/zenoss_core-4.2.5-SP743-zenup11.zup_K_sqd6/custom/blobs/el6/zenoss-compiled.js
-/tmp/tmphxsyXK/zenoss_core-4.2.5-SP743-zenup11.zup_K_sqd6/custom/blobs/el6/zenoss-compiled-debug.js
+/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/zenoss-compiled.js
+/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/zenoss-compiled-debug.js
 
 Processing Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
 creating /opt/zenoss/lib/python2.7/site-packages/Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
@@ -1929,9 +3560,9 @@ Applying schema version: 7
 Applying schema version: 8
 starting...
 Waiting for zeneventserver to start.......
-2019-01-10 16:47:17: waiting a maximum of 15 seconds for ZEP to be available...
+2020-04-28 18:22:43: waiting a maximum of 15 seconds for ZEP to be available...
 
-2019-01-10 16:47:20: is ZEP available: True 
+2020-04-28 18:22:46: is ZEP available: True 
 
 Sorting zenpacks ...
 Sorting zenpacks in zenpack_updates.txt is done
@@ -1940,26 +3571,26 @@ Updating zenpacks ...
 Installing: ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.DeviceSearch
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.DeviceSearch; launching process
-2019-01-10 16:47:31,476 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2020-04-28 18:22:57,429 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
 Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.PythonCollector; launching process
-2019-01-10 16:47:37,756 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2019-01-10 16:47:37,757 INFO zen.AddToPack: End loading objects
-2019-01-10 16:47:37,757 INFO zen.AddToPack: Processing links
-2019-01-10 16:47:37,782 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2019-01-10 16:47:37,790 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2020-04-28 18:23:03,603 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2020-04-28 18:23:03,604 INFO zen.AddToPack: End loading objects
+2020-04-28 18:23:03,604 INFO zen.AddToPack: Processing links
+2020-04-28 18:23:03,633 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2020-04-28 18:23:03,641 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
 Installing: ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.Microsoft.Windows
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launching process
-2019-01-10 16:47:44,617 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2019-01-10 16:47:47,419 INFO zen.AddToPack: End loading objects
-2019-01-10 16:47:47,420 INFO zen.AddToPack: Processing links
-2019-01-10 16:47:47,564 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
-2019-01-10 16:47:47,587 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-2019-01-10 16:47:48,422 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
-2019-01-10 16:47:48,423 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
-2019-01-10 16:47:48,424 INFO zen.migrate: Migrating zDBInstances for /
+2020-04-28 18:23:10,634 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2020-04-28 18:23:13,332 INFO zen.AddToPack: End loading objects
+2020-04-28 18:23:13,332 INFO zen.AddToPack: Processing links
+2020-04-28 18:23:13,484 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
+2020-04-28 18:23:13,508 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2020-04-28 18:23:14,360 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
+2020-04-28 18:23:14,361 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
+2020-04-28 18:23:14,362 INFO zen.migrate: Migrating zDBInstances for /
 Stopping zeneventserver...
 stopping...
 
@@ -2088,10 +3719,10 @@ Daemon: zeneventserver already stopped
 
 Starting zeneventserver...
 starting...
-Waiting for zeneventserver to start.......
-2019-01-10 16:48:09: waiting a maximum of 15 seconds for ZEP to be available...
+Waiting for zeneventserver to start......
+2020-04-28 18:23:34: waiting a maximum of 15 seconds for ZEP to be available...
 
-2019-01-10 16:48:13: is ZEP available: True 
+2020-04-28 18:23:38: is ZEP available: True 
 
 Running zenmigrate...
 INFO:zen.migrate:Will execute these steps: AddDisablePingPerspectiveOption
@@ -2155,8 +3786,8 @@ INFO:zen.migrate:Will execute these steps: ProcessCountThreshold
 INFO:zen.migrate:Installing ProcessCountThreshold (4.2.5)
 INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
-/zport/dmd/Devices/rrdTemplates/OSProcess/thresholds/count ['count_count'] <MinMaxThreshold at count>
 /zport/dmd/Devices/Server/Microsoft/rrdTemplates/OSProcess/thresholds/count ['process_count'] <MinMaxThreshold at count>
+/zport/dmd/Devices/rrdTemplates/OSProcess/thresholds/count ['count_count'] <MinMaxThreshold at count>
 INFO:zen.migrate:Will execute these steps: RegenerateComponentSearchCatalog
 INFO:zen.migrate:Installing RegenerateComponentSearchCatalog (4.2.5)
 Regenerating componentSearch catalog for 1 devices. This may take some time...
@@ -2194,26 +3825,26 @@ INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
 
 Running reportloader...
-2019-01-10 16:49:36,784 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
-2019-01-10 16:49:36,911 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
-2019-01-10 16:49:36,951 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
-2019-01-10 16:49:36,979 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
-2019-01-10 16:49:37,004 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
-2019-01-10 16:49:37,016 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
-2019-01-10 16:49:37,041 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
-2019-01-10 16:49:37,069 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
-2019-01-10 16:49:37,094 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
-2019-01-10 16:49:37,109 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
-2019-01-10 16:49:37,125 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
-2019-01-10 16:49:37,142 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
-2019-01-10 16:49:37,159 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
-2019-01-10 16:49:37,178 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
-2019-01-10 16:49:37,190 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
-2019-01-10 16:49:37,208 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
-2019-01-10 16:49:37,219 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
-2019-01-10 16:49:37,234 INFO zen.ReportLoader: loading: /Device Reports/All Devices
-2019-01-10 16:49:37,246 INFO zen.ReportLoader: loading: /Device Reports/New Devices
-2019-01-10 16:49:37,262 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
+2020-04-28 18:24:54,793 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
+2020-04-28 18:24:54,922 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
+2020-04-28 18:24:54,967 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
+2020-04-28 18:24:54,999 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
+2020-04-28 18:24:55,025 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
+2020-04-28 18:24:55,038 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
+2020-04-28 18:24:55,065 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
+2020-04-28 18:24:55,099 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
+2020-04-28 18:24:55,130 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
+2020-04-28 18:24:55,148 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
+2020-04-28 18:24:55,163 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
+2020-04-28 18:24:55,183 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
+2020-04-28 18:24:55,204 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
+2020-04-28 18:24:55,220 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
+2020-04-28 18:24:55,236 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
+2020-04-28 18:24:55,251 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
+2020-04-28 18:24:55,266 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
+2020-04-28 18:24:55,282 INFO zen.ReportLoader: loading: /Device Reports/All Devices
+2020-04-28 18:24:55,298 INFO zen.ReportLoader: loading: /Device Reports/New Devices
+2020-04-28 18:24:55,314 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
 
 
 ---------------------------------------------------------------------------
@@ -2240,10 +3871,10 @@ Home: /opt/zenoss
 Revision: 743
 Upgrading: None
 Minimum: 743
-Updated On: Thu Jan 10 16:49:38 2019
+Updated On: Tue Apr 28 18:24:56 2020
 Daemon: zeneventserver is already running
 Daemon: zopectl . 
-daemon process started, pid=15007
+daemon process started, pid=15383
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -2260,3 +3891,31 @@ Daemon: zenprocess starting...
 Daemon: zredis starting...
 Daemon: zenjmx starting...
 Daemon: zenpython starting...
+Zenoss Core 4.2.5-2108 install completed successfully!
+
+Please visit http://127.0.0.1:8080 in your favorite Web browser to complete
+setup.
+
+NOTE: You may need to disable or modify this server's firewall to access port
+8080. To disable this system's firewall, type:
+
+# service iptables save
+# service iptables stop
+# chkconfig iptables off
+
+Alternatively, you can modify your firewall to enable incoming connections to
+port 8080. Here is a full list of all the ports Zenoss accepts incoming
+connections from, and their purpose:
+
+	8080 (TCP)                 Web user interface
+	11211 (TCP and UDP)        memcached
+	514 (UDP)                  syslog
+	162 (UDP)                  SNMP traps
+
+
+If you encounter problems with this script, please report them on the
+following wiki page:
+
+http://wiki.zenoss.org/index.php?title=Talk:Install_Zenoss
+
+Thank you for using Zenoss. Happy monitoring!
