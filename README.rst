@@ -151,8 +151,7 @@ Typically, the zenoss user cannot be logged into directly.
 
 *  The hostname of the box is zenny1.class.example.org.
 *  The IP address is 192.168.10.133, with DNS server at 192.168.10.1 and default gateway of 192.168.10.2.
-*  The box has a sample snmpd.conf file in /etc/snmpd such that it responds to a community of public with
-SNMP V1 and V2c.
+*  The box has a sample snmpd.conf file in /etc/snmpd such that it responds to a community of public with SNMP V1 and V2c.
 *  The Zenoss GUI is reached with::
 
     http://zenny1.class.example.org:8080
@@ -170,9 +169,8 @@ Modifying the VM configuration
 You will probably want to change the hostname and IP details for your VM.  This is a relatively simple
 Operating System procedure and requires one action so that Zenoss copes with the name / address change.
 
-*  As root. change to /etc/sysconfig and edit the *network* file.  Change the HOSTNAME to 
-fully-qualified domain name that you require.  Also change the GATEWAY line to match your default gateway.
-* Chnage down to the network-scripts subdirectory and modify ifcfg-eth0::
+*  As root. change to /etc/sysconfig and edit the *network* file.  Change the HOSTNAME to the fully-qualified domain name that you require.  Also change the GATEWAY line to match your default gateway.
+* Change down to the network-scripts subdirectory and modify ifcfg-eth0::
 
     IPADDR=                   new IP address
     PREFIX=                   this is the length of the subnet mask so 24 is a Class C network
