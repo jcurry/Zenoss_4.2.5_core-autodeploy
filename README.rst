@@ -135,6 +135,80 @@ need to get packages from epel and if it gives trouble, change directory to
 */etc/yum.repos.d* and replace epel.repo and epel-testing.repo with the versions supplied
 in the pre_req_downloads directory.
 
+Using the VMware Zenoss 4.2.5
+=============================
+
+If you take the Zenoss 4.2.5 VM then a number of things are already configured:
+
+*  The root password for the VM is object00
+*  There is a user jane with password object00
+*  switch to the zenoss user by going via root, ie::
+
+    su                    and give the root password
+    su - zenoss
+
+Typically, the zenoss user cannot be logged into directly.
+
+*  The hostname of the box is zenny1.class.example.org.
+*  The IP address is 192.168.10.133, with DNS server at 192.168.10.1 and default gateway of 192.168.10.2.
+*  The box has a sample snmpd.conf file in /etc/snmpd such that it responds to a community of public with
+SNMP V1 and V2c.
+*  The Zenoss GUI is reached with::
+
+    http://zenny1.class.example.org:8080
+
+* Zenoss GUI users are configured as:
+
+  *  admin / zenoss
+  *  jane / object00
+
+The initial GUI setup phase has been executed and zenny1.class.example.org shows under /Server/Linux .
+
+Modifying the VM configuration
+------------------------------
+
+You will probably want to change the hostname and IP details for your VM.  This is a relatively simple
+Operating System procedure and requires one action so that Zenoss copes with the name / address change.
+
+*  As root. change to /etc/sysconfig and edit the *network* file.  Change the HOSTNAME to 
+fully-qualified domain name that you require.  Also change the GATEWAY line to match your default gateway.
+* Chnage down to the network-scripts subdirectory and modify ifcfg-eth0::
+
+    IPADDR=                   new IP address
+    PREFIX=                   this is the length of the subnet mask so 24 is a Class C network
+    GATEWAY=                  your default gateway
+    DNS1=                     your DNS server
+    DOMAIN=                   your search path of domains to add to short hostnames
+
+*  Modify the /etc/hosts file and replace::
+
+    192.168.10.133      zenny1.class.example.org zenny1
+    with  your IP address, your fully-qualified domain name and your short hostname
+
+Reboot the system
+
+Zenoss itself copes with host / ip changes but the underlying RabbitMQ system needs help. There is
+a script, fix_rabbit.sh, in /opt/zenoss/local.  It must be run as the root user.
+
+Then, as the zenoss user, restart zenoss::
+
+    zenoss restart
+
+New rabbit queues for the event subsytem should be created.  You can check these, as the root user, with::
+
+    rabbitmqctl -p /zenoss list_queues
+
+There should be 9 queues, probably all with nothing in them.
+
+Check (with *zenoss status* as the zenoss user), that all the zenoss processes are running.
+
+Check that the GUI can be started.  Remember to change your url to::
+
+http:// <your new fully qualified domain name>:8080
+ 
+The zenny1.class.example.org device will still be under /Server/Linux but will (obviously) be down.
+It can be deleted and add your new Zenoss server in.
+
 I would appreciate feedback from anyone else who uses it.
 
 
