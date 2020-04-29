@@ -28,7 +28,7 @@ Zenoss 4.2.5 can be retrieved in several ways:
   *  The file Zenoss_4.2.5_core-autodeploy-master.zip should be downloaded.  Use:
   *       unzip Zenoss_4.2.5_core-autodeploy-master.zip
   *  This will unzip the file into the Zenoss_4.2.5_core-autodeploy-master subdirectory
-*  Install the VMware OVA virtual machine which should be ready-to-go
+*  Install the VMware virtual machine which should be ready-to-go
 
 Building Zenoss 4.2.5
 ======================
@@ -137,6 +137,13 @@ in the pre_req_downloads directory.
 
 Using the VMware Zenoss 4.2.5
 =============================
+
+The VMware virtual machine is packaged simply as a zipped tarbundle in the top directory of this package.
+Unpack the file with::
+
+    tar -czvf zenny1_ZenossCore425.tgz
+
+It will unpack into the zenny1_ZenossCore425 directory.
 
 If you take the Zenoss 4.2.5 VM then a number of things are already configured:
 
