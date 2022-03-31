@@ -327,13 +327,10 @@ Disabling SELinux...
 Using MySQL Community Release version 5.5.37-1
 Install the Zenoss dependencies - zenossdeps-4.2.x-1.el6.noarch.rpm
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining zenossdeps-4.2.x-1.el6.noarch.rpm: zenossdeps-4.2.x-1.el6.noarch
 Marking zenossdeps-4.2.x-1.el6.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenossdeps.noarch 0:4.2.x-1.el6 will be installed
@@ -367,13 +364,10 @@ Installed:
 Complete!
 Installing EPEL Repo
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining epel-release-6-8.noarch.rpm: epel-release-6-8.noarch
 Marking epel-release-6-8.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package epel-release.noarch 0:6-8 will be installed
@@ -407,13 +401,10 @@ Installed:
 Complete!
 Installing erlang-R14B-04.3.el6.x86_64.rpm
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining tk-8.5.7-5.el6.x86_64.rpm: 1:tk-8.5.7-5.el6.x86_64
 Marking tk-8.5.7-5.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package tk.x86_64 1:8.5.7-5.el6 will be installed
@@ -446,13 +437,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining unixODBC-2.2.14-14.el6.x86_64.rpm: unixODBC-2.2.14-14.el6.x86_64
 Marking unixODBC-2.2.14-14.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
@@ -485,13 +473,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining wxBase-2.8.12-1.el6.centos.x86_64.rpm: wxBase-2.8.12-1.el6.centos.x86_64
 Marking wxBase-2.8.12-1.el6.centos.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Examining wxGTK-2.8.12-1.el6.centos.x86_64.rpm: wxGTK-2.8.12-1.el6.centos.x86_64
 Marking wxGTK-2.8.12-1.el6.centos.x86_64.rpm to be installed
 Examining wxGTK-gl-2.8.12-1.el6.centos.x86_64.rpm: wxGTK-gl-2.8.12-1.el6.centos.x86_64
@@ -537,13 +522,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining erlang-appmon-R14B-04.3.el6.x86_64.rpm: erlang-appmon-R14B-04.3.el6.x86_64
 Marking erlang-appmon-R14B-04.3.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Examining erlang-kernel-R14B-04.3.el6.x86_64.rpm: erlang-kernel-R14B-04.3.el6.x86_64
 Marking erlang-kernel-R14B-04.3.el6.x86_64.rpm to be installed
 Examining erlang-asn1-R14B-04.3.el6.x86_64.rpm: erlang-asn1-R14B-04.3.el6.x86_64
@@ -1003,13 +985,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining erlang-R14B-04.3.el6.x86_64.rpm: erlang-R14B-04.3.el6.x86_64
 Marking erlang-R14B-04.3.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Examining erlang-examples-R14B-04.3.el6.x86_64.rpm: erlang-examples-R14B-04.3.el6.x86_64
 Marking erlang-examples-R14B-04.3.el6.x86_64.rpm to be installed
 Resolving Dependencies
@@ -1050,13 +1029,10 @@ Installed:
 Complete!
 Installing RabbitMQ
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining rabbitmq-server-2.8.7-1.noarch.rpm: rabbitmq-server-2.8.7-1.noarch
 Marking rabbitmq-server-2.8.7-1.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package rabbitmq-server.noarch 0:2.8.7-1 will be installed
@@ -1111,13 +1087,10 @@ Unpacking JAR files...
 Done.
 Downloading and installing MySQL RPMs
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining MySQL-client-5.5.37-1.linux2.6.x86_64.rpm: MySQL-client-5.5.37-1.linux2.6.x86_64
 Marking MySQL-client-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-client.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1151,13 +1124,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining MySQL-server-5.5.37-1.linux2.6.x86_64.rpm: MySQL-server-5.5.37-1.linux2.6.x86_64
 Marking MySQL-server-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-server.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1209,13 +1179,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1249,13 +1216,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm: MySQL-shared-compat-5.5.37-1.linux2.6.x86_64
 Marking MySQL-shared-compat-5.5.37-1.linux2.6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package MySQL-shared-compat.x86_64 0:5.5.37-1.linux2.6 will be installed
@@ -1294,13 +1258,10 @@ Configuring MySQL
 Starting MySQL.. SUCCESS! 
 Installing rrdtool
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining ruby-libs-1.8.7.374-5.el6.x86_64.rpm: ruby-libs-1.8.7.374-5.el6.x86_64
 Marking ruby-libs-1.8.7.374-5.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package ruby-libs.x86_64 0:1.8.7.374-5.el6 will be installed
@@ -1333,13 +1294,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining ruby-1.8.7.374-5.el6.x86_64.rpm: ruby-1.8.7.374-5.el6.x86_64
 Marking ruby-1.8.7.374-5.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package ruby.x86_64 0:1.8.7.374-5.el6 will be installed
@@ -1372,13 +1330,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining libdbi-0.8.3-4.el6.x86_64.rpm: libdbi-0.8.3-4.el6.x86_64
 Marking libdbi-0.8.3-4.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package libdbi.x86_64 0:0.8.3-4.el6 will be installed
@@ -1411,13 +1366,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining rrdtool-1.4.7-1.el6.rfx.x86_64.rpm: rrdtool-1.4.7-1.el6.rfx.x86_64
 Marking rrdtool-1.4.7-1.el6.rfx.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Examining perl-rrdtool-1.4.7-1.el6.rfx.x86_64.rpm: perl-rrdtool-1.4.7-1.el6.rfx.x86_64
 Marking perl-rrdtool-1.4.7-1.el6.rfx.x86_64.rpm to be installed
 Resolving Dependencies
@@ -1457,13 +1409,10 @@ Installed:
 Complete!
 ===wget perl-common-sense.noarch====
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-common-sense-3.5-1.el6.noarch.rpm: perl-common-sense-3.5-1.el6.noarch
 Marking perl-common-sense-3.5-1.el6.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-common-sense.noarch 0:3.5-1.el6 will be installed
@@ -1498,13 +1447,10 @@ Complete!
 Installing Zenoss prereqs
 Installing Zenoss
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nspr-4.21.0-1.el6_10.x86_64.rpm: nspr-4.21.0-1.el6_10.x86_64
 Marking nspr-4.21.0-1.el6_10.x86_64.rpm as an update to nspr-4.10.8-2.el6_7.x86_64
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Marking nspr-4.21.0-1.el6_10.x86_64.rpm as an update to nspr-4.10.8-2.el6_7.i686
 Examining nspr-4.21.0-1.el6_10.i686.rpm: nspr-4.21.0-1.el6_10.i686
 Marking nspr-4.21.0-1.el6_10.i686.rpm as an update to nspr-4.10.8-2.el6_7.x86_64
@@ -1560,13 +1506,10 @@ Updated:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nss-util-3.44.0-1.el6_10.x86_64.rpm: nss-util-3.44.0-1.el6_10.x86_64
 Marking nss-util-3.44.0-1.el6_10.x86_64.rpm as an update to nss-util-3.19.1-2.el6_7.x86_64
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Marking nss-util-3.44.0-1.el6_10.x86_64.rpm as an update to nss-util-3.19.1-2.el6_7.i686
 Examining nss-util-3.44.0-1.el6_10.i686.rpm: nss-util-3.44.0-1.el6_10.i686
 Marking nss-util-3.44.0-1.el6_10.i686.rpm as an update to nss-util-3.19.1-2.el6_7.x86_64
@@ -1623,13 +1566,10 @@ Updated:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nss-softokn-3.44.0-6.el6_10.x86_64.rpm: nss-softokn-3.44.0-6.el6_10.x86_64
 Marking nss-softokn-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-3.14.3-23.el6_7.x86_64
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Marking nss-softokn-3.44.0-6.el6_10.x86_64.rpm as an update to nss-softokn-3.14.3-23.el6_7.i686
 Examining nss-softokn-3.44.0-6.el6_10.i686.rpm: nss-softokn-3.44.0-6.el6_10.i686
 Marking nss-softokn-3.44.0-6.el6_10.i686.rpm as an update to nss-softokn-3.14.3-23.el6_7.x86_64
@@ -1726,13 +1666,10 @@ Updated:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nss-3.44.0-7.el6_10.x86_64.rpm: nss-3.44.0-7.el6_10.x86_64
 Marking nss-3.44.0-7.el6_10.x86_64.rpm as an update to nss-3.19.1-8.el6_7.x86_64
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Marking nss-3.44.0-7.el6_10.x86_64.rpm as an update to nss-3.19.1-8.el6_7.i686
 Examining nss-3.44.0-7.el6_10.i686.rpm: nss-3.44.0-7.el6_10.i686
 Marking nss-3.44.0-7.el6_10.i686.rpm as an update to nss-3.19.1-8.el6_7.x86_64
@@ -1807,13 +1744,10 @@ Updated:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining crontabs-1.10-33.el6.noarch.rpm: crontabs-1.10-33.el6.noarch
 Marking crontabs-1.10-33.el6.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Examining cronie-1.4.4-16.el6_8.2.x86_64.rpm: cronie-1.4.4-16.el6_8.2.x86_64
 Marking cronie-1.4.4-16.el6_8.2.x86_64.rpm to be installed
 Examining cronie-anacron-1.4.4-16.el6_8.2.x86_64.rpm: cronie-anacron-1.4.4-16.el6_8.2.x86_64
@@ -1866,13 +1800,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-Async-Interrupt-1.05-1.el6.rf.x86_64.rpm: perl-Async-Interrupt-1.05-1.el6.rf.x86_64
 Marking perl-Async-Interrupt-1.05-1.el6.rf.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-Async-Interrupt.x86_64 0:1.05-1.el6.rf will be installed
@@ -1906,13 +1837,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-JSON-XS-2.27-2.el6.x86_64.rpm: 1:perl-JSON-XS-2.27-2.el6.x86_64
 Marking perl-JSON-XS-2.27-2.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-JSON-XS.x86_64 1:2.27-2.el6 will be installed
@@ -1945,13 +1873,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining tzdata-java-2019c-1.el6.noarch.rpm: tzdata-java-2019c-1.el6.noarch
 Marking tzdata-java-2019c-1.el6.noarch.rpm as an update to tzdata-java-2012c-3.el6.noarch
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package tzdata-java.noarch 0:2012c-3.el6 will be updated
@@ -1986,13 +1911,10 @@ Updated:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-TermReadKey-2.30-13.el6.x86_64.rpm: perl-TermReadKey-2.30-13.el6.x86_64
 Marking perl-TermReadKey-2.30-13.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-TermReadKey.x86_64 0:2.30-13.el6 will be installed
@@ -2025,13 +1947,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining exim-4.92.3-1.el6.x86_64.rpm: exim-4.92.3-1.el6.x86_64
 Marking exim-4.92.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package exim.x86_64 0:4.92.3-1.el6 will be installed
@@ -2064,13 +1983,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining sysstat-9.0.4-33.el6_9.1.x86_64.rpm: sysstat-9.0.4-33.el6_9.1.x86_64
 Marking sysstat-9.0.4-33.el6_9.1.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package sysstat.x86_64 0:9.0.4-33.el6_9.1 will be installed
@@ -2103,13 +2019,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-common-4.4.3-3.el6.x86_64.rpm: nagios-common-4.4.3-3.el6.x86_64
 Marking nagios-common-4.4.3-3.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-common.x86_64 0:4.4.3-3.el6 will be installed
@@ -2141,13 +2054,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-2.3.3-1.el6.x86_64.rpm: nagios-plugins-2.3.3-1.el6.x86_64
 Marking nagios-plugins-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins.x86_64 0:2.3.3-1.el6 will be installed
@@ -2180,13 +2090,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-perl-2.3.3-1.el6.x86_64.rpm: nagios-plugins-perl-2.3.3-1.el6.x86_64
 Marking nagios-plugins-perl-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-perl.x86_64 0:2.3.3-1.el6 will be installed
@@ -2220,13 +2127,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-ircd-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ircd-2.3.3-1.el6.x86_64
 Marking nagios-plugins-ircd-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-ircd.x86_64 0:2.3.3-1.el6 will be installed
@@ -2260,13 +2164,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-rpc-2.3.3-1.el6.x86_64.rpm: nagios-plugins-rpc-2.3.3-1.el6.x86_64
 Marking nagios-plugins-rpc-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-rpc.x86_64 0:2.3.3-1.el6 will be installed
@@ -2300,13 +2201,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-http-2.3.3-1.el6.x86_64.rpm: nagios-plugins-http-2.3.3-1.el6.x86_64
 Marking nagios-plugins-http-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-http.x86_64 0:2.3.3-1.el6 will be installed
@@ -2340,13 +2238,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-tcp-2.3.3-1.el6.x86_64.rpm: nagios-plugins-tcp-2.3.3-1.el6.x86_64
 Marking nagios-plugins-tcp-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-tcp.x86_64 0:2.3.3-1.el6 will be installed
@@ -2380,13 +2275,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-dig-2.3.3-1.el6.x86_64.rpm: nagios-plugins-dig-2.3.3-1.el6.x86_64
 Marking nagios-plugins-dig-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-dig.x86_64 0:2.3.3-1.el6 will be installed
@@ -2420,13 +2312,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-ntp-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ntp-2.3.3-1.el6.x86_64
 Marking nagios-plugins-ntp-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-ntp.x86_64 0:2.3.3-1.el6 will be installed
@@ -2460,13 +2349,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-ldap-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ldap-2.3.3-1.el6.x86_64
 Marking nagios-plugins-ldap-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-ldap.x86_64 0:2.3.3-1.el6 will be installed
@@ -2500,13 +2386,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-dns-2.3.3-1.el6.x86_64.rpm: nagios-plugins-dns-2.3.3-1.el6.x86_64
 Marking nagios-plugins-dns-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-dns.x86_64 0:2.3.3-1.el6 will be installed
@@ -2540,13 +2423,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining nagios-plugins-ping-2.3.3-1.el6.x86_64.rpm: nagios-plugins-ping-2.3.3-1.el6.x86_64
 Marking nagios-plugins-ping-2.3.3-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package nagios-plugins-ping.x86_64 0:2.3.3-1.el6 will be installed
@@ -2580,13 +2460,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining lksctp-tools-1.0.10-7.el6.x86_64.rpm: lksctp-tools-1.0.10-7.el6.x86_64
 Marking lksctp-tools-1.0.10-7.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package lksctp-tools.x86_64 0:1.0.10-7.el6 will be installed
@@ -2619,13 +2496,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining jemalloc-3.6.0-1.el6.x86_64.rpm: jemalloc-3.6.0-1.el6.x86_64
 Marking jemalloc-3.6.0-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package jemalloc.x86_64 0:3.6.0-1.el6 will be installed
@@ -2658,13 +2532,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining redis-3.2.12-2.el6.x86_64.rpm: redis-3.2.12-2.el6.x86_64
 Marking redis-3.2.12-2.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package redis.x86_64 0:3.2.12-2.el6 will be installed
@@ -2697,13 +2568,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-EV-4.03-6.el6.x86_64.rpm: perl-EV-4.03-6.el6.x86_64
 Marking perl-EV-4.03-6.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-EV.x86_64 0:4.03-6.el6 will be installed
@@ -2736,13 +2604,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-JSON-2.50-1.el6.rfx.noarch.rpm: perl-JSON-2.50-1.el6.rfx.noarch
 Marking perl-JSON-2.50-1.el6.rfx.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-JSON.noarch 0:2.50-1.el6.rfx will be installed
@@ -2775,13 +2640,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-Guard-1.022-1.el6.x86_64.rpm: perl-Guard-1.022-1.el6.x86_64
 Marking perl-Guard-1.022-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-Guard.x86_64 0:1.022-1.el6 will be installed
@@ -2814,13 +2676,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-AnyEvent-5.340-1.el6.rf.x86_64.rpm: perl-AnyEvent-5.340-1.el6.rf.x86_64
 Marking perl-AnyEvent-5.340-1.el6.rf.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-AnyEvent.x86_64 0:5.340-1.el6.rf will be installed
@@ -2853,13 +2712,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining perl-YAML-0.72-1.el6.rfx.noarch.rpm: perl-YAML-0.72-1.el6.rfx.noarch
 Marking perl-YAML-0.72-1.el6.rfx.noarch.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package perl-YAML.noarch 0:0.72-1.el6.rfx will be installed
@@ -2892,13 +2748,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining memcached-1.4.14-1.el6.rfx.x86_64.rpm: memcached-1.4.14-1.el6.rfx.x86_64
 Marking memcached-1.4.14-1.el6.rfx.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package memcached.x86_64 0:1.4.14-1.el6.rfx will be installed
@@ -2931,13 +2784,10 @@ Installed:
 
 Complete!
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining zenoss_core-4.2.5-2108.el6.x86_64.rpm: zenoss-4.2.5-2108.el6.x86_64
 Marking zenoss_core-4.2.5-2108.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenoss.x86_64 0:4.2.5-2108.el6 will be installed
@@ -3010,106 +2860,106 @@ Loading initial Zenoss objects into the Zeo database
 Zenoss initialization complete.
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
-2020-04-28 18:18:31,372 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
-2020-04-28 18:18:31,527 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:31,527 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:31,578 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
-2020-04-28 18:18:31,601 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
-2020-04-28 18:18:31,782 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
-2020-04-28 18:18:34,434 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2020-04-28 18:18:34,435 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:34,435 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:34,445 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2020-04-28 18:18:34,460 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
-2020-04-28 18:18:41,317 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
-2020-04-28 18:18:41,456 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:41,456 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:41,465 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
-2020-04-28 18:18:41,481 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
-2020-04-28 18:18:44,026 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
-2020-04-28 18:18:44,070 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:44,070 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:44,100 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2020-04-28 18:18:44,119 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
-2020-04-28 18:18:46,703 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
-2020-04-28 18:18:46,728 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:46,729 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:46,755 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
-2020-04-28 18:18:46,775 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
-2020-04-28 18:18:49,465 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
-2020-04-28 18:18:49,499 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:49,500 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:49,528 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2020-04-28 18:18:49,544 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
-2020-04-28 18:18:51,998 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
-2020-04-28 18:18:52,162 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:52,162 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:52,198 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
-2020-04-28 18:18:52,215 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
-2020-04-28 18:18:54,975 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
-2020-04-28 18:18:55,018 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:55,019 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:55,059 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
-2020-04-28 18:18:55,085 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
-2020-04-28 18:18:57,632 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
-2020-04-28 18:18:57,667 INFO zen.AddToPack: End loading objects
-2020-04-28 18:18:57,667 INFO zen.AddToPack: Processing links
-2020-04-28 18:18:57,701 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2020-04-28 18:18:57,716 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
-2020-04-28 18:19:00,210 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
-2020-04-28 18:19:00,244 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:00,244 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:00,273 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2020-04-28 18:19:00,290 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
-2020-04-28 18:19:02,786 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
-2020-04-28 18:19:02,825 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:02,825 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:02,854 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
-2020-04-28 18:19:02,869 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
-2020-04-28 18:19:05,466 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
-2020-04-28 18:19:05,864 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:05,864 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:05,918 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
-2020-04-28 18:19:05,938 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
-2020-04-28 18:19:06,115 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
-2020-04-28 18:19:09,720 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
-2020-04-28 18:19:12,208 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
-2020-04-28 18:19:12,245 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:12,246 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:12,276 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2020-04-28 18:19:12,292 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
-2020-04-28 18:19:14,862 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
-2020-04-28 18:19:14,969 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:14,969 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:15,022 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
-2020-04-28 18:19:15,043 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
+2022-03-31 17:09:26,299 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/objects/objects.xml
+2022-03-31 17:09:26,469 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:26,469 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:26,519 INFO zen.AddToPack: Loaded 33 objects into the ZODB database
+2022-03-31 17:09:26,543 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ApacheMonitor-2.1.4-py2.7.egg/ZenPacks/zenoss/ApacheMonitor/reports
+2022-03-31 17:09:26,728 INFO zen.migrate: Removing ignoreParameters from OSProcessClass object
+2022-03-31 17:09:29,428 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2022-03-31 17:09:29,428 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:29,429 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:29,440 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2022-03-31 17:09:29,459 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.2.0-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2022-03-31 17:09:36,757 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/objects/objects.xml
+2022-03-31 17:09:36,924 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:36,924 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:36,938 INFO zen.AddToPack: Loaded 3 objects into the ZODB database
+2022-03-31 17:09:36,959 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DellMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/DellMonitor/reports
+2022-03-31 17:09:39,758 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/objects/objects.xml
+2022-03-31 17:09:39,800 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:39,801 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:39,834 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2022-03-31 17:09:39,855 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DigMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/DigMonitor/reports
+2022-03-31 17:09:42,556 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/objects/objects.xml
+2022-03-31 17:09:42,582 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:42,585 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:42,610 INFO zen.AddToPack: Loaded 5 objects into the ZODB database
+2022-03-31 17:09:42,630 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DnsMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/DnsMonitor/reports
+2022-03-31 17:09:45,153 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/objects/objects.xml
+2022-03-31 17:09:45,188 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:45,188 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:45,225 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2022-03-31 17:09:45,240 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.FtpMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/FtpMonitor/reports
+2022-03-31 17:09:47,735 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/objects/objects.xml
+2022-03-31 17:09:47,877 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:47,878 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:47,920 INFO zen.AddToPack: Loaded 19 objects into the ZODB database
+2022-03-31 17:09:47,935 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HPMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HPMonitor/reports
+2022-03-31 17:09:50,739 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/objects/objects.xml
+2022-03-31 17:09:50,781 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:50,781 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:50,817 INFO zen.AddToPack: Loaded 10 objects into the ZODB database
+2022-03-31 17:09:50,837 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.HttpMonitor-2.1.0-py2.7.egg/ZenPacks/zenoss/HttpMonitor/reports
+2022-03-31 17:09:53,454 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/objects/objects.xml
+2022-03-31 17:09:53,488 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:53,489 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:53,521 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2022-03-31 17:09:53,538 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.IRCDMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/IRCDMonitor/reports
+2022-03-31 17:09:56,068 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/objects/objects.xml
+2022-03-31 17:09:56,101 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:56,102 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:56,131 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2022-03-31 17:09:56,147 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.JabberMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/JabberMonitor/reports
+2022-03-31 17:09:58,678 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/objects/objects.xml
+2022-03-31 17:09:58,716 INFO zen.AddToPack: End loading objects
+2022-03-31 17:09:58,716 INFO zen.AddToPack: Processing links
+2022-03-31 17:09:58,745 INFO zen.AddToPack: Loaded 8 objects into the ZODB database
+2022-03-31 17:09:58,762 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LDAPMonitor-1.4.0-py2.7.egg/ZenPacks/zenoss/LDAPMonitor/reports
+2022-03-31 17:10:01,466 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/objects/objects.xml
+2022-03-31 17:10:01,867 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:01,868 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:01,924 INFO zen.AddToPack: Loaded 194 objects into the ZODB database
+2022-03-31 17:10:01,942 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.MySqlMonitor-3.0.0-py2.7.egg/ZenPacks/zenoss/MySqlMonitor/reports
+2022-03-31 17:10:02,118 INFO zen.MySqlMonitor: Adding MySqlMonitor relationships to existing devices
+2022-03-31 17:10:05,858 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NNTPMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/NNTPMonitor/reports
+2022-03-31 17:10:08,407 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/objects/objects.xml
+2022-03-31 17:10:08,443 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:08,444 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:08,476 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2022-03-31 17:10:08,497 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.NtpMonitor-2.2.0-py2.7.egg/ZenPacks/zenoss/NtpMonitor/reports
+2022-03-31 17:10:11,144 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/objects/objects.xml
+2022-03-31 17:10:11,251 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:11,251 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:11,302 INFO zen.AddToPack: Loaded 45 objects into the ZODB database
+2022-03-31 17:10:11,321 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenJMX-3.9.6-py2.7.egg/ZenPacks/zenoss/ZenJMX/reports
 Creating /opt/zenoss/zenjmx-libs
-2020-04-28 18:19:22,621 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
-2020-04-28 18:19:22,746 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:22,746 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:22,786 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
-2020-04-28 18:19:22,807 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
-2020-04-28 18:19:25,848 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
-2020-04-28 18:19:25,865 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:25,865 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:25,890 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
-2020-04-28 18:19:25,911 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
-2020-04-28 18:19:28,784 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
-2020-04-28 18:19:28,865 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:28,865 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:28,904 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
-2020-04-28 18:19:28,922 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
-2020-04-28 18:19:31,707 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
-2020-04-28 18:19:31,738 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:31,739 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:31,762 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
-2020-04-28 18:19:31,783 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
-2020-04-28 18:19:34,403 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
-2020-04-28 18:19:36,996 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2020-04-28 18:19:38,065 INFO zen.AddToPack: End loading objects
-2020-04-28 18:19:38,065 INFO zen.AddToPack: Processing links
-2020-04-28 18:19:38,181 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
-2020-04-28 18:19:38,201 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2022-03-31 17:10:18,692 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/objects/objects.xml
+2022-03-31 17:10:18,807 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:18,807 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:18,843 INFO zen.AddToPack: Loaded 66 objects into the ZODB database
+2022-03-31 17:10:18,860 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.LinuxMonitor-1.2.1-py2.7.egg/ZenPacks/zenoss/LinuxMonitor/reports
+2022-03-31 17:10:21,916 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/objects/objects.xml
+2022-03-31 17:10:21,936 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:21,936 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:21,961 INFO zen.AddToPack: Loaded 2 objects into the ZODB database
+2022-03-31 17:10:21,982 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.ZenossVirtualHostMonitor-2.4.0-py2.7.egg/ZenPacks/zenoss/ZenossVirtualHostMonitor/reports
+2022-03-31 17:10:24,927 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/objects/objects.xml
+2022-03-31 17:10:25,008 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:25,008 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:25,047 INFO zen.AddToPack: Loaded 40 objects into the ZODB database
+2022-03-31 17:10:25,066 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.EsxTop-1.1.0-py2.7.egg/ZenPacks/zenoss/EsxTop/reports
+2022-03-31 17:10:27,927 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/objects/objects.xml
+2022-03-31 17:10:27,957 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:27,958 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:27,983 INFO zen.AddToPack: Loaded 6 objects into the ZODB database
+2022-03-31 17:10:28,003 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.XenMonitor-1.1.0-py2.7.egg/ZenPacks/zenoss/XenMonitor/reports
+2022-03-31 17:10:30,668 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.0-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2022-03-31 17:10:33,356 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2022-03-31 17:10:34,445 INFO zen.AddToPack: End loading objects
+2022-03-31 17:10:34,446 INFO zen.AddToPack: Processing links
+2022-03-31 17:10:34,530 INFO zen.AddToPack: Loaded 499 objects into the ZODB database
+2022-03-31 17:10:34,552 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.0.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
 Zenpacks were installed. Restarting zenoss.
 Daemon: zredis stopping...
 already stopped
@@ -3144,7 +2994,7 @@ Daemon: zeneventserver stopping...
 Daemon: zeneventserver starting...
 Waiting for zeneventserver to start......
 Daemon: zopectl . 
-daemon process started, pid=9830
+daemon process started, pid=9832
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...
@@ -3163,28 +3013,25 @@ Daemon: zenpython starting...
 Daemon: zenjmx starting...
 
 Fresh install post step
---2020-04-28 18:20:52--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
+--2022-03-31 17:11:49--  http://zenny1.class.example.org:8080/zport/dmd/DeviceLoader/loadDevice?deviceName=zenny1.class.example.org&devicePath=/Server/Linux
 Resolving zenny1.class.example.org... 192.168.10.133
 Connecting to zenny1.class.example.org|192.168.10.133|:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `/dev/null'
 
-     0K .......... ..                                          2.16K=5.7s
+     0K .......... ..                                          1.15K=11s
 
-2020-04-28 18:20:59 (2.16 KB/s) - `/dev/null' saved [12651]
+2022-03-31 17:12:00 (1.15 KB/s) - `/dev/null' saved [12651]
 
 Zenoss installation completed.
 Securing configuration files...
 ====================== Installing zenup and SUP 743 =======================
 Loaded plugins: fastestmirror, refresh-packagekit, security
+Loading mirror speeds from cached hostfile
 Setting up Local Package Process
 Examining zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm: zenup-1.1.0.267.869d67a-1.el6.x86_64
 Marking zenup-1.1.0.267.869d67a-1.el6.x86_64.rpm to be installed
-Loading mirror speeds from cached hostfile
- * base: centos.serverspace.co.uk
- * extras: centos.serverspace.co.uk
- * updates: centos.serverspace.co.uk
 Resolving Dependencies
 --> Running transaction check
 ---> Package zenup.x86_64 0:1.1.0.267.869d67a-1.el6 will be installed
@@ -3341,9 +3188,9 @@ Comparing affected files
 Running pre-copy steps
 
 Zenpacks to update:
-/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
-/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
-/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
+/tmp/tmpT3JPJI/zenoss_core-4.2.5-SP743-zenup11.zup_t5CVjI/custom/blobs/el6/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
+/tmp/tmpT3JPJI/zenoss_core-4.2.5-SP743-zenup11.zup_t5CVjI/custom/blobs/el6/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
+/tmp/tmpT3JPJI/zenoss_core-4.2.5-SP743-zenup11.zup_t5CVjI/custom/blobs/el6/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 
 
 Zenmigrate scripts to run:
@@ -3441,8 +3288,8 @@ Installing protocols.tgz to /opt/zenoss/lib/python/zenoss/ ...
 
 
 Copying JS files into place...
-/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/zenoss-compiled.js
-/tmp/tmpOqQFZq/zenoss_core-4.2.5-SP743-zenup11.zup_QBzCaI/custom/blobs/el6/zenoss-compiled-debug.js
+/tmp/tmpT3JPJI/zenoss_core-4.2.5-SP743-zenup11.zup_t5CVjI/custom/blobs/el6/zenoss-compiled.js
+/tmp/tmpT3JPJI/zenoss_core-4.2.5-SP743-zenup11.zup_t5CVjI/custom/blobs/el6/zenoss-compiled-debug.js
 
 Processing Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
 creating /opt/zenoss/lib/python2.7/site-packages/Acquisition-2.13.8.1-py2.7-linux-x86_64.egg
@@ -3560,9 +3407,9 @@ Applying schema version: 7
 Applying schema version: 8
 starting...
 Waiting for zeneventserver to start.......
-2020-04-28 18:22:43: waiting a maximum of 15 seconds for ZEP to be available...
+2022-03-31 17:13:43: waiting a maximum of 15 seconds for ZEP to be available...
 
-2020-04-28 18:22:46: is ZEP available: True 
+2022-03-31 17:13:45: is ZEP available: True 
 
 Sorting zenpacks ...
 Sorting zenpacks in zenpack_updates.txt is done
@@ -3571,26 +3418,26 @@ Updating zenpacks ...
 Installing: ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.DeviceSearch
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.DeviceSearch; launching process
-2020-04-28 18:22:57,429 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
+2022-03-31 17:13:56,539 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.DeviceSearch-1.2.1-py2.7.egg/ZenPacks/zenoss/DeviceSearch/reports
 Installing: ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.PythonCollector
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.PythonCollector; launching process
-2020-04-28 18:23:03,603 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
-2020-04-28 18:23:03,604 INFO zen.AddToPack: End loading objects
-2020-04-28 18:23:03,604 INFO zen.AddToPack: Processing links
-2020-04-28 18:23:03,633 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
-2020-04-28 18:23:03,641 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
+2022-03-31 17:14:02,766 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/objects/objects.xml
+2022-03-31 17:14:02,766 INFO zen.AddToPack: End loading objects
+2022-03-31 17:14:02,767 INFO zen.AddToPack: Processing links
+2022-03-31 17:14:02,791 INFO zen.AddToPack: Loaded 0 objects into the ZODB database
+2022-03-31 17:14:02,802 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.PythonCollector-1.5.2-py2.7.egg/ZenPacks/zenoss/PythonCollector/reports
 Installing: ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg
 INFO:zen.ZenPackCMD:Previous ZenPack exists with same name ZenPacks.zenoss.Microsoft.Windows
 INFO:zen.ZenPackCMD:installing zenpack ZenPacks.zenoss.Microsoft.Windows; launching process
-2020-04-28 18:23:10,634 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
-2020-04-28 18:23:13,332 INFO zen.AddToPack: End loading objects
-2020-04-28 18:23:13,332 INFO zen.AddToPack: Processing links
-2020-04-28 18:23:13,484 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
-2020-04-28 18:23:13,508 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
-2020-04-28 18:23:14,360 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
-2020-04-28 18:23:14,361 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
-2020-04-28 18:23:14,362 INFO zen.migrate: Migrating zDBInstances for /
+2022-03-31 17:14:09,313 INFO zen.ZPLoader: Loading /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/objects/objects.xml
+2022-03-31 17:14:12,077 INFO zen.AddToPack: End loading objects
+2022-03-31 17:14:12,078 INFO zen.AddToPack: Processing links
+2022-03-31 17:14:12,236 INFO zen.AddToPack: Loaded 188 objects into the ZODB database
+2022-03-31 17:14:12,256 INFO zen.HookReportLoader: Loading reports from /opt/zenoss/ZenPacks/ZenPacks.zenoss.Microsoft.Windows-2.1.2-py2.7.egg/ZenPacks/zenoss/Microsoft/Windows/reports
+2022-03-31 17:14:12,694 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Windows
+2022-03-31 17:14:12,695 INFO zen.migrate: Migrating zDBInstances for /Server/Microsoft/Cluster
+2022-03-31 17:14:12,696 INFO zen.migrate: Migrating zDBInstances for /
 Stopping zeneventserver...
 stopping...
 
@@ -3719,10 +3566,10 @@ Daemon: zeneventserver already stopped
 
 Starting zeneventserver...
 starting...
-Waiting for zeneventserver to start......
-2020-04-28 18:23:34: waiting a maximum of 15 seconds for ZEP to be available...
+Waiting for zeneventserver to start.......
+2022-03-31 17:14:34: waiting a maximum of 15 seconds for ZEP to be available...
 
-2020-04-28 18:23:38: is ZEP available: True 
+2022-03-31 17:14:37: is ZEP available: True 
 
 Running zenmigrate...
 INFO:zen.migrate:Will execute these steps: AddDisablePingPerspectiveOption
@@ -3786,8 +3633,8 @@ INFO:zen.migrate:Will execute these steps: ProcessCountThreshold
 INFO:zen.migrate:Installing ProcessCountThreshold (4.2.5)
 INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
-/zport/dmd/Devices/Server/Microsoft/rrdTemplates/OSProcess/thresholds/count ['process_count'] <MinMaxThreshold at count>
 /zport/dmd/Devices/rrdTemplates/OSProcess/thresholds/count ['count_count'] <MinMaxThreshold at count>
+/zport/dmd/Devices/Server/Microsoft/rrdTemplates/OSProcess/thresholds/count ['process_count'] <MinMaxThreshold at count>
 INFO:zen.migrate:Will execute these steps: RegenerateComponentSearchCatalog
 INFO:zen.migrate:Installing RegenerateComponentSearchCatalog (4.2.5)
 Regenerating componentSearch catalog for 1 devices. This may take some time...
@@ -3825,26 +3672,26 @@ INFO:zen.migrate:Committing changes
 INFO:zen.migrate:Migration successful
 
 Running reportloader...
-2020-04-28 18:24:54,793 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
-2020-04-28 18:24:54,922 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
-2020-04-28 18:24:54,967 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
-2020-04-28 18:24:54,999 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
-2020-04-28 18:24:55,025 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
-2020-04-28 18:24:55,038 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
-2020-04-28 18:24:55,065 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
-2020-04-28 18:24:55,099 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
-2020-04-28 18:24:55,130 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
-2020-04-28 18:24:55,148 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
-2020-04-28 18:24:55,163 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
-2020-04-28 18:24:55,183 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
-2020-04-28 18:24:55,204 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
-2020-04-28 18:24:55,220 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
-2020-04-28 18:24:55,236 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
-2020-04-28 18:24:55,251 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
-2020-04-28 18:24:55,266 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
-2020-04-28 18:24:55,282 INFO zen.ReportLoader: loading: /Device Reports/All Devices
-2020-04-28 18:24:55,298 INFO zen.ReportLoader: loading: /Device Reports/New Devices
-2020-04-28 18:24:55,314 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
+2022-03-31 17:15:52,278 INFO zen.ReportLoader: Loading reports from /opt/zenoss/Products/ZenReports/reports
+2022-03-31 17:15:52,402 INFO zen.ReportLoader: loading: /Performance Reports/Availability Report
+2022-03-31 17:15:52,447 INFO zen.ReportLoader: loading: /Performance Reports/Interface Utilization
+2022-03-31 17:15:52,478 INFO zen.ReportLoader: loading: /Performance Reports/CPU Utilization
+2022-03-31 17:15:52,504 INFO zen.ReportLoader: loading: /Performance Reports/Aggregate Reports
+2022-03-31 17:15:52,516 INFO zen.ReportLoader: loading: /Performance Reports/Filesystem Util Report
+2022-03-31 17:15:52,543 INFO zen.ReportLoader: loading: /Performance Reports/Memory Utilization
+2022-03-31 17:15:52,574 INFO zen.ReportLoader: loading: /Performance Reports/Threshold Summary
+2022-03-31 17:15:52,606 INFO zen.ReportLoader: loading: /Event Reports/All Heartbeats
+2022-03-31 17:15:52,622 INFO zen.ReportLoader: loading: /Event Reports/All EventMappings
+2022-03-31 17:15:52,638 INFO zen.ReportLoader: loading: /Event Reports/All EventClasses
+2022-03-31 17:15:52,659 INFO zen.ReportLoader: loading: /Device Reports/All Monitored Components
+2022-03-31 17:15:52,678 INFO zen.ReportLoader: loading: /Device Reports/Device Changes
+2022-03-31 17:15:52,694 INFO zen.ReportLoader: loading: /Device Reports/Ping Status Issues
+2022-03-31 17:15:52,705 INFO zen.ReportLoader: loading: /Device Reports/Model Collection Age
+2022-03-31 17:15:52,724 INFO zen.ReportLoader: loading: /Device Reports/SNMP Status Issues
+2022-03-31 17:15:52,735 INFO zen.ReportLoader: loading: /Device Reports/Software Inventory
+2022-03-31 17:15:52,753 INFO zen.ReportLoader: loading: /Device Reports/All Devices
+2022-03-31 17:15:52,764 INFO zen.ReportLoader: loading: /Device Reports/New Devices
+2022-03-31 17:15:52,783 INFO zen.ReportLoader: loading: /Device Reports/MAC Addresses
 
 
 ---------------------------------------------------------------------------
@@ -3871,10 +3718,10 @@ Home: /opt/zenoss
 Revision: 743
 Upgrading: None
 Minimum: 743
-Updated On: Tue Apr 28 18:24:56 2020
+Updated On: Thu Mar 31 17:15:53 2022
 Daemon: zeneventserver is already running
 Daemon: zopectl . 
-daemon process started, pid=15383
+daemon process started, pid=15337
 Daemon: zenrrdcached starting...
 Daemon: zenhub starting...
 Daemon: zenjobs starting...

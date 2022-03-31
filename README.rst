@@ -1,20 +1,20 @@
-============================================================
-Zenoss Core 4.2.5 updated auto deploy script - April 2020
-============================================================
+==============================================================
+Zenoss Core 4.2.5 updated auto deploy script - March 31st 2022
+==============================================================
 
-The Zenoss wiki has a (somewhat hidden)link to deploy Zenoss Core 4.2.5 with an auto deploy script - 
-http://wiki.zenoss.org/index.php?title=Install_Zenoss&oldid=17203 
+On March 18th 2022 Zenoss suddenly announced that Zenoss Core is to be discountinued and
+that the TechZen Community site will be shut down at the end of this month. It is unclear
+quite what is meant by "discontinued" but I have done a quick review of this autodeploy
+repository to check that it still works and that it is completely independent of any Zenoss site.
+This is a quick check and update; no extra cleaning up has been done.
 
-Unfortunately some of the pre-req / co-req chain appears to have broken as at
-December 2016.  There is a forum append documenting some of the issues at
-http://www.zenoss.org/forum/146626  (sorry this appears to have completely vanished by Dec 2018).
-
-This git repository contains a new standalone version of the script, core-autodeploy_20200428.sh.
+This git repository contains a new standalone version of the script, core-autodeploy_20220331.sh.
 It uses a directory called *pre_req_downloads* to hold all the prereqs to build
 Zenoss 4.2.5 with the latest zenup patch SUP SP743, plus a couple of later spot patches.
 
 Unfortunately, the Zenoss Core rpm, zenoss_core-4.2.5-2108.el6.x86_64.rpm, is too big for
-github at about 120MB.  This must be retrieved separately.
+github at about 120MB.  This must be retrieved separately. We have provided a new
+download site for it at https://www.skills-1st.co.uk/pub/zenoss/zenoss_core-4.2.5-2108.el6.x86_64.rpm 
 
 Retrieving the build package
 ============================
@@ -23,12 +23,11 @@ Zenoss 4.2.5 can be retrieved in several ways:
 
 *  If you are comfortable with git then clone this git directory
 *  If you are not a happy git user: 
-  *  Click the "Clone or download" button from this page 
+  *  Click the "Code" button from this page 
   *  Click the "Download ZIP" button. 
   *  The file Zenoss_4.2.5_core-autodeploy-master.zip should be downloaded.  Use:
   *       unzip Zenoss_4.2.5_core-autodeploy-master.zip
   *  This will unzip the file into the Zenoss_4.2.5_core-autodeploy-master subdirectory
-*  Install the VMware virtual machine which should be ready-to-go
 
 Building Zenoss 4.2.5
 ======================
@@ -73,6 +72,8 @@ Installed Groups:
 *   System administration tools
 *   Web Server
 *   X Window System
+*   
+*   I also have Firefox 38.5.0 installed.
 
 
 You need to build as the root user.  I created a directory, zb, under root's home directory
@@ -82,21 +83,13 @@ except zenoss_core-4.2.5-2108.el6.x86_64.rpm .
 
 To get the Zenoss core file, make sure you are in the pre_req_downloads directory and run::
 
-    wget --no-check-certificate -N https://sourceforge.net/projects/zenoss/files/Community%20Edition%20v4%20%28final%29/zenoss_core-4.2.5-2108.el6.x86_64.rpm
+    wget --no-check-certificate https://www.skills-1st.co.uk/pub/zenoss/zenoss_core-4.2.5-2108.el6.x86_64.rpm
 
-You should also get the Zenoss GPG key::
+You do not need any Zenoss GPG key.
 
-  zenoss_gpg_key="http://wiki.zenoss.org/download/core/gpg/RPM-GPG-KEY-zenoss"
-  if [ `rpm -qa gpg-pubkey* | grep -c "aa5a1ad7-4829c08a"` -eq 0  ]
-  then
-     echo "Importing Zenoss GPG Key"
-     rpm --import $zenoss_gpg_key
-  fi
+You should now have a full build set.  From the pre_req_downloads directory, simply run::
 
-You should now have a full build set.  Simply run::
-
-    core-autodeploy_20200428.sh
-
+    ./core-autodeploy_20220331.sh
 
 The only user interaction is right at the start where you have to accept the Oracle Java
 license (with an ENTER and a "yes").  After that, it should run through standalone.
@@ -129,16 +122,51 @@ the four MySQL packages, Zenoss, nagios modules and epel.
 
 There is a small yum_removes.sh script to do this in the top directory of this package.
 
-The new install script will install and disable the epel-release repository.  You should not need
+If yum remove doesn't work, try rpm -e <package>
+
+The install script will install and disable the epel-release repository.  You should not need
 epel hopefully as everything should be in the pre_req_downloads directory; however, if you do
 need to get packages from epel and if it gives trouble, change directory to 
 */etc/yum.repos.d* and replace epel.repo and epel-testing.repo with the versions supplied
 in the pre_req_downloads directory.
 
-Using the VMware Zenoss 4.2.5
-=============================
+Completing the Zenoss installation
+==================================
 
-The VMware virtual machine is packaged simply as a zipped tarbundle in the top directory of this package.
+When the build is complete, check /tmp/zenoss425_install.out
+
+Switch to the zenoss user (typically, the zenoss user cannot be logged into directly.)::
+
+    su - zenoss
+
+Check the status of zenoss; all daemons should be running ::
+
+    zenoss status
+
+The autodeploy script has built the environment to the same state that a native deployment would
+have done.  Start your browser and point it at your Zenoss device, eg::
+
+    http://zenny1.class.example.org:8080
+
+This should take you through the Zenoss setup wizard.  I just configure a password for the admin
+user and create a user/password for myself at this stage.  If your VM was configured with SNMP,
+allowing access to the box with a community of "public", then the base device should be automatically
+discovered and put into the /Server/Linux device class.
+
+I have a report from someone in March 2022 that they have then used zenbatchload to import devices
+from a Zenoss 6.2.3 system.
+
+Beware that a kluge of ZenPacks are installed but they are very old versions - you may well wish
+to update some.
+
+
+
+Using the VMware Zenoss 4.2.5 VM
+===================================
+
+I have created a  zipped tarbundle of the VM that is created by this process.  It is too big to post
+to github but I can make it available to people on request.
+
 Unpack the file with::
 
     tar -czvf zenny1_ZenossCore425.tgz
@@ -170,6 +198,7 @@ Typically, the zenoss user cannot be logged into directly.
 
 The initial GUI setup phase has been executed and zenny1.class.example.org shows under /Server/Linux .
 
+
 Modifying the VM configuration
 ------------------------------
 
@@ -193,7 +222,9 @@ Operating System procedure and requires one action so that Zenoss copes with the
 Reboot the system
 
 Zenoss itself copes with host / ip changes but the underlying RabbitMQ system needs help. There is
-a script, fix_rabbit.sh, in /opt/zenoss/local.  It must be run as the root user.
+a script, fix_rabbit.sh, in the Zenoss_4.2.5_core-autodeploy/pre_req_downloads directory. It must be 
+run as the root user. *Note* that you will need to modify this script to make the PASS variable match
+what is in your /opt/zenoss/etc/global.conf for the amqppassword password.
 
 Then, as the zenoss user, restart zenoss::
 
@@ -224,4 +255,6 @@ Cheers,
 Jane    
 
 jane.curry@skills-1st.co.uk
+
+March 31st 2022
 
