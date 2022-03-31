@@ -124,6 +124,10 @@ There is a small yum_removes.sh script to do this in the top directory of this p
 
 If yum remove doesn't work, try rpm -e <package>
 
+I have found what I think are time-dependent glitches with installation repos and with
+yum_removes.sh . I have included yum.repos.d_backup.tar in the top-level directory as
+this set of repo configurations has definitely worked.
+
 The install script will install and disable the epel-release repository.  You should not need
 epel hopefully as everything should be in the pre_req_downloads directory; however, if you do
 need to get packages from epel and if it gives trouble, change directory to 
