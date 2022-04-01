@@ -159,18 +159,20 @@ epel_rpm_url=http://dl.fedoraproject.org/pub/epel/$elv/x86_64
 disable_repo rpmforge
 
 # JC - get the zenoss deps (which sorts the rpmforge requirement)
+# Not sure we need to do this any more
 #wget --no-check-certificate http://deps.zenoss.com/yum/zenossdeps-4.2.x-1.$els.noarch.rpm
-echo Install the Zenoss dependencies -  zenossdeps-4.2.x-1.$els.noarch.rpm
-try yum -y localinstall --disablerepo=* zenossdeps-4.2.x-1.$els.noarch.rpm
+#echo Install the Zenoss dependencies -  zenossdeps-4.2.x-1.$els.noarch.rpm
+#try yum -y localinstall --disablerepo=* zenossdeps-4.2.x-1.$els.noarch.rpm
 
-echo "Installing EPEL Repo"
+# Not sure we need to do this any more
+#echo "Installing EPEL Repo"
 # JC - the regex epel* in the following wget also gets epel-rpm-macro which has new prereqs
 #   (as of October 2016) of 3 python-rpm-macros packages (see http://www.zenoss.org/forum/146626 )
 # In fact,  the epel-release package is in the 'extras' repo that comes with a minimal install of
 #   centos so you can just do `yum install epel-release` and avoid the wget too. (thanks baileytj)
 
-yum -y localinstall --disablerepo=* epel-release-6-8.noarch.rpm
-disable_repo epel
+#yum -y localinstall --disablerepo=* epel-release-6-8.noarch.rpm
+#disable_repo epel
 
 echo "Installing erlang-R14B-04.3.el6.x86_64.rpm"
 # tk-8.5.7-5.el6.x86_64.rpm and unixODBC-2.2.14-14.el6.x86_64.rpm are prereqs and wx packages
